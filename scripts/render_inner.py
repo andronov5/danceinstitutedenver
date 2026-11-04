@@ -68,11 +68,11 @@ def img(image: dict, assets: dict | list | None, prefix: str, cls: str = "", alt
 
 
 def intro(name: str, title: str, lead: str = "") -> str:
-    return f'<header class="page-intro section-shell"><p class="eyebrow">{esc(name)}</p><h1 class="intro-title">{esc(title)}</h1>{paragraphs(lead, "intro-lead")}</header>'
+    return f'<header class="page-intro section-shell"><h1 class="intro-title">{esc(title)}</h1>{paragraphs(lead, "intro-lead")}</header>'
 
 
 def heading(number: int, title: str) -> str:
-    return f'<div class="section-heading"><span class="section-number" aria-hidden="true">{number:02d}</span><h2>{esc(title)}</h2></div>'
+    return f'<div class="section-heading"><h2>{esc(title)}</h2></div>'
 
 
 def slug(text: str) -> str:
@@ -94,7 +94,7 @@ def performances(page: dict, assets: dict | list | None, prefix: str) -> str:
     blocks = data["blocks"]
     photo = next((i for i in data["images"] if i.get("alt") == "Ballet at the Barre"), data["images"][-1])
     return intro(page["name"], blocks[0]["text"]) + f'''<section class="section-shell split-story performance-story">
-      <div class="editorial-image reveal">{img(photo, assets, prefix, alt="Ballet at the Barre", eager=True)}<span class="image-corner" aria-hidden="true">✦</span></div>
+      <div class="editorial-image reveal">{img(photo, assets, prefix, alt="Ballet at the Barre", eager=True)}</div>
       <div class="prose story-copy reveal">{paragraphs(blocks[1]["text"])}</div>
     </section>'''
 
@@ -124,7 +124,7 @@ def schedule(page: dict, assets: dict | list | None, prefix: str) -> str:
         subtitle, copy = group["blocks"]
         opened = " open" if i == 0 else ""
         out += f'''<details class="program-detail reveal" id="{slug(group['title'])}"{opened}>
-        <summary class="program-summary"><span class="section-number" aria-hidden="true">{i+1:02d}</span><h2>{esc(group['title'])}</h2><span class="accordion-icon" aria-hidden="true">+</span></summary>
+        <summary class="program-summary"><h2>{esc(group['title'])}</h2><span class="accordion-icon" aria-hidden="true">+</span></summary>
         <div class="program-copy"><h3>{esc(subtitle['text'])}</h3>{paragraphs(copy['text'])}</div>
         </details>'''
     return out + '</section>'
@@ -137,8 +137,8 @@ def competition(page: dict, assets: dict | list | None, prefix: str) -> str:
     for i, group in enumerate(blocks_to_sections(b)):
         subtitle, copy = group["blocks"]
         out += f'''<article class="program-panel reveal" id="{slug(group['title'])}">
-        <div class="program-panel-heading"><span class="section-number" aria-hidden="true">{i+1:02d}</span><h2>{esc(group['title'])}</h2><p class="program-subtitle">{esc(subtitle['text'])}</p></div>
-        <div class="prose">{paragraphs(copy['text'])}</div><span class="program-mark" aria-hidden="true">✦</span>
+        <div class="program-panel-heading"><h2>{esc(group['title'])}</h2><p class="program-subtitle">{esc(subtitle['text'])}</p></div>
+        <div class="prose">{paragraphs(copy['text'])}</div>
         </article>'''
     return out + '</section>'
 
@@ -167,8 +167,7 @@ def legal(page: dict, assets: dict | list | None, prefix: str) -> str:
     intro_text = "\n\n".join(x["text"] for x in before_h1)
     out = intro(name, title, intro_text)
     sections = blocks_to_sections(after_h1)
-    nav = ''.join(f'<a href="#{slug(g["title"])}">{esc(g["title"])}</a>' for g in sections)
-    out += f'<div class="section-shell legal-layout"><nav class="legal-nav" aria-label="On this page">{nav}</nav><div class="legal-copy prose">'
+    out += '<div class="section-shell legal-layout"><div class="legal-copy prose">'
     for item in after_h1:
         if item["tag"] == "H2":
             break
@@ -264,7 +263,7 @@ def render_course_detail(page: dict, assets: dict | list | None = None, prefix: 
     instructor_image = img(page["data"]["images"][1], assets, prefix, "instructor-photo", alt=instructor_name.strip())
     out = f'''<header class="section-shell page-intro course-detail-heading"><div class="course-detail-title">
       <a class="text-link course-back" href="../index.html">&lt; Back</a>
-      <p class="eyebrow">Courses</p><h1 class="intro-title">{esc(name)}</h1></div>
+      <h1 class="intro-title">{esc(name)}</h1></div>
       <div class="course-detail-booking"><dl class="course-meta"><div><dt>{esc(price_label)}</dt><dd>{esc(price)}</dd></div><div><dt>{esc(duration_label)}</dt><dd>{esc(duration)}</dd></div></dl>
       <div class="enroll-action"><a class="button button-dark" href="{esc(email)}" aria-describedby="enroll-description">Enroll <span aria-hidden="true">↗</span></a><p class="form-note" id="enroll-description">Opens an email inquiry. No registration or payment is submitted.</p></div></div>
     </header>
