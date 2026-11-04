@@ -22,5 +22,14 @@
     "source": "https://fonts.gstatic.com/s/manrope/v23/xn7gYHE41ni1AdIRggexSg.woff2",
     "bytes": 24532,
     "axes": "Weight range declared by Google Fonts CSS"
+  },
+  {
+    "family": "Barlow Condensed",
+    "style": "normal",
+    "weight": 700,
+    "file": "barlow-condensed-bold.woff2",
+    "source": "https://fonts.gstatic.com/s/barlowcondensed/v13/HTxwL3I-JCGChYJ8VI-L6OO_au7B46r2z3bWuQ.woff2",
+    "bytes": 22444,
+    "axes": []
   }
 ]

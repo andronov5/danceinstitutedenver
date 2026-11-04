@@ -204,10 +204,10 @@ def courses(page: dict, assets: dict | list | None, prefix: str) -> str:
         link_slug = urlsplit(links[i]["href"]).path.rstrip('/').rsplit('/', 1)[-1]
         href = link_slug + "/index.html"
         out += f'''<article class="course-card reveal">
-        <a class="course-image" href="{esc(href)}" aria-label="{esc(group['title'].strip())}">{img(data['images'][i], assets, prefix, alt=group['title'].strip())}<span class="course-image-arrow" aria-hidden="true">↗</span></a>
+        <a class="course-image" href="{esc(href)}" aria-label="{esc(group['title'].strip())}">{img(data['images'][i], assets, prefix, alt=group['title'].strip())}<span class="course-image-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></span></a>
         <div class="course-body"><h2><a href="{esc(href)}">{esc(group['title'])}</a></h2>{paragraphs(copy['text'])}
         <dl class="course-meta"><div><dt>{esc(price_label['text'])}</dt><dd>{esc(price['text'])}</dd></div><div><dt>{esc(duration_label['text'])}</dt><dd>{esc(duration['text'])}</dd></div></dl>
-        <a class="text-link" href="{esc(href)}">Read More <span aria-hidden="true">↗</span></a></div></article>'''
+        <a class="text-link" href="{esc(href)}">Read More <span aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></span></a></div></article>'''
     return out + '</section>'
 
 
@@ -265,7 +265,7 @@ def render_course_detail(page: dict, assets: dict | list | None = None, prefix: 
       <a class="text-link course-back" href="../index.html">&lt; Back</a>
       <h1 class="intro-title">{esc(name)}</h1></div>
       <div class="course-detail-booking"><dl class="course-meta"><div><dt>{esc(price_label)}</dt><dd>{esc(price)}</dd></div><div><dt>{esc(duration_label)}</dt><dd>{esc(duration)}</dd></div></dl>
-      <div class="enroll-action"><a class="button button-dark" href="{esc(email)}" aria-describedby="enroll-description">Enroll <span aria-hidden="true">↗</span></a><p class="form-note" id="enroll-description">Opens an email inquiry. No registration or payment is submitted.</p></div></div>
+      <div class="enroll-action"><a class="button button-dark" href="{esc(email)}" aria-describedby="enroll-description">Enroll <span aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></span></a><p class="form-note" id="enroll-description">Opens an email inquiry. No registration or payment is submitted.</p></div></div>
     </header>
     <div class="section-shell course-detail-hero reveal">{image}</div>
     <div class="section-shell course-detail-layout">
