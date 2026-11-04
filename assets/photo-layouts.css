@@ -1,0 +1,33 @@
+/* Keep the original design; vary photo proportions instead of corner shapes. */
+.about-main-photo,
+.editorial-image,
+.wide-editorial,
+.contact-photo,
+.course-detail-photo {
+  border-radius: 0;
+}
+
+.about-collage { padding-right: 0; }
+.about-main-photo { width: 76%; object-position: center top; }
+.about-small-photo {
+  width: 64%;
+  aspect-ratio: 1.5;
+  right: 0;
+  transform: none;
+}
+.performance-story .editorial-image { aspect-ratio: 1; }
+.wide-editorial { height: auto; aspect-ratio: 1.8; }
+.contact-photo { aspect-ratio: 1.9; }
+
+.tab-arrow, .card-arrow { display: inline-flex; }
+.tab-arrow svg, .card-arrow svg, .course-image-arrow svg {
+  width: 24px;
+  height: 24px;
+}
+.text-link > span > svg { width: 20px; height: 20px; }
+
+@media (max-width: 650px) {
+  .about-collage { height: 370px; }
+  .about-main-photo { width: 72%; }
+  .about-small-photo { width: 64%; }
+}
