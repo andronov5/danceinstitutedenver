@@ -1,0 +1,12 @@
+{
+  "name": "dance-institute-denver",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A static, responsive rebuild of the Dance Institute Wix website.",
+  "scripts": {
+    "build": "python3 scripts/site.py build",
+    "check": "python3 scripts/site.py check",
+    "check:copy": "python3 scripts/check_copy.py",
+    "package": "python3 scripts/site.py package"
+  }
+}

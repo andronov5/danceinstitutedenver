@@ -1,0 +1,26 @@
+[
+  {
+    "family": "Cormorant Garamond",
+    "style": "italic",
+    "file": "cormorant-garamond-italic-latin.woff2",
+    "source": "https://fonts.gstatic.com/s/cormorantgaramond/v21/co3ZmX5slCNuHLi8bLeY9MK7whWMhyjYrEtImSo.woff2",
+    "bytes": 39260,
+    "axes": "Weight range declared by Google Fonts CSS"
+  },
+  {
+    "family": "Cormorant Garamond",
+    "style": "normal",
+    "file": "cormorant-garamond-normal-latin.woff2",
+    "source": "https://fonts.gstatic.com/s/cormorantgaramond/v21/co3bmX5slCNuHLi8bLeY9MK7whWMhyjYqXtK.woff2",
+    "bytes": 37640,
+    "axes": "Weight range declared by Google Fonts CSS"
+  },
+  {
+    "family": "Manrope",
+    "style": "normal",
+    "file": "manrope-latin.woff2",
+    "source": "https://fonts.gstatic.com/s/manrope/v23/xn7gYHE41ni1AdIRggexSg.woff2",
+    "bytes": 24532,
+    "axes": "Weight range declared by Google Fonts CSS"
+  }
+]

@@ -1,0 +1,962 @@
+[
+  {
+    "name": "Modern Ballet",
+    "data": {
+      "blocks": [
+        {
+          "tag": "H1",
+          "text": "Modern Ballet "
+        },
+        {
+          "tag": "P",
+          "text": "Price"
+        },
+        {
+          "tag": "P",
+          "text": "$600"
+        },
+        {
+          "tag": "P",
+          "text": "Duration"
+        },
+        {
+          "tag": "P",
+          "text": "12 Weeks"
+        },
+        {
+          "tag": "H2",
+          "text": "About the Course"
+        },
+        {
+          "tag": "P",
+          "text": "This is placeholder text. To change this content, double-click on the element and click Change Content. Want to view and manage all your collections? Click on the Content Manager button in the Add panel on the left. Here, you can make changes to your content, add new fields, create dynamic pages and more."
+        },
+        {
+          "tag": "P",
+          "text": "Your collection is already set up for you with fields and content. Add your own content or import it from a CSV file. Add fields for any type of content you want to display, such as rich text, images, and videos. Be sure to click Sync after making changes in a collection, so visitors can see your newest content on your live site. "
+        },
+        {
+          "tag": "H2",
+          "text": "Your Instructor"
+        },
+        {
+          "tag": "P",
+          "text": "Ashley Amerson "
+        },
+        {
+          "tag": "P",
+          "text": "This is placeholder text. To change this content, double-click on the element and click Change Content. To manage all your collections, click on the Content Manager button in the Add panel on the left."
+        }
+      ],
+      "images": [
+        {
+          "alt": "",
+          "html": "<img alt=\"\" style=\"width: 1624px; height: 592px; object-fit: cover;\" data-ssr-src-done=\"true\" fetchpriority=\"high\" src=\"https://static.wixstatic.com/media/fc7570_6acc41d7449b4a5f84feb519fa5ff5ef~mv2.jpg/v1/fill/w_2030,h_740,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/fc7570_6acc41d7449b4a5f84feb519fa5ff5ef~mv2.jpg\">",
+          "parent": "<wow-image id=\"img_comp-ms6fprty1\" class=\"Qh0lWW ayCf9D fO4mKs NgeJ4N bgImage\" data-image-info=\"{&quot;containerId&quot;:&quot;comp-ms6fprty1&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;imageData&quot;:{&quot;width&quot;:5266,&quot;height&quot;:3511,&quot;uri&quot;:&quot;fc7570_6acc41d7449b4a5f84feb519fa5ff5ef~mv2.jpg&quot;,&quot;name&quot;:&quot;&quot;,&quot;displayMode&quot;:&quot;fill&quot;}}\" data-motion-part=\"BG_IMG comp-ms6fprty1\" data-bg-effect-name=\"\" data-has-ssr-src=\"\" style=\"--wix-img-max-width: max(5266px, 100%);\"><img alt=\"\" style=\"width: 1624px; height: 592px; object-fit: cover;\" data-ssr-src-done=\"true\" fetchpriority=\"high\" src=\"https://static.wixstatic.com/media/fc7570_6acc41d7449b4a5f84feb519fa5ff5ef~mv2.jpg/v1/fill/w_2030,h_740,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/fc7570_6acc41d7449b4a5f84feb519fa5ff5ef~mv2.jpg\"></wow-image>",
+          "src": "https://static.wixstatic.com/media/fc7570_6acc41d7449b4a5f84feb519fa5ff5ef~mv2.jpg/v1/fill/w_2030,h_740,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/fc7570_6acc41d7449b4a5f84feb519fa5ff5ef~mv2.jpg"
+        },
+        {
+          "alt": "",
+          "html": "<img alt=\"\" width=\"153\" height=\"153\">",
+          "parent": "<wow-image id=\"img_comp-ms6fprul1\" class=\"Qh0lWW KjjerE\" data-image-info=\"{&quot;containerId&quot;:&quot;comp-ms6fprul1&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;targetWidth&quot;:153,&quot;targetHeight&quot;:153,&quot;imageData&quot;:{&quot;width&quot;:4464,&quot;height&quot;:2976,&quot;uri&quot;:&quot;fc7570_41edef1182c1485e8798c73fce3a17ff~mv2.jpg&quot;,&quot;name&quot;:&quot;Image-empty-state.png&quot;,&quot;displayMode&quot;:&quot;fill&quot;}}\" data-motion-part=\"BG_IMG comp-ms6fprul1\" data-bg-effect-name=\"\" data-has-ssr-src=\"\" style=\"--wix-img-max-width: max(4464px, 100%);\"><img alt=\"\" width=\"153\" height=\"153\"></wow-image>",
+          "src": ""
+        }
+      ],
+      "links": [
+        {
+          "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420",
+          "text": "Dance Institute"
+        },
+        {
+          "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420/contact",
+          "text": "Contact Us"
+        },
+        {
+          "href": "https://www.wix.com/templateslp/links",
+          "text": "Enroll"
+        },
+        {
+          "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420/courses",
+          "text": "< Back"
+        },
+        {
+          "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420",
+          "text": "Dance Institute"
+        },
+        {
+          "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420/privacy-policy",
+          "text": "Privacy Policy"
+        },
+        {
+          "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420/accessibility-statement",
+          "text": "Accessibility Statement"
+        },
+        {
+          "href": "https://www.wix.com/",
+          "text": "Wix"
+        },
+        {
+          "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420",
+          "text": "Home"
+        },
+        {
+          "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420/performances",
+          "text": "Performances"
+        },
+        {
+          "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420/about-1",
+          "text": "About"
+        },
+        {
+          "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420/class-schedule",
+          "text": "Class Schedule"
+        },
+        {
+          "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420/competition",
+          "text": "Competition"
+        },
+        {
+          "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420/contact",
+          "text": "Contact"
+        },
+        {
+          "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420/courses",
+          "text": "Courses"
+        }
+      ],
+      "text": "Skip to Main Content\n\nDance Institute\n\nContact Us\nModern Ballet\n\nPrice\n\n$600\n\nDuration\n\n12 Weeks\n\nEnroll\n< Back\nAbout the Course\n\nThis is placeholder text. To change this content, double-click on the element and click Change Content. Want to view and manage all your collections? Click on the Content Manager button in the Add panel on the left. Here, you can make changes to your content, add new fields, create dynamic pages and more.\n\n\n\n\nYour collection is already set up for you with fields and content. Add your own content or import it from a CSV file. Add fields for any type of content you want to display, such as rich text, images, and videos. Be sure to click Sync after making changes in a collection, so visitors can see your newest content on your live site. \n\nYour Instructor\n\nAshley Amerson\n\nThis is placeholder text. To change this content, double-click on the element and click Change Content. To manage all your collections, click on the Content Manager button in the Add panel on the left.\n\nPrevious\nNext\n\nDance Institute\n\n303-525-0011 Call or Text\n\ndance@danceinstitutedenver.com\n\n10515 E 40th Ave\n\n#114\n\nDenver, CO 80239\n\nPrivacy Policy\n\nAccessibility Statement\n\n© 2035 by K. Larsen. Powered and secured by Wix "
+    }
+  },
+  {
+    "name": "Arts & Crafts",
+    "data": {
+      "blocks": [
+        {
+          "tag": "H1",
+          "text": "Arts & Crafts "
+        },
+        {
+          "tag": "P",
+          "text": "Price"
+        },
+        {
+          "tag": "P",
+          "text": "$350"
+        },
+        {
+          "tag": "P",
+          "text": "Duration"
+        },
+        {
+          "tag": "P",
+          "text": "12 Weeks"
+        },
+        {
+          "tag": "H2",
+          "text": "About the Course"
+        },
+        {
+          "tag": "P",
+          "text": "This is placeholder text. To change this content, double-click on the element and click Change Content. Want to view and manage all your collections? Click on the Content Manager button in the Add panel on the left. Here, you can make changes to your content, add new fields, create dynamic pages and more."
+        },
+        {
+          "tag": "P",
+          "text": "Your collection is already set up for you with fields and content. Add your own content or import it from a CSV file. Add fields for any type of content you want to display, such as rich text, images, and videos. Be sure to click Sync after making changes in a collection, so visitors can see your newest content on your live site. "
+        },
+        {
+          "tag": "H2",
+          "text": "Your Instructor"
+        },
+        {
+          "tag": "P",
+          "text": "Kelly Parker "
+        },
+        {
+          "tag": "P",
+          "text": "This is placeholder text. To change this content, double-click on the element and click Change Content. To manage all your collections, click on the Content Manager button in the Add panel on the left."
+        }
+      ],
+      "images": [
+        {
+          "alt": "",
+          "html": "<img alt=\"\" style=\"width: 1624px; height: 592px; object-fit: cover;\" data-ssr-src-done=\"true\" fetchpriority=\"high\" src=\"https://static.wixstatic.com/media/fc7570_edede96df98b4bc5b8529d1846dac713~mv2.jpg/v1/fill/w_2030,h_740,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/fc7570_edede96df98b4bc5b8529d1846dac713~mv2.jpg\">",
+          "parent": "<wow-image id=\"img_comp-ms6fprty1\" class=\"Qh0lWW ayCf9D fO4mKs NgeJ4N bgImage\" data-image-info=\"{&quot;containerId&quot;:&quot;comp-ms6fprty1&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;imageData&quot;:{&quot;width&quot;:4000,&quot;height&quot;:2735,&quot;uri&quot;:&quot;fc7570_edede96df98b4bc5b8529d1846dac713~mv2.jpg&quot;,&quot;name&quot;:&quot;&quot;,&quot;displayMode&quot;:&quot;fill&quot;}}\" data-motion-part=\"BG_IMG comp-ms6fprty1\" data-bg-effect-name=\"\" data-has-ssr-src=\"\" style=\"--wix-img-max-width: max(4000px, 100%);\"><img alt=\"\" style=\"width: 1624px; height: 592px; object-fit: cover;\" data-ssr-src-done=\"true\" fetchpriority=\"high\" src=\"https://static.wixstatic.com/media/fc7570_edede96df98b4bc5b8529d1846dac713~mv2.jpg/v1/fill/w_2030,h_740,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/fc7570_edede96df98b4bc5b8529d1846dac713~mv2.jpg\"></wow-image>",
+          "src": "https://static.wixstatic.com/media/fc7570_edede96df98b4bc5b8529d1846dac713~mv2.jpg/v1/fill/w_2030,h_740,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/fc7570_edede96df98b4bc5b8529d1846dac713~mv2.jpg"
+        },
+        {
+          "alt": "",
+          "html": "<img alt=\"\" width=\"153\" height=\"153\">",
+          "parent": "<wow-image id=\"img_comp-ms6fprul1\" class=\"Qh0lWW KjjerE\" data-image-info=\"{&quot;containerId&quot;:&quot;comp-ms6fprul1&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;targetWidth&quot;:153,&quot;targetHeight&quot;:153,&quot;imageData&quot;:{&quot;width&quot;:4464,&quot;height&quot;:2976,&quot;uri&quot;:&quot;fc7570_06fbcb382f234c7abdc3f5c66ecc2e4f~mv2.jpg&quot;,&quot;name&quot;:&quot;Image-empty-state.png&quot;,&quot;displayMode&quot;:&quot;fill&quot;}}\" data-motion-part=\"BG_IMG comp-ms6fprul1\" data-bg-effect-name=\"\" data-has-ssr-src=\"\" style=\"--wix-img-max-width: max(4464px, 100%);\"><img alt=\"\" width=\"153\" height=\"153\"></wow-image>",
+          "src": ""
+        }
+      ],
+      "links": [
+        {
+          "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420",
+          "text": "Dance Institute"
+        },
+        {
+          "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420/contact",
+          "text": "Contact Us"
+        },
+        {
+          "href": "https://www.wix.com/templateslp/links",
+          "text": "Enroll"
+        },
+        {
+          "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420/courses",
+          "text": "< Back"
+        },
+        {
+          "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420",
+          "text": "Dance Institute"
+        },
+        {
+          "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420/privacy-policy",
+          "text": "Privacy Policy"
+        },
+        {
+          "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420/accessibility-statement",
+          "text": "Accessibility Statement"
+        },
+        {
+          "href": "https://www.wix.com/",
+          "text": "Wix"
+        },
+        {
+          "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420",
+          "text": "Home"
+        },
+        {
+          "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420/performances",
+          "text": "Performances"
+        },
+        {
+          "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420/about-1",
+          "text": "About"
+        },
+        {
+          "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420/class-schedule",
+          "text": "Class Schedule"
+        },
+        {
+          "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420/competition",
+          "text": "Competition"
+        },
+        {
+          "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420/contact",
+          "text": "Contact"
+        },
+        {
+          "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420/courses",
+          "text": "Courses"
+        }
+      ],
+      "text": "Skip to Main Content\n\nDance Institute\n\nContact Us\nArts & Crafts\n\nPrice\n\n$350\n\nDuration\n\n12 Weeks\n\nEnroll\n< Back\nAbout the Course\n\nThis is placeholder text. To change this content, double-click on the element and click Change Content. Want to view and manage all your collections? Click on the Content Manager button in the Add panel on the left. Here, you can make changes to your content, add new fields, create dynamic pages and more.\n\n\n\n\nYour collection is already set up for you with fields and content. Add your own content or import it from a CSV file. Add fields for any type of content you want to display, such as rich text, images, and videos. Be sure to click Sync after making changes in a collection, so visitors can see your newest content on your live site. \n\nYour Instructor\n\nKelly Parker\n\nThis is placeholder text. To change this content, double-click on the element and click Change Content. To manage all your collections, click on the Content Manager button in the Add panel on the left.\n\nPrevious\nNext\n\nDance Institute\n\n303-525-0011 Call or Text\n\ndance@danceinstitutedenver.com\n\n10515 E 40th Ave\n\n#114\n\nDenver, CO 80239\n\nPrivacy Policy\n\nAccessibility Statement\n\n© 2035 by K. Larsen. Powered and secured by Wix "
+    }
+  },
+  {
+    "name": "Baking for Beginners",
+    "data": {
+      "blocks": [
+        {
+          "tag": "H1",
+          "text": "Baking for Beginners "
+        },
+        {
+          "tag": "P",
+          "text": "Price"
+        },
+        {
+          "tag": "P",
+          "text": "$200"
+        },
+        {
+          "tag": "P",
+          "text": "Duration"
+        },
+        {
+          "tag": "P",
+          "text": "3 Weeks"
+        },
+        {
+          "tag": "H2",
+          "text": "About the Course"
+        },
+        {
+          "tag": "P",
+          "text": "This is placeholder text. To change this content, double-click on the element and click Change Content. Want to view and manage all your collections? Click on the Content Manager button in the Add panel on the left. Here, you can make changes to your content, add new fields, create dynamic pages and more."
+        },
+        {
+          "tag": "P",
+          "text": "Your collection is already set up for you with fields and content. Add your own content or import it from a CSV file. Add fields for any type of content you want to display, such as rich text, images, and videos. Be sure to click Sync after making changes in a collection, so visitors can see your newest content on your live site. "
+        },
+        {
+          "tag": "H2",
+          "text": "Your Instructor"
+        },
+        {
+          "tag": "P",
+          "text": "Marcus Harris"
+        },
+        {
+          "tag": "P",
+          "text": "This is placeholder text. To change this content, double-click on the element and click Change Content. To manage all your collections, click on the Content Manager button in the Add panel on the left."
+        }
+      ],
+      "images": [
+        {
+          "alt": "",
+          "html": "<img alt=\"\" style=\"width: 1624px; height: 592px; object-fit: cover;\" data-ssr-src-done=\"true\" fetchpriority=\"high\" src=\"https://static.wixstatic.com/media/fc7570_2ed737b9f562470691056c62ffb8e47a~mv2.jpg/v1/fill/w_2030,h_740,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/fc7570_2ed737b9f562470691056c62ffb8e47a~mv2.jpg\">",
+          "parent": "<wow-image id=\"img_comp-ms6fprty1\" class=\"Qh0lWW ayCf9D fO4mKs NgeJ4N bgImage\" data-image-info=\"{&quot;containerId&quot;:&quot;comp-ms6fprty1&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;imageData&quot;:{&quot;width&quot;:4452,&quot;height&quot;:3103,&quot;uri&quot;:&quot;fc7570_2ed737b9f562470691056c62ffb8e47a~mv2.jpg&quot;,&quot;name&quot;:&quot;&quot;,&quot;displayMode&quot;:&quot;fill&quot;}}\" data-motion-part=\"BG_IMG comp-ms6fprty1\" data-bg-effect-name=\"\" data-has-ssr-src=\"\" style=\"--wix-img-max-width: max(4452px, 100%);\"><img alt=\"\" style=\"width: 1624px; height: 592px; object-fit: cover;\" data-ssr-src-done=\"true\" fetchpriority=\"high\" src=\"https://static.wixstatic.com/media/fc7570_2ed737b9f562470691056c62ffb8e47a~mv2.jpg/v1/fill/w_2030,h_740,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/fc7570_2ed737b9f562470691056c62ffb8e47a~mv2.jpg\"></wow-image>",
+          "src": "https://static.wixstatic.com/media/fc7570_2ed737b9f562470691056c62ffb8e47a~mv2.jpg/v1/fill/w_2030,h_740,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/fc7570_2ed737b9f562470691056c62ffb8e47a~mv2.jpg"
+        },
+        {
+          "alt": "",
+          "html": "<img alt=\"\" width=\"153\" height=\"153\">",
+          "parent": "<wow-image id=\"img_comp-ms6fprul1\" class=\"Qh0lWW KjjerE\" data-image-info=\"{&quot;containerId&quot;:&quot;comp-ms6fprul1&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;targetWidth&quot;:153,&quot;targetHeight&quot;:153,&quot;imageData&quot;:{&quot;width&quot;:4464,&quot;height&quot;:3055,&quot;uri&quot;:&quot;fc7570_10a16b6e706c46b9992daa163568966c~mv2.jpg&quot;,&quot;name&quot;:&quot;Image-empty-state.png&quot;,&quot;displayMode&quot;:&quot;fill&quot;}}\" data-motion-part=\"BG_IMG comp-ms6fprul1\" data-bg-effect-name=\"\" data-has-ssr-src=\"\" style=\"--wix-img-max-width: max(4464px, 100%);\"><img alt=\"\" width=\"153\" height=\"153\"></wow-image>",
+          "src": ""
+        }
+      ],
+      "links": [
+        {
+          "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420",
+          "text": "Dance Institute"
+        },
+        {
+          "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420/contact",
+          "text": "Contact Us"
+        },
+        {
+          "href": "https://www.wix.com/templateslp/links",
+          "text": "Enroll"
+        },
+        {
+          "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420/courses",
+          "text": "< Back"
+        },
+        {
+          "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420",
+          "text": "Dance Institute"
+        },
+        {
+          "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420/privacy-policy",
+          "text": "Privacy Policy"
+        },
+        {
+          "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420/accessibility-statement",
+          "text": "Accessibility Statement"
+        },
+        {
+          "href": "https://www.wix.com/",
+          "text": "Wix"
+        },
+        {
+          "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420",
+          "text": "Home"
+        },
+        {
+          "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420/performances",
+          "text": "Performances"
+        },
+        {
+          "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420/about-1",
+          "text": "About"
+        },
+        {
+          "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420/class-schedule",
+          "text": "Class Schedule"
+        },
+        {
+          "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420/competition",
+          "text": "Competition"
+        },
+        {
+          "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420/contact",
+          "text": "Contact"
+        },
+        {
+          "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420/courses",
+          "text": "Courses"
+        }
+      ],
+      "text": "Skip to Main Content\n\nDance Institute\n\nContact Us\nBaking for Beginners\n\nPrice\n\n$200\n\nDuration\n\n3 Weeks\n\nEnroll\n< Back\nAbout the Course\n\nThis is placeholder text. To change this content, double-click on the element and click Change Content. Want to view and manage all your collections? Click on the Content Manager button in the Add panel on the left. Here, you can make changes to your content, add new fields, create dynamic pages and more.\n\n\n\n\nYour collection is already set up for you with fields and content. Add your own content or import it from a CSV file. Add fields for any type of content you want to display, such as rich text, images, and videos. Be sure to click Sync after making changes in a collection, so visitors can see your newest content on your live site. \n\nYour Instructor\n\nMarcus Harris\n\nThis is placeholder text. To change this content, double-click on the element and click Change Content. To manage all your collections, click on the Content Manager button in the Add panel on the left.\n\nPrevious\nNext\n\nDance Institute\n\n303-525-0011 Call or Text\n\ndance@danceinstitutedenver.com\n\n10515 E 40th Ave\n\n#114\n\nDenver, CO 80239\n\nPrivacy Policy\n\nAccessibility Statement\n\n© 2035 by K. Larsen. Powered and secured by Wix "
+    }
+  },
+  {
+    "name": "Pottery Workshop",
+    "data": {
+      "blocks": [
+        {
+          "tag": "H1",
+          "text": "Pottery Workshop "
+        },
+        {
+          "tag": "P",
+          "text": "Price"
+        },
+        {
+          "tag": "P",
+          "text": "$200"
+        },
+        {
+          "tag": "P",
+          "text": "Duration"
+        },
+        {
+          "tag": "P",
+          "text": "2 Weeks"
+        },
+        {
+          "tag": "H2",
+          "text": "About the Course"
+        },
+        {
+          "tag": "P",
+          "text": "This is placeholder text. To change this content, double-click on the element and click Change Content. Want to view and manage all your collections? Click on the Content Manager button in the Add panel on the left. Here, you can make changes to your content, add new fields, create dynamic pages and more."
+        },
+        {
+          "tag": "P",
+          "text": "Your collection is already set up for you with fields and content. Add your own content or import it from a CSV file. Add fields for any type of content you want to display, such as rich text, images, and videos. Be sure to click Sync after making changes in a collection, so visitors can see your newest content on your live site. "
+        },
+        {
+          "tag": "H2",
+          "text": "Your Instructor"
+        },
+        {
+          "tag": "P",
+          "text": "Brian Chung "
+        },
+        {
+          "tag": "P",
+          "text": "This is placeholder text. To change this content, double-click on the element and click Change Content. To manage all your collections, click on the Content Manager button in the Add panel on the left."
+        },
+        {
+          "tag": "H1",
+          "text": "Baking for Beginners "
+        },
+        {
+          "tag": "P",
+          "text": "Price"
+        },
+        {
+          "tag": "P",
+          "text": "$200"
+        },
+        {
+          "tag": "P",
+          "text": "Duration"
+        },
+        {
+          "tag": "P",
+          "text": "3 Weeks"
+        },
+        {
+          "tag": "H2",
+          "text": "About the Course"
+        },
+        {
+          "tag": "P",
+          "text": "This is placeholder text. To change this content, double-click on the element and click Change Content. Want to view and manage all your collections? Click on the Content Manager button in the Add panel on the left. Here, you can make changes to your content, add new fields, create dynamic pages and more."
+        },
+        {
+          "tag": "P",
+          "text": "Your collection is already set up for you with fields and content. Add your own content or import it from a CSV file. Add fields for any type of content you want to display, such as rich text, images, and videos. Be sure to click Sync after making changes in a collection, so visitors can see your newest content on your live site. "
+        },
+        {
+          "tag": "H2",
+          "text": "Your Instructor"
+        },
+        {
+          "tag": "P",
+          "text": "Marcus Harris"
+        },
+        {
+          "tag": "P",
+          "text": "This is placeholder text. To change this content, double-click on the element and click Change Content. To manage all your collections, click on the Content Manager button in the Add panel on the left."
+        }
+      ],
+      "images": [
+        {
+          "alt": "",
+          "html": "<img alt=\"\" style=\"width: 1624px; height: 592px; object-fit: cover;\" data-ssr-src-done=\"true\" fetchpriority=\"high\" src=\"https://static.wixstatic.com/media/fc7570_ac1f7e7e38a44bd2ab92fb30b5fa38d7~mv2.jpg/v1/fill/w_2030,h_740,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/fc7570_ac1f7e7e38a44bd2ab92fb30b5fa38d7~mv2.jpg\">",
+          "parent": "<wow-image id=\"img_comp-ms6fprty1\" class=\"Qh0lWW ayCf9D fO4mKs NgeJ4N bgImage\" data-image-info=\"{&quot;containerId&quot;:&quot;comp-ms6fprty1&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;imageData&quot;:{&quot;width&quot;:4176,&quot;height&quot;:2784,&quot;uri&quot;:&quot;fc7570_ac1f7e7e38a44bd2ab92fb30b5fa38d7~mv2.jpg&quot;,&quot;name&quot;:&quot;&quot;,&quot;displayMode&quot;:&quot;fill&quot;}}\" data-motion-part=\"BG_IMG comp-ms6fprty1\" data-bg-effect-name=\"\" data-has-ssr-src=\"\" style=\"--wix-img-max-width: max(4176px, 100%);\"><img alt=\"\" style=\"width: 1624px; height: 592px; object-fit: cover;\" data-ssr-src-done=\"true\" fetchpriority=\"high\" src=\"https://static.wixstatic.com/media/fc7570_ac1f7e7e38a44bd2ab92fb30b5fa38d7~mv2.jpg/v1/fill/w_2030,h_740,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/fc7570_ac1f7e7e38a44bd2ab92fb30b5fa38d7~mv2.jpg\"></wow-image>",
+          "src": "https://static.wixstatic.com/media/fc7570_ac1f7e7e38a44bd2ab92fb30b5fa38d7~mv2.jpg/v1/fill/w_2030,h_740,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/fc7570_ac1f7e7e38a44bd2ab92fb30b5fa38d7~mv2.jpg"
+        },
+        {
+          "alt": "",
+          "html": "<img alt=\"\" width=\"153\" height=\"153\">",
+          "parent": "<wow-image id=\"img_comp-ms6fprul1\" class=\"Qh0lWW KjjerE\" data-image-info=\"{&quot;containerId&quot;:&quot;comp-ms6fprul1&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;targetWidth&quot;:153,&quot;targetHeight&quot;:153,&quot;imageData&quot;:{&quot;width&quot;:4464,&quot;height&quot;:2976,&quot;uri&quot;:&quot;fc7570_edd42b203bac46b8a149d18aca9f82d5~mv2.jpg&quot;,&quot;name&quot;:&quot;Image-empty-state.png&quot;,&quot;displayMode&quot;:&quot;fill&quot;}}\" data-motion-part=\"BG_IMG comp-ms6fprul1\" data-bg-effect-name=\"\" data-has-ssr-src=\"\" style=\"--wix-img-max-width: max(4464px, 100%);\"><img alt=\"\" width=\"153\" height=\"153\"></wow-image>",
+          "src": ""
+        },
+        {
+          "alt": "",
+          "html": "<img alt=\"\" style=\"width: 1624px; height: 592px; object-fit: cover;\" data-ssr-src-done=\"true\" fetchpriority=\"high\" src=\"https://static.wixstatic.com/media/fc7570_2ed737b9f562470691056c62ffb8e47a~mv2.jpg/v1/fill/w_2030,h_740,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/fc7570_2ed737b9f562470691056c62ffb8e47a~mv2.jpg\">",
+          "parent": "<wow-image id=\"img_comp-ms6fprty1\" class=\"Qh0lWW ayCf9D fO4mKs NgeJ4N bgImage\" data-image-info=\"{&quot;containerId&quot;:&quot;comp-ms6fprty1&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;imageData&quot;:{&quot;width&quot;:4452,&quot;height&quot;:3103,&quot;uri&quot;:&quot;fc7570_2ed737b9f562470691056c62ffb8e47a~mv2.jpg&quot;,&quot;name&quot;:&quot;&quot;,&quot;displayMode&quot;:&quot;fill&quot;}}\" data-motion-part=\"BG_IMG comp-ms6fprty1\" data-bg-effect-name=\"\" data-has-ssr-src=\"\" style=\"--wix-img-max-width: max(4452px, 100%);\"><img alt=\"\" style=\"width: 1624px; height: 592px; object-fit: cover;\" data-ssr-src-done=\"true\" fetchpriority=\"high\" src=\"https://static.wixstatic.com/media/fc7570_2ed737b9f562470691056c62ffb8e47a~mv2.jpg/v1/fill/w_2030,h_740,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/fc7570_2ed737b9f562470691056c62ffb8e47a~mv2.jpg\"></wow-image>",
+          "src": "https://static.wixstatic.com/media/fc7570_2ed737b9f562470691056c62ffb8e47a~mv2.jpg/v1/fill/w_2030,h_740,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/fc7570_2ed737b9f562470691056c62ffb8e47a~mv2.jpg"
+        },
+        {
+          "alt": "",
+          "html": "<img alt=\"\" width=\"153\" height=\"153\">",
+          "parent": "<wow-image id=\"img_comp-ms6fprul1\" class=\"Qh0lWW KjjerE\" data-image-info=\"{&quot;containerId&quot;:&quot;comp-ms6fprul1&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;targetWidth&quot;:153,&quot;targetHeight&quot;:153,&quot;imageData&quot;:{&quot;width&quot;:4464,&quot;height&quot;:3055,&quot;uri&quot;:&quot;fc7570_10a16b6e706c46b9992daa163568966c~mv2.jpg&quot;,&quot;name&quot;:&quot;Image-empty-state.png&quot;,&quot;displayMode&quot;:&quot;fill&quot;}}\" data-motion-part=\"BG_IMG comp-ms6fprul1\" data-bg-effect-name=\"\" data-has-ssr-src=\"\" style=\"--wix-img-max-width: max(4464px, 100%);\"><img alt=\"\" width=\"153\" height=\"153\"></wow-image>",
+          "src": ""
+        }
+      ],
+      "links": [
+        {
+          "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420",
+          "text": "Dance Institute"
+        },
+        {
+          "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420/contact",
+          "text": "Contact Us"
+        },
+        {
+          "href": "https://www.wix.com/templateslp/links",
+          "text": "Enroll"
+        },
+        {
+          "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420/courses",
+          "text": "< Back"
+        },
+        {
+          "href": "https://www.wix.com/templateslp/links",
+          "text": "Enroll"
+        },
+        {
+          "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420/courses",
+          "text": "< Back"
+        },
+        {
+          "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420",
+          "text": "Dance Institute"
+        },
+        {
+          "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420/privacy-policy",
+          "text": "Privacy Policy"
+        },
+        {
+          "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420/accessibility-statement",
+          "text": "Accessibility Statement"
+        },
+        {
+          "href": "https://www.wix.com/",
+          "text": "Wix"
+        },
+        {
+          "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420",
+          "text": "Home"
+        },
+        {
+          "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420/performances",
+          "text": "Performances"
+        },
+        {
+          "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420/about-1",
+          "text": "About"
+        },
+        {
+          "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420/class-schedule",
+          "text": "Class Schedule"
+        },
+        {
+          "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420/competition",
+          "text": "Competition"
+        },
+        {
+          "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420/contact",
+          "text": "Contact"
+        },
+        {
+          "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420/courses",
+          "text": "Courses"
+        }
+      ],
+      "text": "Skip to Main Content\n\nDance Institute\n\nContact Us\nPottery Workshop\n\nPrice\n\n$200\n\nDuration\n\n2 Weeks\n\nEnroll\n< Back\nAbout the Course\n\nThis is placeholder text. To change this content, double-click on the element and click Change Content. Want to view and manage all your collections? Click on the Content Manager button in the Add panel on the left. Here, you can make changes to your content, add new fields, create dynamic pages and more.\n\n\n\n\nYour collection is already set up for you with fields and content. Add your own content or import it from a CSV file. Add fields for any type of content you want to display, such as rich text, images, and videos. Be sure to click Sync after making changes in a collection, so visitors can see your newest content on your live site. \n\nYour Instructor\n\nBrian Chung\n\nThis is placeholder text. To change this content, double-click on the element and click Change Content. To manage all your collections, click on the Content Manager button in the Add panel on the left.\n\nPrevious\nNext\nBaking for Beginners\n\nPrice\n\n$200\n\nDuration\n\n3 Weeks\n\nEnroll\n< Back\nAbout the Course\n\nThis is placeholder text. To change this content, double-click on the element and click Change Content. Want to view and manage all your collections? Click on the Content Manager button in the Add panel on the left. Here, you can make changes to your content, add new fields, create dynamic pages and more.\n\n\n\n\nYour collection is already set up for you with fields and content. Add your own content or import it from a CSV file. Add fields for any type of content you want to display, such as rich text, images, and videos. Be sure to click Sync after making changes in a collection, so visitors can see your newest content on your live site. \n\nYour Instructor\n\nMarcus Harris\n\nThis is placeholder text. To change this content, double-click on the element and click Change Content. To manage all your collections, click on the Content Manager button in the Add panel on the left.\n\nPrevious\nNext\n\nDance Institute\n\n303-525-0011 Call or Text\n\ndance@danceinstitutedenver.com\n\n10515 E 40th Ave\n\n#114\n\nDenver, CO 80239\n\nPrivacy Policy\n\nAccessibility Statement\n\n© 2035 by K. Larsen. Powered and secured by Wix "
+    }
+  },
+  {
+    "name": "Tennis",
+    "data": {
+      "blocks": [
+        {
+          "tag": "H1",
+          "text": "Tennis "
+        },
+        {
+          "tag": "P",
+          "text": "Price"
+        },
+        {
+          "tag": "P",
+          "text": "$250"
+        },
+        {
+          "tag": "P",
+          "text": "Duration"
+        },
+        {
+          "tag": "P",
+          "text": "4 Weeks"
+        },
+        {
+          "tag": "H2",
+          "text": "About the Course"
+        },
+        {
+          "tag": "P",
+          "text": "This is placeholder text. To change this content, double-click on the element and click Change Content. Want to view and manage all your collections? Click on the Content Manager button in the Add panel on the left. Here, you can make changes to your content, add new fields, create dynamic pages and more."
+        },
+        {
+          "tag": "P",
+          "text": "Your collection is already set up for you with fields and content. Add your own content or import it from a CSV file. Add fields for any type of content you want to display, such as rich text, images, and videos. Be sure to click Sync after making changes in a collection, so visitors can see your newest content on your live site. "
+        },
+        {
+          "tag": "H2",
+          "text": "Your Instructor"
+        },
+        {
+          "tag": "P",
+          "text": "Brad Grecco"
+        },
+        {
+          "tag": "P",
+          "text": "This is placeholder text. To change this content, double-click on the element and click Change Content. To manage all your collections, click on the Content Manager button in the Add panel on the left."
+        },
+        {
+          "tag": "H1",
+          "text": "Pottery Workshop "
+        },
+        {
+          "tag": "P",
+          "text": "Price"
+        },
+        {
+          "tag": "P",
+          "text": "$200"
+        },
+        {
+          "tag": "P",
+          "text": "Duration"
+        },
+        {
+          "tag": "P",
+          "text": "2 Weeks"
+        },
+        {
+          "tag": "H2",
+          "text": "About the Course"
+        },
+        {
+          "tag": "P",
+          "text": "This is placeholder text. To change this content, double-click on the element and click Change Content. Want to view and manage all your collections? Click on the Content Manager button in the Add panel on the left. Here, you can make changes to your content, add new fields, create dynamic pages and more."
+        },
+        {
+          "tag": "P",
+          "text": "Your collection is already set up for you with fields and content. Add your own content or import it from a CSV file. Add fields for any type of content you want to display, such as rich text, images, and videos. Be sure to click Sync after making changes in a collection, so visitors can see your newest content on your live site. "
+        },
+        {
+          "tag": "H2",
+          "text": "Your Instructor"
+        },
+        {
+          "tag": "P",
+          "text": "Brian Chung "
+        },
+        {
+          "tag": "P",
+          "text": "This is placeholder text. To change this content, double-click on the element and click Change Content. To manage all your collections, click on the Content Manager button in the Add panel on the left."
+        }
+      ],
+      "images": [
+        {
+          "alt": "",
+          "html": "<img alt=\"\" style=\"width: 1624px; height: 592px; object-fit: cover;\" data-ssr-src-done=\"true\" fetchpriority=\"high\" src=\"https://static.wixstatic.com/media/fc7570_ec4b7023b04842119a0387b467d48768~mv2.jpg/v1/fill/w_2030,h_740,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/fc7570_ec4b7023b04842119a0387b467d48768~mv2.jpg\">",
+          "parent": "<wow-image id=\"img_comp-ms6fprty1\" class=\"Qh0lWW ayCf9D fO4mKs NgeJ4N bgImage\" data-image-info=\"{&quot;containerId&quot;:&quot;comp-ms6fprty1&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;imageData&quot;:{&quot;width&quot;:5600,&quot;height&quot;:3762,&quot;uri&quot;:&quot;fc7570_ec4b7023b04842119a0387b467d48768~mv2.jpg&quot;,&quot;name&quot;:&quot;&quot;,&quot;displayMode&quot;:&quot;fill&quot;}}\" data-motion-part=\"BG_IMG comp-ms6fprty1\" data-bg-effect-name=\"\" data-has-ssr-src=\"\" style=\"--wix-img-max-width: max(5600px, 100%);\"><img alt=\"\" style=\"width: 1624px; height: 592px; object-fit: cover;\" data-ssr-src-done=\"true\" fetchpriority=\"high\" src=\"https://static.wixstatic.com/media/fc7570_ec4b7023b04842119a0387b467d48768~mv2.jpg/v1/fill/w_2030,h_740,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/fc7570_ec4b7023b04842119a0387b467d48768~mv2.jpg\"></wow-image>",
+          "src": "https://static.wixstatic.com/media/fc7570_ec4b7023b04842119a0387b467d48768~mv2.jpg/v1/fill/w_2030,h_740,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/fc7570_ec4b7023b04842119a0387b467d48768~mv2.jpg"
+        },
+        {
+          "alt": "",
+          "html": "<img alt=\"\" width=\"153\" height=\"153\">",
+          "parent": "<wow-image id=\"img_comp-ms6fprul1\" class=\"Qh0lWW KjjerE\" data-image-info=\"{&quot;containerId&quot;:&quot;comp-ms6fprul1&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;targetWidth&quot;:153,&quot;targetHeight&quot;:153,&quot;imageData&quot;:{&quot;width&quot;:4464,&quot;height&quot;:2976,&quot;uri&quot;:&quot;fc7570_2adecf12d63b4fa9aa595cc098ca1001~mv2.jpg&quot;,&quot;name&quot;:&quot;Image-empty-state.png&quot;,&quot;displayMode&quot;:&quot;fill&quot;}}\" data-motion-part=\"BG_IMG comp-ms6fprul1\" data-bg-effect-name=\"\" data-has-ssr-src=\"\" style=\"--wix-img-max-width: max(4464px, 100%);\"><img alt=\"\" width=\"153\" height=\"153\"></wow-image>",
+          "src": ""
+        },
+        {
+          "alt": "",
+          "html": "<img alt=\"\" style=\"width: 1624px; height: 592px; object-fit: cover;\" data-ssr-src-done=\"true\" fetchpriority=\"high\" src=\"https://static.wixstatic.com/media/fc7570_ac1f7e7e38a44bd2ab92fb30b5fa38d7~mv2.jpg/v1/fill/w_2030,h_740,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/fc7570_ac1f7e7e38a44bd2ab92fb30b5fa38d7~mv2.jpg\">",
+          "parent": "<wow-image id=\"img_comp-ms6fprty1\" class=\"Qh0lWW ayCf9D fO4mKs NgeJ4N bgImage\" data-image-info=\"{&quot;containerId&quot;:&quot;comp-ms6fprty1&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;imageData&quot;:{&quot;width&quot;:4176,&quot;height&quot;:2784,&quot;uri&quot;:&quot;fc7570_ac1f7e7e38a44bd2ab92fb30b5fa38d7~mv2.jpg&quot;,&quot;name&quot;:&quot;&quot;,&quot;displayMode&quot;:&quot;fill&quot;}}\" data-motion-part=\"BG_IMG comp-ms6fprty1\" data-bg-effect-name=\"\" data-has-ssr-src=\"\" style=\"--wix-img-max-width: max(4176px, 100%);\"><img alt=\"\" style=\"width: 1624px; height: 592px; object-fit: cover;\" data-ssr-src-done=\"true\" fetchpriority=\"high\" src=\"https://static.wixstatic.com/media/fc7570_ac1f7e7e38a44bd2ab92fb30b5fa38d7~mv2.jpg/v1/fill/w_2030,h_740,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/fc7570_ac1f7e7e38a44bd2ab92fb30b5fa38d7~mv2.jpg\"></wow-image>",
+          "src": "https://static.wixstatic.com/media/fc7570_ac1f7e7e38a44bd2ab92fb30b5fa38d7~mv2.jpg/v1/fill/w_2030,h_740,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/fc7570_ac1f7e7e38a44bd2ab92fb30b5fa38d7~mv2.jpg"
+        },
+        {
+          "alt": "",
+          "html": "<img alt=\"\" width=\"153\" height=\"153\">",
+          "parent": "<wow-image id=\"img_comp-ms6fprul1\" class=\"Qh0lWW KjjerE\" data-image-info=\"{&quot;containerId&quot;:&quot;comp-ms6fprul1&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;targetWidth&quot;:153,&quot;targetHeight&quot;:153,&quot;imageData&quot;:{&quot;width&quot;:4464,&quot;height&quot;:2976,&quot;uri&quot;:&quot;fc7570_edd42b203bac46b8a149d18aca9f82d5~mv2.jpg&quot;,&quot;name&quot;:&quot;Image-empty-state.png&quot;,&quot;displayMode&quot;:&quot;fill&quot;}}\" data-motion-part=\"BG_IMG comp-ms6fprul1\" data-bg-effect-name=\"\" data-has-ssr-src=\"\" style=\"--wix-img-max-width: max(4464px, 100%);\"><img alt=\"\" width=\"153\" height=\"153\"></wow-image>",
+          "src": ""
+        }
+      ],
+      "links": [
+        {
+          "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420",
+          "text": "Dance Institute"
+        },
+        {
+          "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420/contact",
+          "text": "Contact Us"
+        },
+        {
+          "href": "https://www.wix.com/templateslp/links",
+          "text": "Enroll"
+        },
+        {
+          "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420/courses",
+          "text": "< Back"
+        },
+        {
+          "href": "https://www.wix.com/templateslp/links",
+          "text": "Enroll"
+        },
+        {
+          "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420/courses",
+          "text": "< Back"
+        },
+        {
+          "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420",
+          "text": "Dance Institute"
+        },
+        {
+          "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420/privacy-policy",
+          "text": "Privacy Policy"
+        },
+        {
+          "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420/accessibility-statement",
+          "text": "Accessibility Statement"
+        },
+        {
+          "href": "https://www.wix.com/",
+          "text": "Wix"
+        },
+        {
+          "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420",
+          "text": "Home"
+        },
+        {
+          "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420/performances",
+          "text": "Performances"
+        },
+        {
+          "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420/about-1",
+          "text": "About"
+        },
+        {
+          "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420/class-schedule",
+          "text": "Class Schedule"
+        },
+        {
+          "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420/competition",
+          "text": "Competition"
+        },
+        {
+          "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420/contact",
+          "text": "Contact"
+        },
+        {
+          "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420/courses",
+          "text": "Courses"
+        }
+      ],
+      "text": "Skip to Main Content\n\nDance Institute\n\nContact Us\nTennis\n\nPrice\n\n$250\n\nDuration\n\n4 Weeks\n\nEnroll\n< Back\nAbout the Course\n\nThis is placeholder text. To change this content, double-click on the element and click Change Content. Want to view and manage all your collections? Click on the Content Manager button in the Add panel on the left. Here, you can make changes to your content, add new fields, create dynamic pages and more.\n\n\n\n\nYour collection is already set up for you with fields and content. Add your own content or import it from a CSV file. Add fields for any type of content you want to display, such as rich text, images, and videos. Be sure to click Sync after making changes in a collection, so visitors can see your newest content on your live site. \n\nYour Instructor\n\nBrad Grecco\n\nThis is placeholder text. To change this content, double-click on the element and click Change Content. To manage all your collections, click on the Content Manager button in the Add panel on the left.\n\nPrevious\nNext\nPottery Workshop\n\nPrice\n\n$200\n\nDuration\n\n2 Weeks\n\nEnroll\n< Back\nAbout the Course\n\nThis is placeholder text. To change this content, double-click on the element and click Change Content. Want to view and manage all your collections? Click on the Content Manager button in the Add panel on the left. Here, you can make changes to your content, add new fields, create dynamic pages and more.\n\n\n\n\nYour collection is already set up for you with fields and content. Add your own content or import it from a CSV file. Add fields for any type of content you want to display, such as rich text, images, and videos. Be sure to click Sync after making changes in a collection, so visitors can see your newest content on your live site. \n\nYour Instructor\n\nBrian Chung\n\nThis is placeholder text. To change this content, double-click on the element and click Change Content. To manage all your collections, click on the Content Manager button in the Add panel on the left.\n\nPrevious\nNext\n\nDance Institute\n\n303-525-0011 Call or Text\n\ndance@danceinstitutedenver.com\n\n10515 E 40th Ave\n\n#114\n\nDenver, CO 80239\n\nPrivacy Policy\n\nAccessibility Statement\n\n© 2035 by K. Larsen. Powered and secured by Wix "
+    }
+  },
+  {
+    "name": "Trumpet Basics",
+    "data": {
+      "blocks": [
+        {
+          "tag": "H1",
+          "text": "Trumpet Basics "
+        },
+        {
+          "tag": "P",
+          "text": "Price"
+        },
+        {
+          "tag": "P",
+          "text": "$400"
+        },
+        {
+          "tag": "P",
+          "text": "Duration"
+        },
+        {
+          "tag": "P",
+          "text": "4 Weeks"
+        },
+        {
+          "tag": "H2",
+          "text": "About the Course"
+        },
+        {
+          "tag": "P",
+          "text": "This is placeholder text. To change this content, double-click on the element and click Change Content. Want to view and manage all your collections? Click on the Content Manager button in the Add panel on the left. Here, you can make changes to your content, add new fields, create dynamic pages and more."
+        },
+        {
+          "tag": "P",
+          "text": "Your collection is already set up for you with fields and content. Add your own content or import it from a CSV file. Add fields for any type of content you want to display, such as rich text, images, and videos. Be sure to click Sync after making changes in a collection, so visitors can see your newest content on your live site. "
+        },
+        {
+          "tag": "H2",
+          "text": "Your Instructor"
+        },
+        {
+          "tag": "P",
+          "text": "Camilla Jones "
+        },
+        {
+          "tag": "P",
+          "text": "This is placeholder text. To change this content, double-click on the element and click Change Content. To manage all your collections, click on the Content Manager button in the Add panel on the left."
+        },
+        {
+          "tag": "H1",
+          "text": "Tennis "
+        },
+        {
+          "tag": "P",
+          "text": "Price"
+        },
+        {
+          "tag": "P",
+          "text": "$250"
+        },
+        {
+          "tag": "P",
+          "text": "Duration"
+        },
+        {
+          "tag": "P",
+          "text": "4 Weeks"
+        },
+        {
+          "tag": "H2",
+          "text": "About the Course"
+        },
+        {
+          "tag": "P",
+          "text": "This is placeholder text. To change this content, double-click on the element and click Change Content. Want to view and manage all your collections? Click on the Content Manager button in the Add panel on the left. Here, you can make changes to your content, add new fields, create dynamic pages and more."
+        },
+        {
+          "tag": "P",
+          "text": "Your collection is already set up for you with fields and content. Add your own content or import it from a CSV file. Add fields for any type of content you want to display, such as rich text, images, and videos. Be sure to click Sync after making changes in a collection, so visitors can see your newest content on your live site. "
+        },
+        {
+          "tag": "H2",
+          "text": "Your Instructor"
+        },
+        {
+          "tag": "P",
+          "text": "Brad Grecco"
+        },
+        {
+          "tag": "P",
+          "text": "This is placeholder text. To change this content, double-click on the element and click Change Content. To manage all your collections, click on the Content Manager button in the Add panel on the left."
+        }
+      ],
+      "images": [
+        {
+          "alt": "",
+          "html": "<img alt=\"\" style=\"width: 100%; height: 100%;\">",
+          "parent": "<wow-image id=\"img_comp-ms6fprty1\" class=\"Qh0lWW ayCf9D fO4mKs NgeJ4N bgImage\" data-image-info=\"{&quot;containerId&quot;:&quot;comp-ms6fprty1&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;imageData&quot;:{&quot;width&quot;:3474,&quot;height&quot;:2263,&quot;uri&quot;:&quot;fc7570_a7cab894f28c483eaf093590691bf2f5~mv2.jpg&quot;,&quot;name&quot;:&quot;&quot;,&quot;displayMode&quot;:&quot;fill&quot;}}\" data-motion-part=\"BG_IMG comp-ms6fprty1\" data-bg-effect-name=\"\" data-has-ssr-src=\"\" style=\"--wix-img-max-width: max(3474px, 100%);\"><img alt=\"\" style=\"width: 100%; height: 100%;\"></wow-image>",
+          "src": ""
+        },
+        {
+          "alt": "",
+          "html": "<img alt=\"\" width=\"153\" height=\"153\">",
+          "parent": "<wow-image id=\"img_comp-ms6fprul1\" class=\"Qh0lWW KjjerE\" data-image-info=\"{&quot;containerId&quot;:&quot;comp-ms6fprul1&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;targetWidth&quot;:153,&quot;targetHeight&quot;:153,&quot;imageData&quot;:{&quot;width&quot;:4464,&quot;height&quot;:2976,&quot;uri&quot;:&quot;fc7570_25731940c59740a782d75a92964ce57f~mv2.jpg&quot;,&quot;name&quot;:&quot;Image-empty-state.png&quot;,&quot;displayMode&quot;:&quot;fill&quot;}}\" data-motion-part=\"BG_IMG comp-ms6fprul1\" data-bg-effect-name=\"\" data-has-ssr-src=\"\" style=\"--wix-img-max-width: max(4464px, 100%);\"><img alt=\"\" width=\"153\" height=\"153\"></wow-image>",
+          "src": ""
+        },
+        {
+          "alt": "",
+          "html": "<img alt=\"\" style=\"width: 1624px; height: 592px; object-fit: cover;\" data-ssr-src-done=\"true\" fetchpriority=\"high\" src=\"https://static.wixstatic.com/media/fc7570_ec4b7023b04842119a0387b467d48768~mv2.jpg/v1/fill/w_2030,h_740,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/fc7570_ec4b7023b04842119a0387b467d48768~mv2.jpg\">",
+          "parent": "<wow-image id=\"img_comp-ms6fprty1\" class=\"Qh0lWW ayCf9D fO4mKs NgeJ4N bgImage\" data-image-info=\"{&quot;containerId&quot;:&quot;comp-ms6fprty1&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;imageData&quot;:{&quot;width&quot;:5600,&quot;height&quot;:3762,&quot;uri&quot;:&quot;fc7570_ec4b7023b04842119a0387b467d48768~mv2.jpg&quot;,&quot;name&quot;:&quot;&quot;,&quot;displayMode&quot;:&quot;fill&quot;}}\" data-motion-part=\"BG_IMG comp-ms6fprty1\" data-bg-effect-name=\"\" data-has-ssr-src=\"\" style=\"--wix-img-max-width: max(5600px, 100%);\"><img alt=\"\" style=\"width: 1624px; height: 592px; object-fit: cover;\" data-ssr-src-done=\"true\" fetchpriority=\"high\" src=\"https://static.wixstatic.com/media/fc7570_ec4b7023b04842119a0387b467d48768~mv2.jpg/v1/fill/w_2030,h_740,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/fc7570_ec4b7023b04842119a0387b467d48768~mv2.jpg\"></wow-image>",
+          "src": "https://static.wixstatic.com/media/fc7570_ec4b7023b04842119a0387b467d48768~mv2.jpg/v1/fill/w_2030,h_740,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/fc7570_ec4b7023b04842119a0387b467d48768~mv2.jpg"
+        },
+        {
+          "alt": "",
+          "html": "<img alt=\"\" width=\"153\" height=\"153\">",
+          "parent": "<wow-image id=\"img_comp-ms6fprul1\" class=\"Qh0lWW KjjerE\" data-image-info=\"{&quot;containerId&quot;:&quot;comp-ms6fprul1&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;targetWidth&quot;:153,&quot;targetHeight&quot;:153,&quot;imageData&quot;:{&quot;width&quot;:4464,&quot;height&quot;:2976,&quot;uri&quot;:&quot;fc7570_2adecf12d63b4fa9aa595cc098ca1001~mv2.jpg&quot;,&quot;name&quot;:&quot;Image-empty-state.png&quot;,&quot;displayMode&quot;:&quot;fill&quot;}}\" data-motion-part=\"BG_IMG comp-ms6fprul1\" data-bg-effect-name=\"\" data-has-ssr-src=\"\" style=\"--wix-img-max-width: max(4464px, 100%);\"><img alt=\"\" width=\"153\" height=\"153\"></wow-image>",
+          "src": ""
+        }
+      ],
+      "links": [
+        {
+          "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420",
+          "text": "Dance Institute"
+        },
+        {
+          "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420/contact",
+          "text": "Contact Us"
+        },
+        {
+          "href": "https://www.wix.com/templateslp/links",
+          "text": "Enroll"
+        },
+        {
+          "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420/courses",
+          "text": "< Back"
+        },
+        {
+          "href": "https://www.wix.com/templateslp/links",
+          "text": "Enroll"
+        },
+        {
+          "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420/courses",
+          "text": "< Back"
+        },
+        {
+          "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420",
+          "text": "Dance Institute"
+        },
+        {
+          "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420/privacy-policy",
+          "text": "Privacy Policy"
+        },
+        {
+          "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420/accessibility-statement",
+          "text": "Accessibility Statement"
+        },
+        {
+          "href": "https://www.wix.com/",
+          "text": "Wix"
+        },
+        {
+          "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420",
+          "text": "Home"
+        },
+        {
+          "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420/performances",
+          "text": "Performances"
+        },
+        {
+          "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420/about-1",
+          "text": "About"
+        },
+        {
+          "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420/class-schedule",
+          "text": "Class Schedule"
+        },
+        {
+          "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420/competition",
+          "text": "Competition"
+        },
+        {
+          "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420/contact",
+          "text": "Contact"
+        },
+        {
+          "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420/courses",
+          "text": "Courses"
+        }
+      ],
+      "text": "Skip to Main Content\n\nDance Institute\n\nContact Us\nTrumpet Basics\n\nPrice\n\n$400\n\nDuration\n\n4 Weeks\n\nEnroll\n< Back\nAbout the Course\n\nThis is placeholder text. To change this content, double-click on the element and click Change Content. Want to view and manage all your collections? Click on the Content Manager button in the Add panel on the left. Here, you can make changes to your content, add new fields, create dynamic pages and more.\n\n\n\n\nYour collection is already set up for you with fields and content. Add your own content or import it from a CSV file. Add fields for any type of content you want to display, such as rich text, images, and videos. Be sure to click Sync after making changes in a collection, so visitors can see your newest content on your live site. \n\nYour Instructor\n\nCamilla Jones\n\nThis is placeholder text. To change this content, double-click on the element and click Change Content. To manage all your collections, click on the Content Manager button in the Add panel on the left.\n\nPrevious\nNext\nTennis\n\nPrice\n\n$250\n\nDuration\n\n4 Weeks\n\nEnroll\n< Back\nAbout the Course\n\nThis is placeholder text. To change this content, double-click on the element and click Change Content. Want to view and manage all your collections? Click on the Content Manager button in the Add panel on the left. Here, you can make changes to your content, add new fields, create dynamic pages and more.\n\n\n\n\nYour collection is already set up for you with fields and content. Add your own content or import it from a CSV file. Add fields for any type of content you want to display, such as rich text, images, and videos. Be sure to click Sync after making changes in a collection, so visitors can see your newest content on your live site. \n\nYour Instructor\n\nBrad Grecco\n\nThis is placeholder text. To change this content, double-click on the element and click Change Content. To manage all your collections, click on the Content Manager button in the Add panel on the left.\n\nPrevious\nNext\n\nDance Institute\n\n303-525-0011 Call or Text\n\ndance@danceinstitutedenver.com\n\n10515 E 40th Ave\n\n#114\n\nDenver, CO 80239\n\nPrivacy Policy\n\nAccessibility Statement\n\n© 2035 by K. Larsen. Powered and secured by Wix "
+    }
+  }
+]

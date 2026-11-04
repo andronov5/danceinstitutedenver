@@ -1,0 +1,202 @@
+{
+  "name": "Home",
+  "data": {
+    "blocks": [
+      {
+        "tag": "H1",
+        "text": "Passion Moves Us"
+      },
+      {
+        "tag": "H2",
+        "text": "Join Us at Dance Institute Today"
+      },
+      {
+        "tag": "H2",
+        "text": "About Dance Institute"
+      },
+      {
+        "tag": "P",
+        "text": "At Dance Institute, we are passionate about teaching dance to students aged 2 to adult. Our extensive curriculum includes Ballet, Tap, Lyrical, Contemporary, Pointe, Hip-Hop, Poms, Acro, Tumbling, and Jazz. We create a nurturing environment where students not only learn to dance but also develop confidence, dedication and self awareness."
+      },
+      {
+        "tag": "H2",
+        "text": "Our Dance Programs"
+      },
+      {
+        "tag": "P",
+        "text": "Program Highlights"
+      },
+      {
+        "tag": "H3",
+        "text": "Ballet & Contemporary"
+      },
+      {
+        "tag": "P",
+        "text": "Grace and Expression"
+      },
+      {
+        "tag": "H3",
+        "text": "Hip-Hop & Jazz"
+      },
+      {
+        "tag": "P",
+        "text": "Rhythm and Style"
+      },
+      {
+        "tag": "H3",
+        "text": "Acro & Tumbling"
+      },
+      {
+        "tag": "P",
+        "text": "Unlock your potential through our diverse offerings, designed to inspire creativity and artistic expression."
+      },
+      {
+        "tag": "H3",
+        "text": "Nutcracker"
+      },
+      {
+        "tag": "P",
+        "text": "Annual Nutcracker in Decmber"
+      },
+      {
+        "tag": "P",
+        "text": "​"
+      },
+      {
+        "tag": "P",
+        "text": "Competitions in April and May"
+      },
+      {
+        "tag": "P",
+        "text": "​"
+      },
+      {
+        "tag": "P",
+        "text": "Annual Recital in early June"
+      },
+      {
+        "tag": "H3",
+        "text": "Spring Recital Showcase"
+      },
+      {
+        "tag": "P",
+        "text": "Competition Teams"
+      },
+      {
+        "tag": "H3",
+        "text": "Personal Growth Through Dance"
+      },
+      {
+        "tag": "P",
+        "text": "Our students gain valuable experiences through performances, building confidence and stage presence in a supportive setting."
+      },
+      {
+        "tag": "H2",
+        "text": "What Our Students Say"
+      },
+      {
+        "tag": "P",
+        "text": "\"My daughter has grown up with a love of dance from a young age thanks to 5+ years with Dance Institute LLC and Ms. Michele. Dance Institute LLC has offered the perfect balance for our young dancer — great instruction and progressive growth with a relaxed, family-friendly, non-competitive atmosphere. I highly recommend Ms. Michele and Dance Institute\""
+      },
+      {
+        "tag": "P",
+        "text": "Lauren Still"
+      },
+      {
+        "tag": "BLOCKQUOTE",
+        "text": "\"Dance with Miss Michele is the highlight of my (4 year old) daughter's week. This is her second year dancing and, not only does she continue to love it, but aslso she is learning all the basics at a young age.  Michele does a great job meeting her young students where they are and steadily teaching them skills poise , and positions while they smile and dance the hour away.\""
+      },
+      {
+        "tag": "P",
+        "text": "Sarah B."
+      },
+      {
+        "tag": "BLOCKQUOTE",
+        "text": "\"Every class at Dance Institute is an opportunity to express myself and improve my skills. I love being part of this amazing dance family!\""
+      },
+      {
+        "tag": "P",
+        "text": "Olivia Brown"
+      },
+      {
+        "tag": "H2",
+        "text": "Why Dance Institute?"
+      },
+      {
+        "tag": "P",
+        "text": "The Dance Institute Advantage"
+      },
+      {
+        "tag": "P",
+        "text": "At Dance Institute, we combine expert instruction with a warm, welcoming atmosphere, ensuring that every dancer, regardless of age or skill level, feels valued and inspired."
+      },
+      {
+        "tag": "P",
+        "text": "Our dedicated instructors are focused on each student's growth, emphasizing health and safety while fostering a love for dance."
+      },
+      {
+        "tag": "H2",
+        "text": "Get in Touch"
+      },
+      {
+        "tag": "P",
+        "text": "We welcome your inquiries about classes, admissions, or any questions you may have. Reach out to us and let’s embark on this dance journey together."
+      }
+    ],
+    "images": [
+      {
+        "alt": "IMG_2114_edited.jpg",
+        "html": "<img alt=\"IMG_2114_edited.jpg\" width=\"980\" height=\"751\" style=\"width: 1524px; height: 751px; object-fit: cover;\" data-ssr-src-done=\"true\" fetchpriority=\"high\" src=\"https://static.wixstatic.com/media/9b36f0_6e767a52bf954c27b206ad8044fade34~mv2.jpg/v1/fill/w_1235,h_609,al_c,q_85,enc_auto/9b36f0_6e767a52bf954c27b206ad8044fade34~mv2.jpg\">",
+        "parent": "<wow-image id=\"img_comp-m82s3xiq3\" class=\"Qh0lWW ayCf9D fO4mKs NgeJ4N bgImage\" data-image-info=\"{&quot;containerId&quot;:&quot;comp-m82s3xiq3&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;targetWidth&quot;:980,&quot;targetHeight&quot;:751,&quot;imageData&quot;:{&quot;width&quot;:1235,&quot;height&quot;:806,&quot;uri&quot;:&quot;9b36f0_6e767a52bf954c27b206ad8044fade34~mv2.jpg&quot;,&quot;name&quot;:&quot;&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;hasAnimation&quot;:false}}\" data-motion-part=\"BG_IMG comp-m82s3xiq3\" data-bg-effect-name=\"\" data-has-ssr-src=\"\" style=\"--wix-img-max-width: max(1235px, 100%);\"><img alt=\"IMG_2114_edited.jpg\" width=\"980\" height=\"751\" style=\"width: 1524px; height: 751px; object-fit: cover;\" data-ssr-src-done=\"true\" fetchpriority=\"high\" src=\"https://static.wixstatic.com/media/9b36f0_6e767a52bf954c27b206ad8044fade34~mv2.jpg/v1/fill/w_1235,h_609,al_c,q_85,enc_auto/9b36f0_6e767a52bf954c27b206ad8044fade34~mv2.jpg\"></wow-image>",
+        "src": "https://static.wixstatic.com/media/9b36f0_6e767a52bf954c27b206ad8044fade34~mv2.jpg/v1/fill/w_1235,h_609,al_c,q_85,enc_auto/9b36f0_6e767a52bf954c27b206ad8044fade34~mv2.jpg"
+      },
+      {
+        "alt": "IMG_1040_edited.jpg",
+        "html": "<img alt=\"IMG_1040_edited.jpg\" width=\"475\" height=\"312\">",
+        "parent": "<wow-image id=\"img_comp-m82s3xj91\" class=\"Qh0lWW gRkIq0\" data-image-info=\"{&quot;containerId&quot;:&quot;comp-m82s3xj91&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;targetWidth&quot;:475,&quot;targetHeight&quot;:312,&quot;imageData&quot;:{&quot;width&quot;:1775,&quot;height&quot;:1299,&quot;uri&quot;:&quot;9b36f0_df875175786f4376843c0540a70c2466~mv2.jpg&quot;,&quot;name&quot;:&quot;IMG_1040_edited.jpg&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;hasAnimation&quot;:false}}\" data-motion-part=\"BG_IMG comp-m82s3xj91\" data-bg-effect-name=\"\" data-has-ssr-src=\"\" style=\"--wix-img-max-width: max(1775px, 100%);\"><img alt=\"IMG_1040_edited.jpg\" width=\"475\" height=\"312\"></wow-image>",
+        "src": ""
+      },
+      {
+        "alt": "IMG_1908_edited.jpg",
+        "html": "<img alt=\"IMG_1908_edited.jpg\" width=\"490\" height=\"739\" style=\"width: 100%; height: 100%;\">",
+        "parent": "<wow-image id=\"img_comp-m82s3xjb\" class=\"Qh0lWW ayCf9D fO4mKs NgeJ4N bgImage\" data-image-info=\"{&quot;containerId&quot;:&quot;comp-m82s3xjb&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;targetWidth&quot;:490,&quot;targetHeight&quot;:739,&quot;imageData&quot;:{&quot;width&quot;:1264,&quot;height&quot;:1800,&quot;uri&quot;:&quot;9b36f0_80ebdda1214d4712bbcf6a4497b37c10~mv2.jpg&quot;,&quot;name&quot;:&quot;&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;hasAnimation&quot;:false}}\" data-motion-part=\"BG_IMG comp-m82s3xjb\" data-bg-effect-name=\"\" data-has-ssr-src=\"\" style=\"--wix-img-max-width: max(1264px, 100%);\"><img alt=\"IMG_1908_edited.jpg\" width=\"490\" height=\"739\" style=\"width: 100%; height: 100%;\"></wow-image>",
+        "src": ""
+      }
+    ],
+    "links": [
+      {
+        "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420",
+        "text": "Dance Institute"
+      },
+      {
+        "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420/contact",
+        "text": "Contact Us"
+      },
+      {
+        "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420/performances",
+        "text": "Discover More"
+      },
+      {
+        "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420/competition",
+        "text": "Join Us Today"
+      },
+      {
+        "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420",
+        "text": "Dance Institute"
+      },
+      {
+        "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420/privacy-policy",
+        "text": "Privacy Policy"
+      },
+      {
+        "href": "https://dance1806-mysite-1.editor.wix.com/html/editor/web/renderer/render/document/b56e4018-f5e3-4410-b260-7346aec7a420/accessibility-statement",
+        "text": "Accessibility Statement"
+      },
+      {
+        "href": "https://www.wix.com/",
+        "text": "Wix"
+      }
+    ],
+    "text": "Dance Institute\n\nContact Us\nPassion Moves Us\nJoin Us at Dance Institute Today\nDiscover More\nAbout Dance Institute\n\nAt Dance Institute, we are passionate about teaching dance to students aged 2 to adult. Our extensive curriculum includes Ballet, Tap, Lyrical, Contemporary, Pointe, Hip-Hop, Poms, Acro, Tumbling, and Jazz. We create a nurturing environment where students not only learn to dance but also develop confidence, dedication and self awareness.\n\nOur Dance Programs\n\nProgram Highlights\n\nBallet & Contemporary\n\nGrace and Expression\n\nHip-Hop & Jazz\n\nRhythm and Style\n\nAcro & Tumbling\n\nUnlock your potential through our diverse offerings, designed to inspire creativity and artistic expression.\n\nNutcracker\n\nAnnual Nutcracker in Decmber\n\n​\n\nCompetitions in April and May\n\n​\n\nAnnual Recital in early June\n\nSpring Recital Showcase\n\nCompetition Teams\n\nPersonal Growth Through Dance\n\nOur students gain valuable experiences through performances, building confidence and stage presence in a supportive setting.\n\nWhat Our Students Say\n\n\"My daughter has grown up with a love of dance from a young age thanks to 5+ years with Dance Institute LLC and Ms. Michele. Dance Institute LLC has offered the perfect balance for our young dancer — great instruction and progressive growth with a relaxed, family-friendly, non-competitive atmosphere. I highly recommend Ms. Michele and Dance Institute\"\n\nLauren Still\n\n\"Dance with Miss Michele is the highlight of my (4 year old) daughter's week. This is her second year dancing and, not only does she continue to love it, but aslso she is learning all the basics at a young age.  Michele does a great job meeting her young students where they are and steadily teaching them skills poise , and positions while they smile and dance the hour away.\"\n\nSarah B.\n\n\"Every class at Dance Institute is an opportunity to express myself and improve my skills. I love being part of this amazing dance family!\"\n\nOlivia Brown\n\nWhy Dance Institute?\n\nThe Dance Institute Advantage\n\nAt Dance Institute, we combine expert instruction with a warm, welcoming atmosphere, ensuring that every dancer, regardless of age or skill level, feels valued and inspired.\n\nOur dedicated instructors are focused on each student's growth, emphasizing health and safety while fostering a love for dance.\n\nJoin Us Today\nGet in Touch\n\nWe welcome your inquiries about classes, admissions, or any questions you may have. Reach out to us and let’s embark on this dance journey together.\n\nFirst name*\nLast name*\nEmail*\nPhone\nMessage\nSubmit\n\nDance Institute\n\n303-525-0011 Call or Text\n\ndance@danceinstitutedenver.com\n\n10515 E 40th Ave\n\n#114\n\nDenver, CO 80239\n\nPrivacy Policy\n\nAccessibility Statement\n\n© 2035 by K. Larsen. Powered and secured by Wix "
+  }
+}
