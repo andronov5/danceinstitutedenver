@@ -24,7 +24,7 @@
       else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first?.focus(); }
     }
   });
-  window.matchMedia('(min-width: 941px)').addEventListener('change', event => { if (event.matches) setMenu(false); });
+  window.matchMedia('(min-width: 1201px)').addEventListener('change', event => { if (event.matches) setMenu(false); });
 
   const tabs = [...document.querySelectorAll('[data-program-tab]')];
   const selectTab = (index, focus = false) => {

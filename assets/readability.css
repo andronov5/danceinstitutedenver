@@ -1,0 +1,62 @@
+/* Readable copy and controls; display headings retain the site's serif scale. */
+body{font-size:17px;line-height:1.75}
+.desktop-nav{gap:20px}
+.desktop-nav a{font-size:17px;line-height:1.5}
+.header-contact,.button,.text-link,.section-topline>.text-link,.course-back,.course-detail-nav{font-size:16px}
+.button{min-height:48px}
+.header-contact svg,.button svg,.text-link svg{flex-shrink:0}
+.text-link,.course-back{max-width:100%;min-width:0;overflow-wrap:anywhere}
+.about-copy>p:not(.eyebrow),.performance-card p,.growth-note p,.advantage-copy,
+.home-contact-intro>p:not(.eyebrow),.prose:not(.story-copy),.program-copy p,
+.program-panel .prose,.contact-intro .prose,.legal-copy,.course-body>p,
+.course-detail-copy p,.instructor-card p,
+.inner-page:has(.legal-layout) .intro-lead{font-size:17px;line-height:1.8}
+.eyebrow,.advantage-title .eyebrow,.quote-slide figcaption,.quote-count,
+.field label,.form-note,.form-status,.course-meta dt,.footer-bottom,.footer-bottom>div{font-size:14px}
+.section-subtitle,.program-subtitle,.team-card p,.mobile-menu .mobile-phone{font-size:16px}
+.instructor-card .eyebrow{font-size:14px}
+.course-meta dd{font-size:22px;line-height:1.4}
+.field input,.field textarea{font-size:17px}
+.field-pair{grid-template-columns:repeat(2,minmax(0,1fr))}
+.field{min-width:0}
+.form-bottom{flex-wrap:wrap}
+.footer-grid{font-size:16px;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr)}
+.footer-grid>*{min-width:0}
+.footer-grid a,.footer-grid address,.legal-copy a{overflow-wrap:anywhere}
+.footer-bottom>div{flex-wrap:wrap;row-gap:8px}
+.course-detail-heading>div,.course-detail-layout>*,.home-contact>*,.contact-layout>*{min-width:0}
+.menu-toggle{flex-shrink:0}
+
+@media(max-width:1200px){
+  .site-header{height:84px}
+  .desktop-nav{display:none}
+  .header-contact{margin-left:auto}
+  .menu-toggle{display:flex}
+  .mobile-menu{top:84px}
+}
+
+@media(max-width:650px){
+  body{font-size:16px}
+  .site-header{height:80px}
+  .mobile-menu{top:80px}
+  .header-contact,.button,.text-link,.section-topline>.text-link,.course-back,.course-detail-nav{font-size:16px}
+  .about-copy>p:not(.eyebrow),.performance-card p,.growth-note p,.advantage-copy,
+  .home-contact-intro>p:not(.eyebrow),.prose:not(.story-copy),.program-copy p,
+  .program-panel .prose,.contact-intro .prose,.legal-copy,.course-body>p,
+  .course-detail-copy p,.instructor-card p,
+  .inner-page:has(.legal-layout) .intro-lead{font-size:16px}
+  .field input,.field textarea{font-size:16px}
+  .eyebrow,.advantage-title .eyebrow,.quote-slide figcaption,.quote-count,
+  .field label,.form-note,.form-status,.course-meta dt,.footer-bottom,.footer-bottom>div,
+  .instructor-card .eyebrow{font-size:14px}
+  .section-topline{flex-wrap:wrap}
+  .section-topline>.text-link{white-space:normal}
+  .footer-grid{grid-template-columns:minmax(0,1fr)}
+  .team-card p{font-size:14px;line-height:1.6}
+  .program-copy{padding-left:0}
+}
+
+@media(max-width:420px){
+  .header-contact{display:none}
+  .menu-toggle{margin-left:auto}
+}
