@@ -145,7 +145,7 @@ def competition(page: dict, assets: dict | list | None, prefix: str) -> str:
 
 def contact(page: dict, assets: dict | list | None, prefix: str) -> str:
     b = page["data"]["blocks"]
-    out = intro(page["name"], b[0]["text"], b[1]["text"])
+    out = intro(page["name"], b[0]["text"])
     photo = img(page["data"]["images"][0], assets, prefix, "contact-photo") if page["data"]["images"] else ""
     return out + f'''<section class="section-shell contact-layout">
       <div class="contact-intro reveal"><div class="prose">{paragraphs(b[2]['text'])}</div>{photo}</div>

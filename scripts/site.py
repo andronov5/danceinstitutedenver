@@ -19,10 +19,11 @@ from check_copy import check_copy
 ROOT = Path(__file__).resolve().parents[1]
 DIST = ROOT / "dist"
 PAGE_DIRS = (
-    "performances", "about-1", "about", "class-schedule", "competition", "contact",
-    "privacy-policy", "accessibility-statement", "courses",
+    "dance-classes", "about", "schedule", "shows-and-competition", "register", "contact",
+    "privacy-policy", "accessibility-statement", "about-1", "class-schedule", "performances",
+    "competition", "registration", "adult-kids-dance-classes", "courses",
 )
-EXPECTED_PAGES = [Path("index.html"), *(Path(name) / "index.html" for name in PAGE_DIRS)]
+EXPECTED_PAGES = [Path("index.html"), *(Path(name) / "index.html" for name in PAGE_DIRS), Path("about/teachers/index.html"), Path("about/studio-policies/index.html")]
 MAX_BYTES = 20_000_000  # Conservative decimal interpretation of Wix's 20 MB limit.
 MAX_FILES = 5_000
 ALLOWED_SUFFIXES = {

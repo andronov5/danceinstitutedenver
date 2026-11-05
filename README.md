@@ -1,69 +1,60 @@
 # Dance Institute Denver
 
-A responsive, static rebuild of the existing Wix website. The design uses the current site's pages and copy as its reference, with a more expressive hero, clearer information hierarchy, and accessible motion.
+A static HTML/CSS/JavaScript website using the owner's supplied copy. The original full-photo home hero, About section, and animated reviews are retained. The new home section has six floating cards over a licensed ballet-feet photograph.
 
-## Project structure
+## Pages and editing
 
 - `index.html` — Home.
-- `about-1/`, `performances/`, `class-schedule/`, `competition/`, `contact/`, `courses/` — individual pages, each with an `index.html`. The original About URL is retained; `about/` provides an alias.
-- `courses/*/index.html` — all six original course details, including their original placeholder content.
-- `privacy-policy/`, `accessibility-statement/` — existing policy pages.
-- `assets/` — shared CSS, JavaScript, images, and fonts.
-- `reference/` — captured Wix content, source asset mappings, and font license notes.
-- `scripts/render.py`, `scripts/render_inner.py` — HTML generation from captured source content.
-- `scripts/site.py`, `scripts/check_copy.py` — dependency-free static build, checks, copy comparison, and ZIP packaging.
-- `dist/` — generated website files; ignored by Git.
-- `exports/` — generated upload ZIP; ignored by Git.
+- `dance-classes/` — supplied class descriptions in native expandable sections.
+- `about/`, `about/studio-policies/`, `about/teachers/` — About, Mission/Announcements, Michele's supplied biography/photo, and named empty spaces for the five other teachers.
+- `schedule/` — the supplied 2026–2027 timetable, weekday tabs, and original image viewer.
+- `shows-and-competition/` — title and blank body, as requested.
+- `register/` — tuition, discounts, membership instructions, and the actual live Sawyer iframe.
+- `contact/` — existing contact content and email-draft form.
+- `privacy-policy/`, `accessibility-statement/` — retained draft policy pages.
 
-Reference content and development notes stay outside the upload. The site itself needs no Node server, database, framework, or npm dependencies. Python 3.10 or newer is used only for development tooling; npm is an optional command shortcut.
+`about-1/`, `class-schedule/`, `performances/`, `competition/`, `registration/`, `adult-kids-dance-classes/`, and `courses/` redirect to the relevant new pages. Superseded example course detail pages have been removed.
 
-## Build and preview
+Edit source in `scripts/render*.py`, reference copy in `reference/*-request.json`, and presentation in `assets/`. Builds overwrite generated HTML. The current request supersedes the old Wix template content, which remains archived in the original reference files. No marketing subtitles or additional descriptive copy have been added. Schedule wording, older dates, supplied spelling, prices and class ages have been retained as supplied.
 
-```sh
-npm run build
-python3 -m http.server 4173 --directory dist
-```
+`assets/site.js` handles menu/reviews, `assets/content-pages.js` handles the About submenu, and `assets/schedule.js` handles day selection and the image dialog. Motion respects reduced-motion settings. Standard links work independently of page transition support; class accordions and full schedule content remain available without JavaScript.
 
-Open `http://localhost:4173`. Stop the preview with Ctrl+C.
-
-Without npm, run `python3 scripts/site.py build`. The generated pages use relative links and assets and can also be opened directly from `dist/index.html`; use the HTTP preview when testing forms or third-party embeds.
-
-The build first regenerates HTML from the renderer and reference data. It checks all nine original pages, the About alias, all six course details, local HTML/CSS asset references, internal page links and anchors, duplicate HTML IDs, supported file types, file count, and total upload size. A separate copy check compares source text blocks against each page's main content while ignoring whitespace and invisible separators; it includes policy list items omitted from the original block capture. For captured dynamic pages, it compares the first H1-delimited page segment, excluding stale content retained during Wix navigation. It does not submit forms, test third-party checkout, or verify external URLs. To repeat checks without rebuilding:
+## Build and package
 
 ```sh
-npm run check
-npm run check:copy
+python3 scripts/site.py package
 ```
 
-## Prepare a Wix upload
+This renders the pages, checks required routes, internal links, anchors, asset files, duplicate IDs, upload limits and supplied copy, then creates `exports/dance-institute-denver-wix.zip`. The ZIP has `index.html` at its root. `dist/` is the same generated site without ZIP compression. Python is used only to build; the website needs no server, database, framework or npm dependencies.
 
-```sh
-npm run package
-```
+For a local development preview outside ChatGPT, serve `dist/` with any ordinary static server. In the managed ChatGPT workspace, use `sites-preview start` with this checkout's absolute path.
 
-This rebuilds and checks the site, then creates `exports/dance-institute-denver-wix.zip`. Its `index.html` is at the ZIP root. Upload **the contents of `dist/` or that ZIP**, not the whole GitHub repository.
+## Wix deployment
 
-The export is checked against Wix Headless Drop's documented limits: static files only, an HTML entry file at the top level, at most 5,000 files, and at most 20 MB total. The checker uses a conservative 20,000,000-byte budget. Optimize photographs and host large video files separately when needed.
+Upload the generated ZIP or the contents of `dist/` at [Wix Headless Drop](https://www.wix.com/headless/drop). This creates a **separate Wix-managed headless project**; it does not import the layout into the classic Wix visual Editor. GitHub pushes do not automatically deploy to Wix unless a separate workflow is configured.
 
-Wix upload requirements: <https://dev.wix.com/docs/go-headless/wix-managed-headless/other-frameworks/your-own-frontend/what-you-can-upload>
+The export uses only supported static files, relative page links and assets, and browser JavaScript. It is checked against Wix's documented 20 MB total/per-file and 5,000-file limits. Wix serves the files unchanged. CSS view transitions are progressive enhancement; unsupported browsers use normal navigation.
 
-## Hosting status and launch work
+Official requirements (checked November 5, 2026):
+- https://dev.wix.com/docs/go-headless/wix-managed-headless/other-frameworks/your-own-frontend/what-you-can-upload
+- https://dev.wix.com/docs/go-headless/wix-managed-headless/other-frameworks/your-own-frontend/upload-a-static-site
 
-This repository does **not** migrate the existing Wix site, connect its domain, transfer a paid plan, or publish to Wix. Wix Headless Drop creates a separate project; moving the existing site's frontend is a different workflow. The owner's existing Business plan and domain setup must be handled through the chosen Wix workflow.
+The existing Wix site, paid plan, domain and DNS have not been changed. Existing plan/domain assignment must be handled in the chosen Wix project before launch. This build retains `noindex,nofollow` for the draft. The retained draft legal pages still need owner review before production.
 
-Original placeholder copy, example course offerings, instructor names, policy text, and footer credits have intentionally been preserved. They are not newly verified business claims. Every generated page currently includes `noindex,nofollow` so search engines are asked not to index this draft. Review the content and production configuration before removing that metadata for launch.
+## Sawyer registration
 
-The contact forms currently prepare an email draft using the visitor's email application; visitors must send that draft themselves. Course **Enroll** links open email inquiries and do not create registrations or take payments. The existing public Sawyer registration destination is available at <https://www.hisawyer.com/dance-institute-denver/schedules/membership-plans>. A Sawyer embed is not configured or tested in this build.
+`register/index.html` embeds this real live URL:
 
-Before production launch:
+https://www.hisawyer.com/dance-institute-denver/schedules/membership-plans
 
-- Decide whether to retain email-draft contact forms or connect a submission backend and verify delivery. Static HTML alone cannot send or store form submissions.
-- Add the approved Sawyer embed and test it on desktop and mobile, including registration and checkout. Preserve the existing Sawyer account and payment setup.
-- Verify page content, accessibility, preserved reference placeholders, and links with the site owner; remove `noindex,nofollow` only when the production configuration is ready.
-- Configure the final domain, preserve existing email DNS records, and retain or redirect the old site's public URLs as appropriate.
+Sawyer's official Wix guide supports embedding the live customer registration URL without a curated widget code: https://help.hisawyer.com/en/articles/11105556-how-to-embed-a-widget-on-wix
 
-Keep service credentials and private keys out of HTML, browser JavaScript, and the repository. Public widget embed code is configured separately from payment account credentials.
+The iframe was observed loading actual memberships at desktop and phone widths. Learn More opened the correct General Membership details in a new tab, following Sawyer's own behavior. No login, registration or payment was submitted. Recheck the full checkout flow after publishing to the final Wix domain. The direct Click Here link is retained above the iframe. Its contents and new-tab behavior are controlled by Sawyer; a later account-provided embed snippet can replace the URL-based iframe if desired.
 
-## Editing
+The contact form prepares an email draft in the visitor's email app; they must send it. It does not silently claim to deliver a message or store submissions. Connect a submission service separately if direct web delivery is needed.
 
-Edit the templates in `scripts/render.py` and `scripts/render_inner.py`, the approved content in `reference/`, and the shared files in `assets/`, then rebuild. Generated HTML files are overwritten during builds. Future layout changes happen in this code; the static frontend is not a Wix drag-and-drop Editor theme. Changes pushed to GitHub do not automatically deploy to Wix unless a separate deployment workflow has been configured.
+## Verification
+
+The build checks 204 supplied/retained source text blocks across the 11 content pages, plus all redirect links and assets. Browser checks covered desktop and 375px content width, menus and About subpages, class accordion expansion, keyboard schedule selection, original schedule dialog, Register Now navigation, the live Sawyer display/detail destination, and the retained Lera review placeholder. No horizontal overflow was observed on the six new/reworked mobile layouts checked.
+
+Photo provenance is in `reference/new-assets.json`; existing photo/font references remain in `reference/`. Development references do not enter the deployment ZIP.

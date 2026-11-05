@@ -76,19 +76,17 @@ def legal_extra_lines(page: dict) -> list[str]:
 
 
 def check_copy(base: Path) -> None:
-    source_pages = json.loads((ROOT / "reference" / "wix-content.json").read_text(encoding="utf-8"))
-    details = json.loads((ROOT / "reference" / "wix-course-details.json").read_text(encoding="utf-8"))
-    checks: list[tuple[str, Path, list[str]]] = []
+    checks = []
+    for reference in sorted((ROOT / 'reference').glob('*-request.json')):
+        for route, expected in json.loads(reference.read_text()).items():
+            checks.append((route, base / route, expected))
+    source_pages = json.loads((ROOT/'reference/wix-content.json').read_text())
     for page in source_pages:
-        source = [block["text"] for block in page["data"]["blocks"]]
-        source.extend(legal_extra_lines(page))
-        checks.append((page["name"], base / PAGE_PATHS[page["name"]], source))
-        if page["name"] == "About":
-            checks.append(("About alias", base / "about" / "index.html", source))
-    for page in details:
-        route = unquote(page["name"].lower().replace(" ", "-"))
-        checks.append((page["name"], base / "courses" / route / "index.html", [block["text"] for block in course_blocks(page)]))
-
+        if page['name'] in {'Privacy Policy', 'Accessibility Statement'}:
+            checks.append((page['name'], base/PAGE_PATHS[page['name']], [b['text'] for b in page['data']['blocks']] + legal_extra_lines(page)))
+        elif page['name'] == 'Contact':
+            checks.append(('Contact',base/'contact/index.html',[b['text'] for i,b in enumerate(page['data']['blocks']) if i != 1]))
+    checks.append(('Shows & Competition',base/'shows-and-competition/index.html',['Shows & Competition']))
     missing: list[str] = []
     checked_blocks = 0
     for name, path, expected in checks:
@@ -107,7 +105,7 @@ def check_copy(base: Path) -> None:
                 missing.append(f"{name}: missing/changed source copy ({required} occurrence(s)): {excerpt!r}")
     if missing:
         raise ValueError("Copy preservation check failed:\n  - " + "\n  - ".join(missing))
-    print(f"Preserved {checked_blocks} source text blocks across {len(checks)} pages, including policy list items.")
+    print(f"Preserved {checked_blocks} source text blocks across {len(checks)} pages, including the newly supplied content.")
 
 
 if __name__ == "__main__":

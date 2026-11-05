@@ -1,0 +1,28 @@
+[
+  {
+    "path": "assets/images/ballet-feet.webp",
+    "width": 2200,
+    "height": 1467,
+    "bytes": 136526,
+    "source_page": "https://unsplash.com/photos/a-ballerinas-feet-in-a-ballet-shoe-tAfLg1IVk0E",
+    "source_image": "https://images.unsplash.com/photo-1679389562335-97ef97c1685c?auto=format&fit=crop&fm=jpg&ixid=NHwxMjA3fDA%3D&ixlib=rb-4.1.0&q=60&w=3000",
+    "photographer": "Anita Austvika",
+    "photographer_page": "https://unsplash.com/@anitaaustvika",
+    "license": "Unsplash License",
+    "license_url": "https://unsplash.com/license",
+    "retrieved_on": "2026-11-05",
+    "license_notes": "Free commercial use; attribution appreciated, not required. Used as an integrated website background.",
+    "processing": "Whole supplied source image resized to 2200 px wide and converted to WebP. No crop, color modification, compositing, or generated imagery.",
+    "suggested_alt": "A dancer wearing pale pink pointe shoes beneath a white tulle skirt."
+  },
+  {
+    "path": "assets/images/miss-michele.webp",
+    "width": 900,
+    "height": 1104,
+    "bytes": 76350,
+    "source": "User-provided image(20261105-031951).png",
+    "license": "User-supplied for this website",
+    "processing": "Whole photo converted to WebP; no crop, compositing, or generated imagery.",
+    "suggested_alt": "Miss Michele."
+  }
+]
