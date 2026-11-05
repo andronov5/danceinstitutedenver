@@ -113,3 +113,6 @@
   .classes-toggle::before,
   .classes-toggle::after { transition: none; }
 }
+
+.classes-page { padding-bottom: 90px; }
+@media (max-width:650px) { .classes-page { padding-bottom: 60px; } }

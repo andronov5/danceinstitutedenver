@@ -99,3 +99,56 @@
  .apart-card { animation: none; transition: none; }
  ::view-transition-old(root), ::view-transition-new(root) { animation: none; }
 }
+
+/* Leave room for the new Summer Intensive link without shrinking navigation. */
+@media (max-width:1320px) {
+ .site-header { height: 84px; }
+ .desktop-nav { display: none; }
+ .header-contact { margin-left: auto; }
+ .menu-toggle { display: flex; }
+ .mobile-menu { top: 84px; }
+}
+@media (max-width:650px) {
+ .site-header { height: 80px; }
+ .mobile-menu { top: 80px; }
+}
+/* Dropdown-only parent sections. */
+.nav-dropdown { position: relative; }
+.nav-dropdown-toggle { display: flex; align-items: center; gap: 7px; min-height: 44px; padding: 0; border: 0; background: none; font-size: 17px; line-height: 1.5; white-space: nowrap; }
+.nav-dropdown-toggle svg { width: 15px; height: 15px; fill: none; stroke: currentColor; stroke-width: 1.5; transition: transform .2s; }
+.nav-dropdown-toggle[aria-expanded=true] svg { transform: rotate(180deg); }
+.nav-dropdown-toggle.is-current { text-decoration: underline; text-underline-offset: 9px; text-decoration-thickness: 1px; }
+.nav-dropdown-menu { position: absolute; top: calc(100% + 12px); left: -20px; min-width: 210px; padding: 14px 20px; background: var(--paper); border: 1px solid var(--line); box-shadow: 0 18px 38px #252e4217; }
+.nav-dropdown-menu a { display: block; padding: 9px 0; }
+.desktop-nav .nav-dropdown-menu a:after { bottom: 7px; }
+.mobile-menu-group { border-bottom: 1px solid var(--line); }
+.mobile-menu-group summary { font-family: var(--serif); font-size: 30px; padding: 11px 0; cursor: pointer; }
+.mobile-submenu { padding: 0 0 10px 24px; }
+.mobile-menu .mobile-submenu a { font-size: 25px; border: 0; padding-block: 7px; }
+.home-about { row-gap: 55px; padding-bottom: 72px; }
+.home-about .about-copy > p { max-width: 55ch; }
+.home-about .about-collage { align-self: start; margin-top: 50px; }
+.home-about-more { grid-column: 1 / -1; display: grid; grid-template-columns: 1.3fr 1.1fr 1fr; gap: 45px; padding-top: 38px; border-top: 1px solid var(--line); }
+.home-about-more p { margin: 0; font-size: 17px; line-height: 1.8; color: #565b66; }
+.trial-strip { background: var(--blush); }
+.trial-strip > div { display: grid; grid-template-columns: auto minmax(0,1fr) auto; align-items: center; gap: 34px; padding-block: 28px; }
+.trial-strip h2 { font-size: 37px; white-space: nowrap; }
+.trial-strip p { max-width: 43ch; line-height: 1.65; font-size: 16px; }
+.trial-strip .button { padding: 15px 22px; gap: 25px; }
+@media (max-width:1050px) {
+ .home-about-more { grid-template-columns: 1fr 1fr; gap: 32px; }
+ .home-about-more p:last-child { grid-column: 1 / -1; max-width: 75ch; }
+ .trial-strip > div { grid-template-columns: 1fr auto; gap: 15px 30px; }
+ .trial-strip h2 { grid-column: 1; }
+ .trial-strip p { grid-column: 1; }
+ .trial-strip .button { grid-column: 2; grid-row: 1 / 3; }
+}
+@media (max-width:650px) {
+ .home-about { row-gap: 32px; padding-bottom: 42px; }
+ .home-about .about-collage { margin-top: 0; }
+ .home-about-more { grid-template-columns: minmax(0,1fr); gap: 26px; padding-top: 28px; }
+ .home-about-more p { font-size: 16px; }
+ .trial-strip > div { grid-template-columns: minmax(0,1fr); gap: 16px; padding-block: 28px; }
+ .trial-strip h2 { font-size: 34px; white-space: normal; }
+ .trial-strip .button { grid-column: 1; grid-row: auto; justify-self: start; }
+}

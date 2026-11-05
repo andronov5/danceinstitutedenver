@@ -1,0 +1,50 @@
+"""Summer content supplied by the owner; repeated pasted prices/copy deduplicated."""
+from html import escape as esc
+import json
+from pathlib import Path
+ROOT=Path(__file__).resolve().parents[1]
+TITLE='2025 Summer Schedule'
+DATES='June 17th – July 31st Tues, Wed, Thurs. There is no class the week of July 4th'
+INTENSIVE=[
+    ('Contemporary/Jazz','2:00-3:30','$225.00',''),
+    ('Inter/Adv Ballet','3:30-5:00','$225.00','(This is for both Pointe and non-Pointe Ballet dancers.)'),
+]
+BOTH='$400.00 for both courses. Your dancer will have 54 hours of training this summer with our intensive. Our Intensive is perfect for dancers 11 and older that are looking to not only maintain their dance over the summer but to grow and be challenged.'
+FLEX='We understand there are vacations planned and students will miss some days here and there. This intensive is designed to accommodate busy schedules with an open curriculum and an extremely discounted price. As well as, no Monday or Friday classes.'
+CAMP_INFO=[
+ 'Schedule is subject to change or cancellation. Sign-up early to get the week you want.',
+ 'Full-day camp is available by combining morning and afternoon camps. Early drop-off and Late pick-up are available for an additional charge of $10.00 per 30 minutes. Our Lunch Hour is Noon-1:00 PM.',
+ 'Campers in both the All-day and Half-day camps are welcome to join us for lunch.'
+]
+CAMPS=[
+ {'title':'Camp AGES 4-6 years old - $225.00','dates':'June 16th – 20th or July 14th – July 18th','body':'9:30 AM - 12:00 PM This camp includes Tap, Ballet, Tumbling, Crafts, Snack.'},
+ {'title':'Camp AGES 6-9 years old - $225.00','dates':'June 23rd – 27th or July 21st - July 25th','body':'9:30 AM - 12:00 PM This camp includes Tap, Ballet, Tumbling, Hip-Hop, Video, Snack.','note':'(Parents of 8 & 9-year-old students please see Miss Michele for placement)'},
+ {'title':'Afternoon Art 6-9 years old - $225.00','discount':'(There’s a $25 discount when combined with morning Dance Camp)','dates':'June 23rd – 27th or July 21st - July 25th','body':'1:00 PM - 3:30 PM Make it an all-day camp for your dancer by adding art in the afternoons. Pack a lunch and spend the afternoon relaxing with our wonderful array of art projects. Each day is a different theme.'},
+ {'title':'Camp AGES 8 – 13 (Beginner/Intermediate) - $250.00','discount':'(There’s a $25 discount when combined with Hip-Hop)','dates':'July 28th – Aug 1st','body':'1:00 PM - 4:30 PM This camp is designed to quickly elevate a student’s abilities. The focus will be on Technique, Showmanship, Strength, and Flexibility in Ballet, Lyrical, Tap, and Jazz. Snack included.','note':'(Parents of 8 &; 9-year-old students please see Miss Michele for placement)'},
+ {'title':'Hip-Hop Camp Ages 6 and up - $195.00','dates':'July 28th – Aug 1st','body':'10:00 AM - Noon Students will receive training from Miss Irie and guest instructors. This camp is designed to give dancers the flavor of Hip-Hop, including breaking, freestyle, and choreography. Snack included.'},
+ {'title':'Nutcracker Prep Week - $100.00','dates':'Aug 18th – Aug 22nd','time':'5:00 PM - 7:00 PM (Monday – Thursday)','body':'This week prepares dancers for their Nutcracker audition. Any dancer wanting to put extra focus into their ballet dancing before they audition is encouraged to come dance with us this week.'}
+]
+REGISTER='Registration: Registration for all the above summer options can be completed through our website DanceInstituteDenver.com. Please click "Register Now" and click on "Camps/Events" to select the programs you’d like. Already a student at Dance Institute? Log in to your Sawyer account and register through the "Camps and Events" tab.'
+
+def render_summer(prefix='../'):
+    courses=''.join(f'<article class="summer-course"><h3>{esc(name)}</h3><p class="summer-time">{esc(time)}</p><p class="summer-price">{esc(price)}</p>'+ (f'<p class="summer-course-note">{esc(note)}</p>' if note else '') +'</article>' for name,time,price,note in INTENSIVE)
+    camps=''
+    for i,camp in enumerate(CAMPS):
+        heading,price=camp['title'].rsplit(' - ',1)
+        # Preserve the full supplied title while giving the price its own column.
+        title=f'<span>{esc(heading)}</span><span class="summer-camp-price"><span class="summer-price-separator"> - </span>{esc(price)}</span>'
+        content=''.join(f'<p class="summer-camp-{key}">{esc(camp[key])}</p>' for key in ['discount','dates','time','body','note'] if key in camp)
+        camps+=f'<article class="summer-camp"><h3>{title}</h3><div class="summer-camp-details">{content}</div></article>'
+    return f'''<div class="summer-page"><header class="page-intro section-shell"><h1 class="intro-title">{TITLE}</h1></header>
+<section class="section-shell summer-intensive"><div class="summer-heading"><h2>Summer Intensive</h2><p>{esc(DATES)}</p></div><div class="summer-courses">{courses}</div><div class="summer-intensive-notes"><p class="summer-both">{esc(BOTH)}</p><p>{esc(FLEX)}</p></div></section>
+<section class="section-shell summer-camps"><div class="summer-heading"><h2>Summer Camps</h2><p>{esc(CAMP_INFO[0])}</p></div><div class="summer-camp-info"><p>{esc(CAMP_INFO[1])}</p><p>{esc(CAMP_INFO[2])}</p></div><div class="summer-camp-list">{camps}</div></section>
+<section class="section-shell summer-registration"><p>{esc(REGISTER)}</p><a class="button button-dark" href="{prefix}register/index.html">Register Now <span aria-hidden="true">↗</span></a></section><section class="section-shell summer-contact"><h2>Interested in Learning More?</h2><a class="text-link" href="{prefix}contact/index.html">Contact Us <span aria-hidden="true">↗</span></a></section></div>'''
+
+def write_reference():
+    blocks=[TITLE,'Summer Intensive',DATES]
+    for name,time,price,note in INTENSIVE: blocks.append(f'{name} {time} {price}'+(f' {note}' if note else ''))
+    blocks += [BOTH,FLEX,'Summer Camps',*CAMP_INFO]
+    for camp in CAMPS: blocks += [camp[k] for k in ['title','discount','dates','time','body','note'] if k in camp]
+    blocks += [REGISTER,'Register Now','Interested in Learning More?','Contact Us']
+    (ROOT/'reference/summer-request.json').write_text(json.dumps({'summer-intensive/index.html':blocks},ensure_ascii=False,indent=2)+'\n')
+if __name__=='__main__': write_reference()

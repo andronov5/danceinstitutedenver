@@ -31,3 +31,6 @@
   .about-main-photo { width: 72%; }
   .about-small-photo { width: 64%; }
 }
+
+/* A very small rightward photo shift; the copy stays in place. */
+.hero-photo { transform: translateX(1.25%) scale(1.025); }

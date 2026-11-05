@@ -86,7 +86,6 @@ def check_copy(base: Path) -> None:
             checks.append((page['name'], base/PAGE_PATHS[page['name']], [b['text'] for b in page['data']['blocks']] + legal_extra_lines(page)))
         elif page['name'] == 'Contact':
             checks.append(('Contact',base/'contact/index.html',[b['text'] for i,b in enumerate(page['data']['blocks']) if i != 1]))
-    checks.append(('Shows & Competition',base/'shows-and-competition/index.html',['Shows & Competition']))
     missing: list[str] = []
     checked_blocks = 0
     for name, path, expected in checks:

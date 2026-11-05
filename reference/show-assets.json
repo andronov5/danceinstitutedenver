@@ -1,0 +1,51 @@
+[
+  {
+    "path": "assets/images/competition-rainbow.webp",
+    "width": 1200,
+    "height": 571,
+    "bytes": 92614,
+    "provenance": "Existing studio-published asset reused for the authorized studio website rebuild. No stock or generated photo substitution.",
+    "processing": "Whole downloaded image converted to WebP without cropping or artistic edits.",
+    "context": "competition",
+    "confirmed_context": "Five Dance Institute dancers on a Rainbow National Dance Competition stage; studio public Sawyer Unlimited Membership image and visible Rainbow banner confirm context. Event year and choreography title unverified.",
+    "source_page": "https://www.hisawyer.com/dance-institute-denver/schedules/membership-plans",
+    "source_image": "https://cdn.filestackcontent.com/AEncGMSKQ8O7Y9ymnhBRAz/resize=width:1200/auto_image/PHrWkGBqRnqzZPoRpvWA",
+    "suggested_alt": "Five Dance Institute dancers performing at Rainbow National Dance Competition."
+  },
+  {
+    "path": "assets/images/nutcracker-illustration.webp",
+    "width": 1600,
+    "height": 1239,
+    "bytes": 67496,
+    "provenance": "Existing studio-published asset reused for the authorized studio website rebuild. No stock or generated photo substitution.",
+    "processing": "Whole downloaded image converted to WebP without cropping or artistic edits.",
+    "context": "nutcracker",
+    "confirmed_context": "Decorative toy Nutcracker illustration from the studio official Nutcracker page. This is NOT a production photograph.",
+    "source_page": "https://www.danceinstitutedenver.com/nutcracker/",
+    "source_image": "https://www.danceinstitutedenver.com/wp-content/uploads/2026/07/nutcracker-background-1600x0-c-default.webp",
+    "suggested_alt": "",
+    "decorative": true
+  },
+  {
+    "path": "assets/images/dance-performance.webp",
+    "context": "nutcracker",
+    "confirmed_context": "Existing Wix photo matches Nutcracker2023-107 in the City Lifestyle feature about Dance Institute. This establishes a Nutcracker 2023 context; do not label as competition.",
+    "source_page": "https://citylifestyle.com/articles/dance-institute-invites-us-to-dance",
+    "corroborating_image": "https://static.citylifestyle.com/articles/dance-institute-invites-us-to-dance/Nutcracker2023-107-1200.jpg?v=1",
+    "suggested_alt": "Dance Institute dancers in pale blue costumes performing in The Nutcracker."
+  },
+  {
+    "path": "assets/images/dance-hero.webp",
+    "context": "general-stage-performance",
+    "confirmed_context": "Existing studio Wix Home photo. Precise show, event type and year are not verified. Do not caption as competition or Nutcracker.",
+    "source_record": "reference/assets.json",
+    "suggested_alt": "Dance Institute dancers performing a contemporary routine on stage."
+  },
+  {
+    "path": "assets/images/dance-community.webp",
+    "context": "general-stage-performance",
+    "confirmed_context": "Existing studio Wix Home photo. Precise show, event type and year are not verified. Do not caption as competition or Nutcracker.",
+    "source_record": "reference/assets.json",
+    "suggested_alt": "Young Dance Institute dancers in pink tutus performing on stage."
+  }
+]

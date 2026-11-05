@@ -43,54 +43,43 @@ FOOTNOTE = '*Class placement is determined by Dance Institute Instructors'
 GRID_ICON = '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="3" width="18" height="18"/><path d="M3 9h18M3 15h18M9 3v18M15 3v18"/></svg>'
 
 
-def time_key(value):
-    start = value.split('-')[0].replace('AM', '').replace('PM', '')
-    hour, minute = [int(part) for part in start.split(':')]
-    if value.endswith('PM') and hour != 12:
-        hour += 12
-    return hour * 60 + minute
-
-
 def render_schedule(prefix='../'):
-    tabs = ''.join(
-        f'<button type="button" id="day-tab-{i}" role="tab" aria-selected="{str(i == 0).lower()}" '
-        f'aria-controls="day-panel-{i}" tabindex="{0 if i == 0 else -1}" data-schedule-tab="{i}">{day}</button>'
-        for i, day in enumerate(DAYS)
-    )
-    panels = []
-    for i, day in enumerate(DAYS):
-        day_rows = sorted((row for row in ROWS if day in row[2]), key=lambda row: time_key(row[2][day]))
-        cards = ''.join(
-            '<li class="schedule-class">'
-            f'<span class="schedule-time">{escape(times[day])}</span>'
-            f'<div><h2>{escape(name)}</h2>'
-            + (f'<p>{escape(description)}</p>' if description else '') + '</div></li>'
-            for name, description, times in day_rows
+    headings = ''.join(f'<th scope="col">{day}</th>' for day in DAYS)
+    rows = []
+    for name, description, times in ROWS:
+        label = f'<span class="schedule-class-name">{escape(name)}</span>'
+        if description:
+            label += f'<span class="schedule-class-description">{escape(description)}</span>'
+        cells = ''.join(
+            f'<td class="schedule-meeting"><span>{escape(times[day])}</span></td>' if day in times
+            else '<td></td>'
+            for day in DAYS
         )
-        panels.append(
-            f'<section class="schedule-day" id="day-panel-{i}" data-schedule-panel="{i}" aria-labelledby="day-heading-{i}">'
-            f'<h2 class="schedule-day-heading" id="day-heading-{i}">{day}</h2>'
-            f'<ul class="schedule-class-list">{cards}</ul></section>'
-        )
+        rows.append(f'<tr><th scope="row">{label}</th>{cells}</tr>')
     source = f'{prefix}assets/images/class-schedule.png'
     return f'''<header class="page-intro section-shell schedule-intro"><h1 class="intro-title">{TITLE}</h1>
       <div class="schedule-actions"><a class="button button-dark" href="{prefix}register/index.html">Register Now</a>
-      <a class="schedule-image-link" href="{source}" target="_blank" rel="noopener" data-schedule-image aria-label="View the full class schedule">{GRID_ICON}</a></div>
+      <a class="schedule-image-link" href="{source}" target="_blank" rel="noopener" data-schedule-image aria-label="View the original class schedule">{GRID_ICON}</a></div>
     </header>
     <div class="section-shell schedule-page" data-schedule>
-      <div class="schedule-day-tabs" role="tablist" aria-label="Class schedule by day" hidden>{tabs}</div>
-      <div class="schedule-days">{''.join(panels)}</div>
-      <p class="schedule-footnote">{FOOTNOTE}</p>
+      <div class="schedule-table-scroll" role="region" aria-label="Weekly class schedule. Scroll horizontally to see every day." tabindex="0">
+        <table class="schedule-table" aria-label="2026-2027 class schedule" aria-describedby="schedule-footnote">
+          <colgroup><col class="schedule-class-column"><col span="6"></colgroup>
+          <thead><tr><th scope="col">Class</th>{headings}</tr></thead>
+          <tbody>{''.join(rows)}</tbody>
+        </table>
+      </div>
+      <p class="schedule-footnote" id="schedule-footnote">{FOOTNOTE}</p>
     </div>
-    <dialog class="schedule-dialog" aria-label="Full 2026-2027 class schedule" data-schedule-dialog>
+    <dialog class="schedule-dialog" aria-label="Original 2026-2027 class schedule" data-schedule-dialog>
       <button class="schedule-dialog-close" type="button" aria-label="Close full schedule" data-schedule-close>×</button>
-      <img src="{source}" width="962" height="772" alt="The original class schedule for 2026-2027. All class details are available in the weekday schedule on this page." loading="lazy">
+      <img src="{source}" width="962" height="772" alt="The original class schedule for 2026-2027. All class details are available in the weekly table on this page." loading="lazy">
     </dialog>'''
 
 
 def expected_copy():
     """Only words supplied by the owner; deduplicate repeated timetable labels."""
-    values = [TITLE, 'Register Now', *DAYS, FOOTNOTE]
+    values = [TITLE, 'Register Now', 'Class', *DAYS, FOOTNOTE]
     for name, description, times in ROWS:
         values.extend([name, description, *times.values()])
     return list(dict.fromkeys(value for value in values if value))

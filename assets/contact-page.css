@@ -1,0 +1,162 @@
+/* The studio photograph and contact actions frame the existing email-draft form. */
+.contact-redesign .contact-studio-band {
+  position: relative;
+  overflow: hidden;
+  background: #ded8cd;
+  height: clamp(300px, 34vw, 430px);
+}
+.contact-redesign .contact-studio-band img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 48%;
+}
+.contact-redesign .contact-content-grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, .92fr) minmax(0, 1.08fr);
+  align-items: start;
+  gap: clamp(28px, 4.5vw, 64px);
+  margin-top: -58px;
+  padding-inline: 36px;
+}
+.contact-redesign .contact-content-grid > * { min-width: 0; }
+.contact-redesign .contact-information {
+  position: relative;
+  padding: clamp(28px, 3.5vw, 46px);
+  color: var(--paper);
+  background: var(--ink);
+  border-top: 5px solid var(--pink);
+  box-shadow: 0 16px 40px rgb(37 46 66 / 10%);
+}
+.contact-redesign .contact-welcome {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #f0ede7;
+}
+.contact-redesign .contact-direct-links { margin-top: 34px; }
+.contact-redesign .contact-direct-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 22px;
+  padding-block: 23px;
+  border-top: 1px solid rgb(248 245 238 / 24%);
+  transition: color .2s ease;
+}
+.contact-redesign .contact-direct-link > span { min-width: 0; }
+.contact-redesign .contact-direct-link > svg {
+  flex: 0 0 22px;
+  width: 22px;
+  height: 22px;
+  transition: transform .2s ease;
+}
+.contact-redesign .contact-direct-link:hover { color: #efc5d8; }
+.contact-redesign .contact-direct-link:hover > svg { transform: translateX(4px); }
+.contact-redesign .contact-direct-link:focus-visible {
+  outline-color: #efc5d8;
+  outline-offset: 4px;
+}
+.contact-redesign .contact-phone-number {
+  display: block;
+  font-family: var(--serif);
+  font-size: clamp(32px, 3vw, 42px);
+  line-height: 1.15;
+  letter-spacing: -.025em;
+}
+.contact-redesign .contact-phone-note {
+  display: block;
+  margin-top: 7px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.contact-redesign .contact-email-link { font-size: 15px; line-height: 1.6; }
+.contact-redesign .contact-email-link > span { overflow-wrap: anywhere; }
+.contact-redesign .contact-address-link { padding-bottom: 0; }
+.contact-redesign .contact-address-link address {
+  font-size: 16px;
+  line-height: 1.7;
+  font-style: normal;
+}
+.contact-redesign .contact-address-link > svg { transform: rotate(-45deg); }
+.contact-redesign .contact-address-link:hover > svg { transform: translate(3px, -3px) rotate(-45deg); }
+.contact-redesign .contact-message-panel {
+  margin-top: 106px;
+  padding: clamp(26px, 3.4vw, 44px);
+  background: #efebe2;
+  border: 1px solid #ded8cd;
+  box-shadow: 12px 12px 0 #eed7df;
+}
+.contact-redesign .contact-form { margin: 0; }
+.contact-redesign .field { margin-bottom: 26px; }
+.contact-redesign .field-pair { gap: 22px; }
+.contact-redesign .field label {
+  display: block;
+  margin-bottom: 9px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.contact-redesign .field input,
+.contact-redesign .field textarea {
+  width: 100%;
+  min-height: 50px;
+  padding: 12px 14px;
+  border: 1px solid #c9c5bd;
+  border-radius: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-size: 16px;
+  line-height: 1.6;
+  transition: border-color .2s ease, background .2s ease;
+}
+.contact-redesign .field textarea { min-height: 160px; resize: vertical; }
+.contact-redesign .field input:hover,
+.contact-redesign .field textarea:hover { border-color: #96918a; }
+.contact-redesign .field input:focus,
+.contact-redesign .field textarea:focus { border-color: #a65279; background: #fffdf9; }
+.contact-redesign .form-bottom { align-items: flex-start; gap: 22px; margin-top: 4px; }
+.contact-redesign .form-bottom .button { border-radius: 0; padding: 15px 25px; }
+.contact-redesign .form-note { font-size: 13px; line-height: 1.6; max-width: 28ch; }
+.contact-redesign .form-status { margin-top: 18px; font-size: 14px; }
+.contact-redesign .form-status:empty { display: none; }
+
+@media (max-width: 1150px) {
+  .contact-redesign .contact-content-grid { padding-inline: 24px; gap: 30px; }
+  .contact-redesign .contact-information { padding: 30px; }
+  .contact-redesign .contact-message-panel { padding: 28px; }
+  .contact-redesign .field-pair { grid-template-columns: minmax(0, 1fr); gap: 0; }
+}
+@media (max-width: 900px) {
+  .contact-redesign .contact-content-grid { grid-template-columns: minmax(0, 1fr); padding-inline: 28px; gap: 38px; }
+  .contact-redesign .contact-information { padding: 34px; }
+  .contact-redesign .contact-welcome { max-width: 62ch; }
+  .contact-redesign .contact-direct-links { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); column-gap: 32px; }
+  .contact-redesign .contact-email-link { grid-column: 1 / -1; grid-row: 2; }
+  .contact-redesign .contact-address-link { padding-bottom: 23px; }
+  .contact-redesign .contact-message-panel { margin-top: 0; padding: 34px; }
+  .contact-redesign .field-pair { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+}
+@media (max-width: 600px) {
+  .contact-redesign .contact-studio-band { height: 280px; }
+  .contact-redesign .contact-content-grid { padding-inline: 12px; margin-top: -30px; gap: 28px; }
+  .contact-redesign .contact-information { padding: 27px 24px 30px; }
+  .contact-redesign .contact-welcome { font-size: 16px; line-height: 1.8; }
+  .contact-redesign .contact-direct-links { display: block; margin-top: 28px; }
+  .contact-redesign .contact-direct-link { gap: 16px; }
+  .contact-redesign .contact-phone-number { font-size: 34px; }
+  .contact-redesign .contact-email-link { font-size: 14px; }
+  .contact-redesign .contact-address-link { padding-bottom: 0; }
+  .contact-redesign .contact-message-panel { padding: 27px 22px; box-shadow: 7px 7px 0 #eed7df; }
+  .contact-redesign .field-pair { grid-template-columns: minmax(0, 1fr); gap: 0; }
+  .contact-redesign .field textarea { min-height: 150px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .contact-redesign .contact-direct-link,
+  .contact-redesign .contact-direct-link > svg,
+  .contact-redesign .field input,
+  .contact-redesign .field textarea { transition: none; }
+}
+
+.contact-redesign .field label { font-size: 16px; }
+.contact-redesign .form-note { font-size: 14px; }
+.contact-redesign .contact-email-link { font-size: 16px; }
