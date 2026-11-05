@@ -103,6 +103,18 @@
         "focalX": null,
         "focalY": null,
         "_id": "06ba428f-8c25-583e-a38e-1295dbff17d5"
+      },
+      {
+        "_id": "26573964-03e0-555d-9c5c-f47d9c1fc2cb",
+        "key": "policies-ballet-photo",
+        "isVisible": true,
+        "sortOrder": 5,
+        "title": "Studio Policies photograph",
+        "page": "about/studio-policies/index.html",
+        "image": "https://static.wixstatic.com/media/24dcb0_08904e1259944c46b0eb3f2593417e51~mv2.png",
+        "alt": "Ballet dancer practicing en pointe at the studio barre",
+        "focalX": null,
+        "focalY": null
       }
     ],
     "DiPageContent": [
@@ -3143,7 +3155,7 @@
       }
     ]
   },
-  "sourceDigest": "0d23be34e902234ed17525957e979a3ffe7b2fe317275e1e71943ad9457f9619",
-  "lastSyncAt": "2026-11-05",
+  "sourceDigest": "0530af6f8627124f24b090e0f87400696d829e5e9decfb994a1420dda8acec10",
+  "lastSyncAt": "2026-11-05T19:48:47.454Z",
   "verification": "All desired source fields matched or were written and verified; no external conflicts. Six removed source rows were hidden by verified partial patches."
 }

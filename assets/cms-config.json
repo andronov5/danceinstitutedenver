@@ -1,6 +1,6 @@
 {
-  "enabled": false,
+  "enabled": true,
   "transport": "http-function",
-  "endpoint": "",
+  "endpoint": "https://dance1806.wixsite.com/mysite-1/_functions/danceContent",
   "collectionIds": {}
 }

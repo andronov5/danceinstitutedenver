@@ -46,7 +46,29 @@
 .teachers-page .teacher-empty-bio { min-height: 7.4em; }
 
 .policies-page .intro-title { font-size: clamp(48px, 6.5vw, 86px); }
-.policies-page .policies-content { max-width: 1100px; }
+.policies-page .policies-content {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(210px, 270px);
+  align-items: start;
+  gap: clamp(40px, 4vw, 64px);
+  max-width: 1400px;
+}
+.policies-page .policies-list { min-width: 0; }
+.policies-page .policy-portrait {
+  position: sticky;
+  top: 140px;
+  width: 100%;
+  margin: 0;
+  border-bottom: 4px solid #ac4b79;
+}
+.policies-page .policy-portrait img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
 .policies-page .policy-section {
   display: grid;
   grid-template-columns: minmax(0, .65fr) minmax(0, 1.35fr);
@@ -59,6 +81,11 @@
 .policies-page .policy-copy ul { margin: 22px 0 0; padding-left: 21px; }
 .policies-page .policy-copy ul li { padding-left: 5px; }
 .policies-page .policy-copy ul li + li { margin-top: 14px; }
+
+@media (max-width: 1199px) {
+  .policies-page .policies-content { grid-template-columns: minmax(0, 1fr); max-width: 1100px; }
+  .policies-page .policy-portrait { position: static; order: -1; max-width: 280px; justify-self: center; }
+}
 
 @media (max-width: 760px) {
   .about-hub .about-hub-layout { grid-template-columns: minmax(0, 1fr); gap: 30px; }

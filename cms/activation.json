@@ -1,0 +1,44 @@
+{
+  "status": "active",
+  "activatedOn": "2026-11-05",
+  "wixSiteId": "f3c88b1a-e358-495d-bcfd-78c490531ee8",
+  "wixSiteUrl": "https://dance1806.wixsite.com/mysite-1",
+  "endpoint": "https://dance1806.wixsite.com/mysite-1/_functions/danceContent",
+  "codedSiteUrl": "https://dance-institute-denver-design.gnotobiot.chatgpt.site",
+  "backendFiles": [
+    "backend/http-functions.js",
+    "backend/content-schema.js"
+  ],
+  "temporaryWixDraftPublicationUserApproved": true,
+  "studioDomainMigrated": false,
+  "codedFrontendMigrated": false,
+  "verification": {
+    "collectionCount": 23,
+    "initialVisibleRows": 310,
+    "publicEndpointComplete": true,
+    "publicFieldsOnly": true,
+    "collectionPermissionsUnchanged": true,
+    "corsOrigin": "https://dance-institute-denver-design.gnotobiot.chatgpt.site",
+    "optionsStatus": 204,
+    "invalidCollectionStatus": 400,
+    "unapprovedOriginStatus": 403,
+    "nodeTestsPassed": 31,
+    "browserPagesHydrated": 13,
+    "reversibleLiveEdits": [
+      "Competition heading",
+      "Trot’n Tots Saturday time",
+      "45-minute tuition",
+      "Competition gallery order"
+    ],
+    "allTestChangesRestored": true
+  },
+  "policiesPhoto": {
+    "collection": "DiImages",
+    "key": "policies-ballet-photo",
+    "id": "26573964-03e0-555d-9c5c-f47d9c1fc2cb",
+    "mediaUrl": "https://static.wixstatic.com/media/24dcb0_08904e1259944c46b0eb3f2593417e51~mv2.png",
+    "remoteInsertVerified": true,
+    "syncReport": "cms/policies-photo-sync.json"
+  },
+  "editing": "Use the existing site's CMS collections. Saved live content appears on refresh of the coded website. Native Edit Site opens the separate older Wix draft."
+}

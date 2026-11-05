@@ -1,8 +1,10 @@
 # Michele’s website content guide
 
-The GitHub website keeps its current design. Once the connection is completed, Michele can change its content in **Wix → CMS**, using her existing Wix login. These are content tables, not draggable blocks in the Wix Editor. Routine text, photo, date and price-display changes will not require GitHub or coding.
+The GitHub website keeps its current design. Michele can change its content in **Wix → CMS**, using her existing Wix login. These are content tables, not draggable blocks in the Wix Editor. Routine text, photo, date and price-display changes do not require GitHub or coding.
 
-**Current status:** the content model now covers 23 collections, including all existing page copy and images, navigation labels, extra text/photo blocks, complete section visibility, legal content, and dynamic class categories. The website connection remains disabled until the Wix backend is installed, published and tested. Dashboard edits will not appear on the website until that activation step is complete. See `cms/provisioning.json` and `cms/sync-report.json` for the actual account import results.
+**Current status:** connected on November 5, 2026. The CMS covers 23 collections, including all existing page copy and images, navigation labels, extra text/photo blocks, complete section visibility, legal content, and dynamic class categories. Saved live CMS edits appear when the [coded website](https://dance-institute-denver-design.gnotobiot.chatgpt.site) is refreshed. See `cms/activation.json` for connection verification; the earlier import results remain in `cms/provisioning.json` and `cms/sync-report.json`.
+
+Use the **CMS** dashboard to change the coded website. **Edit Site** opens the older Wix template, which is published at its temporary Wix address to host the content connection; it is separate from the coded website's layout.
 
 Use the shared **My Site** project: `f3c88b1a-e358-495d-bcfd-78c490531ee8`.
 

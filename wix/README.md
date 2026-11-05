@@ -2,7 +2,7 @@
 
 This integration preserves the existing coded website and reads its public content from Wix CMS. Michele edits the content in the Wix dashboard. It does not convert the site into native Wix Editor blocks, migrate its frontend, change DNS, or publish a new frontend by itself.
 
-**Current status:** the browser connection defaults to disabled in `assets/cms-config.json`. Setup is incomplete until the backend is installed on the correct Wix site, the live collections are populated, and the published endpoint works from the actual website origin.
+**Current status:** connected on November 5, 2026. `assets/cms-config.json` enables the published endpoint `https://dance1806.wixsite.com/mysite-1/_functions/danceContent`. The backend is installed in the correct shared Wix site. Public content responses, browser CORS, and reversible edits through to the coded website have been verified; see `cms/activation.json`.
 
 Target the existing shared **My Site**, site ID **`f3c88b1a-e358-495d-bcfd-78c490531ee8`**. Do not create a replacement project or use the separate “Passion Moves Us Dance” project.
 
@@ -20,12 +20,13 @@ Target the existing shared **My Site**, site ID **`f3c88b1a-e358-495d-bcfd-78c49
 | `assets/cms.js` | Applies CMS fields and lists to the existing page layout |
 | `scripts/cms_bind.py` | Adds page bindings and generates collection/seed/allowlist files after rendering |
 | `cms/README.md` | Michele’s day-to-day content editing guide |
+| `cms/activation.json` | Published endpoint and activation verification results |
 
 Run the normal site renderer before generating bindings. Do not run the binding pass repeatedly over already-bound pages. The seed is generated from source; it is not a backup/export of the current Wix database.
 
 ## One-time setup
 
-The initial 19-collection creation, 206-item import and 16 media uploads are recorded in `cms/provisioning.json`. The expanded model contains 23 collections; incremental schema/data sync results are recorded in `cms/sync-report.json`. Resume at backend installation below. No frontend or domain was migrated, and no Wix site was published during this setup.
+The initial 19-collection creation, 206-item import and 16 media uploads are recorded in `cms/provisioning.json`. The expanded model contains 23 collections; incremental schema/data sync results are recorded in `cms/sync-report.json`. During activation, the user approved publishing the existing Wix draft at `https://dance1806.wixsite.com/mysite-1` to host the backend. The coded frontend and studio domain were not migrated. The steps below document setup/recovery; do not re-import the seed over live edits.
 
 1. **Check the site identity.** Open the shared My Site project and confirm its site ID above. Inspect existing collections before creating or updating anything.
 2. **Create/update the content collections** according to `cms/collections.json`, preserving the exact IDs and field keys. The schema uses admin-only collection permissions. Michele must have the appropriate owner/admin CMS access. The public website does not receive write access.
@@ -42,13 +43,13 @@ The initial 19-collection creation, 206-item import and 16 media uploads are rec
 
 The function name is `danceContent`. Wix uses `<site-base-url>/_functions/danceContent` for the production endpoint. A Wix-hosted subdirectory URL includes that site's path before `/_functions/`.
 
-Example configuration shape—not a real endpoint to copy:
+Current connection configuration:
 
 ```json
 {
-  "enabled": false,
+  "enabled": true,
   "transport": "http-function",
-  "endpoint": "https://ACCOUNT.wixsite.com/SITE/_functions/danceContent",
+  "endpoint": "https://dance1806.wixsite.com/mysite-1/_functions/danceContent",
   "collectionIds": {}
 }
 ```

@@ -1,0 +1,25 @@
+{
+  "status": "APPLIED_VERIFIED",
+  "siteId": "f3c88b1a-e358-495d-bcfd-78c490531ee8",
+  "sourceDigest": "0530af6f8627124f24b090e0f87400696d829e5e9decfb994a1420dda8acec10",
+  "scope": "Only Studio Policies photo in DiImages; no updates, deletes, schema, permissions or other collection writes",
+  "applied": [
+    {
+      "collection": "DiImages",
+      "id": "26573964-03e0-555d-9c5c-f47d9c1fc2cb",
+      "operation": "insert",
+      "verified": true
+    }
+  ],
+  "verifiedMutations": 1,
+  "baselineDelta": {
+    "DiImages": {
+      "sourceRows": [
+        "26573964-03e0-555d-9c5c-f47d9c1fc2cb"
+      ],
+      "sourceFields": {},
+      "hiddenRows": []
+    }
+  },
+  "completedAt": "2026-11-05T19:48:47.454Z"
+}
