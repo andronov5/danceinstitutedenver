@@ -1,4 +1,7 @@
 /* Keep the original design; vary photo proportions instead of corner shapes. */
+.header-logo { width: 158px; height: auto; background: transparent; }
+@media (max-width: 650px) { .header-logo { width: 130px; } }
+
 .about-main-photo,
 .editorial-image,
 .wide-editorial,
@@ -32,5 +35,11 @@
   .about-small-photo { width: 64%; }
 }
 
-/* A very small rightward photo shift; the copy stays in place. */
-.hero-photo { transform: translateX(1.25%) scale(1.025); }
+/* Center the stage photograph and let the title overlap the performance. */
+.hero-photo { transform: none; object-position: 50% 48%; }
+.hero-copy { max-width: 1100px; }
+.hero h1 { font-size: clamp(96px, 14vw, 210px); line-height: .9; }
+@media (max-width: 650px) {
+  .hero-photo { object-position: 50% 40%; }
+  .hero h1 { font-size: clamp(62px, 18vw, 110px); line-height: .94; }
+}

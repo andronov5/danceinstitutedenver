@@ -1,7 +1,20 @@
-/* Distinct photo compositions for each show, within the studio's existing palette. */
-.shows-page .nutcracker-banner { height: auto; aspect-ratio: 16 / 9; overflow: hidden; background: #e8d9d9; }
-.shows-page .nutcracker-banner img { width: 100%; height: 100%; object-fit: cover; }
-.shows-page .nutcracker-photo-space { background: linear-gradient(125deg, #e8d9d9, #f0e8dc); }
+/* Contained show galleries and the Nutcracker's photograph-backed opening. */
+.shows-page > .page-intro { padding-block: 32px 24px; margin-bottom: 24px; }
+.shows-page > .page-intro .intro-title { font-size: clamp(58px, 6vw, 84px); }
+.shows-page .nutcracker-hero { --nutcracker-photo-height: clamp(410px, 37vw, 560px); position: relative; isolation: isolate; min-height: clamp(580px, 52vw, 740px); overflow: hidden; color: #fffaf3; background: #09090c; }
+.shows-page .nutcracker-hero > img { position: absolute; inset: auto 0 0; z-index: -2; width: 100%; height: var(--nutcracker-photo-height); object-fit: cover; object-position: center 70%; mask-image: linear-gradient(to bottom, transparent, #000 26%, #000 82%, transparent); -webkit-mask-image: linear-gradient(to bottom, transparent, #000 26%, #000 82%, transparent); animation: nutcracker-stage-arrive 1.15s ease-out both; }
+.shows-page .nutcracker-hero::before { content: ''; position: absolute; inset: auto 0 0; height: var(--nutcracker-photo-height); z-index: -1; pointer-events: none; background: linear-gradient(90deg, #09090c, transparent 10%, transparent 90%, #09090c); }
+.shows-page .nutcracker-hero-content { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr); gap: 40px; align-items: start; padding-block: 54px; }
+.shows-page .nutcracker-hero h1 { position: relative; z-index: 1; font-size: clamp(82px, 9.5vw, 144px); line-height: .95; letter-spacing: -.045em; color: #fffaf3; }
+.shows-page .nutcracker-hero-dates { display: flex; justify-content: flex-end; gap: clamp(24px, 3vw, 46px); list-style: none; margin: 3px 0 0; padding: 0; }
+.shows-page .nutcracker-hero-dates li { min-width: 0; }
+.shows-page .nutcracker-hero-dates time { display: block; white-space: nowrap; }
+.shows-page .nutcracker-date-prefix { display: block; margin-bottom: 7px; color: #f4e9ed; font-size: 14px; line-height: 1.6; }
+.shows-page .nutcracker-date-number { font-family: var(--serif); font-size: clamp(64px, 6vw, 88px); line-height: .9; color: var(--blush); }
+.shows-page .nutcracker-date-year { font-size: 14px; color: #f4e9ed; }
+@keyframes nutcracker-stage-arrive { from { opacity: .45; transform: translateY(16px) scale(1.02); } to { opacity: 1; transform: translateY(0) scale(1); } }
+@media (prefers-reduced-motion: reduce) { .shows-page .nutcracker-hero > img { animation: none; } }
+@media (min-width: 601px) and (max-width: 1000px) { .shows-page .nutcracker-hero-content { grid-template-columns: minmax(0, 1fr); gap: 28px; padding-block: 38px; } .shows-page .nutcracker-hero-dates { justify-content: flex-start; } .shows-page .nutcracker-hero { min-height: 700px; } }
 .shows-page .nutcracker-audition-card {
   position: relative;
   width: 100%;
@@ -14,11 +27,18 @@
 }
 .shows-page .nutcracker-audition-time { font-family: var(--serif); font-size: clamp(30px, 3.4vw, 40px); line-height: 1.2; color: #f1c8db; }
 .shows-page .nutcracker-audition-status { margin-top: 16px; font-size: 17px; line-height: 1.7; }
-.shows-page .nutcracker-prep { margin-top: 48px; }
+.shows-page .nutcracker-prep { margin-top: 0; }
+.shows-page .nutcracker-shows { max-width: 780px; margin-inline: auto; padding-block: 36px; font-size: 19px; line-height: 1.65; }
+.shows-page .nutcracker-show-details { display: grid; grid-template-columns: 76px minmax(0, 1fr); gap: 16px 20px; margin: 0; }
+.shows-page .nutcracker-show-details dt { font-weight: 600; }
+.shows-page .nutcracker-show-details dd, .shows-page .nutcracker-show-details p { margin: 0; }
+.shows-page .nutcracker-show-venue { display: inline-flex; align-items: center; gap: 8px; text-decoration: underline; text-decoration-color: #b97995; text-underline-offset: 4px; }
+.shows-page .nutcracker-show-venue svg { width: 20px; height: 22px; flex-shrink: 0; color: #a65279; }
+.shows-page .nutcracker-show-venue:hover { color: #a65279; }
 .shows-page.nutcracker-page .show-information { margin-top: 0; }
 .shows-page .nutcracker-show-dates { list-style: none; margin: 0 0 24px; padding: 0; font-family: var(--serif); font-size: clamp(28px, 3vw, 36px); line-height: 1.25; }
 .shows-page .nutcracker-show-dates li + li { margin-top: 14px; }
-.shows-page .nutcracker-ticket-note { padding-top: 20px; border-top: 1px solid var(--line); }
+.shows-page .nutcracker-ticket-note { margin: 18px 0 0 96px; color: #a24c73; font-weight: 600; }
 .shows-page .show-detail-row {
   display: grid;
   grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr);
@@ -39,58 +59,39 @@
 .shows-page .show-contact .button { flex-shrink: 0; gap: 30px; border: 1px solid var(--ink); border-radius: 0; }
 .shows-page .show-contact .button:hover { background: var(--ink); color: var(--paper); }
 
-.shows-page .show-gallery { display: grid; gap: clamp(24px, 4.5vw, 62px); }
-.shows-page .show-photo { position: relative; display: block; min-width: 0; overflow: hidden; background: #e7e0d6; }
-.shows-page .show-photo img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s var(--ease); }
-.shows-page .show-photo:hover img { transform: scale(1.025); }
-.shows-page .show-photo-expand { position: absolute; right: 16px; bottom: 16px; width: 42px; height: 42px; display: grid; place-items: center; background: var(--paper); color: var(--ink); transition: background .2s ease; }
-.shows-page .show-photo-expand svg { width: 21px; height: 21px; }
-.shows-page .show-photo:hover .show-photo-expand { background: var(--blush); }
-.shows-page .competition-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; padding: 0 24px; }
-.shows-page .competition-gallery .show-photo img { display: block; height: auto; }
-.shows-page .competition-gallery .show-photo:nth-child(2n) { margin-top: 76px; }
-.shows-page .competition-gallery .show-photo:nth-child(3n) { width: 86%; justify-self: end; }
-.shows-page .competition-gallery .show-photo:first-child,
-.shows-page .competition-gallery .show-photo:last-child { grid-column: 1 / -1; width: 100%; margin-top: 0; }
-.shows-page .show-photo-space { min-height: 320px; background: #eee7e0; }
-.shows-page .competition-gallery .show-photo-space { min-height: 0; aspect-ratio: 1.4; width: 86%; }
-.shows-page .competition-gallery .show-photo-space:last-child { justify-self: end; margin-top: 58px; background: #e9dedf; }
+.shows-page .show-gallery { position: relative; width: 100%; min-width: 0; max-width: 1120px; margin-inline: auto; background: #202738; overflow: hidden; }
+.shows-page .show-gallery-stage { position: relative; display: block; width: 100%; aspect-ratio: 16 / 10; min-height: 260px; max-height: max(300px, calc(100dvh - 450px)); background: #202738; touch-action: pan-y; }
+.shows-page .show-gallery-stage > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.shows-page .competition-gallery { max-width: 860px; }
+.shows-page .competition-gallery .show-gallery-stage { aspect-ratio: 3 / 2; max-height: min(450px, max(300px, calc(100dvh - 450px))); }
+.shows-page .show-gallery-stage:focus-visible { outline-offset: -5px; outline-color: var(--pink); }
+.shows-page .show-gallery-controls { display: none; }
+.shows-page .show-gallery.is-enhanced .show-gallery-controls { position: absolute; inset: 0; display: flex; align-items: center; justify-content: space-between; padding: 16px; pointer-events: none; }
+.shows-page .show-gallery-controls button { display: grid; place-items: center; width: 44px; height: 44px; padding: 0; border: 1px solid rgb(255 255 255 / 48%); border-radius: 50%; background: rgb(15 19 28 / 65%); color: #fff; pointer-events: auto; backdrop-filter: blur(8px); }
+.shows-page .show-gallery-controls button svg { width: 21px; height: 21px; }
+.shows-page .show-gallery-controls button:hover { background: var(--blush); color: var(--ink); }
+.shows-page .show-gallery-status { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.shows-page .nutcracker-gallery { margin-block: 12px 48px; }
 .shows-page .competition-copy { max-width: 850px; margin: 64px auto 0; padding: 36px 0 0; border-top: 1px solid var(--line); font-family: var(--serif); font-size: clamp(27px, 3vw, 38px); line-height: 1.35; letter-spacing: -.02em; }
-.shows-page .recital-gallery { grid-template-columns: minmax(0, 1.35fr) minmax(0, .8fr); gap: 0; align-items: center; }
-.shows-page .recital-gallery .show-photo:first-child { aspect-ratio: 1.16; }
-.shows-page .recital-gallery .show-photo:nth-child(2) { width: calc(100% + 58px); margin-left: -58px; margin-top: 100px; aspect-ratio: .8; border: 14px solid var(--paper); box-shadow: 10px 10px 0 var(--blush); }
-.shows-page .recital-gallery .show-photo-space { min-height: 0; width: 88%; aspect-ratio: 1.3; margin-top: 48px; }
-.shows-page .recital-gallery .show-photo-space:nth-child(even) { width: 92%; justify-self: end; aspect-ratio: .95; margin-top: 68px; background: #e9dedf; }
-.shows-page .recital-gallery .show-photo-space:nth-child(5) { width: 100%; aspect-ratio: 1.65; }
-.shows-page .recital-gallery .show-photo-space:nth-child(6) { width: 86%; aspect-ratio: 1.15; }
-.shows-page .nutcracker-gallery { grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr); align-items: start; padding-block: 12px 48px; gap: 32px; }
-.shows-page .nutcracker-gallery .show-photo img { height: auto; }
-.shows-page .nutcracker-gallery .show-photo-space { min-height: 0; aspect-ratio: 1.3; }
-.shows-page .nutcracker-gallery .show-photo-space:nth-child(2) { aspect-ratio: .95; background: #e9dedf; }
-.shows-page .nutcracker-gallery .show-photo-space:nth-child(4) { aspect-ratio: 1.1; }
 .shows-page .recital-copy-space { min-height: 140px; }
 .shows-page .recital-volunteering-space { min-height: 200px; }
 
-.show-lightbox { width: min(1400px, calc(100% - 36px)); max-width: none; max-height: calc(100dvh - 36px); padding: 62px 22px 22px; border: 1px solid rgb(248 245 238 / 24%); background: #202738; color: var(--paper); overflow: auto; }
-.show-lightbox::backdrop { background: rgb(17 22 33 / 88%); }
-.show-lightbox > img { width: 100%; height: min(74dvh, 920px); object-fit: contain; }
-.show-lightbox button { display: grid; place-items: center; width: 44px; height: 44px; padding: 0; color: var(--paper); background: transparent; border: 1px solid rgb(248 245 238 / 35%); font-size: 25px; line-height: 1; }
-.show-lightbox button:hover { background: #3c4353; }
-.show-lightbox button:focus-visible { outline-color: var(--pink); }
-.show-lightbox .show-lightbox-close { position: absolute; top: 10px; right: 22px; border: 0; font-size: 34px; }
-.show-lightbox-controls { display: flex; justify-content: center; gap: 16px; margin-top: 20px; }
 
 @media (max-width: 800px) {
   .shows-page .show-detail-row { grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: 30px; }
   .shows-page .show-contact { padding: 34px; gap: 28px; }
-  .shows-page .competition-gallery { padding-inline: 0; }
-  .shows-page .competition-gallery .show-photo:nth-child(2n) { margin-top: 44px; }
-  .shows-page .recital-gallery .show-photo:nth-child(2) { width: calc(100% + 35px); margin-left: -35px; border-width: 9px; }
 }
 @media (max-width: 600px) {
+  .shows-page .nutcracker-shows { font-size: 17px; padding-block: 28px; }
+  .shows-page .nutcracker-show-details { grid-template-columns: 58px minmax(0, 1fr); gap: 14px 12px; }
+  .shows-page .nutcracker-ticket-note { margin-left: 70px; }
+  .shows-page .nutcracker-hero { --nutcracker-photo-height: 400px; min-height: 560px; }
+  .shows-page .nutcracker-hero-content { grid-template-columns: minmax(0, 1fr); gap: 28px; padding-block: 32px; }
+  .shows-page .nutcracker-hero h1 { font-size: clamp(54px, 12.8vw, 78px); }
+  .shows-page .nutcracker-hero-dates { justify-content: flex-start; gap: 34px; margin-top: 0; }
+  .shows-page .nutcracker-date-number { font-size: 66px; }
   .shows-page .nutcracker-audition-card { padding: 26px; }
   .shows-page .nutcracker-audition-status { font-size: 16px; }
-  .shows-page .nutcracker-prep { margin-top: 30px; }
   .shows-page .show-detail-row { grid-template-columns: minmax(0, 1fr); padding-block: 32px; gap: 25px; }
   .shows-page .show-detail-row h2 { max-width: 16ch; }
   .shows-page .show-information { margin-top: 36px; }
@@ -98,33 +99,10 @@
   .shows-page .show-detail-copy { font-size: 16px; }
   .shows-page .show-detail-date { margin-bottom: 22px; }
   .shows-page .show-contact { flex-direction: column; align-items: flex-start; padding: 30px 26px; gap: 26px; }
-  .shows-page .competition-gallery { gap: 24px; grid-template-columns: minmax(0, 1fr); }
-  .shows-page .competition-gallery .show-photo { width: 92%; }
-  .shows-page .competition-gallery .show-photo:nth-child(2n) { margin-top: 0; justify-self: end; }
-  .shows-page .competition-gallery .show-photo:nth-child(3n) { width: 92%; justify-self: start; }
-  .shows-page .competition-gallery .show-photo:first-child,
-  .shows-page .competition-gallery .show-photo:last-child { width: 100%; }
-  .shows-page .competition-gallery .show-photo-space { width: 82%; aspect-ratio: 1.55; }
-  .shows-page .competition-gallery .show-photo-space:last-child { margin-top: 0; }
+  .shows-page .show-gallery-stage { min-height: 220px; aspect-ratio: 4 / 3; }
+  .shows-page .show-gallery.is-enhanced .show-gallery-controls { padding: 10px; }
   .shows-page .competition-copy { margin-top: 38px; padding-top: 28px; font-size: 28px; }
-  .shows-page .recital-gallery { grid-template-columns: minmax(0, 1fr); }
-  .shows-page .recital-gallery .show-photo:first-child { width: 94%; aspect-ratio: 1.2; }
-  .shows-page .recital-gallery .show-photo:nth-child(2) { width: 68%; margin: -36px 8px 0 0; justify-self: end; border-width: 8px; }
-  .shows-page .recital-gallery .show-photo-space,
-  .shows-page .recital-gallery .show-photo-space:nth-child(5) { width: 92%; margin-top: 30px; aspect-ratio: 1.4; }
-  .shows-page .recital-gallery .show-photo-space:nth-child(even) { width: 76%; margin-top: 30px; aspect-ratio: 1.15; }
-  .shows-page .nutcracker-gallery { grid-template-columns: minmax(0, 1fr); gap: 24px; padding-block: 0 32px; }
-  .shows-page .nutcracker-gallery .show-photo-space { width: 90%; aspect-ratio: 1.4; }
-  .shows-page .nutcracker-gallery .show-photo-space:nth-child(2),
-  .shows-page .nutcracker-gallery .show-photo-space:nth-child(4) { width: 80%; justify-self: end; aspect-ratio: 1.25; }
+  .shows-page .nutcracker-gallery { margin-block: 0 32px; }
   .shows-page .recital-copy-space { min-height: 100px; }
   .shows-page .recital-volunteering-space { min-height: 140px; }
-  .show-lightbox { width: calc(100% - 20px); padding: 58px 10px 18px; }
-  .show-lightbox .show-lightbox-close { right: 10px; }
-  .show-lightbox > img { height: min(68dvh, 820px); }
-}
-@media (prefers-reduced-motion: reduce) {
-  .shows-page .show-photo img,
-  .shows-page .show-photo-expand { transition: none; }
-  .shows-page .show-photo:hover img { transform: none; }
 }

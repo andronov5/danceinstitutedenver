@@ -1,13 +1,13 @@
 /* A horizontal gallery with a quiet center and visible neighboring reviews. */
-.testimonials.review-gallery { display: block; width: 100%; max-width: none; margin-inline: 0; padding-block: 100px 90px; }
-.review-gallery .review-heading { max-width: 980px; text-align: center; margin-bottom: 32px; }
-.review-gallery .review-heading h2 { font-size: clamp(46px, 5vw, 70px); line-height: 1.08; }
+.testimonials.review-gallery { display: block; width: 100%; max-width: none; margin-inline: 0; padding-block: 86px 78px; }
+.review-gallery .review-heading { max-width: 980px; text-align: center; margin-bottom: 28px; }
+.review-gallery .review-heading h2 { font-size: clamp(42px, 4.5vw, 62px); line-height: 1.08; }
 .review-gallery .review-heading em { white-space: nowrap; }
-.review-gallery .review-viewport { position: relative; padding: 22px 0 40px; }
+.review-gallery .review-viewport { position: relative; padding: 19px 0 34px; }
 .review-gallery .review-rail { display: grid; gap: 24px; }
-.review-gallery .review-panel { width: min(840px, calc(100% - 64px)); margin: 0 auto; padding: 46px clamp(28px, 5vw, 74px); background: #fffdf8; border: 1px solid #e1dcd1; text-align: center; }
-.review-gallery .review-panel blockquote { margin: 0; font-family: var(--serif); font-size: clamp(25px, 2.5vw, 34px); line-height: 1.36; letter-spacing: -.015em; }
-.review-gallery .review-panel figcaption { margin-top: 28px; font-size: 15px; line-height: 1.6; letter-spacing: .015em; }
+.review-gallery .review-panel { width: min(840px, calc(100% - 64px)); margin: 0 auto; padding: 40px clamp(26px, 4.5vw, 64px); background: #fffdf8; border: 1px solid #e1dcd1; text-align: center; }
+.review-gallery .review-panel blockquote { margin: 0; font-family: var(--serif); font-size: clamp(26px, 2.25vw, 30px); line-height: 1.36; letter-spacing: -.015em; }
+.review-gallery .review-panel figcaption { margin-top: 24px; font-size: 15px; line-height: 1.6; letter-spacing: .015em; }
 .review-gallery .review-navigation { display: none; }
 .review-gallery .review-status { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
 
@@ -16,7 +16,7 @@
 .review-gallery.reviews-ready .review-viewport.is-dragging { cursor: grabbing; }
 .review-gallery.reviews-ready .review-rail { display: flex; gap: 32px; align-items: stretch; transition: transform .65s cubic-bezier(.22, .68, .28, 1); will-change: transform; }
 .review-gallery.reviews-ready .review-panel {
-  flex: 0 0 min(76%, 840px); min-width: 0; min-height: 390px; margin: 0;
+  flex: 0 0 min(76%, 840px); min-width: 0; min-height: 340px; margin: 0;
   display: flex; flex-direction: column; justify-content: center;
   transform: scale(.94); opacity: .45;
   transition: transform .65s ease, opacity .65s ease, box-shadow .65s ease;
@@ -37,20 +37,20 @@
 .header-contact[aria-current=page] { background: var(--ink); color: var(--paper); }
 
 @media (max-width: 940px) {
-  .testimonials.review-gallery { padding-block: 80px; }
+  .testimonials.review-gallery { padding-block: 70px; }
   .review-gallery.reviews-ready .review-panel { flex-basis: 82%; }
-  .review-gallery .review-panel { padding: 36px; }
+  .review-gallery .review-panel { padding: 31px; }
 }
 @media (max-width: 650px) {
-  .testimonials.review-gallery { padding-block: 60px; }
-  .review-gallery .review-heading { margin-bottom: 22px; }
-  .review-gallery .review-heading h2 { font-size: 46px; }
+  .testimonials.review-gallery { padding-block: 52px; }
+  .review-gallery .review-heading { margin-bottom: 19px; }
+  .review-gallery .review-heading h2 { font-size: 41px; }
   .review-gallery .review-heading em { white-space: normal; }
-  .review-gallery .review-panel { width: calc(100% - 36px); padding: 30px 23px; }
+  .review-gallery .review-panel { width: calc(100% - 36px); padding: 26px 21px; }
   .review-gallery .review-panel blockquote { font-size: 24px; line-height: 1.36; }
-  .review-gallery .review-panel figcaption { font-size: 14px; margin-top: 24px; }
+  .review-gallery .review-panel figcaption { font-size: 14px; margin-top: 21px; }
   .review-gallery.reviews-ready .review-rail { gap: 12px; }
-  .review-gallery.reviews-ready .review-panel { flex-basis: 88%; min-height: 350px; }
+  .review-gallery.reviews-ready .review-panel { flex-basis: 88%; min-height: 306px; }
   .review-gallery.reviews-ready .review-navigation { gap: 20px; }
 }
 @media (prefers-reduced-motion: reduce) {

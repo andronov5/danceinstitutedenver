@@ -26,7 +26,7 @@ def title(value: str) -> str:
 def render_teachers(prefix: str = "../../") -> str:
     """Return alternating teacher rows with the complete supplied copy preserved."""
     blocks = REQUEST["about/teachers/index.html"]
-    biography = "".join(paragraph(value) for value in blocks[3:6])
+    biography = "".join(paragraph(value) for value in blocks[2:6])
     additional = "".join(
         f'''<article class="teacher-row" aria-labelledby="teacher-{index}">
           <div class="teacher-portrait teacher-empty-photo" aria-hidden="true"></div>
@@ -41,12 +41,7 @@ def render_teachers(prefix: str = "../../") -> str:
       <section class="section-shell teacher-rows">
         <article class="teacher-row" aria-labelledby="miss-michele">
           <figure class="teacher-portrait"><img src="{esc(prefix)}assets/images/miss-michele.webp" alt="{esc(blocks[1])}" loading="eager" fetchpriority="high" decoding="async"></figure>
-          <div class="teacher-biography"><h2 id="miss-michele">{esc(blocks[1])}</h2>{paragraph(blocks[2])}
-            <details class="teacher-bio-details">
-              <summary aria-label="Full biography for Miss Michele"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M5 12h14"/><path class="teacher-bio-plus" d="M12 5v14"/></svg></summary>
-              <div class="teacher-bio-rest">{biography}</div>
-            </details>
-          </div>
+          <div class="teacher-biography"><h2 id="miss-michele">{esc(blocks[1])}</h2>{biography}</div>
         </article>
         {additional}
       </section>
@@ -57,20 +52,28 @@ def render_policies(prefix: str = "../../") -> str:
     """Return the four supplied studio-policy sections without changing their copy."""
     blocks = REQUEST["about/studio-policies/index.html"]
     rules = "".join(f"<li>{esc(value)}</li>" for value in blocks[3:7])
-    sections = "".join(
-        f'''<section class="policy-section" aria-labelledby="policy-{anchor}">
+    attire = blocks[8]
+    for beginning in ("Female dancers", "Skirts may", "All dancers"):
+        attire = attire.replace(" " + beginning, "\n\n" + beginning)
+    attire_paragraphs = "".join(paragraph(value) for value in attire.split("\n\n"))
+    short_sections = "".join(
+        f'''<section class="policy-section policy-short policy-{anchor} reveal" aria-labelledby="policy-{anchor}">
           <h2 id="policy-{anchor}">{esc(blocks[index])}</h2>
           <div class="policy-copy">{paragraph(blocks[index + 1])}</div>
         </section>'''
-        for anchor, index in [("attire", 7), ("hair", 9), ("class-viewing", 11)]
+        for anchor, index in [("hair", 9), ("class-viewing", 11)]
     )
     return f'''<div class="policies-page">
       {title(blocks[0])}
       <div class="section-shell policies-content">
-        <section class="policy-section" aria-labelledby="policy-rules">
+        <section class="policy-section policy-rules-panel reveal" aria-labelledby="policy-rules">
           <h2 id="policy-rules">{esc(blocks[1])}</h2>
           <div class="policy-copy">{paragraph(blocks[2])}<ul class="policy-rules">{rules}</ul></div>
         </section>
-        {sections}
+        <section class="policy-section policy-attire-panel reveal" aria-labelledby="policy-attire">
+          <h2 id="policy-attire">{esc(blocks[7])}</h2>
+          <div class="policy-copy">{attire_paragraphs}</div>
+        </section>
+        {short_sections}
       </div>
     </div>'''

@@ -14,12 +14,12 @@ PLACEMENT_NOTE = "Class placement is determined by Dance Institute Instructors."
 
 
 def row(text: str) -> str:
-    """Keep each class name above its single-sentence description."""
+    """Keep the supplied name and description together in a compact card."""
     name, separator, description = text.partition("\n")
-    content = f"<strong>{html.escape(name)}</strong>"
+    content = f"<h3>{html.escape(name)}</h3>"
     if separator:
-        content += f"<br>{html.escape(description)}"
-    return f'<p class="classes-row">{content}</p>'
+        content += f"<p>{html.escape(description)}</p>"
+    return f'<article class="classes-row">{content}</article>'
 
 
 def render_classes(prefix: str = "../") -> str:
@@ -39,7 +39,11 @@ def render_classes(prefix: str = "../") -> str:
 
     out = f'''<div class="classes-page">
       <header class="page-intro section-shell"><h1 class="intro-title">{html.escape(title)}</h1></header>
-      <div class="section-shell classes-accordion">'''
+      <nav class="section-shell classes-jump" aria-label="Class categories">'''
+    for category in CATEGORIES:
+        identifier = category.lower().replace(" ", "-")
+        out += f'<a href="#{identifier}">{html.escape(category)}</a>'
+    out += '</nav><div class="section-shell classes-accordion">'
 
     for category in CATEGORIES:
         identifier = category.lower().replace(" ", "-")
@@ -50,5 +54,5 @@ def render_classes(prefix: str = "../") -> str:
             out += row(text)
         out += "</div></details>"
 
-    out += f'</div><div class="section-shell"><p class="classes-row">{html.escape(PLACEMENT_NOTE)}</p></div></div>'
+    out += f'</div><div class="section-shell"><p class="classes-placement">{html.escape(PLACEMENT_NOTE)}</p></div></div>'
     return out

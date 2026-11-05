@@ -1,23 +1,47 @@
-/* Restore the original information/photo column beside the inquiry form. */
+/* A single photograph-and-details panel keeps the original side-by-side form. */
 .contact-page .contact-layout {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
+  grid-template-columns: minmax(0, 448px) minmax(0, 1fr);
   align-items: start;
   gap: clamp(32px, 5vw, 72px);
 }
 .contact-page .contact-layout > * { min-width: 0; }
 .contact-page .contact-intro { display: block; }
+.contact-page .contact-visual-panel {
+  max-width: 448px;
+  overflow: hidden;
+  background: var(--ink);
+  color: var(--paper);
+  border-bottom: 4px solid var(--accent-pink, #d78eaf);
+}
+.contact-page .contact-photo-frame { position: relative; }
+.contact-page .contact-photo-frame::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 25%, rgb(37 46 66 / 18%) 42%, rgb(37 46 66 / 90%) 72%, var(--ink) 100%);
+  pointer-events: none;
+}
 .contact-page .contact-details {
-  margin-bottom: 26px;
-  padding-bottom: 24px;
-  border-bottom: 1px solid var(--line);
+  position: relative;
+  margin-top: -148px;
+  padding: 0 30px 30px;
+  background: linear-gradient(180deg, rgb(37 46 66 / 90%), var(--ink) 65%);
+}
+.contact-page .contact-details::before {
+  content: "";
+  position: absolute;
+  inset: -32px 0 auto;
+  height: 32px;
+  background: linear-gradient(180deg, transparent, rgb(37 46 66 / 90%));
+  pointer-events: none;
 }
 .contact-page .contact-address-link {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 24px;
-  width: fit-content;
+  width: 100%;
   max-width: 100%;
 }
 .contact-page .contact-address-link address {
@@ -31,19 +55,24 @@
   width: 22px;
   height: 22px;
   transform: rotate(-45deg);
+  color: var(--accent-pink-pale, #f6c6df);
 }
 .contact-page .contact-actions {
   display: grid;
   justify-items: start;
   gap: 7px;
-  margin-top: 18px;
+  margin-top: 22px;
+  padding-top: 20px;
+  border-top: 1px solid rgb(248 245 238 / 24%);
   font-size: 17px;
   line-height: 1.6;
 }
 .contact-page .contact-actions a { max-width: 100%; overflow-wrap: anywhere; }
-.contact-page .contact-details a:hover { color: var(--accent-raspberry, #9e2a62); }
+.contact-page .contact-details a:hover { color: var(--accent-pink-pale, #f6c6df); }
+.contact-page .contact-details a:focus-visible { outline-color: var(--accent-pink-pale, #f6c6df); }
 .contact-page .contact-intro .prose {
-  margin-bottom: 28px;
+  margin-top: 24px;
+  margin-bottom: 0;
   max-width: 50ch;
   font-size: 17px;
   line-height: 1.8;
@@ -61,11 +90,16 @@
 .contact-page .contact-form-panel { margin: 0; box-shadow: none; }
 .contact-page .contact-form { margin: 0; }
 .contact-page .form-status:empty { display: none; }
+@media (min-width: 761px) and (max-width: 1000px) {
+  .contact-page .contact-layout { grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr); }
+  .contact-page .contact-details { padding-inline: 24px; margin-top: -126px; }
+}
 @media (max-width: 760px) {
   .contact-page .contact-layout { grid-template-columns: minmax(0, 1fr); gap: 32px; }
   .contact-page .contact-intro { display: block; }
 }
 @media (max-width: 650px) {
+  .contact-page .contact-details { margin-top: -126px; padding: 0 24px 26px; }
   .contact-page .contact-address-link address { font-size: 24px; }
   .contact-page .contact-actions,
   .contact-page .contact-intro .prose { font-size: 16px; }

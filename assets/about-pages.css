@@ -44,38 +44,31 @@
 .teachers-page .teacher-biography p + p { margin-top: 1.4em; }
 .teachers-page .teacher-empty-photo { aspect-ratio: 1.25; background: #eeeae2; }
 .teachers-page .teacher-empty-bio { min-height: 7.4em; }
-.teachers-page .teacher-bio-details { margin-top: 24px; }
-.teachers-page .teacher-bio-details summary {
-  display: grid;
-  place-items: center;
-  width: 44px;
-  height: 44px;
-  list-style: none;
-  cursor: pointer;
-  border: 1px solid var(--line);
-  border-radius: 50%;
-  background: var(--paper);
-}
-.teachers-page .teacher-bio-details summary::-webkit-details-marker { display: none; }
-.teachers-page .teacher-bio-details summary:hover { background: var(--blush); }
-.teachers-page .teacher-bio-details summary svg { width: 20px; height: 20px; }
-.teachers-page .teacher-bio-details[open] .teacher-bio-plus { display: none; }
-.teachers-page .teacher-bio-rest { padding-top: 24px; }
 
 .policies-page .intro-title { font-size: clamp(48px, 6.5vw, 86px); }
-.policies-page .policies-content { max-width: 1100px; }
-.policies-page .policy-section {
+.policies-page .policies-content {
   display: grid;
-  grid-template-columns: minmax(0, .65fr) minmax(0, 1.35fr);
-  gap: clamp(30px, 5vw, 70px);
-  align-items: start;
+  grid-template-columns: minmax(0, .95fr) minmax(0, 1.15fr);
+  gap: 34px;
+  max-width: 1180px;
+  padding-bottom: 80px;
 }
-.policies-page .policy-section + .policy-section { margin-top: 50px; padding-top: 44px; border-top: 1px solid var(--line); }
-.policies-page .policy-section h2 { font-size: clamp(38px, 4.2vw, 54px); line-height: 1.1; }
-.policies-page .policy-copy { min-width: 0; max-width: 65ch; font-size: 17px; line-height: 1.85; }
-.policies-page .policy-rules { margin: 22px 0 0; padding-left: 21px; }
-.policies-page .policy-rules li { padding-left: 5px; }
-.policies-page .policy-rules li + li { margin-top: 14px; }
+.policies-page .policy-section { min-width: 0; padding: clamp(28px, 3.4vw, 42px); }
+.policies-page .policy-section h2 { font-size: clamp(38px, 4vw, 50px); line-height: 1.08; margin-bottom: 26px; }
+.policies-page .policy-copy { min-width: 0; font-size: 17px; line-height: 1.8; }
+.policies-page .policy-copy p + p { margin-top: 20px; }
+.policies-page .policy-rules-panel { background: var(--ink); color: var(--paper); box-shadow: 8px 8px 0 var(--blush); }
+.policies-page .policy-rules-panel h2 { max-width: 9ch; }
+.policies-page .policy-rules-panel .policy-copy > p { color: #e3dce0; }
+.policies-page .policy-rules { list-style: none; margin: 30px 0 0; padding: 0; }
+.policies-page .policy-rules li { position: relative; padding: 18px 0 18px 24px; border-top: 1px solid #ffffff2e; }
+.policies-page .policy-rules li::before { content: ''; position: absolute; top: 29px; left: 0; width: 6px; height: 6px; background: var(--pink); }
+.policies-page .policy-rules li:last-child { padding-bottom: 0; }
+.policies-page .policy-attire-panel { border: 1px solid #d7c8cc; border-top: 5px solid #bf8aa2; background: #fffaf6; }
+.policies-page .policy-attire-panel .policy-copy { color: #505664; }
+.policies-page .policy-short h2 { margin-bottom: 20px; font-size: clamp(36px, 3.4vw, 44px); }
+.policies-page .policy-hair { background: #eed7df; border-left: 4px solid #ac688a; }
+.policies-page .policy-class-viewing { background: #efede6; border: 1px solid var(--line); }
 
 @media (max-width: 760px) {
   .about-hub .about-hub-layout { grid-template-columns: minmax(0, 1fr); gap: 30px; }
@@ -85,7 +78,8 @@
   .teachers-page .teacher-portrait,
   .teachers-page .teacher-row:nth-child(even) .teacher-portrait { max-width: 420px; justify-self: start; }
   .teachers-page .teacher-row + .teacher-row { margin-top: 44px; padding-top: 44px; }
-  .policies-page .policy-section { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  .policies-page .policies-content { grid-template-columns: minmax(0, 1fr); gap: 28px; }
+  .policies-page .policy-rules-panel h2 { max-width: none; }
 }
 
 @media (max-width: 650px) {
@@ -96,6 +90,10 @@
   .teachers-page .teacher-biography h2 { margin-bottom: 22px; }
   .teachers-page .teacher-empty-bio { font-size: 16px; }
   .policies-page .policy-copy { font-size: 16px; }
-  .policies-page .policy-section + .policy-section { margin-top: 34px; padding-top: 30px; }
+  .policies-page .policies-content { padding-bottom: 55px; }
+  .policies-page .policy-section { padding: 27px 24px; }
+  .policies-page .policy-section h2 { margin-bottom: 22px; }
+  .policies-page .policy-rules-panel { box-shadow: 5px 5px 0 var(--blush); }
+  .policies-page .policy-rules { margin-top: 23px; }
 }
 

@@ -40,7 +40,6 @@ ROWS = [
 ]
 TITLE = '2026-2027 Classes Schedule'
 FOOTNOTE = '*Class placement is determined by Dance Institute Instructors'
-GRID_ICON = '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="3" width="18" height="18"/><path d="M3 9h18M3 15h18M9 3v18M15 3v18"/></svg>'
 
 
 def render_schedule(prefix='../'):
@@ -57,10 +56,8 @@ def render_schedule(prefix='../'):
             for day in DAYS
         )
         rows.append(f'<tr><th scope="row">{label}</th>{detail}{cells}</tr>')
-    source = f'{prefix}assets/images/class-schedule.png'
     return f'''<header class="page-intro section-shell schedule-intro"><h1 class="intro-title">{TITLE}</h1>
-      <div class="schedule-actions"><a class="button button-dark" href="{prefix}register/index.html">Register Now</a>
-      <a class="schedule-image-link" href="{source}" target="_blank" rel="noopener" data-schedule-image aria-label="View the original class schedule">{GRID_ICON}</a></div>
+      <div class="schedule-actions"><a class="button button-dark" href="{prefix}register/index.html">Register Now</a></div>
     </header>
     <div class="section-shell schedule-page" data-schedule>
       <div class="schedule-table-scroll" role="region" aria-label="Weekly class schedule. Scroll to browse classes and days." tabindex="0">
@@ -71,11 +68,7 @@ def render_schedule(prefix='../'):
         </table>
       </div>
       <p class="schedule-footnote" id="schedule-footnote">{FOOTNOTE}</p>
-    </div>
-    <dialog class="schedule-dialog" aria-label="Original 2026-2027 class schedule" data-schedule-dialog>
-      <button class="schedule-dialog-close" type="button" aria-label="Close full schedule" data-schedule-close>×</button>
-      <img src="{source}" width="962" height="772" alt="The original class schedule for 2026-2027. All class details are available in the weekly table on this page." loading="lazy">
-    </dialog>'''
+    </div>'''
 
 
 def expected_copy():
