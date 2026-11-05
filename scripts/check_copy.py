@@ -82,10 +82,16 @@ def check_copy(base: Path) -> None:
             checks.append((route, base / route, expected))
     source_pages = json.loads((ROOT/'reference/wix-content.json').read_text())
     for page in source_pages:
-        if page['name'] in {'Privacy Policy', 'Accessibility Statement'}:
-            checks.append((page['name'], base/PAGE_PATHS[page['name']], [b['text'] for b in page['data']['blocks']] + legal_extra_lines(page)))
-        elif page['name'] == 'Contact':
+        if page['name'] == 'Contact':
             checks.append(('Contact',base/'contact/index.html',[b['text'] for i,b in enumerate(page['data']['blocks']) if i != 1]))
+    # The user requested replacement of the archived Wix legal placeholders.
+    for route, page in json.loads((ROOT/'reference/legal-content.json').read_text()).items():
+        expected = [page['title'], page.get('introduction', ''), page.get('opening', '')]
+        for section in page['sections']:
+            parser = MainText()
+            parser.feed('<main>' + section['body'] + '</main>')
+            expected.extend([section['title'], ''.join(parser.pieces)])
+        checks.append((page['title'], base/route/'index.html', expected))
     missing: list[str] = []
     checked_blocks = 0
     for name, path, expected in checks:

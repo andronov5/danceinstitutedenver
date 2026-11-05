@@ -13,6 +13,7 @@ from render_summer import render_summer
 from render_contact import render_contact
 from render_reviews import render_reviews
 from render_shows import render_nutcracker, render_competition, render_recital
+from render_legal import render_legal
 
 ROOT = Path(__file__).resolve().parents[1]
 PAGES = json.loads((ROOT / 'reference/wix-content.json').read_text())
@@ -90,8 +91,7 @@ def main():
         prefix='../'*len(route.split('/'))
         write(ROOT/route/'index.html',shell(name,name,body,prefix))
     for name,route in [('Privacy Policy','privacy-policy'),('Accessibility Statement','accessibility-statement')]:
-        page=next(p for p in PAGES if p['name']==name)
-        body=render_page_content(page,ASSETS,'../').replace('<!--CONTACT_FORM-->',contact_form('../'))
+        body=render_legal(route)
         write(ROOT/route/'index.html',shell(name,name,body,'../'))
     aliases={'about-1':'about/teachers','about':'about/teachers','shows-and-competition':'shows-and-competition/nutcracker','nutcracker':'shows-and-competition/nutcracker','class-schedule':'schedule','performances':'shows-and-competition/nutcracker','competition':'shows-and-competition/competition','registration':'register','adult-kids-dance-classes':'dance-classes','courses':'dance-classes'}
     for old,new in aliases.items():

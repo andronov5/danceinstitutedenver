@@ -954,9 +954,9 @@
         "key": "accessibility-statement-title",
         "isVisible": true,
         "sortOrder": 94,
-        "title": "ACCESSIBILITY STATEMENT",
+        "title": "Accessibility Statement",
         "page": "accessibility-statement",
-        "text": "ACCESSIBILITY STATEMENT",
+        "text": "Accessibility Statement",
         "_id": "05a3456f-31e2-5e7e-8347-cc74be0397b7"
       },
       {
@@ -965,7 +965,7 @@
         "sortOrder": 95,
         "title": "Introduction 1",
         "page": "accessibility-statement",
-        "body": "At Dance Institute, we are dedicated to ensuring our dance studio is welcoming and accessible to everyone, including individuals with disabilities. We strive to provide an inclusive environment that empowers all students to express themselves through dance.",
+        "body": "Last updated: November 5, 2026.",
         "_id": "ffa1173e-7f51-52b6-a247-3ff35ce852bc"
       },
       {
@@ -974,7 +974,7 @@
         "sortOrder": 96,
         "title": "Opening paragraph 1",
         "page": "accessibility-statement",
-        "body": "This statement was last updated on [enter relevant date]. We at Dance Institute are committed to making our studio and website accessible to all individuals, ensuring everyone can engage with our dance programs.",
+        "body": "Dance Institute is committed to making information about our classes, events, and registration accessible to people with disabilities. If something on this website prevents you from getting the information or help you need, please contact our team.",
         "_id": "3ea4adce-c9a2-5773-9e7f-102c2bae5554"
       }
     ],
@@ -3022,8 +3022,8 @@
         "isVisible": true,
         "sortOrder": 0,
         "page": "privacy-policy",
-        "title": "A legal disclaimer",
-        "body": "<p>The explanations and information provided on this page are only general and high-level explanations and information on how to write your own document of a Privacy Policy. You should not rely on this article as legal advice or as recommendations regarding what you should actually do, because we cannot know in advance what are the specific privacy policies you wish to establish between your business and your customers and visitors. We recommend that you seek legal advice to help you understand and to assist you in the creation of your own Privacy Policy.</p>",
+        "title": "About this notice",
+        "body": "<p><strong>Last updated: November 5, 2026.</strong></p><p>This notice explains how information is handled when you visit this Dance Institute website, contact our Denver studio, or follow our registration links. Dance Institute is located at 10515 E 40th Ave, #114, Denver, CO 80239. Third-party services, including Sawyer registration, also have their own privacy notices.</p>",
         "_id": "0d68b94c-a273-54fe-9014-62291233f7d8"
       },
       {
@@ -3031,8 +3031,8 @@
         "isVisible": true,
         "sortOrder": 1,
         "page": "privacy-policy",
-        "title": "Privacy Policy - the basics",
-        "body": "<p>Having said that, a privacy policy is a statement that discloses some or all of the ways a website collects, uses, discloses, processes, and manages the data of its visitors and customers. It usually also includes a statement regarding the website’s commitment to protecting its visitors’ or customers’ privacy, and an explanation about the different mechanisms the website is implementing in order to protect privacy. </p><p>Different jurisdictions have different legal obligations of what must be included in a Privacy Policy. You are responsible to make sure you are following the relevant legislation to your activities and location. </p>",
+        "title": "Information you provide",
+        "body": "<ul><li><strong>Inquiries:</strong> your name, email address, optional phone number, and anything you include in your message.</li><li><strong>Registration:</strong> the parent or guardian, dancer, class, membership, and transaction details submitted through Sawyer. The information requested depends on the program and its registration forms.</li><li><strong>Website content:</strong> photos, teacher biographies, and testimonials provided for publication. Published content is visible to people who can access the website.</li></ul><p>The contact form prepares a draft in your email application. It does not send a message to the studio or save a submission in this website's database. You must send the draft from your email application for us to receive it. Your email provider also processes that communication.</p><p>Please do not include payment card details, government identification numbers, or medical information in a general inquiry. Contact the studio if you need to discuss information that requires a more appropriate channel.</p>",
         "_id": "a06e338a-f688-57b7-b875-d6a0692d3158"
       },
       {
@@ -3040,17 +3040,71 @@
         "isVisible": true,
         "sortOrder": 2,
         "page": "privacy-policy",
-        "title": "What to include in the Privacy Policy",
-        "body": "<p>Generally speaking, a Privacy Policy often addresses these types of issues: the types of information the website is collecting and the manner in which it collects the data; an explanation about why is the website collecting these types of information; what are the website’s practices on sharing the information with third parties; ways in which your visitors and customers can exercise their rights according to the relevant privacy legislation; the specific practices regarding minors’ data collection; and much, much more. </p><p>\nTo learn more about this, check out our article “<a href=\"https://support.wix.com/en/article/creating-a-privacy-policy\" target=\"_blank\" rel=\"noopener noreferrer\">Creating a Privacy Policy</a>”.</p>",
+        "title": "How information is used",
+        "body": "<p>Information you send to the studio is used to answer your questions, help with class placement and registration, administer classes and events, communicate program changes, maintain relevant business records, and address safety or legal matters. Photos and testimonials displayed on the site help introduce our studio and community.</p><p>Registration and payment information is handled through Sawyer and its payment providers. This website's contact form does not collect card payments. Please review the information and choices shown in Sawyer before completing a registration or purchase.</p>",
         "_id": "b6d9a3e1-a6a4-529f-98d0-52ac0a89059f"
+      },
+      {
+        "key": "privacy-policy-4",
+        "isVisible": true,
+        "sortOrder": 3,
+        "page": "privacy-policy",
+        "title": "Website services, cookies, and links",
+        "body": "<p>Loading this website sends technical information, such as your IP address, browser information, requested page or file, and request time, to the services delivering it. We use website hosting services and Wix for website content, images, and authorized staff editing.</p><p>The custom website code does not add advertising pixels or store contact-form entries in cookies or browser storage. This does not mean that hosting or third-party services collect no information. Those services may use logs, cookies, or similar technologies for their own functionality, security, analytics, or other purposes described in their notices.</p><p>The Register page contains an embedded Sawyer widget. When that widget loads, your browser connects to Sawyer even before you submit a registration. Sawyer may use cookies and other technologies under its <a href=\"https://www.hisawyer.com/privacy\" target=\"_blank\" rel=\"noopener noreferrer\">Privacy Notice</a>. Wix's handling of information is described in its <a href=\"https://www.wix.com/about/privacy\" target=\"_blank\" rel=\"noopener noreferrer\">Privacy Policy</a>.</p><p>Map links open Google Maps; other external links open services with their own privacy practices. You can manage cookies through your browser and any controls offered by those services. Blocking cookies may affect registration or sign-in. You can also contact the studio by phone or email for registration assistance.</p>",
+        "_id": "318978ae-21ef-5402-97bd-cdb9aa40638c"
+      },
+      {
+        "key": "privacy-policy-5",
+        "isVisible": true,
+        "sortOrder": 4,
+        "page": "privacy-policy",
+        "title": "Sharing and service providers",
+        "body": "<p>Information may be handled by the services needed to operate the website, deliver email, manage registrations, or process payments, and by studio staff working on your inquiry or enrollment. Information may also be disclosed when required by law or necessary to address fraud, safety, or the protection of legal rights.</p><p>The custom website has no feature for selling visitor information, running targeted advertising, or making automated decisions about admission or class placement. Third-party services may have additional practices, as described in their own notices. Their processing and storage may take place in the United States or other countries.</p>",
+        "_id": "13dcb6b2-8d73-5c07-9481-ae55beb8012b"
+      },
+      {
+        "key": "privacy-policy-6",
+        "isVisible": true,
+        "sortOrder": 5,
+        "page": "privacy-policy",
+        "title": "Children, photographs, and testimonials",
+        "body": "<p>Our programs serve children and adults. A parent or guardian should manage a child's registration and inquiries. Children under 13 should not submit personal information through the contact form themselves. Please contact the studio if you believe a child has provided information without appropriate parent or guardian involvement so we can review and address it.</p><p>If you have a concern about a photo, name, or testimonial on the website, or want to request its correction or removal, email us with the page link and enough detail to identify the content. If the request concerns a child, tell us your relationship to that child. We may need to confirm your authority before acting. Removing content from our website cannot remove copies previously saved by others or held independently by another service.</p>",
+        "_id": "3f6fec5d-7715-55ef-8678-8fb5de20239a"
+      },
+      {
+        "key": "privacy-policy-7",
+        "isVisible": true,
+        "sortOrder": 6,
+        "page": "privacy-policy",
+        "title": "Retention and security",
+        "body": "<p>Relevant retention needs can differ for inquiries, registration records, transaction records, and published content. They include responding to your request, operating the program, resolving issues, and meeting applicable recordkeeping obligations. Contact us to ask about information held by the studio or request deletion; service providers may have separate retention requirements.</p><p>The website uses HTTPS, and its content-management functions require authorized Wix access. No website, email system, or storage service can guarantee absolute security. Please use the registration provider's payment process rather than sending payment details by email.</p>",
+        "_id": "92902805-8b33-55a9-9301-8b2630ede6b4"
+      },
+      {
+        "key": "privacy-policy-8",
+        "isVisible": true,
+        "sortOrder": 7,
+        "page": "privacy-policy",
+        "title": "Your choices and privacy requests",
+        "body": "<p>You can contact us to ask what personal information the studio holds about you, request a copy, correct inaccurate information, or request deletion. Depending on the law that applies, you may also have rights to receive a portable copy, withdraw consent, or opt out of certain uses, including sale, targeted advertising, or qualifying profiling. The availability of a legal right depends on its applicable requirements; this notice does not limit those rights.</p><p>Email <a href=\"mailto:dance@danceinstitutedenver.com\" data-cms-target=\"cms-621\">dance@danceinstitutedenver.com</a> with the subject Privacy Request, or call <a href=\"tel:+13035250011\" data-cms-target=\"cms-618\">303-525-0011</a>. Describe your request and the relevant interaction with the studio. Do not send identity documents or passwords in your initial message. We may ask for information reasonably necessary to verify your identity or authority and will handle applicable legal requests within the required time limits.</p><p>Some records may need to be retained to meet legal obligations or resolve transactions. If a request is declined, you can ask us to review that decision by replying to our response. Where applicable, you may also raise a concern with the <a href=\"https://coag.gov/file-complaint/\" target=\"_blank\" rel=\"noopener noreferrer\">Colorado Attorney General</a> or another relevant authority. For information controlled independently by Sawyer, Wix, or another provider, use the request options in that provider's privacy notice.</p>",
+        "_id": "5b968ba1-8ea7-552f-929b-0b303a6a5bbd"
+      },
+      {
+        "key": "privacy-policy-9",
+        "isVisible": true,
+        "sortOrder": 8,
+        "page": "privacy-policy",
+        "title": "Contact and updates",
+        "body": "<p><strong>Dance Institute</strong><br>10515 E 40th Ave, #114<br>Denver, CO 80239<br><a href=\"mailto:dance@danceinstitutedenver.com\" data-cms-target=\"cms-622\">dance@danceinstitutedenver.com</a><br><a href=\"tel:+13035250011\" data-cms-target=\"cms-619\">303-525-0011</a> — call or text</p><p>We may update this notice when website features or information practices change. The date at the beginning identifies the latest revision. Any additional notice or consent required by applicable law will be handled separately; visiting this page is not consent to every possible use of personal information.</p>",
+        "_id": "0cdff328-5dc4-5a8e-b024-c531da7d14bf"
       },
       {
         "key": "accessibility-statement-1",
         "isVisible": true,
         "sortOrder": 0,
         "page": "accessibility-statement",
-        "title": "What web accessibility is",
-        "body": "<p>An accessible platform allows everyone, regardless of ability, to participate in our dance classes and activities with ease and enjoyment. Our goal is to accommodate all students, ensuring they have equal access to our resources.</p>",
+        "title": "Our accessibility goal",
+        "body": "<p>Our goal is to work toward the <a href=\"https://www.w3.org/TR/WCAG22/\" target=\"_blank\" rel=\"noopener noreferrer\">Web Content Accessibility Guidelines (WCAG) 2.2, Level AA</a>. These guidelines help make websites easier to perceive, navigate, understand, and use with assistive technology.</p><p>The website has not completed a comprehensive accessibility evaluation, so we do not claim full WCAG conformance. This statement describes the features currently implemented and the limitations we know about.</p>",
         "_id": "4ef5df7c-8438-555a-b4d7-f7a5eb7c905d"
       },
       {
@@ -3058,8 +3112,8 @@
         "isVisible": true,
         "sortOrder": 1,
         "page": "accessibility-statement",
-        "title": "Accessibility adjustments on this site",
-        "body": "<p>We have adapted our website in accordance with WCAG 2.1 guidelines and have made it accessible to the level of AA. Our site is compatible with assistive technologies, such as screen readers, to enhance the user experience for all visitors.</p><ul><li>Utilized accessibility tools to identify and rectify issues</li><li>Set the language for our site</li><li>Organized content for easy navigation</li><li>Established clear headings on all pages</li><li>Provided alternative text for images</li><li>Ensured color contrast meets accessibility standards</li><li>Minimized motion effects on the site</li><li>Made sure all multimedia content is accessible</li></ul>",
+        "title": "Features that support access",
+        "body": "<ul><li>Headings, navigation landmarks, and a Skip to Main Content link help visitors move through each page.</li><li>Navigation controls, gallery buttons, and form fields have text labels and keyboard focus indicators.</li><li>Informative images have text alternatives; decorative images are marked accordingly.</li><li>The weekly schedule is an HTML table with row and column headings.</li><li>Browser zoom is available, and the design adapts to different screen sizes.</li><li>Scroll effects and automatic gallery movement respect your device's reduced-motion preference. Galleries and testimonials also stop automatic movement while their controls have keyboard focus or the pointer is over them.</li></ul>",
         "_id": "a0ffd5df-020b-52a2-acce-3f738cbaa6f9"
       },
       {
@@ -3067,8 +3121,8 @@
         "isVisible": true,
         "sortOrder": 2,
         "page": "accessibility-statement",
-        "title": "We acknowledge partial compliance with the standard due to certain third-party content.",
-        "body": "<p>The accessibility of specific pages relies on content from [enter relevant third-party name]. The following pages may not fully comply: [list URLs of affected pages]. We declare partial compliance for these pages.</p>",
+        "title": "Known limitations and alternatives",
+        "body": "<ul><li><strong>Small-screen schedule:</strong> the full week is shown together, which makes text small on a phone. Browser zoom or a larger screen may help. Call or email us for help finding a class or for the schedule in another format.</li><li><strong>Moving galleries:</strong> galleries and testimonials do not currently have a persistent pause button. Enable Reduce Motion in your device's accessibility settings to stop automatic advancement, or keep keyboard focus within the gallery while reading.</li><li><strong>Third-party registration:</strong> Sawyer's embedded registration and checkout are provided separately, and we do not control every part of their accessibility. Contact the studio if you have trouble completing a task.</li><li><strong>Contact form:</strong> submitting prepares an email draft and requires an email application. If it does not open, email the studio directly or call us.</li></ul><p>New photos and edited content may introduce additional barriers. Please tell us about missing image descriptions, hard-to-read content, or controls that do not work for you.</p>",
         "_id": "e1658768-2df1-5389-a405-f443d1ad571c"
       },
       {
@@ -3076,8 +3130,8 @@
         "isVisible": true,
         "sortOrder": 3,
         "page": "accessibility-statement",
-        "title": "Accessibility arrangements in the organization",
-        "body": "<p>Our studio locations are equipped with ramps and designated parking for individuals with disabilities. We ensure that all spaces, including classrooms and restrooms, are accessible and welcoming. Additional support services are available upon request.</p>",
+        "title": "Using the website",
+        "body": "<p>The site uses standard HTML, CSS, and JavaScript. Use a current browser and any assistive technology you normally use. JavaScript is needed for live content updates, interactive galleries, and the embedded registration experience; the site's basic information and contact links remain available without those features.</p><p>Our review has included source-code and functional checks. Compatibility has not been comprehensively verified across browser and screen-reader combinations, and not every editable color or layout state has been tested.</p>",
         "_id": "2c16e90c-a7d1-5051-8e53-7eafba257a5a"
       },
       {
@@ -3085,8 +3139,8 @@
         "isVisible": true,
         "sortOrder": 4,
         "page": "accessibility-statement",
-        "title": "Requests, issues, and suggestions",
-        "body": "<p>If you encounter any accessibility issues or need assistance, please reach out to our accessibility coordinator:</p><ul><li>[Name of the accessibility coordinator]</li><li>[Telephone number of the accessibility coordinator]</li><li>[Email address of the accessibility coordinator]</li><li>[Additional contact details if relevant]</li></ul>",
+        "title": "Request help or report a barrier",
+        "body": "<p>Email <a href=\"mailto:dance@danceinstitutedenver.com\" data-cms-target=\"cms-667\">dance@danceinstitutedenver.com</a> or call or text <a href=\"tel:+13035250011\" data-cms-target=\"cms-665\">303-525-0011</a>. Please include the page link, what you were trying to do, the difficulty you encountered, and how you would prefer us to contact you. You may include your browser or assistive technology if that would help; you do not need to share a diagnosis.</p><p>Our team can help explain class schedules and program information and discuss an alternative way to complete your task. For a time-sensitive registration or show question, please call. If your concern remains unresolved, contact us again and ask for studio management to review it.</p><p>For questions about visiting the studio or accessibility at a performance venue, please contact us before your visit so we can discuss the location and your needs. This website statement does not certify the accessibility of a building or venue.</p><p><strong>Dance Institute</strong><br>10515 E 40th Ave, #114<br>Denver, CO 80239</p>",
         "_id": "4ba9d3c7-9694-5408-a554-6d0709c56164"
       }
     ]
