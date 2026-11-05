@@ -13,6 +13,9 @@
   'use strict';
   var own = Function.call.bind(Object.prototype.hasOwnProperty);
   var MAX_TEXT = 100000;
+  var EDITABLE_ATTRIBUTES = new Set(['datetime', 'aria-label', 'placeholder', 'content',
+    'data-expand-label', 'data-collapse-label', 'data-feedback-message',
+    'data-subject', 'data-open-label', 'data-close-label']);
   function text(value) {
     if (value === null || value === undefined) return '';
     if (typeof value !== 'string' && typeof value !== 'number' && typeof value !== 'boolean') throw new Error('Invalid CMS field value');
@@ -82,6 +85,23 @@
       var orderB = Number.isFinite(b.sortOrder) ? b.sortOrder : 0;
       return orderA - orderB;
     });
+  }
+  function contentCollections(manifest) {
+    if (!manifest || !Array.isArray(manifest.records) || !Array.isArray(manifest.lists) || !Array.isArray(manifest.galleries)) throw new Error('Invalid CMS binding manifest');
+    var names = new Set();
+    function collect(entry, depth) {
+      if (!entry || typeof entry.collection !== 'string' || !entry.collection || depth > 4) throw new Error('Invalid CMS collection binding');
+      names.add(entry.collection);
+      if (entry.children !== undefined) {
+        if (!Array.isArray(entry.children)) throw new Error('Invalid nested CMS lists');
+        entry.children.forEach(function (child) {
+          if (!child.match || typeof child.match.field !== 'string' || typeof child.match.parentField !== 'string') throw new Error('Missing nested CMS relationship');
+          collect(child, depth + 1);
+        });
+      }
+    }
+    manifest.records.concat(manifest.lists, manifest.galleries).forEach(function (entry) { collect(entry, 0); });
+    return Array.from(names);
   }
   function sanitizeHtml(document, value, base, current, inlineOnly) {
     var template = document.createElement('template');
@@ -163,11 +183,11 @@
           lines.forEach(function (line, index) { if (index) node.appendChild(context.document.createElement('br')); node.appendChild(context.document.createTextNode(line)); });
         } else if (kind === 'addressInline') node.textContent = string.replace(/\s*\r?\n\s*/g, ' · ');
         else if (kind === 'attribute') {
-          if (field.attribute !== 'datetime') throw new Error('Unsupported CMS attribute');
-          if (string) node.setAttribute('datetime', string); else node.removeAttribute('datetime');
+          if (!EDITABLE_ATTRIBUTES.has(field.attribute)) throw new Error('Unsupported CMS attribute');
+          if (string) node.setAttribute(field.attribute, string); else node.removeAttribute(field.attribute);
         } else if (kind === 'image') {
           var source = imageUrl(value, context.adapter, context.base);
-          if (source) { node.src = source; node.removeAttribute('srcset'); node.removeAttribute('sizes'); }
+          if (source) { node.src = source; node.hidden = false; node.removeAttribute('srcset'); node.removeAttribute('sizes'); }
           else { node.removeAttribute('src'); node.hidden = true; }
           if (field.altField) node.alt = text(row[field.altField]);
           var x = coordinate(row[field.xField]);
@@ -182,7 +202,7 @@
           else if (kind === 'sawyer') url = sawyerUrl(string);
           else throw new Error('Unsupported CMS field type: ' + kind);
           var attribute = kind === 'formEmail' ? 'action' : kind === 'sawyer' && node.tagName === 'IFRAME' ? 'src' : 'href';
-          if (url) { node.setAttribute(attribute, url); node.removeAttribute('aria-disabled'); }
+          if (url) { node.setAttribute(attribute, url); node.removeAttribute('aria-disabled'); if (kind === 'sawyer') node.hidden = false; }
           else { node.removeAttribute(attribute); node.setAttribute('aria-disabled', 'true'); if (kind === 'sawyer') node.hidden = true; }
           if (node.getAttribute('target') === '_blank') node.setAttribute('rel', 'noopener noreferrer');
         }
@@ -190,32 +210,56 @@
     });
   }
   function hydrate(document, manifest, collections, adapter, base) {
-    if (!manifest || !Array.isArray(manifest.records) || !Array.isArray(manifest.lists) || !Array.isArray(manifest.galleries)) throw new Error('Invalid CMS binding manifest');
-    var draft = document.body.cloneNode(true);
+    // Validate nested collections even when their parent list is empty/hidden.
+    // A broken snapshot must not partially replace a complete page or its title.
+    contentCollections(manifest).forEach(function (name) { visibleRows(collections[name]); });
+    var draft = document.documentElement.cloneNode(true);
     var context = { document: document, adapter: adapter, base: base, current: document.URL };
     var entries = manifest.records.concat(manifest.lists, manifest.galleries);
     var selectors = Array.from(new Set(entries.map(function (entry) { return entry.selector; })));
     selectors.forEach(function (selector) { if (!draft.querySelector(selector)) throw new Error('CMS page target is missing'); });
+    // Undo only visibility previously imposed by CMS records. Keep the original
+    // state of conditional UI (menus, empty optional links, disclosure controls).
+    selectors.forEach(function (selector) {
+      var target = draft.querySelector(selector);
+      if (target.hasAttribute('data-cms-hidden')) {
+        target.hidden = target.getAttribute('data-cms-hidden') === 'true';
+        target.removeAttribute('data-cms-hidden');
+      }
+    });
+    var hiddenRecords = new Set();
     manifest.records.forEach(function (entry) {
       var target = draft.querySelector(entry.selector);
       var row = visibleRows(collections[entry.collection]).find(function (item) { return item.key === entry.key; });
-      if (!row) { target.hidden = true; return; }
+      if (!row) { hiddenRecords.add(target); return; }
       applyFields(target, row, entry.fields, context);
     });
-    manifest.lists.forEach(function (entry, groupIndex) {
-      var target = draft.querySelector(entry.selector);
-      var rows = visibleRows(collections[entry.collection], entry.filter);
+    function fillList(target, entry, groupKey, parentRow) {
+      var filter = entry.filter ? Object.assign({}, entry.filter) : undefined;
+      if (parentRow) {
+        filter = filter || {};
+        filter[entry.match.field] = parentRow[entry.match.parentField];
+      }
+      var rows = visibleRows(collections[entry.collection], filter);
       var template = document.createElement('template');
       template.innerHTML = entry.template;
       if (template.content.children.length !== 1) throw new Error('Invalid CMS list template');
       var fragment = document.createDocumentFragment();
       rows.forEach(function (row, index) {
         var item = template.content.firstElementChild.cloneNode(true);
-        uniqueIds(item, 'cms-' + groupIndex + '-' + index);
+        uniqueIds(item, 'cms-' + groupKey + '-' + index);
         applyFields(item, row, entry.fields, context);
+        (entry.children || []).forEach(function (child, childIndex) {
+          var container = item.querySelector(child.selector);
+          if (!container) throw new Error('Nested CMS template target is missing');
+          fillList(container, child, groupKey + '-' + index + '-' + childIndex, row);
+        });
         fragment.appendChild(item);
       });
       target.replaceChildren(fragment);
+    }
+    manifest.lists.forEach(function (entry, groupIndex) {
+      fillList(draft.querySelector(entry.selector), entry, String(groupIndex));
     });
     manifest.galleries.forEach(function (entry) {
       var target = draft.querySelector(entry.selector);
@@ -234,6 +278,12 @@
       var stage = target.querySelector('[data-show-stage]');
       if (photos.length && image) { image.src = photos[0].src; image.alt = photos[0].alt; image.style.objectPosition = photos[0].position; }
       if (photos.length && stage) stage.setAttribute('aria-label', photos[0].alt);
+    });
+    // A section's visibility wins over another binding on the same element,
+    // including galleries that normally reveal themselves when photos exist.
+    hiddenRecords.forEach(function (target) {
+      target.setAttribute('data-cms-hidden', String(target.hidden));
+      target.hidden = true;
     });
     // Prepare every replacement before touching the visible document. Nested
     // bindings are already contained in their ancestor's prepared replacement.
@@ -256,7 +306,7 @@
       var config = await configResponse.json();
       if (!config || config.enabled !== true) return { status: 'bundled' };
       var manifest = JSON.parse(marker.textContent);
-      var ids = Array.from(new Set(manifest.records.concat(manifest.lists, manifest.galleries).map(function (entry) { return entry.collection; })));
+      var ids = contentCollections(manifest);
       var collections = await adapter.loadCollections(config, ids, { signal: controller.signal, timeoutMs: 4500 });
       if (controller.signal.aborted) throw new Error('CMS content request timed out');
       return hydrate(document, manifest, collections, adapter, base);
@@ -267,5 +317,5 @@
       return { status: 'fallback' };
     } finally { clearTimeout(timer); }
   }
-  return Object.freeze({ safeUrl: safeUrl, phoneHref: phoneHref, emailHref: emailHref, mapHref: mapHref, sawyerUrl: sawyerUrl, coordinate: coordinate, visibleRows: visibleRows, sanitizeHtml: sanitizeHtml, hydrate: hydrate, start: start });
+  return Object.freeze({ safeUrl: safeUrl, phoneHref: phoneHref, emailHref: emailHref, mapHref: mapHref, sawyerUrl: sawyerUrl, coordinate: coordinate, visibleRows: visibleRows, contentCollections: contentCollections, sanitizeHtml: sanitizeHtml, hydrate: hydrate, start: start });
 });

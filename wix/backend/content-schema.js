@@ -8,7 +8,8 @@ export const PUBLIC_COLLECTIONS = {
     "name",
     "phone",
     "email",
-    "address"
+    "address",
+    "phoneSuffix"
   ],
   "DiImages": [
     "key",
@@ -29,6 +30,8 @@ export const PUBLIC_COLLECTIONS = {
     "page",
     "text",
     "body",
+    "expandLabel",
+    "collapseLabel",
     "dateTime"
   ],
   "DiLinks": [
@@ -54,12 +57,34 @@ export const PUBLIC_COLLECTIONS = {
     "title",
     "quote"
   ],
-  "DiClassCategories": [
+  "DiPages": [
     "key",
     "isVisible",
     "sortOrder",
     "title",
-    "categoryOrder"
+    "page",
+    "description"
+  ],
+  "DiSections": [
+    "key",
+    "isVisible",
+    "sortOrder",
+    "title",
+    "page"
+  ],
+  "DiContentBlocks": [
+    "key",
+    "isVisible",
+    "sortOrder",
+    "page",
+    "title",
+    "body",
+    "image",
+    "alt",
+    "focalX",
+    "focalY",
+    "label",
+    "url"
   ],
   "DiClasses": [
     "key",
@@ -68,6 +93,13 @@ export const PUBLIC_COLLECTIONS = {
     "title",
     "description",
     "category",
+    "categoryOrder"
+  ],
+  "DiClassCategories": [
+    "key",
+    "isVisible",
+    "sortOrder",
+    "title",
     "categoryOrder"
   ],
   "DiTeachers": [
@@ -174,5 +206,13 @@ export const PUBLIC_COLLECTIONS = {
     "price",
     "description",
     "url"
+  ],
+  "DiLegalSections": [
+    "key",
+    "isVisible",
+    "sortOrder",
+    "page",
+    "title",
+    "body"
   ]
 };

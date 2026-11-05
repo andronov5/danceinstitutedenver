@@ -25,11 +25,13 @@ Run the normal site renderer before generating bindings. Do not run the binding 
 
 ## One-time setup
 
-The initial collection creation, 206-item import and 16 media uploads are complete; see `cms/provisioning.json`. Resume at backend installation below. No frontend or domain was migrated, and no Wix site was published during this setup.
+The initial 19-collection creation, 206-item import and 16 media uploads are recorded in `cms/provisioning.json`. The expanded model contains 23 collections; incremental schema/data sync results are recorded in `cms/sync-report.json`. Resume at backend installation below. No frontend or domain was migrated, and no Wix site was published during this setup.
 
 1. **Check the site identity.** Open the shared My Site project and confirm its site ID above. Inspect existing collections before creating or updating anything.
 2. **Create/update the content collections** according to `cms/collections.json`, preserving the exact IDs and field keys. The schema uses admin-only collection permissions. Michele must have the appropriate owner/admin CMS access. The public website does not receive write access.
 3. **Seed the live data** from `cms/seed.json`, preserving `_id`, `key`, `sortOrder`, `isVisible` and the content fields. Confirm all required collections exist, including empty ones. Do not re-import initial seed records over Michele’s later edits. If an Image field does not accept a bundled relative image path, import that media into Wix or use a verified absolute HTTPS image URL while retaining the correct photograph and crop.
+
+   For an already provisioned site, use `scripts/sync_cms_plan.py` and its last applied baseline instead of a bulk overwrite. It adds missing schema/items and applies only guarded, field-level updates where the Wix value still matches the previous baseline; edited values are reported and preserved. Never advance the baseline before checking the actual per-item results.
 4. **Install the backend files** in the same Wix site: put the function in `Backend/http-functions.js` and the allowlist in `Backend/content-schema.js`. If `http-functions.js` already has functions, merge these exports rather than replacing existing code. Preserve the import path `backend/content-schema.js`.
 5. **Check allowed origins.** `ALLOWED_ORIGINS` in the backend lists the current preview and studio-domain origins. Add the verified production frontend origin if it changes. An origin is only the scheme and hostname, with no path or trailing slash. An origin allowlist is not authentication: everything returned by this endpoint is public website content.
 6. **Publish the backend deliberately.** Wix’s production HTTP-function endpoint requires publication. Publishing the Wix site can also publish other pending editor changes, so inspect the pending site state first. Backend deployment is a separate step from moving the custom frontend or connecting the studio domain.

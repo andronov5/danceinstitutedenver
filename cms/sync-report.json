@@ -1,0 +1,3035 @@
+{
+  "mode": "apply",
+  "siteId": "f3c88b1a-e358-495d-bcfd-78c490531ee8",
+  "sourceDigest": "0d23be34e902234ed17525957e979a3ffe7b2fe317275e1e71943ad9457f9619",
+  "status": "APPLIED_VERIFIED",
+  "collections": [
+    {
+      "id": "DiStudio",
+      "existingItems": 1,
+      "createCollection": false,
+      "addFields": [
+        "phoneSuffix"
+      ],
+      "insertIds": [],
+      "patchItems": [
+        {
+          "id": "d42556b4-9afc-50dc-9f97-1e70122cb322",
+          "fields": [
+            "phoneSuffix"
+          ],
+          "reason": "update"
+        }
+      ]
+    },
+    {
+      "id": "DiImages",
+      "existingItems": 7,
+      "createCollection": false,
+      "addFields": [],
+      "insertIds": [],
+      "patchItems": []
+    },
+    {
+      "id": "DiPageContent",
+      "existingItems": 64,
+      "createCollection": false,
+      "addFields": [
+        "expandLabel",
+        "collapseLabel"
+      ],
+      "insertIds": [
+        "6c43d568-fe59-5c4d-b95d-526da03960d6",
+        "24970ed2-ff59-5b36-8fa2-7f4096511260",
+        "3450d2d8-1414-5683-8dab-3f89016e00ea",
+        "bbfd9627-dee0-59ef-bf9c-b4071b7dd0d8",
+        "2e5acde2-803f-5ba6-85f8-d8a7c4bae4f6",
+        "01552db2-0ff1-5715-98ce-2b478b95c447",
+        "82aaa194-67c9-58f2-9c56-aedcf9f7ff91",
+        "571a7b95-1c17-5333-8b8d-1f80309e849f",
+        "a9b72236-419c-5b35-925e-ddd45720f63a",
+        "d34fb970-49b6-51a2-b18b-115cbee28b95",
+        "f975d50e-6a9d-53a9-a557-8015afb5f2b2",
+        "394fdcec-8a12-51d4-b914-54851c83ac39",
+        "66db0c77-ba06-553a-92f2-f2be11db03fc",
+        "e397506c-4cb1-5a91-9dae-3496986836d8",
+        "0426c0ff-7783-56c2-850d-240d8fa62275",
+        "faf2724d-a02d-588f-af7d-4da1a17de60c",
+        "1507cb0f-c64d-569e-a519-8e9ba92aeed4",
+        "acaedf41-a47a-537e-b092-9848cbee0a83",
+        "9cead242-11fe-5591-9bd7-2feaa6fb378d",
+        "02b1c99c-85c3-5182-9cf6-ecdd575e9027",
+        "a77dda26-669b-58b6-afe3-03bed24085dd",
+        "a3c61071-e5c5-529c-ac85-938d89d481f5",
+        "61e708b4-9ab1-50fe-8238-a5dd9f100647",
+        "20574198-a000-5aad-9f39-03f8edcd6d48",
+        "4241e3d6-298b-5a67-81e1-b328d2313997",
+        "5e3d47c8-9d89-50d7-9c59-2c9c2f870104",
+        "12a8441c-6aa8-5c43-8ca6-6743c3b11497",
+        "3a59997d-237d-5330-9dbb-150d298f6f04",
+        "b9cd0fef-ce70-57ba-8ff4-c913295deaaf",
+        "9dc97b49-faeb-535c-9257-323079e616d5",
+        "e65121c2-d099-540e-a949-a2dcb327ccb2",
+        "05a3456f-31e2-5e7e-8347-cc74be0397b7",
+        "ffa1173e-7f51-52b6-a247-3ff35ce852bc",
+        "3ea4adce-c9a2-5773-9e7f-102c2bae5554"
+      ],
+      "patchItems": [
+        {
+          "id": "4fe97297-8abe-5f4a-a42e-b908958f9982",
+          "fields": [
+            "sortOrder"
+          ],
+          "reason": "update"
+        },
+        {
+          "id": "fb87d34b-63bf-52fc-b812-3a01a98b88ea",
+          "fields": [
+            "sortOrder"
+          ],
+          "reason": "update"
+        },
+        {
+          "id": "d68b8311-87b7-5f5b-af53-8032fe2cfb06",
+          "fields": [
+            "sortOrder"
+          ],
+          "reason": "update"
+        },
+        {
+          "id": "8ff4622a-2913-5b40-9dea-19bc13772bc8",
+          "fields": [
+            "sortOrder"
+          ],
+          "reason": "update"
+        },
+        {
+          "id": "43e04dbb-b6dc-5d7e-908e-90354807c607",
+          "fields": [
+            "sortOrder"
+          ],
+          "reason": "update"
+        },
+        {
+          "id": "cb9a54fe-ba8f-505b-9b4b-d65318b0f262",
+          "fields": [
+            "sortOrder"
+          ],
+          "reason": "update"
+        },
+        {
+          "id": "5b2fbeb8-12bd-5707-9b34-1c2ee73c88d2",
+          "fields": [
+            "sortOrder"
+          ],
+          "reason": "update"
+        },
+        {
+          "id": "e9f19ecc-943e-5ab2-9882-6291cac7564d",
+          "fields": [
+            "sortOrder"
+          ],
+          "reason": "update"
+        },
+        {
+          "id": "376f9657-a832-5dd2-a5a3-d76b6b105978",
+          "fields": [
+            "sortOrder"
+          ],
+          "reason": "update"
+        },
+        {
+          "id": "322128d8-f055-5b5a-a216-126d0e7e5a62",
+          "fields": [
+            "sortOrder"
+          ],
+          "reason": "update"
+        },
+        {
+          "id": "c869eee6-2121-5061-8187-ab5a9caeb761",
+          "fields": [
+            "sortOrder"
+          ],
+          "reason": "update"
+        },
+        {
+          "id": "83eb3801-31eb-5a8c-a894-fb22c39494a7",
+          "fields": [
+            "sortOrder"
+          ],
+          "reason": "update"
+        },
+        {
+          "id": "3305a806-0381-5e76-9b9a-d5e066be2eb7",
+          "fields": [
+            "sortOrder"
+          ],
+          "reason": "update"
+        },
+        {
+          "id": "0fff9305-55f5-5f6f-82ea-8a8422814a47",
+          "fields": [
+            "sortOrder"
+          ],
+          "reason": "update"
+        },
+        {
+          "id": "040c6d16-d1af-511c-96fd-b679412e5359",
+          "fields": [
+            "sortOrder"
+          ],
+          "reason": "update"
+        },
+        {
+          "id": "9a8a768b-5be5-55a8-bb8e-b60ccd9d2f51",
+          "fields": [
+            "sortOrder"
+          ],
+          "reason": "update"
+        },
+        {
+          "id": "78cdcadc-f175-565d-938f-71a7fe6db263",
+          "fields": [
+            "sortOrder"
+          ],
+          "reason": "update"
+        },
+        {
+          "id": "662c8eee-520f-563d-a60e-6b6980613398",
+          "fields": [
+            "sortOrder"
+          ],
+          "reason": "update"
+        },
+        {
+          "id": "016875ac-564c-5857-bf1a-2bc0959a7f16",
+          "fields": [
+            "sortOrder"
+          ],
+          "reason": "update"
+        },
+        {
+          "id": "3c291381-ef54-519a-9141-969fb92bd51c",
+          "fields": [
+            "sortOrder"
+          ],
+          "reason": "update"
+        },
+        {
+          "id": "0eaa83ce-f6af-5b6c-85f3-68655a7cae5e",
+          "fields": [
+            "sortOrder"
+          ],
+          "reason": "update"
+        },
+        {
+          "id": "cdb4ec3a-751d-55d6-8f02-65d604333aa9",
+          "fields": [
+            "sortOrder"
+          ],
+          "reason": "update"
+        },
+        {
+          "id": "19aa4739-9ef5-5780-bc4b-dcf3b5fb87e8",
+          "fields": [
+            "sortOrder"
+          ],
+          "reason": "update"
+        },
+        {
+          "id": "81871d88-3f76-59d8-b719-2af58dd264e1",
+          "fields": [
+            "sortOrder"
+          ],
+          "reason": "update"
+        },
+        {
+          "id": "325b2eed-a32d-5835-90ab-d985133770f1",
+          "fields": [
+            "sortOrder",
+            "body"
+          ],
+          "reason": "update"
+        },
+        {
+          "id": "7ac7f921-e2e2-5377-b334-2a9d25125775",
+          "fields": [
+            "sortOrder"
+          ],
+          "reason": "update"
+        },
+        {
+          "id": "011653a7-fcef-515a-ba1f-789c164b0fad",
+          "fields": [
+            "sortOrder"
+          ],
+          "reason": "update"
+        },
+        {
+          "id": "3b6741fb-449d-53f7-ae7b-64daa7be6b6c",
+          "fields": [
+            "sortOrder",
+            "body"
+          ],
+          "reason": "update"
+        },
+        {
+          "id": "03563609-c825-5800-9d5c-e1bcbe068ed8",
+          "fields": [
+            "sortOrder"
+          ],
+          "reason": "update"
+        },
+        {
+          "id": "75ab7e8d-3609-56b4-b14f-ff76cb36dcee",
+          "fields": [
+            "sortOrder"
+          ],
+          "reason": "update"
+        },
+        {
+          "id": "ca767709-47be-512c-9fef-3147a613ccf6",
+          "fields": [
+            "sortOrder"
+          ],
+          "reason": "update"
+        },
+        {
+          "id": "311c370e-8620-5009-bbda-76834a6a17d0",
+          "fields": [
+            "sortOrder"
+          ],
+          "reason": "update"
+        },
+        {
+          "id": "0ed13a1f-67c0-535b-9be0-828a0fb3e91e",
+          "fields": [
+            "sortOrder"
+          ],
+          "reason": "update"
+        },
+        {
+          "id": "661a5479-df5e-5527-8751-69d7da2df277",
+          "fields": [
+            "sortOrder"
+          ],
+          "reason": "update"
+        },
+        {
+          "id": "65c1be78-6928-5839-a49e-fc15449cbd60",
+          "fields": [
+            "sortOrder"
+          ],
+          "reason": "update"
+        },
+        {
+          "id": "f4d4ad93-1733-5e44-847b-6add16c1caef",
+          "fields": [
+            "sortOrder"
+          ],
+          "reason": "update"
+        },
+        {
+          "id": "396bcaa5-052e-5145-86d2-547298400c16",
+          "fields": [
+            "sortOrder"
+          ],
+          "reason": "update"
+        },
+        {
+          "id": "3588e8ae-03d0-586f-8106-e473ce29e3a3",
+          "fields": [
+            "sortOrder"
+          ],
+          "reason": "update"
+        },
+        {
+          "id": "5cde47fd-081e-576e-bc6f-fb8f5e0a4001",
+          "fields": [
+            "sortOrder"
+          ],
+          "reason": "update"
+        },
+        {
+          "id": "1ea41dff-891a-5e56-8bbc-59479cdd613f",
+          "fields": [
+            "sortOrder"
+          ],
+          "reason": "update"
+        },
+        {
+          "id": "86b0f669-a0ab-5b29-8a07-3742af33a434",
+          "fields": [
+            "sortOrder"
+          ],
+          "reason": "update"
+        },
+        {
+          "id": "8eef6266-606d-594b-adb8-e4e84776f754",
+          "fields": [
+            "sortOrder"
+          ],
+          "reason": "update"
+        },
+        {
+          "id": "8c66523c-c9fd-5e0a-85aa-032a404fe2fd",
+          "fields": [
+            "sortOrder"
+          ],
+          "reason": "update"
+        },
+        {
+          "id": "5cce6bbd-f59b-5689-be71-c2d54570a2c6",
+          "fields": [
+            "sortOrder"
+          ],
+          "reason": "update"
+        },
+        {
+          "id": "d9a31c3a-fa0a-566e-863f-6cb67deaf236",
+          "fields": [
+            "sortOrder"
+          ],
+          "reason": "update"
+        },
+        {
+          "id": "6e004a14-81d1-524d-b08a-086925cfcc55",
+          "fields": [
+            "sortOrder"
+          ],
+          "reason": "update"
+        },
+        {
+          "id": "443823b3-b970-5cfc-af4e-7983c3b106fd",
+          "fields": [
+            "sortOrder"
+          ],
+          "reason": "update"
+        },
+        {
+          "id": "09c6ead1-6f75-5f5b-996d-c9ac9c450d99",
+          "fields": [
+            "sortOrder"
+          ],
+          "reason": "update"
+        },
+        {
+          "id": "1a064351-1d3d-550d-8c13-c40a17d9bcde",
+          "fields": [
+            "sortOrder"
+          ],
+          "reason": "update"
+        },
+        {
+          "id": "1470530c-09db-53b1-a0e4-01e808e315cc",
+          "fields": [
+            "isVisible"
+          ],
+          "reason": "hide-removed-source-row"
+        }
+      ]
+    },
+    {
+      "id": "DiLinks",
+      "existingItems": 12,
+      "createCollection": false,
+      "addFields": [],
+      "insertIds": [
+        "d6de2e42-0e93-5596-b91d-01f926c37d08",
+        "fc2e8b00-ad12-58aa-8364-d9ec8eb7eb31",
+        "c2163a23-4d00-5e15-abcb-9351907d5fba",
+        "106920db-1de7-5678-8628-8ff5d928707c",
+        "05f00fdf-cdea-5b6e-a546-bee5c697a82b",
+        "51d084d2-a9f1-5c95-b619-4ee83afeeb01",
+        "58652e60-65bb-5a7b-9621-6cfd0fb4b987",
+        "2b472978-4148-5da7-913e-2d1fc277030f",
+        "2504ef49-b0fd-50ee-b97b-a4977a7252d2",
+        "1985e33e-a01c-5f2f-8aa1-0fecc3f7f48d",
+        "8862286f-46dc-5172-802a-59195bd8c4a4",
+        "6eed6c15-6c05-5c3d-ab34-1ef0841d8c2d",
+        "cf97b55c-bd89-5189-a38a-759e2fc75950",
+        "5f9b8c78-91d9-5898-a800-45e7857d390b",
+        "fada9b12-bb92-5c35-b702-36f9bafea78c",
+        "c1694856-9d03-5466-8571-3527e95ceac9"
+      ],
+      "patchItems": [
+        {
+          "id": "1990c7db-8872-5179-85a9-42fd3ad0dfc6",
+          "fields": [
+            "sortOrder"
+          ],
+          "reason": "update"
+        },
+        {
+          "id": "4bbd3cb9-c2d6-5c7f-815a-cc4059a2d442",
+          "fields": [
+            "sortOrder"
+          ],
+          "reason": "update"
+        },
+        {
+          "id": "f7fca8ae-3649-5ecd-869c-aedfb387d18a",
+          "fields": [
+            "sortOrder"
+          ],
+          "reason": "update"
+        },
+        {
+          "id": "ec68052f-0e35-5bd9-bee9-05f6dffd007f",
+          "fields": [
+            "sortOrder"
+          ],
+          "reason": "update"
+        },
+        {
+          "id": "33fe37db-7668-5725-9eda-2c7e0755911a",
+          "fields": [
+            "sortOrder"
+          ],
+          "reason": "update"
+        },
+        {
+          "id": "4daeef97-fb38-5da0-8b19-0f58a4e84287",
+          "fields": [
+            "sortOrder"
+          ],
+          "reason": "update"
+        },
+        {
+          "id": "408a526a-1535-5160-bcbc-1dbe744addcc",
+          "fields": [
+            "sortOrder"
+          ],
+          "reason": "update"
+        },
+        {
+          "id": "da39edbb-a847-5a92-8237-0052196866dc",
+          "fields": [
+            "sortOrder"
+          ],
+          "reason": "update"
+        },
+        {
+          "id": "db5c80c4-1736-5c18-a614-8070e1ee6bae",
+          "fields": [
+            "sortOrder"
+          ],
+          "reason": "update"
+        },
+        {
+          "id": "b15aed59-e297-5496-81c5-31db2524a1bf",
+          "fields": [
+            "sortOrder"
+          ],
+          "reason": "update"
+        }
+      ]
+    },
+    {
+      "id": "DiFeatures",
+      "existingItems": 6,
+      "createCollection": false,
+      "addFields": [],
+      "insertIds": [],
+      "patchItems": []
+    },
+    {
+      "id": "DiTestimonials",
+      "existingItems": 4,
+      "createCollection": false,
+      "addFields": [],
+      "insertIds": [],
+      "patchItems": [
+        {
+          "id": "44106651-0d37-5f5f-aafe-b0807addbf5d",
+          "fields": [
+            "quote"
+          ],
+          "reason": "update"
+        }
+      ]
+    },
+    {
+      "id": "DiPages",
+      "existingItems": 0,
+      "createCollection": true,
+      "addFields": [],
+      "insertIds": [
+        "139dcb23-e65c-5578-8e99-efc0197ba28b",
+        "ad58fafa-e41b-5a99-9d70-e0e87d43cc8d",
+        "b0f1d689-2d14-555e-b040-94ec5473ff59",
+        "1a3ce299-30ae-51ea-81d7-9fd5229e8021",
+        "4a957945-c086-5d5c-8c85-149e9b3e3c2d",
+        "35ae9a76-bc75-5871-8ab7-f75173a0402a",
+        "732f8a04-aaaf-54b5-a5d9-f251678499eb",
+        "cae2c07b-3755-5139-bb66-983160449907",
+        "0f0227a8-d57f-5603-bf70-1686882d53db",
+        "4e70fe51-6a4e-5c1e-9de8-bd9aa717424f",
+        "126fcd65-73fa-53fd-80ba-9dd65bf9b911",
+        "5cb1267e-20d8-5f27-83d0-e4e615737797",
+        "eb3e9b73-8da2-565e-9a7a-1bbe223d09b0"
+      ],
+      "patchItems": []
+    },
+    {
+      "id": "DiSections",
+      "existingItems": 0,
+      "createCollection": true,
+      "addFields": [],
+      "insertIds": [
+        "2c8cac39-8956-5b24-b1ea-2a7c1e3ee3b2",
+        "0a612613-4088-528a-8f0f-5e03f1d6cc2e",
+        "84c64a2a-6b53-5248-ae1b-1551dc942be1",
+        "ddccc0c5-0dfd-5da7-97ca-ea749c8df23e",
+        "f8682cb4-33fc-5076-a040-e9c45fd0c504",
+        "e0055d3a-7095-5b17-92fb-6ed311508f2a",
+        "ece835f8-f8e4-5732-be44-f5b036561340",
+        "fb853c99-237b-5944-a1ba-167a91657277",
+        "502eb52f-fbc7-5d63-b548-bedfa40a401f",
+        "e052c319-5e0d-5cf8-9e68-fc6a3d59d216",
+        "5b0ce497-07e5-5564-a046-bc6e90e873aa",
+        "1eb5d621-89c8-5f04-bb0f-0961b4e4677f",
+        "94a02c5f-ad06-5c2a-8468-334abd0f067a",
+        "9dcd3a87-5294-5e20-9017-445970ea7263",
+        "e4a1245c-502b-5893-9cd3-9df99b2b99d6",
+        "81738f82-cb20-564a-a3f8-4d7b7c4eb42c",
+        "b968ebcd-2bf3-58cd-9c91-233bc8edf7dd",
+        "6bde3123-8782-5725-8f9d-e21c8bf0f411",
+        "ba286951-494c-59ad-bfca-867292f480e5",
+        "97cf0fbb-4ac6-5773-bcbb-d9b69c9795ba",
+        "4f250b47-0e5d-5ff3-84b4-f35bb9431465",
+        "54cf5f02-50de-5565-b35d-dac0f3bbf573",
+        "fa0c571c-30d2-54ad-9b2f-5144e0958a8d",
+        "8936ed3b-1616-59bc-afbb-4f14c5a77c0b",
+        "0f66d62e-a7a3-5c79-8029-874e1a5e5843",
+        "2c7dab02-9a54-59b1-948b-0cc422e85d98",
+        "8bf36396-a1f5-549c-bece-9ea1b43d5ee0",
+        "c698cc39-2656-5c1f-a3e5-d46308ce003f",
+        "bc3e3f29-95d7-5f1e-8529-f8a26a301afa",
+        "a8bd5b3c-4bab-537c-b46a-4fb08bc860b9",
+        "b664cfb2-cf45-5689-9687-c8d483739636",
+        "493d2420-4392-5634-b24b-8392a359eee1",
+        "3cf98f17-e33e-59e3-9422-4f1c6a4aac87",
+        "3633c5b2-4a20-5b11-8b9b-e0693bf08f13",
+        "c0d2bfe6-1637-5519-a38f-2357d52c3dbe",
+        "557cb217-8457-519f-ae83-96ebaa94e5e1",
+        "362c6ccc-d132-52d6-a1c6-2b07c1c15ec0",
+        "aba5373d-a444-528f-bc7b-b6000476f511"
+      ],
+      "patchItems": []
+    },
+    {
+      "id": "DiContentBlocks",
+      "existingItems": 0,
+      "createCollection": true,
+      "addFields": [],
+      "insertIds": [
+        "00be3df1-0ae8-52ff-a9fd-c9f5e620564a"
+      ],
+      "patchItems": []
+    },
+    {
+      "id": "DiClasses",
+      "existingItems": 28,
+      "createCollection": false,
+      "addFields": [],
+      "insertIds": [],
+      "patchItems": []
+    },
+    {
+      "id": "DiClassCategories",
+      "existingItems": 5,
+      "createCollection": false,
+      "addFields": [],
+      "insertIds": [],
+      "patchItems": []
+    },
+    {
+      "id": "DiTeachers",
+      "existingItems": 6,
+      "createCollection": false,
+      "addFields": [],
+      "insertIds": [],
+      "patchItems": []
+    },
+    {
+      "id": "DiPolicies",
+      "existingItems": 4,
+      "createCollection": false,
+      "addFields": [],
+      "insertIds": [],
+      "patchItems": []
+    },
+    {
+      "id": "DiSchedule",
+      "existingItems": 28,
+      "createCollection": false,
+      "addFields": [],
+      "insertIds": [],
+      "patchItems": []
+    },
+    {
+      "id": "DiShowDates",
+      "existingItems": 2,
+      "createCollection": false,
+      "addFields": [],
+      "insertIds": [],
+      "patchItems": []
+    },
+    {
+      "id": "DiGalleryPhotos",
+      "existingItems": 12,
+      "createCollection": false,
+      "addFields": [],
+      "insertIds": [],
+      "patchItems": []
+    },
+    {
+      "id": "DiCompetitionInfo",
+      "existingItems": 6,
+      "createCollection": false,
+      "addFields": [],
+      "insertIds": [
+        "9f752bf8-d5ab-5874-bbe5-17c018ad6238"
+      ],
+      "patchItems": [
+        {
+          "id": "618a71e1-3609-57ac-b840-ceb5cfc1fccf",
+          "fields": [
+            "body"
+          ],
+          "reason": "update"
+        },
+        {
+          "id": "65940714-af75-5968-8980-3c199539ebf8",
+          "fields": [
+            "isVisible"
+          ],
+          "reason": "hide-removed-source-row"
+        },
+        {
+          "id": "a7ce7371-27e1-5b01-a43d-8e7309f8c478",
+          "fields": [
+            "isVisible"
+          ],
+          "reason": "hide-removed-source-row"
+        },
+        {
+          "id": "79690958-e5b2-558e-8bc7-0221f8623994",
+          "fields": [
+            "isVisible"
+          ],
+          "reason": "hide-removed-source-row"
+        },
+        {
+          "id": "25f024d3-d9cd-530c-841d-db5643fd5407",
+          "fields": [
+            "isVisible"
+          ],
+          "reason": "hide-removed-source-row"
+        },
+        {
+          "id": "8b1be864-5dff-5e60-b947-9cfcb3552fc7",
+          "fields": [
+            "isVisible"
+          ],
+          "reason": "hide-removed-source-row"
+        }
+      ]
+    },
+    {
+      "id": "DiSummerCourses",
+      "existingItems": 2,
+      "createCollection": false,
+      "addFields": [],
+      "insertIds": [],
+      "patchItems": []
+    },
+    {
+      "id": "DiSummerCamps",
+      "existingItems": 6,
+      "createCollection": false,
+      "addFields": [],
+      "insertIds": [],
+      "patchItems": []
+    },
+    {
+      "id": "DiTuition",
+      "existingItems": 7,
+      "createCollection": false,
+      "addFields": [],
+      "insertIds": [],
+      "patchItems": []
+    },
+    {
+      "id": "DiDiscounts",
+      "existingItems": 4,
+      "createCollection": false,
+      "addFields": [],
+      "insertIds": [],
+      "patchItems": []
+    },
+    {
+      "id": "DiRegistration",
+      "existingItems": 2,
+      "createCollection": false,
+      "addFields": [],
+      "insertIds": [],
+      "patchItems": []
+    },
+    {
+      "id": "DiLegalSections",
+      "existingItems": 0,
+      "createCollection": true,
+      "addFields": [],
+      "insertIds": [
+        "0d68b94c-a273-54fe-9014-62291233f7d8",
+        "a06e338a-f688-57b7-b875-d6a0692d3158",
+        "b6d9a3e1-a6a4-529f-98d0-52ac0a89059f",
+        "4ef5df7c-8438-555a-b4d7-f7a5eb7c905d",
+        "a0ffd5df-020b-52a2-acce-3f738cbaa6f9",
+        "e1658768-2df1-5389-a405-f443d1ad571c",
+        "2c16e90c-a7d1-5051-8e53-7eafba257a5a",
+        "4ba9d3c7-9694-5408-a554-6d0709c56164"
+      ],
+      "patchItems": []
+    }
+  ],
+  "conflicts": [],
+  "blockers": [],
+  "applied": [
+    {
+      "collection": "DiStudio",
+      "field": "phoneSuffix",
+      "operation": "addField",
+      "verified": true
+    },
+    {
+      "collection": "DiStudio",
+      "id": "d42556b4-9afc-50dc-9f97-1e70122cb322",
+      "operation": "patch",
+      "fields": [
+        "phoneSuffix"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "field": "expandLabel",
+      "operation": "addField",
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "field": "collapseLabel",
+      "operation": "addField",
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "id": "6c43d568-fe59-5c4d-b95d-526da03960d6",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page",
+        "text"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "id": "24970ed2-ff59-5b36-8fa2-7f4096511260",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page",
+        "text"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "id": "3450d2d8-1414-5683-8dab-3f89016e00ea",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page",
+        "text"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "id": "bbfd9627-dee0-59ef-bf9c-b4071b7dd0d8",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page",
+        "text"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "id": "2e5acde2-803f-5ba6-85f8-d8a7c4bae4f6",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page",
+        "text"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "id": "01552db2-0ff1-5715-98ce-2b478b95c447",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page",
+        "text"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "id": "82aaa194-67c9-58f2-9c56-aedcf9f7ff91",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page",
+        "text"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "id": "571a7b95-1c17-5333-8b8d-1f80309e849f",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page",
+        "expandLabel",
+        "collapseLabel"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "id": "a9b72236-419c-5b35-925e-ddd45720f63a",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page",
+        "text"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "id": "d34fb970-49b6-51a2-b18b-115cbee28b95",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page",
+        "text"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "id": "f975d50e-6a9d-53a9-a557-8015afb5f2b2",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page",
+        "text"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "id": "394fdcec-8a12-51d4-b914-54851c83ac39",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page",
+        "text"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "id": "66db0c77-ba06-553a-92f2-f2be11db03fc",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page",
+        "text"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "id": "e397506c-4cb1-5a91-9dae-3496986836d8",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page",
+        "text"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "id": "0426c0ff-7783-56c2-850d-240d8fa62275",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page",
+        "text"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "id": "faf2724d-a02d-588f-af7d-4da1a17de60c",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page",
+        "text"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "id": "1507cb0f-c64d-569e-a519-8e9ba92aeed4",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page",
+        "text"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "id": "acaedf41-a47a-537e-b092-9848cbee0a83",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page",
+        "text"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "id": "9cead242-11fe-5591-9bd7-2feaa6fb378d",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page",
+        "text"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "id": "02b1c99c-85c3-5182-9cf6-ecdd575e9027",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page",
+        "body"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "id": "a77dda26-669b-58b6-afe3-03bed24085dd",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page",
+        "text"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "id": "a3c61071-e5c5-529c-ac85-938d89d481f5",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page",
+        "text"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "id": "61e708b4-9ab1-50fe-8238-a5dd9f100647",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page",
+        "text"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "id": "20574198-a000-5aad-9f39-03f8edcd6d48",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page",
+        "text"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "id": "4241e3d6-298b-5a67-81e1-b328d2313997",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page",
+        "text"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "id": "5e3d47c8-9d89-50d7-9c59-2c9c2f870104",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page",
+        "text"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "id": "12a8441c-6aa8-5c43-8ca6-6743c3b11497",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page",
+        "text"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "id": "3a59997d-237d-5330-9dbb-150d298f6f04",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page",
+        "text"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "id": "b9cd0fef-ce70-57ba-8ff4-c913295deaaf",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page",
+        "text"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "id": "9dc97b49-faeb-535c-9257-323079e616d5",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page",
+        "text"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "id": "e65121c2-d099-540e-a949-a2dcb327ccb2",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page",
+        "text"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "id": "05a3456f-31e2-5e7e-8347-cc74be0397b7",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page",
+        "text"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "id": "ffa1173e-7f51-52b6-a247-3ff35ce852bc",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page",
+        "body"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "id": "3ea4adce-c9a2-5773-9e7f-102c2bae5554",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page",
+        "body"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "id": "4fe97297-8abe-5f4a-a42e-b908958f9982",
+      "operation": "patch",
+      "fields": [
+        "sortOrder"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "id": "fb87d34b-63bf-52fc-b812-3a01a98b88ea",
+      "operation": "patch",
+      "fields": [
+        "sortOrder"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "id": "d68b8311-87b7-5f5b-af53-8032fe2cfb06",
+      "operation": "patch",
+      "fields": [
+        "sortOrder"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "id": "8ff4622a-2913-5b40-9dea-19bc13772bc8",
+      "operation": "patch",
+      "fields": [
+        "sortOrder"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "id": "43e04dbb-b6dc-5d7e-908e-90354807c607",
+      "operation": "patch",
+      "fields": [
+        "sortOrder"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "id": "cb9a54fe-ba8f-505b-9b4b-d65318b0f262",
+      "operation": "patch",
+      "fields": [
+        "sortOrder"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "id": "5b2fbeb8-12bd-5707-9b34-1c2ee73c88d2",
+      "operation": "patch",
+      "fields": [
+        "sortOrder"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "id": "e9f19ecc-943e-5ab2-9882-6291cac7564d",
+      "operation": "patch",
+      "fields": [
+        "sortOrder"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "id": "376f9657-a832-5dd2-a5a3-d76b6b105978",
+      "operation": "patch",
+      "fields": [
+        "sortOrder"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "id": "322128d8-f055-5b5a-a216-126d0e7e5a62",
+      "operation": "patch",
+      "fields": [
+        "sortOrder"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "id": "c869eee6-2121-5061-8187-ab5a9caeb761",
+      "operation": "patch",
+      "fields": [
+        "sortOrder"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "id": "83eb3801-31eb-5a8c-a894-fb22c39494a7",
+      "operation": "patch",
+      "fields": [
+        "sortOrder"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "id": "3305a806-0381-5e76-9b9a-d5e066be2eb7",
+      "operation": "patch",
+      "fields": [
+        "sortOrder"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "id": "0fff9305-55f5-5f6f-82ea-8a8422814a47",
+      "operation": "patch",
+      "fields": [
+        "sortOrder"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "id": "040c6d16-d1af-511c-96fd-b679412e5359",
+      "operation": "patch",
+      "fields": [
+        "sortOrder"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "id": "9a8a768b-5be5-55a8-bb8e-b60ccd9d2f51",
+      "operation": "patch",
+      "fields": [
+        "sortOrder"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "id": "78cdcadc-f175-565d-938f-71a7fe6db263",
+      "operation": "patch",
+      "fields": [
+        "sortOrder"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "id": "662c8eee-520f-563d-a60e-6b6980613398",
+      "operation": "patch",
+      "fields": [
+        "sortOrder"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "id": "016875ac-564c-5857-bf1a-2bc0959a7f16",
+      "operation": "patch",
+      "fields": [
+        "sortOrder"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "id": "3c291381-ef54-519a-9141-969fb92bd51c",
+      "operation": "patch",
+      "fields": [
+        "sortOrder"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "id": "0eaa83ce-f6af-5b6c-85f3-68655a7cae5e",
+      "operation": "patch",
+      "fields": [
+        "sortOrder"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "id": "cdb4ec3a-751d-55d6-8f02-65d604333aa9",
+      "operation": "patch",
+      "fields": [
+        "sortOrder"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "id": "19aa4739-9ef5-5780-bc4b-dcf3b5fb87e8",
+      "operation": "patch",
+      "fields": [
+        "sortOrder"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "id": "81871d88-3f76-59d8-b719-2af58dd264e1",
+      "operation": "patch",
+      "fields": [
+        "sortOrder"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "id": "325b2eed-a32d-5835-90ab-d985133770f1",
+      "operation": "patch",
+      "fields": [
+        "sortOrder",
+        "body"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "id": "7ac7f921-e2e2-5377-b334-2a9d25125775",
+      "operation": "patch",
+      "fields": [
+        "sortOrder"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "id": "011653a7-fcef-515a-ba1f-789c164b0fad",
+      "operation": "patch",
+      "fields": [
+        "sortOrder"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "id": "3b6741fb-449d-53f7-ae7b-64daa7be6b6c",
+      "operation": "patch",
+      "fields": [
+        "sortOrder",
+        "body"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "id": "03563609-c825-5800-9d5c-e1bcbe068ed8",
+      "operation": "patch",
+      "fields": [
+        "sortOrder"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "id": "75ab7e8d-3609-56b4-b14f-ff76cb36dcee",
+      "operation": "patch",
+      "fields": [
+        "sortOrder"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "id": "ca767709-47be-512c-9fef-3147a613ccf6",
+      "operation": "patch",
+      "fields": [
+        "sortOrder"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "id": "311c370e-8620-5009-bbda-76834a6a17d0",
+      "operation": "patch",
+      "fields": [
+        "sortOrder"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "id": "0ed13a1f-67c0-535b-9be0-828a0fb3e91e",
+      "operation": "patch",
+      "fields": [
+        "sortOrder"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "id": "661a5479-df5e-5527-8751-69d7da2df277",
+      "operation": "patch",
+      "fields": [
+        "sortOrder"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "id": "65c1be78-6928-5839-a49e-fc15449cbd60",
+      "operation": "patch",
+      "fields": [
+        "sortOrder"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "id": "f4d4ad93-1733-5e44-847b-6add16c1caef",
+      "operation": "patch",
+      "fields": [
+        "sortOrder"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "id": "396bcaa5-052e-5145-86d2-547298400c16",
+      "operation": "patch",
+      "fields": [
+        "sortOrder"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "id": "3588e8ae-03d0-586f-8106-e473ce29e3a3",
+      "operation": "patch",
+      "fields": [
+        "sortOrder"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "id": "5cde47fd-081e-576e-bc6f-fb8f5e0a4001",
+      "operation": "patch",
+      "fields": [
+        "sortOrder"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "id": "1ea41dff-891a-5e56-8bbc-59479cdd613f",
+      "operation": "patch",
+      "fields": [
+        "sortOrder"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "id": "86b0f669-a0ab-5b29-8a07-3742af33a434",
+      "operation": "patch",
+      "fields": [
+        "sortOrder"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "id": "8eef6266-606d-594b-adb8-e4e84776f754",
+      "operation": "patch",
+      "fields": [
+        "sortOrder"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "id": "8c66523c-c9fd-5e0a-85aa-032a404fe2fd",
+      "operation": "patch",
+      "fields": [
+        "sortOrder"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "id": "5cce6bbd-f59b-5689-be71-c2d54570a2c6",
+      "operation": "patch",
+      "fields": [
+        "sortOrder"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "id": "d9a31c3a-fa0a-566e-863f-6cb67deaf236",
+      "operation": "patch",
+      "fields": [
+        "sortOrder"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "id": "6e004a14-81d1-524d-b08a-086925cfcc55",
+      "operation": "patch",
+      "fields": [
+        "sortOrder"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "id": "443823b3-b970-5cfc-af4e-7983c3b106fd",
+      "operation": "patch",
+      "fields": [
+        "sortOrder"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "id": "09c6ead1-6f75-5f5b-996d-c9ac9c450d99",
+      "operation": "patch",
+      "fields": [
+        "sortOrder"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "id": "1a064351-1d3d-550d-8c13-c40a17d9bcde",
+      "operation": "patch",
+      "fields": [
+        "sortOrder"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPageContent",
+      "id": "1470530c-09db-53b1-a0e4-01e808e315cc",
+      "operation": "patch",
+      "fields": [
+        "isVisible"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiLinks",
+      "id": "d6de2e42-0e93-5596-b91d-01f926c37d08",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page",
+        "url",
+        "label"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiLinks",
+      "id": "fc2e8b00-ad12-58aa-8364-d9ec8eb7eb31",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page",
+        "url",
+        "label"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiLinks",
+      "id": "c2163a23-4d00-5e15-abcb-9351907d5fba",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page",
+        "url",
+        "label"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiLinks",
+      "id": "106920db-1de7-5678-8628-8ff5d928707c",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page",
+        "url",
+        "label"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiLinks",
+      "id": "05f00fdf-cdea-5b6e-a546-bee5c697a82b",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page",
+        "url",
+        "label"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiLinks",
+      "id": "51d084d2-a9f1-5c95-b619-4ee83afeeb01",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page",
+        "url",
+        "label"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiLinks",
+      "id": "58652e60-65bb-5a7b-9621-6cfd0fb4b987",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page",
+        "url",
+        "label"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiLinks",
+      "id": "2b472978-4148-5da7-913e-2d1fc277030f",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page",
+        "url",
+        "label"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiLinks",
+      "id": "2504ef49-b0fd-50ee-b97b-a4977a7252d2",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page",
+        "url",
+        "label"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiLinks",
+      "id": "1985e33e-a01c-5f2f-8aa1-0fecc3f7f48d",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page",
+        "url",
+        "label"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiLinks",
+      "id": "8862286f-46dc-5172-802a-59195bd8c4a4",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page",
+        "url",
+        "label"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiLinks",
+      "id": "6eed6c15-6c05-5c3d-ab34-1ef0841d8c2d",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page",
+        "url",
+        "label"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiLinks",
+      "id": "cf97b55c-bd89-5189-a38a-759e2fc75950",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page",
+        "url",
+        "label"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiLinks",
+      "id": "5f9b8c78-91d9-5898-a800-45e7857d390b",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page",
+        "url",
+        "label"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiLinks",
+      "id": "fada9b12-bb92-5c35-b702-36f9bafea78c",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page",
+        "url"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiLinks",
+      "id": "c1694856-9d03-5466-8571-3527e95ceac9",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page",
+        "label",
+        "url"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiLinks",
+      "id": "1990c7db-8872-5179-85a9-42fd3ad0dfc6",
+      "operation": "patch",
+      "fields": [
+        "sortOrder"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiLinks",
+      "id": "4bbd3cb9-c2d6-5c7f-815a-cc4059a2d442",
+      "operation": "patch",
+      "fields": [
+        "sortOrder"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiLinks",
+      "id": "f7fca8ae-3649-5ecd-869c-aedfb387d18a",
+      "operation": "patch",
+      "fields": [
+        "sortOrder"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiLinks",
+      "id": "ec68052f-0e35-5bd9-bee9-05f6dffd007f",
+      "operation": "patch",
+      "fields": [
+        "sortOrder"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiLinks",
+      "id": "33fe37db-7668-5725-9eda-2c7e0755911a",
+      "operation": "patch",
+      "fields": [
+        "sortOrder"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiLinks",
+      "id": "4daeef97-fb38-5da0-8b19-0f58a4e84287",
+      "operation": "patch",
+      "fields": [
+        "sortOrder"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiLinks",
+      "id": "408a526a-1535-5160-bcbc-1dbe744addcc",
+      "operation": "patch",
+      "fields": [
+        "sortOrder"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiLinks",
+      "id": "da39edbb-a847-5a92-8237-0052196866dc",
+      "operation": "patch",
+      "fields": [
+        "sortOrder"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiLinks",
+      "id": "db5c80c4-1736-5c18-a614-8070e1ee6bae",
+      "operation": "patch",
+      "fields": [
+        "sortOrder"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiLinks",
+      "id": "b15aed59-e297-5496-81c5-31db2524a1bf",
+      "operation": "patch",
+      "fields": [
+        "sortOrder"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiTestimonials",
+      "id": "44106651-0d37-5f5f-aafe-b0807addbf5d",
+      "operation": "patch",
+      "fields": [
+        "quote"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPages",
+      "operation": "createCollection",
+      "verified": true
+    },
+    {
+      "collection": "DiPages",
+      "id": "139dcb23-e65c-5578-8e99-efc0197ba28b",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page",
+        "description"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPages",
+      "id": "ad58fafa-e41b-5a99-9d70-e0e87d43cc8d",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page",
+        "description"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPages",
+      "id": "b0f1d689-2d14-555e-b040-94ec5473ff59",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page",
+        "description"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPages",
+      "id": "1a3ce299-30ae-51ea-81d7-9fd5229e8021",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page",
+        "description"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPages",
+      "id": "4a957945-c086-5d5c-8c85-149e9b3e3c2d",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page",
+        "description"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPages",
+      "id": "35ae9a76-bc75-5871-8ab7-f75173a0402a",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page",
+        "description"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPages",
+      "id": "732f8a04-aaaf-54b5-a5d9-f251678499eb",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page",
+        "description"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPages",
+      "id": "cae2c07b-3755-5139-bb66-983160449907",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page",
+        "description"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPages",
+      "id": "0f0227a8-d57f-5603-bf70-1686882d53db",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page",
+        "description"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPages",
+      "id": "4e70fe51-6a4e-5c1e-9de8-bd9aa717424f",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page",
+        "description"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPages",
+      "id": "126fcd65-73fa-53fd-80ba-9dd65bf9b911",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page",
+        "description"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPages",
+      "id": "5cb1267e-20d8-5f27-83d0-e4e615737797",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page",
+        "description"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiPages",
+      "id": "eb3e9b73-8da2-565e-9a7a-1bbe223d09b0",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page",
+        "description"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiSections",
+      "operation": "createCollection",
+      "verified": true
+    },
+    {
+      "collection": "DiSections",
+      "id": "2c8cac39-8956-5b24-b1ea-2a7c1e3ee3b2",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiSections",
+      "id": "0a612613-4088-528a-8f0f-5e03f1d6cc2e",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiSections",
+      "id": "84c64a2a-6b53-5248-ae1b-1551dc942be1",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiSections",
+      "id": "ddccc0c5-0dfd-5da7-97ca-ea749c8df23e",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiSections",
+      "id": "f8682cb4-33fc-5076-a040-e9c45fd0c504",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiSections",
+      "id": "e0055d3a-7095-5b17-92fb-6ed311508f2a",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiSections",
+      "id": "ece835f8-f8e4-5732-be44-f5b036561340",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiSections",
+      "id": "fb853c99-237b-5944-a1ba-167a91657277",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiSections",
+      "id": "502eb52f-fbc7-5d63-b548-bedfa40a401f",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiSections",
+      "id": "e052c319-5e0d-5cf8-9e68-fc6a3d59d216",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiSections",
+      "id": "5b0ce497-07e5-5564-a046-bc6e90e873aa",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiSections",
+      "id": "1eb5d621-89c8-5f04-bb0f-0961b4e4677f",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiSections",
+      "id": "94a02c5f-ad06-5c2a-8468-334abd0f067a",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiSections",
+      "id": "9dcd3a87-5294-5e20-9017-445970ea7263",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiSections",
+      "id": "e4a1245c-502b-5893-9cd3-9df99b2b99d6",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiSections",
+      "id": "81738f82-cb20-564a-a3f8-4d7b7c4eb42c",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiSections",
+      "id": "b968ebcd-2bf3-58cd-9c91-233bc8edf7dd",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiSections",
+      "id": "6bde3123-8782-5725-8f9d-e21c8bf0f411",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiSections",
+      "id": "ba286951-494c-59ad-bfca-867292f480e5",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiSections",
+      "id": "97cf0fbb-4ac6-5773-bcbb-d9b69c9795ba",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiSections",
+      "id": "4f250b47-0e5d-5ff3-84b4-f35bb9431465",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiSections",
+      "id": "54cf5f02-50de-5565-b35d-dac0f3bbf573",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiSections",
+      "id": "fa0c571c-30d2-54ad-9b2f-5144e0958a8d",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiSections",
+      "id": "8936ed3b-1616-59bc-afbb-4f14c5a77c0b",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiSections",
+      "id": "0f66d62e-a7a3-5c79-8029-874e1a5e5843",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiSections",
+      "id": "2c7dab02-9a54-59b1-948b-0cc422e85d98",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiSections",
+      "id": "8bf36396-a1f5-549c-bece-9ea1b43d5ee0",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiSections",
+      "id": "c698cc39-2656-5c1f-a3e5-d46308ce003f",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiSections",
+      "id": "bc3e3f29-95d7-5f1e-8529-f8a26a301afa",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiSections",
+      "id": "a8bd5b3c-4bab-537c-b46a-4fb08bc860b9",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiSections",
+      "id": "b664cfb2-cf45-5689-9687-c8d483739636",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiSections",
+      "id": "493d2420-4392-5634-b24b-8392a359eee1",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiSections",
+      "id": "3cf98f17-e33e-59e3-9422-4f1c6a4aac87",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiSections",
+      "id": "3633c5b2-4a20-5b11-8b9b-e0693bf08f13",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiSections",
+      "id": "c0d2bfe6-1637-5519-a38f-2357d52c3dbe",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiSections",
+      "id": "557cb217-8457-519f-ae83-96ebaa94e5e1",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiSections",
+      "id": "362c6ccc-d132-52d6-a1c6-2b07c1c15ec0",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiSections",
+      "id": "aba5373d-a444-528f-bc7b-b6000476f511",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "page"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiContentBlocks",
+      "operation": "createCollection",
+      "verified": true
+    },
+    {
+      "collection": "DiContentBlocks",
+      "id": "00be3df1-0ae8-52ff-a9fd-c9f5e620564a",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "page",
+        "title",
+        "body",
+        "image",
+        "alt",
+        "focalX",
+        "focalY",
+        "label",
+        "url"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiCompetitionInfo",
+      "id": "9f752bf8-d5ab-5874-bbe5-17c018ad6238",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "title",
+        "body"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiCompetitionInfo",
+      "id": "618a71e1-3609-57ac-b840-ceb5cfc1fccf",
+      "operation": "patch",
+      "fields": [
+        "body"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiCompetitionInfo",
+      "id": "65940714-af75-5968-8980-3c199539ebf8",
+      "operation": "patch",
+      "fields": [
+        "isVisible"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiCompetitionInfo",
+      "id": "a7ce7371-27e1-5b01-a43d-8e7309f8c478",
+      "operation": "patch",
+      "fields": [
+        "isVisible"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiCompetitionInfo",
+      "id": "79690958-e5b2-558e-8bc7-0221f8623994",
+      "operation": "patch",
+      "fields": [
+        "isVisible"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiCompetitionInfo",
+      "id": "25f024d3-d9cd-530c-841d-db5643fd5407",
+      "operation": "patch",
+      "fields": [
+        "isVisible"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiCompetitionInfo",
+      "id": "8b1be864-5dff-5e60-b947-9cfcb3552fc7",
+      "operation": "patch",
+      "fields": [
+        "isVisible"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiLegalSections",
+      "operation": "createCollection",
+      "verified": true
+    },
+    {
+      "collection": "DiLegalSections",
+      "id": "0d68b94c-a273-54fe-9014-62291233f7d8",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "page",
+        "title",
+        "body"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiLegalSections",
+      "id": "a06e338a-f688-57b7-b875-d6a0692d3158",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "page",
+        "title",
+        "body"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiLegalSections",
+      "id": "b6d9a3e1-a6a4-529f-98d0-52ac0a89059f",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "page",
+        "title",
+        "body"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiLegalSections",
+      "id": "4ef5df7c-8438-555a-b4d7-f7a5eb7c905d",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "page",
+        "title",
+        "body"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiLegalSections",
+      "id": "a0ffd5df-020b-52a2-acce-3f738cbaa6f9",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "page",
+        "title",
+        "body"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiLegalSections",
+      "id": "e1658768-2df1-5389-a405-f443d1ad571c",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "page",
+        "title",
+        "body"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiLegalSections",
+      "id": "2c16e90c-a7d1-5051-8e53-7eafba257a5a",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "page",
+        "title",
+        "body"
+      ],
+      "verified": true
+    },
+    {
+      "collection": "DiLegalSections",
+      "id": "4ba9d3c7-9694-5408-a554-6d0709c56164",
+      "operation": "insert",
+      "fields": [
+        "key",
+        "isVisible",
+        "sortOrder",
+        "page",
+        "title",
+        "body"
+      ],
+      "verified": true
+    }
+  ],
+  "failures": [],
+  "totals": {
+    "collectionsRead": 23,
+    "createCollections": 4,
+    "addFields": 3,
+    "insertItems": 111,
+    "patchItems": 68,
+    "hideItems": 6,
+    "conflictItems": 0
+  },
+  "verifiedMutations": 186,
+  "initialProvisionedBaseline": {
+    "sourceCommit": "2cf2c4e",
+    "timestamp": "2026-11-05T06:29:36.432Z",
+    "collections": 19,
+    "records": 206
+  },
+  "sourceSnapshot": {
+    "sha256": "0d23be34e902234ed17525957e979a3ffe7b2fe317275e1e71943ad9457f9619",
+    "collections": 23,
+    "desiredRecords": 311,
+    "fileModifiedAt": "2026-11-05T17:03:19.362521+00:00"
+  },
+  "retainedRemoteRecords": 317,
+  "hiddenObsoleteSourceRecords": 6,
+  "hiddenObsoleteSourceIds": {
+    "DiPageContent": [
+      "1470530c-09db-53b1-a0e4-01e808e315cc"
+    ],
+    "DiCompetitionInfo": [
+      "65940714-af75-5968-8980-3c199539ebf8",
+      "a7ce7371-27e1-5b01-a43d-8e7309f8c478",
+      "79690958-e5b2-558e-8bc7-0221f8623994",
+      "25f024d3-d9cd-530c-841d-db5643fd5407",
+      "8b1be864-5dff-5e60-b947-9cfcb3552fc7"
+    ]
+  },
+  "frontendConnection": "disabled; Velo bridge still requires authenticated editor activation",
+  "frontendPublished": false,
+  "permissionsChanged": false,
+  "resultRecovery": "Tool output truncated its large optional backup and full next-baseline tail. The complete mutation report was recovered intact. Baseline advanced from that verified result plus the matching source snapshot; no writes were repeated.",
+  "backupSaved": false,
+  "backupNote": "Optional public pre-change snapshot was truncated in the tool response and was not saved as a complete backup.",
+  "recordedAt": "2026-11-05T17:07:38.206569+00:00"
+}

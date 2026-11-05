@@ -96,14 +96,163 @@
     assert(!container.textContent.includes(edited.DiTeachers[0].name), 'Hidden teacher is still displayed');
     assert(container.firstElementChild.textContent.includes('A new biography.'), 'New biography missing');
   });
-  await check('Classes: add a class to the chosen category', async () => {
+  await check('Classes: add, hide and reorder categories with their own class rows', async () => {
     const doc = await load('dance-classes/index.html'), win = frame.contentWindow;
     const manifest = JSON.parse(doc.getElementById('dance-cms-bindings').textContent);
-    const list = manifest.lists.find(item => item.collection === 'DiClasses');
+    const list = manifest.lists.find(item => item.collection === 'DiClassCategories');
     const edited = clone(seed);
-    edited.DiClasses.push({key:'qa-new-class',title:'QA Class',description:'A short description.',category:list.filter.category,sortOrder:-1,isVisible:true});
+    const hidden = edited.DiClassCategories[0];
+    hidden.isVisible = false;
+    edited.DiClassCategories.push({key:'qa-new-category',title:'QA New Category',sortOrder:-1,isVisible:true});
+    edited.DiClasses.push({key:'qa-new-class',title:'QA Class',description:'A short description.',category:'qa-new-category',sortOrder:1,isVisible:true});
+    edited.DiClasses.push({key:'qa-first-class',title:'QA First Class',description:'First class in its group.',category:'qa-new-category',sortOrder:0,isVisible:true});
+    edited.DiClasses.push({key:'qa-hidden-class',title:'QA Hidden Class',category:'qa-new-category',isVisible:false});
     win.DanceCMS.hydrate(doc, manifest, edited, win.DanceWixCMS, root);
-    assert(doc.querySelector(list.selector).firstElementChild.textContent.includes('QA Class'), 'Class was not added to its category');
+    const container = doc.querySelector(list.selector), first = container.firstElementChild;
+    assert(first.querySelector('h2').textContent === 'QA New Category', 'New category was not ordered first');
+    assert(first.open, 'New category did not start expanded');
+    assert(![...container.querySelectorAll('h2')].some(node => node.textContent === hidden.title), 'Hidden category still appears');
+    const classNames = [...first.querySelectorAll('h3')].map(node => node.textContent);
+    assert(JSON.stringify(classNames) === JSON.stringify(['QA First Class','QA Class']), 'Nested classes did not retain category, order and visibility');
+    assert(container.children[1].querySelectorAll('h3').length > 0, 'Existing category lost its classes');
+  });
+  await check('Classes: missing or duplicate nested content cannot partially alter the page', async () => {
+    const doc = await load('dance-classes/index.html'), win = frame.contentWindow;
+    const manifest = JSON.parse(doc.getElementById('dance-cms-bindings').textContent);
+    const before = doc.documentElement.innerHTML;
+    for (const missing of [true, false]) {
+      const edited = clone(seed);
+      if (missing) {
+        edited.DiClassCategories.forEach(row => { row.isVisible = false; });
+        delete edited.DiClasses;
+      } else edited.DiClasses.push({...edited.DiClasses[0]});
+      let threw = false;
+      try { win.DanceCMS.hydrate(doc, manifest, edited, win.DanceWixCMS, root); } catch (_) { threw = true; }
+      assert(threw && doc.documentElement.innerHTML === before, 'Invalid nested content changed the document');
+    }
+  });
+  await check('Head metadata and control labels update safely and atomically', async () => {
+    const doc = await load('dance-classes/index.html'), win = frame.contentWindow;
+    const record = (selector, fields) => ({selector, collection:'QaSettings', key:'settings', fields});
+    const manifest = {lists:[],galleries:[],records:[
+      record('head > title', [{selector:':scope',field:'title',kind:'text'}]),
+      record('meta[name="description"]', [{selector:':scope',field:'description',kind:'attribute',attribute:'content'}]),
+      record('[data-classes-toggle]', [
+        {selector:':scope',field:'expand',kind:'attribute',attribute:'data-expand-label'},
+        {selector:':scope',field:'collapse',kind:'attribute',attribute:'data-collapse-label'},
+        {selector:':scope',field:'accessible',kind:'attribute',attribute:'aria-label'}
+      ])
+    ]};
+    const data = {QaSettings:[{key:'settings',isVisible:true,title:'QA Class title',description:'QA Description',expand:'Open every group',collapse:'Close every group',accessible:'Class group controls'}]};
+    win.DanceCMS.hydrate(doc, manifest, data, win.DanceWixCMS, root);
+    assert(doc.title === 'QA Class title' && doc.querySelector('meta[name="description"]').content === 'QA Description', 'Head metadata failed to update');
+    const toggle = doc.querySelector('[data-classes-toggle]');
+    assert(toggle.dataset.expandLabel === 'Open every group' && toggle.dataset.collapseLabel === 'Close every group' && toggle.getAttribute('aria-label') === 'Class group controls', 'Control labels failed to update');
+    const before = doc.documentElement.innerHTML;
+    for (const attribute of ['onclick', 'srcdoc', 'href']) {
+      const bad = clone(manifest);
+      bad.records[2].fields.push({selector:':scope',field:'title',kind:'attribute',attribute});
+      let threw = false;
+      try { win.DanceCMS.hydrate(doc, bad, data, win.DanceWixCMS, root); } catch (_) { threw = true; }
+      assert(threw && doc.documentElement.innerHTML === before, 'Unsafe attribute partly changed the page: ' + attribute);
+    }
+  });
+  await check('Shared navigation updates desktop and mobile together', async () => {
+    const doc = await load('index.html'), win = frame.contentWindow;
+    const manifest = JSON.parse(doc.getElementById('dance-cms-bindings').textContent), edited = clone(seed);
+    Object.assign(edited.DiLinks.find(row => row.key === 'navigation-contact'), {label:'QA Reach us',url:'@/contact/index.html?source=qa'});
+    edited.DiPageContent.find(row => row.key === 'navigation-group-about').text = 'QA About DI';
+    win.DanceCMS.hydrate(doc, manifest, edited, win.DanceWixCMS, root);
+    for (const selector of ['.desktop-nav', '.mobile-menu']) {
+      const links = [...doc.querySelectorAll(selector + ' a')].filter(node => node.textContent === 'QA Reach us');
+      assert(links.length === 1 && links[0].href === new URL('contact/index.html?source=qa', root).href, selector + ' link was not updated');
+      assert(doc.querySelector(selector).textContent.includes('QA About DI'), selector + ' group label was not updated');
+    }
+    assert(doc.querySelector('.mobile-menu').hidden, 'Hydration unexpectedly opened the mobile menu');
+  });
+  await check('Extra content adds safe text, photos and links in the chosen page only', async () => {
+    const doc = await load('index.html'), win = frame.contentWindow;
+    const manifest = JSON.parse(doc.getElementById('dance-cms-bindings').textContent), edited = clone(seed);
+    const list = manifest.lists.find(row => row.collection === 'DiContentBlocks');
+    const starter = edited.DiContentBlocks[0];
+    const image = edited.DiImages.find(row => row.key === 'home-hero-photo').image;
+    edited.DiContentBlocks.push({...starter,key:'qa-extra',page:'home',title:'QA Extra content',body:'<p>Extra <strong>copy</strong>.</p>',image,alt:'QA photograph',focalX:30,focalY:80,url:'https://example.com/photos',label:'QA Photos',isVisible:true,sortOrder:-2});
+    edited.DiContentBlocks.push({...starter,key:'qa-unsafe-link',page:'home',title:'QA Unsafe link',url:'javascript:alert(1)',label:'Unsafe link',isVisible:true,sortOrder:-1});
+    edited.DiContentBlocks.push({...starter,key:'qa-hidden',page:'home',title:'QA Hidden block',isVisible:false});
+    edited.DiContentBlocks.push({...starter,key:'qa-other-page',page:'contact',title:'QA Other page',isVisible:true});
+    win.DanceCMS.hydrate(doc, manifest, edited, win.DanceWixCMS, root);
+    const container = doc.querySelector(list.selector), first = container.firstElementChild;
+    assert(container.children.length === 2 && first.querySelector('h2').textContent === 'QA Extra content', 'Block ordering, page filter or visibility failed');
+    assert(first.querySelector('strong').textContent === 'copy', 'Extra rich text did not render');
+    const photo = first.querySelector('img');
+    assert(!photo.hidden && photo.alt === 'QA photograph' && photo.style.objectPosition === '30% 80%', 'Extra photo or crop failed');
+    assert(first.querySelector('a').href === 'https://example.com/photos' && first.querySelector('a').textContent === 'QA Photos', 'Extra link failed');
+    const unsafe = container.lastElementChild.querySelector('a');
+    assert(!unsafe.hasAttribute('href') && unsafe.getAttribute('aria-disabled') === 'true', 'Unsafe block URL survived');
+  });
+  await check('Section visibility respects overlapping records and can be restored', async () => {
+    const doc = await load('contact/index.html'), win = frame.contentWindow;
+    const manifest = JSON.parse(doc.getElementById('dance-cms-bindings').textContent), edited = clone(seed);
+    const section = edited.DiSections.find(row => row.key === 'contact-contact-introduction');
+    const copy = edited.DiPageContent.find(row => row.key === 'contact-introduction');
+    section.isVisible = false;
+    copy.text = 'QA Contact introduction';
+    win.DanceCMS.hydrate(doc, manifest, edited, win.DanceWixCMS, root);
+    assert(doc.querySelector('.contact-introduction').hidden && !doc.querySelector('.contact-form-panel').hidden, 'Hiding one section affected other content');
+    section.isVisible = true;
+    copy.isVisible = false;
+    win.DanceCMS.hydrate(doc, manifest, edited, win.DanceWixCMS, root);
+    assert(doc.querySelector('.contact-introduction').hidden, 'Visible section overrode its hidden content record');
+    copy.isVisible = true;
+    win.DanceCMS.hydrate(doc, manifest, edited, win.DanceWixCMS, root);
+    assert(!doc.querySelector('.contact-introduction').hidden && doc.querySelector('.contact-introduction').textContent === 'QA Contact introduction', 'Re-enabled section did not return');
+    assert(doc.querySelector('.mobile-menu').hidden && [...doc.querySelectorAll('.nav-dropdown-menu')].every(node => node.hidden), 'Restoring content opened conditional navigation');
+  });
+  await check('Hiding a gallery section wins over its nonempty photo list', async () => {
+    const doc = await load('shows-and-competition/nutcracker/index.html'), win = frame.contentWindow;
+    const manifest = JSON.parse(doc.getElementById('dance-cms-bindings').textContent), edited = clone(seed);
+    const section = edited.DiSections.find(row => row.key === 'shows-and-competition/nutcracker-nutcracker-gallery');
+    section.isVisible = false;
+    win.DanceCMS.hydrate(doc, manifest, edited, win.DanceWixCMS, root);
+    assert(doc.querySelector('.nutcracker-gallery').hidden && !doc.querySelector('.nutcracker-shows').hidden, 'Gallery content overrode section visibility');
+    section.isVisible = true;
+    win.DanceCMS.hydrate(doc, manifest, edited, win.DanceWixCMS, root);
+    assert(!doc.querySelector('.nutcracker-gallery').hidden, 'Gallery did not return after re-enabling');
+  });
+  await check('Legal sections support edited bodies, order and visibility', async () => {
+    const doc = await load('privacy-policy/index.html'), win = frame.contentWindow;
+    const manifest = JSON.parse(doc.getElementById('dance-cms-bindings').textContent), edited = clone(seed);
+    const list = manifest.lists.find(row => row.collection === 'DiLegalSections');
+    const hidden = edited.DiLegalSections.find(row => row.page === 'privacy-policy');
+    hidden.isVisible = false;
+    edited.DiLegalSections.push({key:'qa-legal',page:'privacy-policy',title:'QA Privacy section',body:'<p>Updated privacy information.</p><ul><li>QA Detail</li></ul>',isVisible:true,sortOrder:-1});
+    edited.DiLegalSections.push({key:'qa-other-legal',page:'accessibility-statement',title:'QA Different page',body:'<p>Other page.</p>',isVisible:true,sortOrder:-2});
+    win.DanceCMS.hydrate(doc, manifest, edited, win.DanceWixCMS, root);
+    const container = doc.querySelector(list.selector), first = container.firstElementChild;
+    assert(first.querySelector('h2').textContent === 'QA Privacy section', 'New legal section order failed');
+    assert(first.querySelector('li').textContent === 'QA Detail' && first.querySelector('p').textContent === 'Updated privacy information.', 'Legal body did not render');
+    assert(!container.textContent.includes(hidden.title) && !container.textContent.includes('QA Different page'), 'Legal visibility/page filtering failed');
+  });
+  await check('Contact labels, email feedback and page metadata are editable', async () => {
+    const doc = await load('contact/index.html'), win = frame.contentWindow;
+    const manifest = JSON.parse(doc.getElementById('dance-cms-bindings').textContent), edited = clone(seed);
+    for (const [key, value] of [['contact-field-first','QA Given name'],['contact-submit-label','QA Prepare message'],['contact-data-feedback-message','QA Send your draft to {email}.'],['contact-data-subject','QA Studio inquiry']]) {
+      edited.DiPageContent.find(row => row.key === key).text = value;
+    }
+    Object.assign(edited.DiPages.find(row => row.key === 'contact'), {title:'QA Contact | Dance Institute',description:'QA Contact description'});
+    win.DanceCMS.hydrate(doc, manifest, edited, win.DanceWixCMS, root);
+    const form = doc.querySelector('[data-contact-form]');
+    assert(form.querySelector('label[for="contact-first"]').textContent === 'QA Given name*', 'Field wording or required marker was lost');
+    assert(form.querySelector('button[type="submit"]').textContent.trim() === 'QA Prepare message' && form.querySelector('button[type="submit"] svg'), 'Submit wording or icon was lost');
+    assert(form.dataset.feedbackMessage === 'QA Send your draft to {email}.' && form.dataset.subject === 'QA Studio inquiry', 'Email settings failed to update');
+    assert(doc.title === 'QA Contact | Dance Institute' && doc.querySelector('meta[name="description"]').content === 'QA Contact description', 'Contact metadata did not update');
+    const photo = edited.DiImages.find(row => row.key === 'contact-photo'), originalImage = photo.image;
+    photo.image = '';
+    win.DanceCMS.hydrate(doc, manifest, edited, win.DanceWixCMS, root);
+    assert(doc.querySelector('.contact-photo').hidden, 'An empty contact photo remained visible');
+    photo.image = originalImage;
+    win.DanceCMS.hydrate(doc, manifest, edited, win.DanceWixCMS, root);
+    assert(!doc.querySelector('.contact-photo').hidden, 'Restoring a contact photo left it hidden');
   });
   await check('Competition gallery: reorder, hide and add photos', async () => {
     const doc = await load('shows-and-competition/competition/index.html'), win = frame.contentWindow;

@@ -11,7 +11,9 @@ Promise.resolve(window.siteContentReady).then(() => {
   const syncToggle = () => {
     const visible = groups.filter(group => !group.hidden);
     toggle.disabled = !visible.length;
-    toggle.textContent = visible.some(group => group.open) ? 'Collapse all' : 'Expand all';
+    toggle.textContent = visible.some(group => group.open)
+      ? toggle.dataset.collapseLabel || 'Collapse all'
+      : toggle.dataset.expandLabel || 'Expand all';
   };
   toggle.addEventListener('click', () => {
     const visible = groups.filter(group => !group.hidden);

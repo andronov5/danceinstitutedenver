@@ -11,6 +11,7 @@
         "phone": "303-525-0011",
         "email": "dance@danceinstitutedenver.com",
         "address": "10515 E 40th Ave\n#114\nDenver, CO 80239",
+        "phoneSuffix": "Call or Text",
         "_id": "d42556b4-9afc-50dc-9f97-1e70122cb322"
       }
     ],
@@ -228,9 +229,72 @@
         "_id": "78e00ed4-cff5-5554-8dc3-6b03e7ad8317"
       },
       {
-        "key": "classes-title",
+        "key": "navigation-group-about",
         "isVisible": true,
         "sortOrder": 14,
+        "title": "Navigation group: About",
+        "page": "All pages",
+        "text": "About",
+        "_id": "6c43d568-fe59-5c4d-b95d-526da03960d6"
+      },
+      {
+        "key": "navigation-group-shows-competition",
+        "isVisible": true,
+        "sortOrder": 15,
+        "title": "Navigation group: Shows & Competition",
+        "page": "All pages",
+        "text": "Shows & Competition",
+        "_id": "24970ed2-ff59-5b36-8fa2-7f4096511260"
+      },
+      {
+        "key": "logo-home-label",
+        "isVisible": true,
+        "sortOrder": 16,
+        "title": "Logo link accessible label",
+        "page": "All pages",
+        "text": "Dance Institute home",
+        "_id": "3450d2d8-1414-5683-8dab-3f89016e00ea"
+      },
+      {
+        "key": "navigation-data-open-label",
+        "isVisible": true,
+        "sortOrder": 17,
+        "title": "Navigation: Open menu",
+        "page": "All pages",
+        "text": "Open menu",
+        "_id": "bbfd9627-dee0-59ef-bf9c-b4071b7dd0d8"
+      },
+      {
+        "key": "navigation-data-close-label",
+        "isVisible": true,
+        "sortOrder": 18,
+        "title": "Navigation: Close menu",
+        "page": "All pages",
+        "text": "Close menu",
+        "_id": "2e5acde2-803f-5ba6-85f8-d8a7c4bae4f6"
+      },
+      {
+        "key": "back-to-top",
+        "isVisible": true,
+        "sortOrder": 19,
+        "title": "Back to top accessible label",
+        "page": "All pages",
+        "text": "Back to top",
+        "_id": "01552db2-0ff1-5715-98ce-2b478b95c447"
+      },
+      {
+        "key": "skip-link",
+        "isVisible": true,
+        "sortOrder": 20,
+        "title": "Skip to content label",
+        "page": "All pages",
+        "text": "Skip to Main Content",
+        "_id": "82aaa194-67c9-58f2-9c56-aedcf9f7ff91"
+      },
+      {
+        "key": "classes-title",
+        "isVisible": true,
+        "sortOrder": 21,
         "title": "Dance Classes title",
         "page": "Dance Classes",
         "text": "Dance Classes",
@@ -239,16 +303,26 @@
       {
         "key": "classes-placement",
         "isVisible": true,
-        "sortOrder": 15,
+        "sortOrder": 22,
         "title": "Class placement note",
         "page": "Dance Classes",
         "text": "Class placement is determined by Dance Institute Instructors.",
         "_id": "fb87d34b-63bf-52fc-b812-3a01a98b88ea"
       },
       {
+        "key": "classes-disclosure-labels",
+        "isVisible": true,
+        "sortOrder": 23,
+        "title": "Expand and collapse class groups",
+        "page": "Dance Classes",
+        "expandLabel": "Expand all",
+        "collapseLabel": "Collapse all",
+        "_id": "571a7b95-1c17-5333-8b8d-1f80309e849f"
+      },
+      {
         "key": "teachers-title",
         "isVisible": true,
-        "sortOrder": 16,
+        "sortOrder": 24,
         "title": "Teachers page title",
         "page": "about/teachers/index.html",
         "text": "Teachers",
@@ -257,7 +331,7 @@
       {
         "key": "policies-title",
         "isVisible": true,
-        "sortOrder": 17,
+        "sortOrder": 25,
         "title": "Studio Policies page title",
         "page": "about/studio-policies/index.html",
         "text": "STUDIO POLICIES",
@@ -266,7 +340,7 @@
       {
         "key": "schedule-title",
         "isVisible": true,
-        "sortOrder": 18,
+        "sortOrder": 26,
         "title": "Class Schedule title",
         "page": "Schedule",
         "text": "2026-2027 Class Schedule",
@@ -275,16 +349,97 @@
       {
         "key": "schedule-footnote",
         "isVisible": true,
-        "sortOrder": 19,
+        "sortOrder": 27,
         "title": "Class Schedule placement note",
         "page": "Schedule",
         "text": "*Class placement is determined by Dance Institute Instructors",
         "_id": "cb9a54fe-ba8f-505b-9b4b-d65318b0f262"
       },
       {
+        "key": "schedule-column-class",
+        "isVisible": true,
+        "sortOrder": 28,
+        "title": "Schedule column: Class",
+        "page": "Schedule",
+        "text": "Class",
+        "_id": "a9b72236-419c-5b35-925e-ddd45720f63a"
+      },
+      {
+        "key": "schedule-column-details",
+        "isVisible": true,
+        "sortOrder": 29,
+        "title": "Schedule column: Details",
+        "page": "Schedule",
+        "text": "Details",
+        "_id": "d34fb970-49b6-51a2-b18b-115cbee28b95"
+      },
+      {
+        "key": "schedule-column-monday",
+        "isVisible": true,
+        "sortOrder": 30,
+        "title": "Schedule column: Monday",
+        "page": "Schedule",
+        "text": "Monday",
+        "_id": "f975d50e-6a9d-53a9-a557-8015afb5f2b2"
+      },
+      {
+        "key": "schedule-column-tuesday",
+        "isVisible": true,
+        "sortOrder": 31,
+        "title": "Schedule column: Tuesday",
+        "page": "Schedule",
+        "text": "Tuesday",
+        "_id": "394fdcec-8a12-51d4-b914-54851c83ac39"
+      },
+      {
+        "key": "schedule-column-wednesday",
+        "isVisible": true,
+        "sortOrder": 32,
+        "title": "Schedule column: Wednesday",
+        "page": "Schedule",
+        "text": "Wednesday",
+        "_id": "66db0c77-ba06-553a-92f2-f2be11db03fc"
+      },
+      {
+        "key": "schedule-column-thursday",
+        "isVisible": true,
+        "sortOrder": 33,
+        "title": "Schedule column: Thursday",
+        "page": "Schedule",
+        "text": "Thursday",
+        "_id": "e397506c-4cb1-5a91-9dae-3496986836d8"
+      },
+      {
+        "key": "schedule-column-friday",
+        "isVisible": true,
+        "sortOrder": 34,
+        "title": "Schedule column: Friday",
+        "page": "Schedule",
+        "text": "Friday",
+        "_id": "0426c0ff-7783-56c2-850d-240d8fa62275"
+      },
+      {
+        "key": "schedule-column-saturday",
+        "isVisible": true,
+        "sortOrder": 35,
+        "title": "Schedule column: Saturday",
+        "page": "Schedule",
+        "text": "Saturday",
+        "_id": "faf2724d-a02d-588f-af7d-4da1a17de60c"
+      },
+      {
+        "key": "schedule-region-label",
+        "isVisible": true,
+        "sortOrder": 36,
+        "title": "Schedule accessible label",
+        "page": "Schedule",
+        "text": "Full weekly class schedule",
+        "_id": "1507cb0f-c64d-569e-a519-8e9ba92aeed4"
+      },
+      {
         "key": "nutcracker-title",
         "isVisible": true,
-        "sortOrder": 20,
+        "sortOrder": 37,
         "title": "Nutcracker page title",
         "page": "shows-and-competition/nutcracker/index.html",
         "text": "Nutcracker",
@@ -293,7 +448,7 @@
       {
         "key": "nutcracker-shows-title",
         "isVisible": true,
-        "sortOrder": 21,
+        "sortOrder": 38,
         "title": "Nutcracker Shows heading",
         "page": "shows-and-competition/nutcracker/index.html",
         "text": "Nutcracker Shows",
@@ -302,7 +457,7 @@
       {
         "key": "nutcracker-prep-title",
         "isVisible": true,
-        "sortOrder": 22,
+        "sortOrder": 39,
         "title": "Nutcracker Prep Week heading",
         "page": "shows-and-competition/nutcracker/index.html",
         "text": "Nutcracker Prep Week",
@@ -311,7 +466,7 @@
       {
         "key": "nutcracker-auditions-title",
         "isVisible": true,
-        "sortOrder": 23,
+        "sortOrder": 40,
         "title": "Nutcracker Auditions heading",
         "page": "shows-and-competition/nutcracker/index.html",
         "text": "Nutcracker Auditions",
@@ -320,7 +475,7 @@
       {
         "key": "nutcracker-rehearsals-title",
         "isVisible": true,
-        "sortOrder": 24,
+        "sortOrder": 41,
         "title": "Nutcracker Rehearsals heading",
         "page": "shows-and-competition/nutcracker/index.html",
         "text": "Nutcracker Rehearsals",
@@ -329,7 +484,7 @@
       {
         "key": "nutcracker-merch-title",
         "isVisible": true,
-        "sortOrder": 25,
+        "sortOrder": 42,
         "title": "Merch heading",
         "page": "shows-and-competition/nutcracker/index.html",
         "text": "Merch",
@@ -338,7 +493,7 @@
       {
         "key": "nutcracker-when-label",
         "isVisible": true,
-        "sortOrder": 26,
+        "sortOrder": 43,
         "title": "When label",
         "page": "shows-and-competition/nutcracker/index.html",
         "text": "When:",
@@ -347,7 +502,7 @@
       {
         "key": "nutcracker-where-label",
         "isVisible": true,
-        "sortOrder": 27,
+        "sortOrder": 44,
         "title": "Where label",
         "page": "shows-and-competition/nutcracker/index.html",
         "text": "Where:",
@@ -356,7 +511,7 @@
       {
         "key": "nutcracker-venue",
         "isVisible": true,
-        "sortOrder": 28,
+        "sortOrder": 45,
         "title": "Show venue name",
         "page": "shows-and-competition/nutcracker/index.html",
         "text": "Adams City High School",
@@ -365,7 +520,7 @@
       {
         "key": "nutcracker-tickets-status",
         "isVisible": true,
-        "sortOrder": 29,
+        "sortOrder": 46,
         "title": "Nutcracker tickets status",
         "page": "shows-and-competition/nutcracker/index.html",
         "text": "Tickets coming soon!",
@@ -374,7 +529,7 @@
       {
         "key": "nutcracker-prep-body",
         "isVisible": true,
-        "sortOrder": 30,
+        "sortOrder": 47,
         "title": "Nutcracker Prep Week details",
         "page": "shows-and-competition/nutcracker/index.html",
         "body": "<p>This week prepares dancers for their Nutcracker audition. Any dancer wanting to put extra focus into their ballet dancing before they audition is encouraged to come dance with us this week.</p>",
@@ -383,7 +538,7 @@
       {
         "key": "nutcracker-audition-date",
         "isVisible": true,
-        "sortOrder": 31,
+        "sortOrder": 48,
         "title": "Nutcracker audition date",
         "page": "shows-and-competition/nutcracker/index.html",
         "text": "August 29, 2026",
@@ -393,7 +548,7 @@
       {
         "key": "nutcracker-audition-status",
         "isVisible": true,
-        "sortOrder": 32,
+        "sortOrder": 49,
         "title": "Nutcracker audition status",
         "page": "shows-and-competition/nutcracker/index.html",
         "text": "Auditions have closed for this season.",
@@ -402,7 +557,7 @@
       {
         "key": "nutcracker-rehearsal-date",
         "isVisible": true,
-        "sortOrder": 33,
+        "sortOrder": 50,
         "title": "Rehearsal schedule",
         "page": "shows-and-competition/nutcracker/index.html",
         "text": "Saturday afternoons",
@@ -411,7 +566,7 @@
       {
         "key": "nutcracker-rehearsal-body",
         "isVisible": true,
-        "sortOrder": 34,
+        "sortOrder": 51,
         "title": "Rehearsal details and registration link",
         "page": "shows-and-competition/nutcracker/index.html",
         "body": "Rehearsals last 30–90 minutes, depending on the role. We make every effort to accommodate performers’ schedules. Performers may miss no more than two rehearsals. The rehearsal fee is $130 and can be paid under Events on the <a href=\"../../register/index.html\">Register Now!</a> page.",
@@ -420,7 +575,7 @@
       {
         "key": "nutcracker-merch-status",
         "isVisible": true,
-        "sortOrder": 35,
+        "sortOrder": 52,
         "title": "Nutcracker merchandise status",
         "page": "shows-and-competition/nutcracker/index.html",
         "text": "Coming soon!",
@@ -429,7 +584,7 @@
       {
         "key": "nutcracker-contact-title",
         "isVisible": true,
-        "sortOrder": 36,
+        "sortOrder": 53,
         "title": "Nutcracker contact heading",
         "page": "shows-and-competition/nutcracker/index.html",
         "text": "Interested in Learning More?",
@@ -438,7 +593,7 @@
       {
         "key": "competition-title",
         "isVisible": true,
-        "sortOrder": 37,
+        "sortOrder": 54,
         "title": "Competition page title",
         "page": "shows-and-competition/competition/index.html",
         "text": "Competition",
@@ -447,7 +602,7 @@
       {
         "key": "competition-introduction",
         "isVisible": true,
-        "sortOrder": 38,
+        "sortOrder": 55,
         "title": "Competition introduction",
         "page": "shows-and-competition/competition/index.html",
         "body": "<p>We typically attend three competitions in April and May.</p>",
@@ -456,7 +611,7 @@
       {
         "key": "recital-title",
         "isVisible": true,
-        "sortOrder": 39,
+        "sortOrder": 56,
         "title": "Recital page title",
         "page": "shows-and-competition/recital/index.html",
         "text": "Recital",
@@ -465,7 +620,7 @@
       {
         "key": "recital-shows-title",
         "isVisible": true,
-        "sortOrder": 40,
+        "sortOrder": 57,
         "title": "Recital shows heading",
         "page": "shows-and-competition/recital/index.html",
         "text": "Shows",
@@ -474,7 +629,7 @@
       {
         "key": "recital-gala-title",
         "isVisible": true,
-        "sortOrder": 41,
+        "sortOrder": 58,
         "title": "Recital gala heading",
         "page": "shows-and-competition/recital/index.html",
         "text": "Our Gala",
@@ -483,7 +638,7 @@
       {
         "key": "recital-volunteering-title",
         "isVisible": true,
-        "sortOrder": 42,
+        "sortOrder": 59,
         "title": "Recital volunteering heading",
         "page": "shows-and-competition/recital/index.html",
         "text": "Volunteering",
@@ -492,7 +647,7 @@
       {
         "key": "recital-information",
         "isVisible": true,
-        "sortOrder": 43,
+        "sortOrder": 60,
         "title": "Recital information",
         "page": "shows-and-competition/recital/index.html",
         "body": "<p>We present three shows in early June to showcase what our dancers have been learning in class. Younger classes perform in one show, while some classes perform in all three.</p>",
@@ -501,7 +656,7 @@
       {
         "key": "recital-gala",
         "isVisible": true,
-        "sortOrder": 44,
+        "sortOrder": 61,
         "title": "Recital gala",
         "page": "shows-and-competition/recital/index.html",
         "body": "<p>Our gala is an opportunity to support the studio, take part in bidding, and enjoy performances of our competition dances.</p>",
@@ -510,7 +665,7 @@
       {
         "key": "recital-volunteering",
         "isVisible": true,
-        "sortOrder": 45,
+        "sortOrder": 62,
         "title": "Recital volunteering",
         "page": "shows-and-competition/recital/index.html",
         "body": "",
@@ -519,7 +674,7 @@
       {
         "key": "summer-title",
         "isVisible": true,
-        "sortOrder": 46,
+        "sortOrder": 63,
         "title": "Summer page title",
         "page": "Summer Intensive",
         "text": "2025 Summer Schedule",
@@ -528,7 +683,7 @@
       {
         "key": "summer-intensive-heading",
         "isVisible": true,
-        "sortOrder": 47,
+        "sortOrder": 64,
         "title": "Summer Intensive heading",
         "page": "Summer Intensive",
         "text": "Summer Intensive",
@@ -537,7 +692,7 @@
       {
         "key": "summer-intensive-dates",
         "isVisible": true,
-        "sortOrder": 48,
+        "sortOrder": 65,
         "title": "Summer Intensive dates and days",
         "page": "Summer Intensive",
         "text": "Classes meet Tuesdays, Wednesdays and Thursdays from June 17th–July 31st.",
@@ -546,7 +701,7 @@
       {
         "key": "summer-holiday-exception",
         "isVisible": true,
-        "sortOrder": 49,
+        "sortOrder": 66,
         "title": "Summer holiday exception",
         "page": "Summer Intensive",
         "text": "No class the week of July 4th.",
@@ -555,7 +710,7 @@
       {
         "key": "summer-combined-price",
         "isVisible": true,
-        "sortOrder": 50,
+        "sortOrder": 67,
         "title": "Summer combined course price",
         "page": "Summer Intensive",
         "body": "<strong>$400.00</strong> for both courses.",
@@ -564,7 +719,7 @@
       {
         "key": "summer-combined-description",
         "isVisible": true,
-        "sortOrder": 51,
+        "sortOrder": 68,
         "title": "Summer combined course description",
         "page": "Summer Intensive",
         "body": "Your dancer will have 54 hours of training this summer with our intensive. Our Intensive is perfect for dancers 11 and older that are looking to not only maintain their dance over the summer but to grow and be challenged.",
@@ -573,7 +728,7 @@
       {
         "key": "summer-flexibility",
         "isVisible": true,
-        "sortOrder": 52,
+        "sortOrder": 69,
         "title": "Summer attendance and flexibility",
         "page": "Summer Intensive",
         "body": "We understand there are vacations planned and students will miss some days here and there. This intensive is designed to accommodate busy schedules with an open curriculum and an extremely discounted price. As well as, no Monday or Friday classes.",
@@ -582,7 +737,7 @@
       {
         "key": "summer-camps-heading",
         "isVisible": true,
-        "sortOrder": 53,
+        "sortOrder": 70,
         "title": "Summer Camps heading",
         "page": "Summer Intensive",
         "text": "Summer Camps",
@@ -591,7 +746,7 @@
       {
         "key": "summer-camps-notice",
         "isVisible": true,
-        "sortOrder": 54,
+        "sortOrder": 71,
         "title": "Summer camp schedule notice",
         "page": "Summer Intensive",
         "body": "Schedule is subject to change or cancellation. Sign-up early to get the week you want.",
@@ -600,7 +755,7 @@
       {
         "key": "summer-camp-logistics",
         "isVisible": true,
-        "sortOrder": 55,
+        "sortOrder": 72,
         "title": "Summer camp full day and pickup information",
         "page": "Summer Intensive",
         "body": "Full-day camp is available by combining morning and afternoon camps. Early drop-off and Late pick-up are available for an additional charge of $10.00 per 30 minutes. Our Lunch Hour is Noon-1:00 PM.",
@@ -609,7 +764,7 @@
       {
         "key": "summer-camp-lunch",
         "isVisible": true,
-        "sortOrder": 56,
+        "sortOrder": 73,
         "title": "Summer camp lunch information",
         "page": "Summer Intensive",
         "body": "Campers in both the All-day and Half-day camps are welcome to join us for lunch.",
@@ -618,7 +773,7 @@
       {
         "key": "summer-contact-heading",
         "isVisible": true,
-        "sortOrder": 57,
+        "sortOrder": 74,
         "title": "Summer contact heading",
         "page": "Summer Intensive",
         "text": "Interested in Learning More?",
@@ -627,7 +782,7 @@
       {
         "key": "contact-title",
         "isVisible": true,
-        "sortOrder": 58,
+        "sortOrder": 75,
         "title": "Contact page title",
         "page": "Contact",
         "text": "Contact Dance Institute",
@@ -636,16 +791,88 @@
       {
         "key": "contact-introduction",
         "isVisible": true,
-        "sortOrder": 59,
+        "sortOrder": 76,
         "title": "Contact introduction",
         "page": "Contact",
         "text": "We are excited to hear from you! If you have any questions about our classes, schedule, or anything else, please reach out using the form below. Our team will respond promptly to ensure you have all the information you need.",
         "_id": "8c66523c-c9fd-5e0a-85aa-032a404fe2fd"
       },
       {
+        "key": "contact-field-first",
+        "isVisible": true,
+        "sortOrder": 77,
+        "title": "Contact form: first",
+        "page": "Contact",
+        "text": "First name",
+        "_id": "a77dda26-669b-58b6-afe3-03bed24085dd"
+      },
+      {
+        "key": "contact-field-last",
+        "isVisible": true,
+        "sortOrder": 78,
+        "title": "Contact form: last",
+        "page": "Contact",
+        "text": "Last name",
+        "_id": "a3c61071-e5c5-529c-ac85-938d89d481f5"
+      },
+      {
+        "key": "contact-field-email",
+        "isVisible": true,
+        "sortOrder": 79,
+        "title": "Contact form: email",
+        "page": "Contact",
+        "text": "Email",
+        "_id": "61e708b4-9ab1-50fe-8238-a5dd9f100647"
+      },
+      {
+        "key": "contact-field-phone",
+        "isVisible": true,
+        "sortOrder": 80,
+        "title": "Contact form: phone",
+        "page": "Contact",
+        "text": "Phone",
+        "_id": "20574198-a000-5aad-9f39-03f8edcd6d48"
+      },
+      {
+        "key": "contact-field-message",
+        "isVisible": true,
+        "sortOrder": 81,
+        "title": "Contact form: message",
+        "page": "Contact",
+        "text": "Message",
+        "_id": "4241e3d6-298b-5a67-81e1-b328d2313997"
+      },
+      {
+        "key": "contact-submit-label",
+        "isVisible": true,
+        "sortOrder": 82,
+        "title": "Contact submit button",
+        "page": "Contact",
+        "text": "Submit",
+        "_id": "5e3d47c8-9d89-50d7-9c59-2c9c2f870104"
+      },
+      {
+        "key": "contact-data-feedback-message",
+        "isVisible": true,
+        "sortOrder": 83,
+        "title": "Contact form: feedback-message",
+        "page": "Contact",
+        "text": "Your email draft is ready. Send it from your email app to deliver your message. You can also email {email} directly.",
+        "_id": "12a8441c-6aa8-5c43-8ca6-6743c3b11497"
+      },
+      {
+        "key": "contact-data-subject",
+        "isVisible": true,
+        "sortOrder": 84,
+        "title": "Contact form: subject",
+        "page": "Contact",
+        "text": "Dance Institute inquiry",
+        "_id": "3a59997d-237d-5330-9dbb-150d298f6f04"
+      },
+      {
         "key": "register-heading-1",
         "isVisible": true,
-        "sortOrder": 60,
+        "sortOrder": 85,
         "title": "Register",
         "page": "Register",
         "text": "Register",
@@ -654,7 +881,7 @@
       {
         "key": "register-heading-2",
         "isVisible": true,
-        "sortOrder": 61,
+        "sortOrder": 86,
         "title": "Monthly Tuition",
         "page": "Register",
         "text": "Monthly Tuition",
@@ -663,7 +890,7 @@
       {
         "key": "register-heading-3",
         "isVisible": true,
-        "sortOrder": 62,
+        "sortOrder": 87,
         "title": "Discounts Given",
         "page": "Register",
         "text": "Discounts Given",
@@ -672,7 +899,7 @@
       {
         "key": "register-heading-4",
         "isVisible": true,
-        "sortOrder": 63,
+        "sortOrder": 88,
         "title": "Membership Fee",
         "page": "Register",
         "text": "Membership Fee",
@@ -681,7 +908,7 @@
       {
         "key": "register-heading-5",
         "isVisible": true,
-        "sortOrder": 64,
+        "sortOrder": 89,
         "title": "How to Register:",
         "page": "Register",
         "text": "How to Register:",
@@ -690,11 +917,65 @@
       {
         "key": "register-instructions",
         "isVisible": true,
-        "sortOrder": 65,
+        "sortOrder": 90,
         "title": "Registration instructions",
         "page": "Register",
         "body": "Please click “Register Now!” then click “Learn More.” Once you have purchased your membership, you will be guided through the registration process. Ignore our waitlists. We have put those in place to ensure all the appropriate discounts are applied. If you have any questions or need any assistance please call <a href=\"tel:+13035250011\">303-525-0011</a>.",
         "_id": "1a064351-1d3d-550d-8c13-c40a17d9bcde"
+      },
+      {
+        "key": "sawyer-link-label",
+        "isVisible": true,
+        "sortOrder": 91,
+        "title": "Sawyer link label",
+        "page": "Register",
+        "text": "Click Here",
+        "_id": "b9cd0fef-ce70-57ba-8ff4-c913295deaaf"
+      },
+      {
+        "key": "sawyer-link-suffix",
+        "isVisible": true,
+        "sortOrder": 92,
+        "title": "Sawyer link trailing text",
+        "page": "Register",
+        "text": "to register",
+        "_id": "9dc97b49-faeb-535c-9257-323079e616d5"
+      },
+      {
+        "key": "privacy-policy-title",
+        "isVisible": true,
+        "sortOrder": 93,
+        "title": "Privacy Policy",
+        "page": "privacy-policy",
+        "text": "Privacy Policy",
+        "_id": "e65121c2-d099-540e-a949-a2dcb327ccb2"
+      },
+      {
+        "key": "accessibility-statement-title",
+        "isVisible": true,
+        "sortOrder": 94,
+        "title": "ACCESSIBILITY STATEMENT",
+        "page": "accessibility-statement",
+        "text": "ACCESSIBILITY STATEMENT",
+        "_id": "05a3456f-31e2-5e7e-8347-cc74be0397b7"
+      },
+      {
+        "key": "accessibility-statement-introduction-1",
+        "isVisible": true,
+        "sortOrder": 95,
+        "title": "Introduction 1",
+        "page": "accessibility-statement",
+        "body": "At Dance Institute, we are dedicated to ensuring our dance studio is welcoming and accessible to everyone, including individuals with disabilities. We strive to provide an inclusive environment that empowers all students to express themselves through dance.",
+        "_id": "ffa1173e-7f51-52b6-a247-3ff35ce852bc"
+      },
+      {
+        "key": "accessibility-statement-opening-1",
+        "isVisible": true,
+        "sortOrder": 96,
+        "title": "Opening paragraph 1",
+        "page": "accessibility-statement",
+        "body": "This statement was last updated on [enter relevant date]. We at Dance Institute are committed to making our studio and website accessible to all individuals, ensuring everyone can engage with our dance programs.",
+        "_id": "3ea4adce-c9a2-5773-9e7f-102c2bae5554"
       }
     ],
     "DiLinks": [
@@ -719,9 +1000,158 @@
         "_id": "523b831b-672c-54bd-b24f-7a7974bed8ef"
       },
       {
-        "key": "schedule-register",
+        "key": "navigation-home",
         "isVisible": true,
         "sortOrder": 2,
+        "title": "Navigation: Home",
+        "page": "All pages",
+        "url": "@/index.html",
+        "label": "Home",
+        "_id": "d6de2e42-0e93-5596-b91d-01f926c37d08"
+      },
+      {
+        "key": "navigation-dance-classes",
+        "isVisible": true,
+        "sortOrder": 3,
+        "title": "Navigation: Dance Classes",
+        "page": "All pages",
+        "url": "@/dance-classes/index.html",
+        "label": "Dance Classes",
+        "_id": "fc2e8b00-ad12-58aa-8364-d9ec8eb7eb31"
+      },
+      {
+        "key": "navigation-studio-policies",
+        "isVisible": true,
+        "sortOrder": 4,
+        "title": "Navigation: Studio Policies",
+        "page": "All pages",
+        "url": "@/about/studio-policies/index.html",
+        "label": "Studio Policies",
+        "_id": "c2163a23-4d00-5e15-abcb-9351907d5fba"
+      },
+      {
+        "key": "navigation-teachers",
+        "isVisible": true,
+        "sortOrder": 5,
+        "title": "Navigation: Teachers",
+        "page": "All pages",
+        "url": "@/about/teachers/index.html",
+        "label": "Teachers",
+        "_id": "106920db-1de7-5678-8628-8ff5d928707c"
+      },
+      {
+        "key": "navigation-schedule",
+        "isVisible": true,
+        "sortOrder": 6,
+        "title": "Navigation: Schedule",
+        "page": "All pages",
+        "url": "@/schedule/index.html",
+        "label": "Schedule",
+        "_id": "05f00fdf-cdea-5b6e-a546-bee5c697a82b"
+      },
+      {
+        "key": "navigation-nutcracker",
+        "isVisible": true,
+        "sortOrder": 7,
+        "title": "Navigation: Nutcracker",
+        "page": "All pages",
+        "url": "@/shows-and-competition/nutcracker/index.html",
+        "label": "Nutcracker",
+        "_id": "51d084d2-a9f1-5c95-b619-4ee83afeeb01"
+      },
+      {
+        "key": "navigation-competition",
+        "isVisible": true,
+        "sortOrder": 8,
+        "title": "Navigation: Competition",
+        "page": "All pages",
+        "url": "@/shows-and-competition/competition/index.html",
+        "label": "Competition",
+        "_id": "58652e60-65bb-5a7b-9621-6cfd0fb4b987"
+      },
+      {
+        "key": "navigation-recital",
+        "isVisible": true,
+        "sortOrder": 9,
+        "title": "Navigation: Recital",
+        "page": "All pages",
+        "url": "@/shows-and-competition/recital/index.html",
+        "label": "Recital",
+        "_id": "2b472978-4148-5da7-913e-2d1fc277030f"
+      },
+      {
+        "key": "navigation-summer-intensive",
+        "isVisible": true,
+        "sortOrder": 10,
+        "title": "Navigation: Summer Intensive",
+        "page": "All pages",
+        "url": "@/summer-intensive/index.html",
+        "label": "Summer Intensive",
+        "_id": "2504ef49-b0fd-50ee-b97b-a4977a7252d2"
+      },
+      {
+        "key": "navigation-contact",
+        "isVisible": true,
+        "sortOrder": 11,
+        "title": "Navigation: Contact",
+        "page": "All pages",
+        "url": "@/contact/index.html",
+        "label": "Contact",
+        "_id": "1985e33e-a01c-5f2f-8aa1-0fecc3f7f48d"
+      },
+      {
+        "key": "navigation-register",
+        "isVisible": true,
+        "sortOrder": 12,
+        "title": "Navigation: Register",
+        "page": "All pages",
+        "url": "@/register/index.html",
+        "label": "Register",
+        "_id": "8862286f-46dc-5172-802a-59195bd8c4a4"
+      },
+      {
+        "key": "header-register",
+        "isVisible": true,
+        "sortOrder": 13,
+        "title": "Header registration button",
+        "page": "All pages",
+        "url": "@/register/index.html",
+        "label": "Register Now",
+        "_id": "6eed6c15-6c05-5c3d-ab34-1ef0841d8c2d"
+      },
+      {
+        "key": "footer-privacy-policy",
+        "isVisible": true,
+        "sortOrder": 14,
+        "title": "Footer: Privacy Policy",
+        "page": "All pages",
+        "url": "@/privacy-policy/index.html",
+        "label": "Privacy Policy",
+        "_id": "cf97b55c-bd89-5189-a38a-759e2fc75950"
+      },
+      {
+        "key": "footer-accessibility-statement",
+        "isVisible": true,
+        "sortOrder": 15,
+        "title": "Footer: Accessibility Statement",
+        "page": "All pages",
+        "url": "@/accessibility-statement/index.html",
+        "label": "Accessibility Statement",
+        "_id": "5f9b8c78-91d9-5898-a800-45e7857d390b"
+      },
+      {
+        "key": "logo-home-link",
+        "isVisible": true,
+        "sortOrder": 16,
+        "title": "Home links",
+        "page": "All pages",
+        "url": "@/index.html",
+        "_id": "fada9b12-bb92-5c35-b702-36f9bafea78c"
+      },
+      {
+        "key": "schedule-register",
+        "isVisible": true,
+        "sortOrder": 17,
         "title": "Schedule registration button",
         "page": "Schedule",
         "url": "@/register/index.html",
@@ -731,7 +1161,7 @@
       {
         "key": "nutcracker-venue-link",
         "isVisible": true,
-        "sortOrder": 3,
+        "sortOrder": 18,
         "title": "Show venue directions",
         "page": "shows-and-competition/nutcracker/index.html",
         "url": "https://www.google.com/maps/dir/?api=1&destination=Adams+City+High+School%2C+7200+Quebec+Parkway%2C+Commerce+City%2C+CO+80022",
@@ -740,7 +1170,7 @@
       {
         "key": "nutcracker-tickets-link",
         "isVisible": true,
-        "sortOrder": 4,
+        "sortOrder": 19,
         "title": "Nutcracker tickets link",
         "page": "shows-and-competition/nutcracker/index.html",
         "label": "",
@@ -750,7 +1180,7 @@
       {
         "key": "nutcracker-merch-link",
         "isVisible": true,
-        "sortOrder": 5,
+        "sortOrder": 20,
         "title": "Nutcracker merchandise link",
         "page": "shows-and-competition/nutcracker/index.html",
         "label": "",
@@ -760,7 +1190,7 @@
       {
         "key": "nutcracker-contact-link",
         "isVisible": true,
-        "sortOrder": 6,
+        "sortOrder": 21,
         "title": "Nutcracker contact link",
         "page": "shows-and-competition/nutcracker/index.html",
         "url": "@/contact/index.html",
@@ -770,7 +1200,7 @@
       {
         "key": "recital-information-link",
         "isVisible": true,
-        "sortOrder": 7,
+        "sortOrder": 22,
         "title": "Recital information link",
         "page": "shows-and-competition/recital/index.html",
         "label": "",
@@ -780,7 +1210,7 @@
       {
         "key": "recital-gala-link",
         "isVisible": true,
-        "sortOrder": 8,
+        "sortOrder": 23,
         "title": "Recital gala link",
         "page": "shows-and-competition/recital/index.html",
         "label": "",
@@ -790,7 +1220,7 @@
       {
         "key": "recital-volunteering-link",
         "isVisible": true,
-        "sortOrder": 9,
+        "sortOrder": 24,
         "title": "Recital volunteering link",
         "page": "shows-and-competition/recital/index.html",
         "label": "",
@@ -800,7 +1230,7 @@
       {
         "key": "summer-register",
         "isVisible": true,
-        "sortOrder": 10,
+        "sortOrder": 25,
         "title": "Summer registration button",
         "page": "Summer Intensive",
         "url": "@/register/index.html",
@@ -810,7 +1240,7 @@
       {
         "key": "summer-contact",
         "isVisible": true,
-        "sortOrder": 11,
+        "sortOrder": 26,
         "title": "Summer contact button",
         "page": "Summer Intensive",
         "url": "@/contact/index.html",
@@ -820,7 +1250,7 @@
       {
         "key": "register-now",
         "isVisible": true,
-        "sortOrder": 12,
+        "sortOrder": 27,
         "title": "Register Now button",
         "page": "Register",
         "url": "#sawyer-widget",
@@ -912,46 +1342,446 @@
         "_id": "44106651-0d37-5f5f-aafe-b0807addbf5d"
       }
     ],
-    "DiClassCategories": [
+    "DiPages": [
       {
-        "key": "combo-classes",
+        "key": "home",
         "isVisible": true,
         "sortOrder": 0,
-        "title": "Combo Classes",
-        "categoryOrder": 0,
-        "_id": "dd10c74c-f7fe-5cbc-80ff-aeb65431c663"
+        "title": "Passion Moves Us | Dance Institute",
+        "page": "home",
+        "description": "Dance Institute in Denver. Ballet, Tap, Lyrical, Contemporary, Pointe, Hip-Hop, Poms, Acro, Tumbling, and Jazz.",
+        "_id": "139dcb23-e65c-5578-8e99-efc0197ba28b"
       },
       {
-        "key": "advanced-classes",
+        "key": "dance-classes",
         "isVisible": true,
         "sortOrder": 1,
-        "title": "Advanced Classes",
-        "categoryOrder": 1,
-        "_id": "bd5bff50-ecd2-5f89-9f8e-6a14a5682a5d"
+        "title": "Dance Classes | Dance Institute",
+        "page": "dance-classes",
+        "description": "Dance Institute in Denver. Ballet, Tap, Lyrical, Contemporary, Pointe, Hip-Hop, Poms, Acro, Tumbling, and Jazz.",
+        "_id": "ad58fafa-e41b-5a99-9d70-e0e87d43cc8d"
       },
       {
-        "key": "ballet-classes",
+        "key": "about/teachers",
         "isVisible": true,
         "sortOrder": 2,
-        "title": "Ballet Classes",
-        "categoryOrder": 2,
-        "_id": "c98a358c-449c-5dbc-8fce-c9d737c1abee"
+        "title": "Teachers | Dance Institute",
+        "page": "about/teachers",
+        "description": "Dance Institute in Denver. Ballet, Tap, Lyrical, Contemporary, Pointe, Hip-Hop, Poms, Acro, Tumbling, and Jazz.",
+        "_id": "b0f1d689-2d14-555e-b040-94ec5473ff59"
       },
       {
-        "key": "hip-hop-classes",
+        "key": "about/studio-policies",
         "isVisible": true,
         "sortOrder": 3,
-        "title": "Hip-Hop Classes",
-        "categoryOrder": 3,
-        "_id": "2f9eebaa-b0ad-5782-ac36-273eb7175186"
+        "title": "Studio Policies | Dance Institute",
+        "page": "about/studio-policies",
+        "description": "Dance Institute in Denver. Ballet, Tap, Lyrical, Contemporary, Pointe, Hip-Hop, Poms, Acro, Tumbling, and Jazz.",
+        "_id": "1a3ce299-30ae-51ea-81d7-9fd5229e8021"
       },
       {
-        "key": "additional-classes",
+        "key": "schedule",
         "isVisible": true,
         "sortOrder": 4,
-        "title": "Additional Classes",
-        "categoryOrder": 4,
-        "_id": "cefb71d7-93dd-538e-93da-81d2ef4b6851"
+        "title": "Schedule | Dance Institute",
+        "page": "schedule",
+        "description": "Dance Institute in Denver. Ballet, Tap, Lyrical, Contemporary, Pointe, Hip-Hop, Poms, Acro, Tumbling, and Jazz.",
+        "_id": "4a957945-c086-5d5c-8c85-149e9b3e3c2d"
+      },
+      {
+        "key": "shows-and-competition/nutcracker",
+        "isVisible": true,
+        "sortOrder": 5,
+        "title": "Nutcracker | Dance Institute",
+        "page": "shows-and-competition/nutcracker",
+        "description": "Dance Institute in Denver. Ballet, Tap, Lyrical, Contemporary, Pointe, Hip-Hop, Poms, Acro, Tumbling, and Jazz.",
+        "_id": "35ae9a76-bc75-5871-8ab7-f75173a0402a"
+      },
+      {
+        "key": "shows-and-competition/competition",
+        "isVisible": true,
+        "sortOrder": 6,
+        "title": "Competition | Dance Institute",
+        "page": "shows-and-competition/competition",
+        "description": "Dance Institute in Denver. Ballet, Tap, Lyrical, Contemporary, Pointe, Hip-Hop, Poms, Acro, Tumbling, and Jazz.",
+        "_id": "732f8a04-aaaf-54b5-a5d9-f251678499eb"
+      },
+      {
+        "key": "shows-and-competition/recital",
+        "isVisible": true,
+        "sortOrder": 7,
+        "title": "Recital | Dance Institute",
+        "page": "shows-and-competition/recital",
+        "description": "Dance Institute in Denver. Ballet, Tap, Lyrical, Contemporary, Pointe, Hip-Hop, Poms, Acro, Tumbling, and Jazz.",
+        "_id": "cae2c07b-3755-5139-bb66-983160449907"
+      },
+      {
+        "key": "summer-intensive",
+        "isVisible": true,
+        "sortOrder": 8,
+        "title": "Summer Intensive | Dance Institute",
+        "page": "summer-intensive",
+        "description": "Dance Institute in Denver. Ballet, Tap, Lyrical, Contemporary, Pointe, Hip-Hop, Poms, Acro, Tumbling, and Jazz.",
+        "_id": "0f0227a8-d57f-5603-bf70-1686882d53db"
+      },
+      {
+        "key": "contact",
+        "isVisible": true,
+        "sortOrder": 9,
+        "title": "Contact | Dance Institute",
+        "page": "contact",
+        "description": "Dance Institute in Denver. Ballet, Tap, Lyrical, Contemporary, Pointe, Hip-Hop, Poms, Acro, Tumbling, and Jazz.",
+        "_id": "4e70fe51-6a4e-5c1e-9de8-bd9aa717424f"
+      },
+      {
+        "key": "register",
+        "isVisible": true,
+        "sortOrder": 10,
+        "title": "Register | Dance Institute",
+        "page": "register",
+        "description": "Dance Institute in Denver. Ballet, Tap, Lyrical, Contemporary, Pointe, Hip-Hop, Poms, Acro, Tumbling, and Jazz.",
+        "_id": "126fcd65-73fa-53fd-80ba-9dd65bf9b911"
+      },
+      {
+        "key": "privacy-policy",
+        "isVisible": true,
+        "sortOrder": 11,
+        "title": "Privacy Policy | Dance Institute",
+        "page": "privacy-policy",
+        "description": "Dance Institute in Denver. Ballet, Tap, Lyrical, Contemporary, Pointe, Hip-Hop, Poms, Acro, Tumbling, and Jazz.",
+        "_id": "5cb1267e-20d8-5f27-83d0-e4e615737797"
+      },
+      {
+        "key": "accessibility-statement",
+        "isVisible": true,
+        "sortOrder": 12,
+        "title": "Accessibility Statement | Dance Institute",
+        "page": "accessibility-statement",
+        "description": "Dance Institute in Denver. Ballet, Tap, Lyrical, Contemporary, Pointe, Hip-Hop, Poms, Acro, Tumbling, and Jazz.",
+        "_id": "eb3e9b73-8da2-565e-9a7a-1bbe223d09b0"
+      }
+    ],
+    "DiSections": [
+      {
+        "key": "home-hero",
+        "isVisible": true,
+        "sortOrder": 0,
+        "title": "Hero",
+        "page": "home",
+        "_id": "2c8cac39-8956-5b24-b1ea-2a7c1e3ee3b2"
+      },
+      {
+        "key": "home-home-address-bar",
+        "isVisible": true,
+        "sortOrder": 1,
+        "title": "Home address bar",
+        "page": "home",
+        "_id": "0a612613-4088-528a-8f0f-5e03f1d6cc2e"
+      },
+      {
+        "key": "home-home-about",
+        "isVisible": true,
+        "sortOrder": 2,
+        "title": "Home about",
+        "page": "home",
+        "_id": "84c64a2a-6b53-5248-ae1b-1551dc942be1"
+      },
+      {
+        "key": "home-trial-strip",
+        "isVisible": true,
+        "sortOrder": 3,
+        "title": "Trial strip",
+        "page": "home",
+        "_id": "ddccc0c5-0dfd-5da7-97ca-ea749c8df23e"
+      },
+      {
+        "key": "home-apart-section",
+        "isVisible": true,
+        "sortOrder": 4,
+        "title": "Apart section",
+        "page": "home",
+        "_id": "f8682cb4-33fc-5076-a040-e9c45fd0c504"
+      },
+      {
+        "key": "home-testimonials",
+        "isVisible": true,
+        "sortOrder": 5,
+        "title": "Testimonials",
+        "page": "home",
+        "_id": "e0055d3a-7095-5b17-92fb-6ed311508f2a"
+      },
+      {
+        "key": "dance-classes-classes-accordion",
+        "isVisible": true,
+        "sortOrder": 6,
+        "title": "Classes accordion",
+        "page": "dance-classes",
+        "_id": "ece835f8-f8e4-5732-be44-f5b036561340"
+      },
+      {
+        "key": "about/teachers-teacher-rows",
+        "isVisible": true,
+        "sortOrder": 7,
+        "title": "Teacher rows",
+        "page": "about/teachers",
+        "_id": "fb853c99-237b-5944-a1ba-167a91657277"
+      },
+      {
+        "key": "about/studio-policies-policies-content",
+        "isVisible": true,
+        "sortOrder": 8,
+        "title": "Policies content",
+        "page": "about/studio-policies",
+        "_id": "502eb52f-fbc7-5d63-b548-bedfa40a401f"
+      },
+      {
+        "key": "schedule-schedule-page",
+        "isVisible": true,
+        "sortOrder": 9,
+        "title": "Schedule page",
+        "page": "schedule",
+        "_id": "e052c319-5e0d-5cf8-9e68-fc6a3d59d216"
+      },
+      {
+        "key": "shows-and-competition/nutcracker-nutcracker-hero",
+        "isVisible": true,
+        "sortOrder": 10,
+        "title": "Nutcracker hero",
+        "page": "shows-and-competition/nutcracker",
+        "_id": "5b0ce497-07e5-5564-a046-bc6e90e873aa"
+      },
+      {
+        "key": "shows-and-competition/nutcracker-nutcracker-shows",
+        "isVisible": true,
+        "sortOrder": 11,
+        "title": "Nutcracker shows",
+        "page": "shows-and-competition/nutcracker",
+        "_id": "1eb5d621-89c8-5f04-bb0f-0961b4e4677f"
+      },
+      {
+        "key": "shows-and-competition/nutcracker-nutcracker-prep",
+        "isVisible": true,
+        "sortOrder": 12,
+        "title": "Nutcracker prep",
+        "page": "shows-and-competition/nutcracker",
+        "_id": "94a02c5f-ad06-5c2a-8468-334abd0f067a"
+      },
+      {
+        "key": "shows-and-competition/nutcracker-nutcracker-auditions",
+        "isVisible": true,
+        "sortOrder": 13,
+        "title": "Nutcracker auditions",
+        "page": "shows-and-competition/nutcracker",
+        "_id": "9dcd3a87-5294-5e20-9017-445970ea7263"
+      },
+      {
+        "key": "shows-and-competition/nutcracker-nutcracker-rehearsals",
+        "isVisible": true,
+        "sortOrder": 14,
+        "title": "Nutcracker rehearsals",
+        "page": "shows-and-competition/nutcracker",
+        "_id": "e4a1245c-502b-5893-9cd3-9df99b2b99d6"
+      },
+      {
+        "key": "shows-and-competition/nutcracker-nutcracker-merch",
+        "isVisible": true,
+        "sortOrder": 15,
+        "title": "Nutcracker merch",
+        "page": "shows-and-competition/nutcracker",
+        "_id": "81738f82-cb20-564a-a3f8-4d7b7c4eb42c"
+      },
+      {
+        "key": "shows-and-competition/nutcracker-nutcracker-gallery",
+        "isVisible": true,
+        "sortOrder": 16,
+        "title": "Nutcracker gallery",
+        "page": "shows-and-competition/nutcracker",
+        "_id": "b968ebcd-2bf3-58cd-9c91-233bc8edf7dd"
+      },
+      {
+        "key": "shows-and-competition/nutcracker-show-contact",
+        "isVisible": true,
+        "sortOrder": 17,
+        "title": "Show contact",
+        "page": "shows-and-competition/nutcracker",
+        "_id": "6bde3123-8782-5725-8f9d-e21c8bf0f411"
+      },
+      {
+        "key": "shows-and-competition/competition-competition-opening",
+        "isVisible": true,
+        "sortOrder": 18,
+        "title": "Competition opening",
+        "page": "shows-and-competition/competition",
+        "_id": "ba286951-494c-59ad-bfca-867292f480e5"
+      },
+      {
+        "key": "shows-and-competition/competition-competition-introduction",
+        "isVisible": true,
+        "sortOrder": 19,
+        "title": "Competition introduction",
+        "page": "shows-and-competition/competition",
+        "_id": "97cf0fbb-4ac6-5773-bcbb-d9b69c9795ba"
+      },
+      {
+        "key": "shows-and-competition/competition-competition-information",
+        "isVisible": true,
+        "sortOrder": 20,
+        "title": "Competition information",
+        "page": "shows-and-competition/competition",
+        "_id": "4f250b47-0e5d-5ff3-84b4-f35bb9431465"
+      },
+      {
+        "key": "shows-and-competition/recital-recital-opening",
+        "isVisible": true,
+        "sortOrder": 21,
+        "title": "Recital opening",
+        "page": "shows-and-competition/recital",
+        "_id": "54cf5f02-50de-5565-b35d-dac0f3bbf573"
+      },
+      {
+        "key": "shows-and-competition/recital-recital-shows",
+        "isVisible": true,
+        "sortOrder": 22,
+        "title": "Recital shows",
+        "page": "shows-and-competition/recital",
+        "_id": "fa0c571c-30d2-54ad-9b2f-5144e0958a8d"
+      },
+      {
+        "key": "shows-and-competition/recital-recital-gala",
+        "isVisible": true,
+        "sortOrder": 23,
+        "title": "Recital gala",
+        "page": "shows-and-competition/recital",
+        "_id": "8936ed3b-1616-59bc-afbb-4f14c5a77c0b"
+      },
+      {
+        "key": "shows-and-competition/recital-recital-volunteering",
+        "isVisible": true,
+        "sortOrder": 24,
+        "title": "Recital volunteering",
+        "page": "shows-and-competition/recital",
+        "_id": "0f66d62e-a7a3-5c79-8029-874e1a5e5843"
+      },
+      {
+        "key": "summer-intensive-summer-intensive",
+        "isVisible": true,
+        "sortOrder": 25,
+        "title": "Summer intensive",
+        "page": "summer-intensive",
+        "_id": "2c7dab02-9a54-59b1-948b-0cc422e85d98"
+      },
+      {
+        "key": "summer-intensive-summer-camps",
+        "isVisible": true,
+        "sortOrder": 26,
+        "title": "Summer camps",
+        "page": "summer-intensive",
+        "_id": "8bf36396-a1f5-549c-bece-9ea1b43d5ee0"
+      },
+      {
+        "key": "summer-intensive-summer-registration",
+        "isVisible": true,
+        "sortOrder": 27,
+        "title": "Summer registration",
+        "page": "summer-intensive",
+        "_id": "c698cc39-2656-5c1f-a3e5-d46308ce003f"
+      },
+      {
+        "key": "summer-intensive-summer-contact",
+        "isVisible": true,
+        "sortOrder": 28,
+        "title": "Summer contact",
+        "page": "summer-intensive",
+        "_id": "bc3e3f29-95d7-5f1e-8529-f8a26a301afa"
+      },
+      {
+        "key": "contact-contact-introduction",
+        "isVisible": true,
+        "sortOrder": 29,
+        "title": "Contact introduction",
+        "page": "contact",
+        "_id": "a8bd5b3c-4bab-537c-b46a-4fb08bc860b9"
+      },
+      {
+        "key": "contact-contact-intro",
+        "isVisible": true,
+        "sortOrder": 30,
+        "title": "Contact intro",
+        "page": "contact",
+        "_id": "b664cfb2-cf45-5689-9687-c8d483739636"
+      },
+      {
+        "key": "contact-contact-form-panel",
+        "isVisible": true,
+        "sortOrder": 31,
+        "title": "Contact form panel",
+        "page": "contact",
+        "_id": "493d2420-4392-5634-b24b-8392a359eee1"
+      },
+      {
+        "key": "register-tuition-panel",
+        "isVisible": true,
+        "sortOrder": 32,
+        "title": "Tuition panel",
+        "page": "register",
+        "_id": "3cf98f17-e33e-59e3-9422-4f1c6a4aac87"
+      },
+      {
+        "key": "register-discount-panel",
+        "isVisible": true,
+        "sortOrder": 33,
+        "title": "Discount panel",
+        "page": "register",
+        "_id": "3633c5b2-4a20-5b11-8b9b-e0693bf08f13"
+      },
+      {
+        "key": "register-membership-panel",
+        "isVisible": true,
+        "sortOrder": 34,
+        "title": "Membership panel",
+        "page": "register",
+        "_id": "c0d2bfe6-1637-5519-a38f-2357d52c3dbe"
+      },
+      {
+        "key": "register-registration-how",
+        "isVisible": true,
+        "sortOrder": 35,
+        "title": "Registration how",
+        "page": "register",
+        "_id": "557cb217-8457-519f-ae83-96ebaa94e5e1"
+      },
+      {
+        "key": "register-sawyer-link",
+        "isVisible": true,
+        "sortOrder": 36,
+        "title": "Sawyer link",
+        "page": "register",
+        "_id": "362c6ccc-d132-52d6-a1c6-2b07c1c15ec0"
+      },
+      {
+        "key": "register-sawyer-frame",
+        "isVisible": true,
+        "sortOrder": 37,
+        "title": "Sawyer frame",
+        "page": "register",
+        "_id": "aba5373d-a444-528f-bc7b-b6000476f511"
+      }
+    ],
+    "DiContentBlocks": [
+      {
+        "key": "extra-content-template",
+        "isVisible": false,
+        "sortOrder": 10,
+        "page": "home",
+        "title": "",
+        "body": "",
+        "image": "",
+        "alt": "",
+        "focalX": null,
+        "focalY": null,
+        "label": "",
+        "url": "",
+        "_id": "00be3df1-0ae8-52ff-a9fd-c9f5e620564a"
       }
     ],
     "DiClasses": [
@@ -1234,6 +2064,48 @@
         "category": "additional-classes",
         "categoryOrder": 4,
         "_id": "5203d46c-5d72-53ff-ab3b-21aef2b97c6e"
+      }
+    ],
+    "DiClassCategories": [
+      {
+        "key": "combo-classes",
+        "isVisible": true,
+        "sortOrder": 0,
+        "title": "Combo Classes",
+        "categoryOrder": 0,
+        "_id": "dd10c74c-f7fe-5cbc-80ff-aeb65431c663"
+      },
+      {
+        "key": "advanced-classes",
+        "isVisible": true,
+        "sortOrder": 1,
+        "title": "Advanced Classes",
+        "categoryOrder": 1,
+        "_id": "bd5bff50-ecd2-5f89-9f8e-6a14a5682a5d"
+      },
+      {
+        "key": "ballet-classes",
+        "isVisible": true,
+        "sortOrder": 2,
+        "title": "Ballet Classes",
+        "categoryOrder": 2,
+        "_id": "c98a358c-449c-5dbc-8fce-c9d737c1abee"
+      },
+      {
+        "key": "hip-hop-classes",
+        "isVisible": true,
+        "sortOrder": 3,
+        "title": "Hip-Hop Classes",
+        "categoryOrder": 3,
+        "_id": "2f9eebaa-b0ad-5782-ac36-273eb7175186"
+      },
+      {
+        "key": "additional-classes",
+        "isVisible": true,
+        "sortOrder": 4,
+        "title": "Additional Classes",
+        "categoryOrder": 4,
+        "_id": "cefb71d7-93dd-538e-93da-81d2ef4b6851"
       }
     ],
     "DiTeachers": [
@@ -2141,6 +3013,80 @@
         "title": "Sawyer membership link",
         "url": "https://www.hisawyer.com/dance-institute-denver/schedules/membership-plans",
         "_id": "f7ce44dc-5b1e-5f7f-9dda-60698f1f9925"
+      }
+    ],
+    "DiLegalSections": [
+      {
+        "key": "privacy-policy-1",
+        "isVisible": true,
+        "sortOrder": 0,
+        "page": "privacy-policy",
+        "title": "A legal disclaimer",
+        "body": "<p>The explanations and information provided on this page are only general and high-level explanations and information on how to write your own document of a Privacy Policy. You should not rely on this article as legal advice or as recommendations regarding what you should actually do, because we cannot know in advance what are the specific privacy policies you wish to establish between your business and your customers and visitors. We recommend that you seek legal advice to help you understand and to assist you in the creation of your own Privacy Policy.</p>",
+        "_id": "0d68b94c-a273-54fe-9014-62291233f7d8"
+      },
+      {
+        "key": "privacy-policy-2",
+        "isVisible": true,
+        "sortOrder": 1,
+        "page": "privacy-policy",
+        "title": "Privacy Policy - the basics",
+        "body": "<p>Having said that, a privacy policy is a statement that discloses some or all of the ways a website collects, uses, discloses, processes, and manages the data of its visitors and customers. It usually also includes a statement regarding the website’s commitment to protecting its visitors’ or customers’ privacy, and an explanation about the different mechanisms the website is implementing in order to protect privacy. </p><p>Different jurisdictions have different legal obligations of what must be included in a Privacy Policy. You are responsible to make sure you are following the relevant legislation to your activities and location. </p>",
+        "_id": "a06e338a-f688-57b7-b875-d6a0692d3158"
+      },
+      {
+        "key": "privacy-policy-3",
+        "isVisible": true,
+        "sortOrder": 2,
+        "page": "privacy-policy",
+        "title": "What to include in the Privacy Policy",
+        "body": "<p>Generally speaking, a Privacy Policy often addresses these types of issues: the types of information the website is collecting and the manner in which it collects the data; an explanation about why is the website collecting these types of information; what are the website’s practices on sharing the information with third parties; ways in which your visitors and customers can exercise their rights according to the relevant privacy legislation; the specific practices regarding minors’ data collection; and much, much more. </p><p>\nTo learn more about this, check out our article “<a href=\"https://support.wix.com/en/article/creating-a-privacy-policy\" target=\"_blank\" rel=\"noopener noreferrer\">Creating a Privacy Policy</a>”.</p>",
+        "_id": "b6d9a3e1-a6a4-529f-98d0-52ac0a89059f"
+      },
+      {
+        "key": "accessibility-statement-1",
+        "isVisible": true,
+        "sortOrder": 0,
+        "page": "accessibility-statement",
+        "title": "What web accessibility is",
+        "body": "<p>An accessible platform allows everyone, regardless of ability, to participate in our dance classes and activities with ease and enjoyment. Our goal is to accommodate all students, ensuring they have equal access to our resources.</p>",
+        "_id": "4ef5df7c-8438-555a-b4d7-f7a5eb7c905d"
+      },
+      {
+        "key": "accessibility-statement-2",
+        "isVisible": true,
+        "sortOrder": 1,
+        "page": "accessibility-statement",
+        "title": "Accessibility adjustments on this site",
+        "body": "<p>We have adapted our website in accordance with WCAG 2.1 guidelines and have made it accessible to the level of AA. Our site is compatible with assistive technologies, such as screen readers, to enhance the user experience for all visitors.</p><ul><li>Utilized accessibility tools to identify and rectify issues</li><li>Set the language for our site</li><li>Organized content for easy navigation</li><li>Established clear headings on all pages</li><li>Provided alternative text for images</li><li>Ensured color contrast meets accessibility standards</li><li>Minimized motion effects on the site</li><li>Made sure all multimedia content is accessible</li></ul>",
+        "_id": "a0ffd5df-020b-52a2-acce-3f738cbaa6f9"
+      },
+      {
+        "key": "accessibility-statement-3",
+        "isVisible": true,
+        "sortOrder": 2,
+        "page": "accessibility-statement",
+        "title": "We acknowledge partial compliance with the standard due to certain third-party content.",
+        "body": "<p>The accessibility of specific pages relies on content from [enter relevant third-party name]. The following pages may not fully comply: [list URLs of affected pages]. We declare partial compliance for these pages.</p>",
+        "_id": "e1658768-2df1-5389-a405-f443d1ad571c"
+      },
+      {
+        "key": "accessibility-statement-4",
+        "isVisible": true,
+        "sortOrder": 3,
+        "page": "accessibility-statement",
+        "title": "Accessibility arrangements in the organization",
+        "body": "<p>Our studio locations are equipped with ramps and designated parking for individuals with disabilities. We ensure that all spaces, including classrooms and restrooms, are accessible and welcoming. Additional support services are available upon request.</p>",
+        "_id": "2c16e90c-a7d1-5051-8e53-7eafba257a5a"
+      },
+      {
+        "key": "accessibility-statement-5",
+        "isVisible": true,
+        "sortOrder": 4,
+        "page": "accessibility-statement",
+        "title": "Requests, issues, and suggestions",
+        "body": "<p>If you encounter any accessibility issues or need assistance, please reach out to our accessibility coordinator:</p><ul><li>[Name of the accessibility coordinator]</li><li>[Telephone number of the accessibility coordinator]</li><li>[Email address of the accessibility coordinator]</li><li>[Additional contact details if relevant]</li></ul>",
+        "_id": "4ba9d3c7-9694-5408-a554-6d0709c56164"
       }
     ]
   }

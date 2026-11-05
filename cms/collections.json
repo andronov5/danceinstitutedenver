@@ -45,6 +45,11 @@
           "key": "address",
           "displayName": "Address",
           "type": "TEXT"
+        },
+        {
+          "key": "phoneSuffix",
+          "displayName": "Phone suffix",
+          "type": "TEXT"
         }
       ],
       "permissions": {
@@ -151,6 +156,16 @@
           "key": "body",
           "displayName": "Body",
           "type": "RICH_TEXT"
+        },
+        {
+          "key": "expandLabel",
+          "displayName": "Expand label",
+          "type": "TEXT"
+        },
+        {
+          "key": "collapseLabel",
+          "displayName": "Collapse label",
+          "type": "TEXT"
         },
         {
           "key": "dateTime",
@@ -291,8 +306,8 @@
       "description": "Dance Institute website content. Edit copy and photos; keep Content key unchanged. Display order controls list order; Show on website controls visibility. Site connection must be activated before edits appear."
     },
     {
-      "id": "DiClassCategories",
-      "displayName": "Class categories",
+      "id": "DiPages",
+      "displayName": "Page titles and descriptions",
       "fields": [
         {
           "key": "key",
@@ -315,9 +330,125 @@
           "type": "TEXT"
         },
         {
-          "key": "categoryOrder",
-          "displayName": "Category order",
+          "key": "page",
+          "displayName": "Page",
+          "type": "TEXT"
+        },
+        {
+          "key": "description",
+          "displayName": "Description",
+          "type": "TEXT"
+        }
+      ],
+      "permissions": {
+        "insert": "ADMIN",
+        "update": "ADMIN",
+        "remove": "ADMIN",
+        "read": "ADMIN"
+      },
+      "description": "Dance Institute website content. Edit copy and photos; keep Content key unchanged. Display order controls list order; Show on website controls visibility. Site connection must be activated before edits appear."
+    },
+    {
+      "id": "DiSections",
+      "displayName": "Show or hide sections",
+      "fields": [
+        {
+          "key": "key",
+          "displayName": "Content key — keep unchanged",
+          "type": "TEXT"
+        },
+        {
+          "key": "isVisible",
+          "displayName": "Show on website",
+          "type": "BOOLEAN"
+        },
+        {
+          "key": "sortOrder",
+          "displayName": "Display order",
           "type": "NUMBER"
+        },
+        {
+          "key": "title",
+          "displayName": "Title",
+          "type": "TEXT"
+        },
+        {
+          "key": "page",
+          "displayName": "Page",
+          "type": "TEXT"
+        }
+      ],
+      "permissions": {
+        "insert": "ADMIN",
+        "update": "ADMIN",
+        "remove": "ADMIN",
+        "read": "ADMIN"
+      },
+      "description": "Dance Institute website content. Edit copy and photos; keep Content key unchanged. Display order controls list order; Show on website controls visibility. Site connection must be activated before edits appear."
+    },
+    {
+      "id": "DiContentBlocks",
+      "displayName": "Additional text and photos",
+      "fields": [
+        {
+          "key": "key",
+          "displayName": "Content key — keep unchanged",
+          "type": "TEXT"
+        },
+        {
+          "key": "isVisible",
+          "displayName": "Show on website",
+          "type": "BOOLEAN"
+        },
+        {
+          "key": "sortOrder",
+          "displayName": "Display order",
+          "type": "NUMBER"
+        },
+        {
+          "key": "page",
+          "displayName": "Page",
+          "type": "TEXT"
+        },
+        {
+          "key": "title",
+          "displayName": "Title",
+          "type": "TEXT"
+        },
+        {
+          "key": "body",
+          "displayName": "Body",
+          "type": "RICH_TEXT"
+        },
+        {
+          "key": "image",
+          "displayName": "Image",
+          "type": "IMAGE"
+        },
+        {
+          "key": "alt",
+          "displayName": "Alt",
+          "type": "TEXT"
+        },
+        {
+          "key": "focalX",
+          "displayName": "Photo horizontal focus (0–100)",
+          "type": "NUMBER"
+        },
+        {
+          "key": "focalY",
+          "displayName": "Photo vertical focus (0–100)",
+          "type": "NUMBER"
+        },
+        {
+          "key": "label",
+          "displayName": "Label",
+          "type": "TEXT"
+        },
+        {
+          "key": "url",
+          "displayName": "Url",
+          "type": "TEXT"
         }
       ],
       "permissions": {
@@ -360,6 +491,44 @@
         {
           "key": "category",
           "displayName": "Category key",
+          "type": "TEXT"
+        },
+        {
+          "key": "categoryOrder",
+          "displayName": "Category order",
+          "type": "NUMBER"
+        }
+      ],
+      "permissions": {
+        "insert": "ADMIN",
+        "update": "ADMIN",
+        "remove": "ADMIN",
+        "read": "ADMIN"
+      },
+      "description": "Dance Institute website content. Edit copy and photos; keep Content key unchanged. Display order controls list order; Show on website controls visibility. Site connection must be activated before edits appear."
+    },
+    {
+      "id": "DiClassCategories",
+      "displayName": "Class categories",
+      "fields": [
+        {
+          "key": "key",
+          "displayName": "Content key — keep unchanged",
+          "type": "TEXT"
+        },
+        {
+          "key": "isVisible",
+          "displayName": "Show on website",
+          "type": "BOOLEAN"
+        },
+        {
+          "key": "sortOrder",
+          "displayName": "Display order",
+          "type": "NUMBER"
+        },
+        {
+          "key": "title",
+          "displayName": "Title",
           "type": "TEXT"
         },
         {
@@ -924,6 +1093,49 @@
           "key": "url",
           "displayName": "Url",
           "type": "TEXT"
+        }
+      ],
+      "permissions": {
+        "insert": "ADMIN",
+        "update": "ADMIN",
+        "remove": "ADMIN",
+        "read": "ADMIN"
+      },
+      "description": "Dance Institute website content. Edit copy and photos; keep Content key unchanged. Display order controls list order; Show on website controls visibility. Site connection must be activated before edits appear."
+    },
+    {
+      "id": "DiLegalSections",
+      "displayName": "Legal page sections",
+      "fields": [
+        {
+          "key": "key",
+          "displayName": "Content key — keep unchanged",
+          "type": "TEXT"
+        },
+        {
+          "key": "isVisible",
+          "displayName": "Show on website",
+          "type": "BOOLEAN"
+        },
+        {
+          "key": "sortOrder",
+          "displayName": "Display order",
+          "type": "NUMBER"
+        },
+        {
+          "key": "page",
+          "displayName": "Page",
+          "type": "TEXT"
+        },
+        {
+          "key": "title",
+          "displayName": "Title",
+          "type": "TEXT"
+        },
+        {
+          "key": "body",
+          "displayName": "Body",
+          "type": "RICH_TEXT"
         }
       ],
       "permissions": {

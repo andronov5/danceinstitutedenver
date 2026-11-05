@@ -2,9 +2,11 @@
 
 The GitHub website keeps its current design. Once the connection is completed, Michele can change its content in **Wix → CMS**, using her existing Wix login. These are content tables, not draggable blocks in the Wix Editor. Routine text, photo, date and price-display changes will not require GitHub or coding.
 
-**Current status:** the 19 content collections, 206 initial items and 16 photographs are now in Michele’s shared Wix site. The editing code is built and tested. The website connection remains disabled until the Wix backend is installed, published and tested. Dashboard edits will not appear on the website until that activation step is complete.
+**Current status:** the content model now covers 23 collections, including all existing page copy and images, navigation labels, extra text/photo blocks, complete section visibility, legal content, and dynamic class categories. The website connection remains disabled until the Wix backend is installed, published and tested. Dashboard edits will not appear on the website until that activation step is complete. See `cms/provisioning.json` and `cms/sync-report.json` for the actual account import results.
 
 Use the shared **My Site** project: `f3c88b1a-e358-495d-bcfd-78c490531ee8`.
+
+[Open Michele’s Wix CMS](https://manage.wix.com/dashboard/f3c88b1a-e358-495d-bcfd-78c490531ee8/wix-cms)
 
 ## Make an edit
 
@@ -19,13 +21,13 @@ The **Title** field in Page text, Page photos and logo, and Buttons and links id
 
 | Collection | What it controls |
 | --- | --- |
-| Studio contact information (`DiStudio`) | Studio name, phone, email and address; shared contact links and map directions |
-| Page text (`DiPageContent`) | Hero words, introductions, section headings, announcements, instructions and other page copy |
+| Studio contact information (`DiStudio`) | Studio name, phone, email, address and “Call or Text” wording; shared contact links and map directions |
+| Page text (`DiPageContent`) | Hero words, introductions, section headings, announcements, instructions, dropdown labels, contact form wording, schedule headings and other page copy |
 | Page photos and logo (`DiImages`) | Hero and page photographs, logo, alt text and photo focus |
-| Buttons and links (`DiLinks`) | Connected button labels, contact/map links, optional ticket and merchandise links |
+| Buttons and links (`DiLinks`) | Desktop/mobile navigation links and labels, header/footer links, buttons, venue directions, optional ticket and merchandise links |
 | What sets us apart (`DiFeatures`) | Home-page feature titles and descriptions |
 | Testimonials (`DiTestimonials`) | Review text, names and order |
-| Class categories (`DiClassCategories`) | Existing class-group headings and visibility |
+| Class categories (`DiClassCategories`) | Add, name, hide and reorder class groups |
 | Dance classes (`DiClasses`) | Class names, descriptions and category placement |
 | Weekly schedule (`DiSchedule`) | Schedule rows and their day/time values |
 | Teachers (`DiTeachers`) | Teacher names, complete biographies and photos |
@@ -38,6 +40,10 @@ The **Title** field in Page text, Page photos and logo, and Buttons and links id
 | Monthly tuition (`DiTuition`) | Tuition rows and displayed prices |
 | Tuition discounts (`DiDiscounts`) | Discount rows and displayed amounts |
 | Registration settings (`DiRegistration`) | Displayed membership fee and Sawyer membership URL |
+| Page titles and descriptions (`DiPages`) | Browser title and description for each existing page |
+| Show or hide sections (`DiSections`) | Hide entire existing sections, including their backgrounds and spacing |
+| Additional text and photos (`DiContentBlocks`) | Add optional text, photo and linked-button sections at the bottom of any existing page |
+| Legal page sections (`DiLegalSections`) | Privacy/Accessibility section headings, rich text, links and order |
 
 ## Add, hide and reorder items
 
@@ -45,7 +51,25 @@ The **Title** field in Page text, Page photos and logo, and Buttons and links id
 - **Show on website** (`isVisible`): check it to show an item; uncheck it to hide it. New items need this checked. It is separate from any Wix draft/published status.
 - **Content key** (`key`): leave an existing key unchanged. It connects that item to the website. For a new list item, leave the key blank so the connection can use Wix’s unique item ID, or enter a unique key such as `teacher-new-name`. If duplicating an item, clear its copied key or replace it with a unique value; do not reuse another item’s key.
 - Add rows to the relevant list collection to add a teacher, review, class, policy, camp or gallery photo. For a new class, copy an existing row in the same category and keep the category key consistent. New page layouts or entirely new page types still require a website code change.
-- Keep the existing page-text, shared studio and registration setting keys. Adding an arbitrary row to those collections does not create a new section automatically. Class-category order is also part of the current layout; its order fields do not rearrange those sections.
+- Keep the existing page-text, shared studio and registration setting keys. Adding an arbitrary row to those collections does not create a new section automatically. Use **Additional text and photos** for new content sections.
+
+## Add a class category
+
+1. Add an item to **Class categories**. Give it a unique Content key, such as `adult-classes`, a Title, a Display order, and check Show on website.
+2. Add classes to **Dance classes**. Put that exact category key in each class’s Category field.
+3. Display order in Class categories controls category order; Display order in Dance classes controls order within each category. All categories start open. A hidden category hides its classes without deleting them.
+
+## Add text, an image or a button
+
+Use **Additional text and photos** and add an item (or duplicate its hidden starter item and clear/change the Content key). Choose the existing page using one of these exact Page values:
+
+`home`, `dance-classes`, `about/teachers`, `about/studio-policies`, `schedule`, `shows-and-competition/nutcracker`, `shows-and-competition/competition`, `shows-and-competition/recital`, `summer-intensive`, `register`, `contact`, `privacy-policy`, `accessibility-statement`.
+
+Fill in any combination of Title, Body and Image. Use Label and Url together for a button. Set Display order and check Show on website. Blank optional fields add no placeholder wording. These new sections appear after the page’s existing content; they inherit its typography and spacing. Use Photo galleries for additions to the existing rotating galleries.
+
+## Hide an existing section
+
+Open **Show or hide sections**, find the Page and section Title, and uncheck Show on website. Its text remains saved in the other collections. Recheck it to restore the section. Keep the Content key unchanged; this table controls the existing sections and does not create new ones.
 
 ## Add a gallery photograph
 
@@ -74,19 +98,28 @@ Each Nutcracker show has one record used in both date displays. Keep the visible
 
 Audition dates/status, rehearsal details and prep-week copy are in **Page text**. Ticket and merchandise status text is there too. Their optional purchase links are in **Buttons and links**; fill in both Label and Url when ready. Those links stay hidden while the URL is empty. The existing “coming soon” status does not disappear automatically—update that text when tickets or merchandise become available.
 
-Recital information and volunteering copy start empty in Page text. Their optional links are in Buttons and links. Add the content when it is ready; the blank fields do not add public placeholder wording.
+Recital Shows and Our Gala have their supplied copy in Page text. Volunteering copy remains empty until it is ready. Their optional links are in Buttons and links; blank fields do not add public placeholder wording.
+
+## Shared labels and contact form
+
+Edit navigation entries in **Buttons and links** to update the matching desktop/mobile links together. Dropdown names are in **Page text**. Existing page addresses and the navigation arrangement remain part of the design.
+
+Contact field labels, the Submit label, email subject and draft feedback message are in **Page text** under Contact. Keep `{email}` in the feedback message when you want the current studio email inserted automatically. These controls change wording; they do not add form fields or change the form into an automatic submission service.
 
 ## What remains separate
 
 - **Sawyer:** the website’s tuition, discounts and membership fee are display text. Changing them in Wix does **not** change Sawyer’s charges, memberships, availability or registrations. Update those in Sawyer as well. The Sawyer URL setting connects the website link and embedded membership page.
 - **Classes and schedule:** these are separate collections. If a class changes, update its class description and schedule row wherever needed; one does not automatically rewrite the other.
 - **Contact form:** the current form prepares an email in the visitor’s email application. The visitor still sends that email; this is not a Wix Inbox submission system. Editing the studio email changes its destination.
-- **Design:** colors, layout, navigation structure, animation behavior and custom functionality remain in the website code.
+- **Design:** colors, layout, navigation structure, animation behavior and entirely new page types remain in the website code. Additional content blocks and class categories can be added through the collections above.
+- **Page metadata:** the CMS updates browser titles and descriptions on load. The saved HTML remains the fallback; social previews and crawlers that do not run JavaScript may continue to see that saved metadata until the fallback is rebuilt.
 
 ## If an edit does not appear
 
 Confirm the correct Wix project, live collection, published status where applicable, and Show on website checkbox, then refresh. Make sure a new row has a blank or unique key and the correct category/gallery value.
 
 If the Wix content connection is unavailable, the page retains its bundled website content. That bundled copy may be older than the latest Wix edits. **Wix edits do not currently update the GitHub fallback automatically.** A developer must deliberately export/reconcile current CMS content into the source and rebuild the fallback later; that export workflow has not been implemented in this change.
+
+Future schema/import maintenance must use the guarded sync plan, which preserves Wix changes rather than re-importing the whole seed over them.
 
 Wix references: [Manage collection content](https://support.wix.com/en/article/cms-managing-your-collection-content), [live and sandbox collections](https://support.wix.com/en/article/cms-accessing-and-syncing-your-sandbox-and-live-collections), and [item publication status](https://support.wix.com/en/article/cms-controlling-live-site-item-visibility-from-your-collection).

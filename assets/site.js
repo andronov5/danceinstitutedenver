@@ -8,7 +8,7 @@ Promise.resolve(window.siteContentReady).then(() => {
     if (!menu || !menuButton) return;
     menu.hidden = !open;
     menuButton.setAttribute('aria-expanded', String(open));
-    menuButton.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    menuButton.setAttribute('aria-label', open ? (menuButton.dataset.closeLabel || 'Close menu') : (menuButton.dataset.openLabel || 'Open menu'));
     document.body.classList.toggle('menu-open', open);
     if (restoreFocus) menuButton.focus();
   };
@@ -58,8 +58,8 @@ Promise.resolve(window.siteContentReady).then(() => {
       const body = `Name: ${name}\nEmail: ${data.get('email')}\nPhone: ${data.get('phone') || ''}\n\n${data.get('message') || ''}`;
       const status = form.querySelector('.form-status');
       const recipient = form.getAttribute('action').replace(/^mailto:/, '').split('?')[0];
-      if (status) status.textContent = `Your email draft is ready. Send it from your email app to deliver your message. You can also email ${recipient} directly.`;
-      window.location.href = `mailto:${recipient}?subject=${encodeURIComponent('Dance Institute inquiry')}&body=${encodeURIComponent(body)}`;
+      if (status) status.textContent = (form.dataset.feedbackMessage || 'Your email draft is ready. Send it from your email app to deliver your message. You can also email {email} directly.').replaceAll('{email}', recipient);
+      window.location.href = `mailto:${recipient}?subject=${encodeURIComponent(form.dataset.subject || 'Dance Institute inquiry')}&body=${encodeURIComponent(body)}`;
     });
   });
 

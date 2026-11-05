@@ -44,6 +44,22 @@ test('missing collections and ambiguous visible keys reject the transaction', ()
   assert.throws(() => cms.visibleRows([{isVisible:true,key:'same'},{isVisible:true,key:'same'}]));
   assert.throws(() => cms.visibleRows([null]));
 });
+test('CMS requests collections used by nested lists exactly once', () => {
+  const manifest = {records:[{collection:'DiPageContent'}], galleries:[], lists:[{
+    collection:'DiClassCategories', children:[{
+      collection:'DiClasses', match:{field:'category',parentField:'key'}
+    }]
+  }, {collection:'DiClasses'}]};
+  assert.deepEqual(cms.contentCollections(manifest), ['DiPageContent','DiClassCategories','DiClasses']);
+});
+test('invalid nested relationships and excessive depth are rejected before hydration', () => {
+  const manifest = child => ({records:[],galleries:[],lists:[{collection:'Parent',children:[child]}]});
+  assert.throws(() => cms.contentCollections(manifest({collection:'Child'})), /relationship/);
+  assert.throws(() => cms.contentCollections(manifest({collection:'Child',match:{field:'category'}})), /relationship/);
+  const entry = {collection:'Child',match:{field:'category',parentField:'key'}};
+  entry.children = [entry];
+  assert.throws(() => cms.contentCollections(manifest(entry)), /collection binding/);
+});
 test('image focal coordinates are constrained', () => {
   assert.equal(cms.coordinate(120), 100);
   assert.equal(cms.coordinate(-10), 0);

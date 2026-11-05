@@ -9,6 +9,7 @@ from cms_model import CMSBuilder, field, inner, outer, plain
 from cms_bind_shows_about import bind_page
 from cms_bind_summer import bind_summer
 from cms_bind_classes_schedule import bind_classes_schedule
+from cms_bind_controls import bind_controls
 
 ROOT = Path(__file__).resolve().parents[1]
 ROUTES = ['', 'dance-classes', 'about/teachers', 'about/studio-policies', 'schedule',
@@ -31,13 +32,22 @@ def text(b, doc, name, key, page, rich=False):
 def shared(b, route, doc):
     data = {'title':'Studio contact information', 'name':'Dance Institute',
             'phone':'303-525-0011','email':'dance@danceinstitutedenver.com',
-            'address':'10515 E 40th Ave\n#114\nDenver, CO 80239'}
+            'address':'10515 E 40th Ave\n#114\nDenver, CO 80239', 'phoneSuffix':'Call or Text'}
     def bind(node, fields): b.singleton(node,'DiStudio','studio',data,fields)
     bind(one(doc,'footer-brand'),[field(':scope','name')])
     for node in doc.xpath('//a[starts-with(@href,"tel:")]'):
         if node.xpath('ancestor::*['+cls('registration-how')+']'): continue
-        suffix=' Call or Text' if 'Call or Text' in plain(node) else ''
-        bind(node,[field(':scope','phone',suffix=suffix),field(':scope','phone','phoneHref')])
+        has_suffix = 'Call or Text' in plain(node)
+        if has_suffix:
+            number = html.Element('span', {'class': 'cms-phone-number'}); number.text = data['phone']
+            number.tail = ' '
+            suffix = html.Element('span', {'class': 'cms-phone-suffix'}); suffix.text = data['phoneSuffix']
+            node.text = None
+            for child in list(node): node.remove(child)
+            node.extend([number, suffix])
+            bind(node,[field('.cms-phone-number','phone'),field('.cms-phone-suffix','phoneSuffix'),field(':scope','phone','phoneHref')])
+        else:
+            bind(node,[field(':scope','phone'),field(':scope','phone','phoneHref')])
     for node in doc.xpath('//a[starts-with(@href,"mailto:")]'):
         bind(node,[field(':scope','email'),field(':scope','email','emailHref')])
     for node in doc.xpath('//form[@data-contact-form]'):
@@ -98,7 +108,8 @@ NAMES={'DiStudio':'Studio contact information','DiPageContent':'Page text','DiIm
  'DiFeatures':'What sets us apart','DiTestimonials':'Testimonials','DiTuition':'Monthly tuition','DiDiscounts':'Tuition discounts',
  'DiRegistration':'Registration settings','DiTeachers':'Teachers','DiPolicies':'Studio policies','DiShowDates':'Nutcracker show dates',
  'DiCompetitionInfo':'Competition information','DiGalleryPhotos':'Photo galleries','DiSummerCourses':'Summer intensive courses',
- 'DiSummerCamps':'Summer camps','DiClassCategories':'Class categories','DiClasses':'Dance classes','DiSchedule':'Weekly schedule'}
+ 'DiSummerCamps':'Summer camps','DiClassCategories':'Class categories','DiClasses':'Dance classes','DiSchedule':'Weekly schedule',
+ 'DiPages':'Page titles and descriptions','DiSections':'Show or hide sections','DiContentBlocks':'Additional text and photos','DiLegalSections':'Legal page sections'}
 
 def field_type(key,values,collection=''):
     if key=='isVisible':return 'BOOLEAN'
@@ -143,11 +154,13 @@ def main():
             text(b,doc,'contact-introduction','contact-introduction','Contact')
             b.image(one(doc,'contact-photo'),'contact-photo','Contact photo','Contact')
         bind_page(b,page_route,doc);bind_summer(b,page_route,doc);bind_classes_schedule(b,page_route,doc)
+        bind_controls(b,route,doc)
         payload=html.Element('script',type='application/json',id='dance-cms-bindings')
         payload.text=json.dumps(b.current,ensure_ascii=False,separators=(',',':')).replace('<','\\u003c')
         doc.xpath('//body')[0].append(payload)
         prefix='../'*len(route.split('/')) if route else ''
         head=doc.xpath('//head')[0];first=head.xpath('./script')[0];index=head.index(first)
+        head.append(html.Element('link', rel='stylesheet', href=prefix+'assets/cms-content.css'))
         for i,name in enumerate(['cms-wix.js','cms.js']):head.insert(index+i,html.Element('script',src=prefix+'assets/'+name,defer='defer'))
         path.write_text('<!doctype html>\n'+etree.tostring(doc,encoding='unicode',method='html')+'\n')
     export(b)

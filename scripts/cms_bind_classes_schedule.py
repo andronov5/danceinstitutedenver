@@ -26,28 +26,40 @@ def _bind_classes(builder, page):
     builder.text(_one(page, './/p[' + _class('classes-placement') + ']'),
                  'classes-placement', 'Class placement note', 'Dance Classes')
 
+    toggle = _one(page, './/button[@data-classes-toggle]')
+    toggle.set('data-expand-label', 'Expand all')
+    toggle.set('data-collapse-label', plain(toggle))
+    builder.singleton(toggle, 'DiPageContent', 'classes-disclosure-labels', {
+        'title': 'Expand and collapse class groups', 'page': 'Dance Classes',
+        'expandLabel': 'Expand all', 'collapseLabel': plain(toggle),
+    }, [field(':scope', 'expandLabel', 'attribute', attribute='data-expand-label'),
+        field(':scope', 'collapseLabel', 'attribute', attribute='data-collapse-label')])
+
     groups = page.xpath('.//details[' + _class('classes-group') + ']')
+    if not groups:
+        raise ValueError('Class catalogue has no category template')
+    categories = []
+    class_template = None
     for category_order, group in enumerate(groups):
         category = group.get('id')
         if not category:
             raise ValueError('Class category is missing its stable ID')
         title = _one(group, './summary/h2')
-        builder.singleton(group, 'DiClassCategories', category, {
+        categories.append({
+            'key': category,
             'title': plain(title),
             'categoryOrder': category_order,
             'sortOrder': category_order,
             'isVisible': True,
-        }, [field('.classes-summary h2', 'title')])
+        })
 
         container = _one(group, './div[' + _class('classes-rows') + ']')
         rows = container.xpath('./article[' + _class('classes-row') + ']')
         if not rows:
             raise ValueError('Class category has no cloning template: ' + category)
-        records = []
         for index, row in enumerate(rows):
             paragraphs = row.xpath('./p')
-            records.append({
-                'key': category + '-' + str(index + 1),
+            builder.record('DiClasses', category + '-' + str(index + 1), {
                 'title': plain(_one(row, './h3')),
                 'description': plain(paragraphs[0]) if paragraphs else '',
                 'category': category,
@@ -55,13 +67,28 @@ def _bind_classes(builder, page):
                 'sortOrder': index,
                 'isVisible': True,
             })
-        template = deepcopy(rows[0])
-        if not template.xpath('./p'):
-            template.append(html.Element('p'))
-        builder.listing(container, 'DiClasses', records, outer(template), [
-            field('h3', 'title'),
-            field('p', 'description', hideIfEmpty=True),
-        ], filter={'category': category})
+        if class_template is None:
+            class_template = deepcopy(rows[0])
+            if not class_template.xpath('./p'):
+                class_template.append(html.Element('p'))
+
+    # The category list owns its nested class rows, so added categories work
+    # without another hard-coded page section or a developer-created selector.
+    group_template = deepcopy(groups[0])
+    group_template.attrib.pop('id', None)
+    _one(group_template, './div[' + _class('classes-rows') + ']').clear()
+    _one(group_template, './div').set('class', 'classes-rows')
+    listing = builder.listing(
+        _one(page, './/div[' + _class('classes-accordion') + ']'),
+        'DiClassCategories', categories, outer(group_template),
+        [field('.classes-summary h2', 'title')],
+    )
+    listing['children'] = [{
+        'selector': '.classes-rows', 'collection': 'DiClasses',
+        'match': {'field': 'category', 'parentField': 'key'},
+        'template': outer(class_template),
+        'fields': [field('h3', 'title'), field('p', 'description', hideIfEmpty=True)],
+    }]
 
 
 def _bind_schedule(builder, doc, page):
@@ -71,6 +98,21 @@ def _bind_schedule(builder, doc, page):
                  'schedule-footnote', 'Class Schedule placement note', 'Schedule')
     builder.link(_one(intro, './/*[' + _class('schedule-actions') + ']/a'),
                  'schedule-register', 'Schedule registration button', 'Schedule')
+
+    table = _one(page, './/table[' + _class('schedule-table') + ']')
+    heading = _one(intro, './h1')
+    # Reuse the visible title record so its accessible name changes with the year.
+    builder.singleton(table, 'DiPageContent', 'schedule-title',
+                      {'title': 'Class Schedule title', 'page': 'Schedule', 'text': plain(heading)},
+                      [field(':scope', 'text', 'attribute', attribute='aria-label')])
+    for key, node in zip(('class', 'details', *DAYS), table.xpath('./thead/tr/th')):
+        builder.text(node, 'schedule-column-' + key,
+                     'Schedule column: ' + plain(node), 'Schedule')
+    region = _one(page, './/*[' + _class('schedule-table-scroll') + ']')
+    builder.singleton(region, 'DiPageContent', 'schedule-region-label',
+                      {'title': 'Schedule accessible label', 'page': 'Schedule',
+                       'text': region.get('aria-label', '')},
+                      [field(':scope', 'text', 'attribute', attribute='aria-label')])
 
     container = _one(page, './/table[' + _class('schedule-table') + ']/tbody')
     rows = container.xpath('./tr')
