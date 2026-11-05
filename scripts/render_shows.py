@@ -30,6 +30,13 @@ RECITAL_IMAGES = [
     ("dance-hero.webp", "Dance Institute dancers performing together on stage"),
     ("dance-community.webp", "Young Dance Institute dancers in pink tutus on stage"),
 ]
+PHOTO_POSITIONS = {
+    "dance-community.webp": "50% 0%",
+    "competition-legacy-reach.webp": "50% 100%",
+    "competition-legacy-red-costumes.webp": "50% 80%",
+    "competition-legacy-quartet.webp": "50% 80%",
+    "competition-legacy-ensemble.webp": "50% 80%",
+}
 
 
 def esc(value: str) -> str:
@@ -44,12 +51,12 @@ def gallery(images: list[tuple[str, str]], prefix: str, class_name: str) -> str:
     """A single looping photo frame; append photos to the data lists."""
     if not images:
         return ""
-    items = [{"src": f"{prefix}assets/images/{filename}", "alt": alt} for filename, alt in images]
+    items = [{"src": f"{prefix}assets/images/{filename}", "alt": alt, "position": PHOTO_POSITIONS.get(filename, "50% 50%")} for filename, alt in images]
     data = json.dumps(items, ensure_ascii=False).replace("<", "\\u003c")
     source, alt = items[0]["src"], items[0]["alt"]
     return f'''<section class="show-gallery {esc(class_name)}" data-show-gallery aria-roledescription="carousel" aria-label="{esc(class_name.removesuffix('-gallery').capitalize())} photographs">
       <script type="application/json" data-gallery-items>{data}</script>
-      <div class="show-gallery-stage" data-show-stage tabindex="0" role="group" aria-label="{esc(alt)}"><img src="{esc(source)}" alt="{esc(alt)}" data-show-stage-image loading="eager" decoding="async" draggable="false"></div>
+      <div class="show-gallery-stage" data-show-stage tabindex="0" role="group" aria-label="{esc(alt)}"><img src="{esc(source)}" alt="{esc(alt)}" style="object-position: {esc(items[0]['position'])}" data-show-stage-image loading="eager" decoding="async" draggable="false"></div>
       <div class="show-gallery-controls"><button type="button" data-gallery-prev aria-label="Previous photograph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M19 12H5m7-7-7 7 7 7"/></svg></button><button type="button" data-gallery-next aria-label="Next photograph">{ARROW}</button></div>
       <p class="show-gallery-status" data-gallery-status aria-live="polite" aria-atomic="true"></p>
     </section>'''
@@ -101,19 +108,22 @@ def render_nutcracker(prefix: str = "../../") -> str:
 
 def render_competition(prefix: str = "../../") -> str:
     blocks = REQUEST["shows-and-competition/competition/index.html"]
+    sections = "".join(
+        f'<section class="competition-info-row"><h3>{esc(blocks[index])}</h3><p>{esc(blocks[index + 1])}</p></section>'
+        for index in range(3, len(blocks), 2)
+    )
     return f'''<div class="shows-page competition-page">
-      {title(blocks[0])}
-      <div class="section-shell">{gallery(COMPETITION_IMAGES, prefix, 'competition-gallery')}
-        <div class="competition-copy"><p>{esc(blocks[1])}</p></div>
-      </div>
+      <header class="competition-opening"><div class="section-shell"><h1>{esc(blocks[0])}</h1>{gallery(COMPETITION_IMAGES, prefix, 'competition-gallery')}</div></header>
+      <div class="competition-introduction"><div class="section-shell"><p>{esc(blocks[1])}</p></div></div>
+      <section class="section-shell competition-information" aria-labelledby="competition-information-title"><h2 id="competition-information-title">{esc(blocks[2])}</h2><div>{sections}</div></section>
     </div>'''
 
 
 def render_recital(prefix: str = "../../") -> str:
     blocks = REQUEST["shows-and-competition/recital/index.html"]
     return f'''<div class="shows-page recital-page">
-      {title(blocks[0])}
-      <div class="section-shell">{gallery(RECITAL_IMAGES, prefix, 'recital-gallery')}
+      <header class="recital-opening" aria-labelledby="recital-title">{gallery(RECITAL_IMAGES, prefix, 'recital-gallery')}<div class="section-shell recital-heading"><h1 id="recital-title">{esc(blocks[0])}</h1></div></header>
+      <div class="section-shell">
         <div class="recital-copy-space" aria-hidden="true"></div>
         <section class="show-detail-row recital-volunteering" aria-labelledby="recital-volunteering-title"><h2 id="recital-volunteering-title">{esc(blocks[1])}</h2><div class="recital-volunteering-space" aria-hidden="true"></div></section>
       </div>

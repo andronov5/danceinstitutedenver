@@ -39,11 +39,7 @@ def render_classes(prefix: str = "../") -> str:
 
     out = f'''<div class="classes-page">
       <header class="page-intro section-shell"><h1 class="intro-title">{html.escape(title)}</h1></header>
-      <nav class="section-shell classes-jump" aria-label="Class categories">'''
-    for category in CATEGORIES:
-        identifier = category.lower().replace(" ", "-")
-        out += f'<a href="#{identifier}">{html.escape(category)}</a>'
-    out += '</nav><div class="section-shell classes-accordion">'
+      <div class="section-shell classes-accordion">'''
 
     for category in CATEGORIES:
         identifier = category.lower().replace(" ", "-")

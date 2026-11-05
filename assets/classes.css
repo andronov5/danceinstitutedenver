@@ -6,32 +6,6 @@
   margin-bottom: 20px;
 }
 .classes-page .intro-title { font-size: clamp(48px, 5.5vw, 76px); }
-.classes-jump {
-  position: sticky;
-  top: 0;
-  z-index: 20;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0 36px;
-  padding-block: 8px;
-  margin-bottom: 18px;
-  background: var(--paper);
-  border-bottom: 1px solid var(--line);
-}
-.classes-jump a {
-  display: inline-flex;
-  align-items: center;
-  min-height: 44px;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 1.35;
-  color: var(--ink);
-  text-decoration: underline;
-  text-decoration-color: #c996ac;
-  text-underline-offset: 5px;
-}
-.classes-jump a:hover { color: #93476b; }
-.classes-jump a:focus-visible { outline-offset: 3px; }
 .classes-group {
   margin-bottom: 24px;
   border-bottom: 1px solid var(--line);
@@ -108,15 +82,6 @@
 @media (max-width: 760px) {
   .classes-page { padding-bottom: 44px; }
   .classes-page .page-intro { padding-block: 30px 20px; margin-bottom: 12px; }
-  .classes-jump {
-    flex-wrap: nowrap;
-    gap: 24px;
-    overflow-x: auto;
-    scrollbar-width: thin;
-    padding-block: 8px;
-    margin-bottom: 16px;
-  }
-  .classes-jump a { flex-shrink: 0; white-space: nowrap; }
   .classes-group { scroll-margin-top: 20px; }
   .classes-rows { margin-bottom: 12px; }
   .classes-summary { min-height: 70px; padding-block: 16px; }
@@ -124,9 +89,6 @@
   .classes-page .classes-row h3 { font-size: 18px; }
 }
 
-@media (max-width: 650px) {
-  .classes-group { scroll-margin-top: 54px; }
-}
 
 @media (max-width: 480px) {
   .classes-summary h2 { font-size: 32px; }

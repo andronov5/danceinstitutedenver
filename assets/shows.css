@@ -106,3 +106,44 @@
   .shows-page .recital-copy-space { min-height: 100px; }
   .shows-page .recital-volunteering-space { min-height: 140px; }
 }
+
+/* Competition pairs an oversized heading with a quiet, contained photo stage. */
+.shows-page .competition-opening { padding-top: 38px; background: linear-gradient(to bottom, var(--paper) 72%, var(--ink) 72%); }
+.shows-page .competition-opening > .section-shell { max-width: 1120px; }
+.shows-page .competition-opening h1 { position: relative; margin: 0 0 28px; font-size: clamp(66px, 10vw, 144px); line-height: .95; letter-spacing: -.045em; }
+.shows-page .competition-opening h1::after { content: ''; display: block; width: 90px; height: 4px; margin-top: 24px; background: #a84e78; }
+.shows-page .competition-opening .competition-gallery { box-shadow: 0 18px 50px #080d1c30; }
+.shows-page .competition-introduction { padding: 40px 0 48px; color: var(--paper); background: var(--ink); }
+.shows-page .competition-introduction p { max-width: 860px; margin: auto; font-family: var(--serif); font-size: clamp(26px, 2.5vw, 34px); line-height: 1.4; letter-spacing: -.015em; }
+.shows-page .competition-information { display: grid; grid-template-columns: minmax(0, .65fr) minmax(0, 1.35fr); gap: clamp(30px, 5vw, 72px); max-width: 1120px; padding-block: 64px 28px; }
+.shows-page .competition-information > h2 { max-width: 9ch; font-size: clamp(34px, 3.5vw, 48px); line-height: 1.1; color: #9e466e; }
+.shows-page .competition-info-row { padding-block: 25px; border-top: 1px solid var(--line); }
+.shows-page .competition-info-row:first-child { padding-top: 0; border-top: 0; }
+.shows-page .competition-info-row h3 { margin: 0 0 10px; font-family: var(--sans); font-size: 20px; font-weight: 600; line-height: 1.4; }
+.shows-page .competition-info-row p { margin: 0; font-size: 17px; line-height: 1.8; color: #565b66; }
+
+/* Recital uses its gallery as the opening, with a soft stage fade behind the title. */
+.shows-page .recital-opening { position: relative; isolation: isolate; background: #09090c; border-bottom: 5px solid var(--blush); }
+.shows-page .recital-opening .recital-gallery { max-width: none; background: #09090c; }
+.shows-page .recital-opening .show-gallery-stage { height: clamp(430px, 47vw, 640px); min-height: 0; max-height: none; aspect-ratio: auto; }
+.shows-page .recital-opening .show-gallery-stage::after { content: ''; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(to bottom, #09090c55, transparent 30%, transparent 48%, #09090cce); }
+.shows-page .recital-heading { position: absolute; z-index: 1; inset: auto 0 40px; pointer-events: none; }
+.shows-page .recital-heading h1 { color: #fffaf3; text-align: center; font-size: clamp(92px, 13vw, 190px); font-style: italic; line-height: .8; letter-spacing: -.035em; text-shadow: 0 3px 24px #0003; }
+.shows-page .recital-opening .show-gallery-controls { z-index: 2; }
+.shows-page .recital-copy-space { min-height: 76px; }
+.shows-page .recital-volunteering { border-top-color: #c7a5b5; }
+@media (max-width: 760px) {
+  .shows-page .competition-opening { padding-top: 30px; }
+  .shows-page .competition-opening h1 { font-size: clamp(54px, 10.5vw, 80px); margin-bottom: 24px; }
+  .shows-page .competition-opening h1::after { width: 64px; margin-top: 18px; }
+  .shows-page .competition-introduction { padding-block: 28px 34px; }
+  .shows-page .competition-introduction p { font-size: 26px; }
+  .shows-page .competition-information { grid-template-columns: minmax(0, 1fr); gap: 30px; padding-block: 42px 18px; }
+  .shows-page .competition-information > h2 { max-width: none; font-size: 36px; }
+  .shows-page .competition-info-row { padding-block: 22px; }
+  .shows-page .competition-info-row p { font-size: 16px; }
+  .shows-page .recital-opening .show-gallery-stage { height: 460px; }
+  .shows-page .recital-heading { bottom: 34px; }
+  .shows-page .recital-heading h1 { font-size: clamp(92px, 20vw, 130px); }
+  .shows-page .recital-copy-space { min-height: 44px; }
+}

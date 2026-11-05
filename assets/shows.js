@@ -43,6 +43,7 @@
       const selected = items[current];
       image.src = selected.src;
       image.alt = selected.alt;
+      image.style.objectPosition = selected.position || '50% 50%';
       stage.setAttribute('aria-label', selected.alt);
       if (announce) status.textContent = selected.alt;
       const nextImage = new Image();

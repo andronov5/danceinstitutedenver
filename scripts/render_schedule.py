@@ -38,7 +38,7 @@ ROWS = [
     ('Intro to Poms', '1 Hr Ages 9-Up', {'Thursday': '5:30PM'}),
     ('Rehearsals', 'Nutcracker & Competition', {'Friday': '4:00-7:00', 'Saturday': '12:00-5:00'}),
 ]
-TITLE = '2026-2027 Classes Schedule'
+TITLE = '2026-2027 Class Schedule'
 FOOTNOTE = '*Class placement is determined by Dance Institute Instructors'
 
 

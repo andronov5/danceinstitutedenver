@@ -34,6 +34,7 @@
 .registration-prices { display: grid; grid-template-columns: minmax(0,1.1fr) minmax(0,1fr); align-items: start; gap: 24px; padding-bottom: 30px; }
 .registration-side { display: grid; gap: 20px; min-width: 0; }
 .registration-prices .tuition-panel, .registration-prices .discount-panel, .registration-prices .membership-panel { min-width: 0; padding: 24px; border: 1px solid var(--line); background: #efede6; }
+.registration-prices .tuition-panel { background: #f2e0e9; border-color: #dfbfcd; }
 .registration-prices h2 { font-size: 32px; line-height: 1.15; margin-bottom: 20px; }
 .registration-prices .membership-panel { border-color: #d7b9c6; border-top: 4px solid var(--accent-pink,#a65279); background: #eed7df85; }
 .membership-panel p { display: flex; align-items: baseline; flex-wrap: wrap; gap: 6px 12px; margin: 0; line-height: 1.5; }

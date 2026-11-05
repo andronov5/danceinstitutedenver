@@ -5,7 +5,8 @@ import re
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 TITLE='2025 Summer Schedule'
-DATES='June 17th – July 31st Tues, Wed, Thurs. There is no class the week of July 4th'
+DATES='Classes meet Tuesdays, Wednesdays and Thursdays from June 17th–July 31st.'
+DATE_EXCEPTION='No class the week of July 4th.'
 INTENSIVE=[
     ('Contemporary/Jazz','2:00-3:30','$225.00',''),
     ('Inter/Adv Ballet','3:30-5:00','$225.00','(This is for both Pointe and non-Pointe Ballet dancers.)'),
@@ -28,9 +29,7 @@ CAMPS=[
 
 def render_summer(prefix='../'):
     courses=''.join(f'<article class="summer-course"><h3>{esc(name)}</h3><div class="summer-course-meta"><p class="summer-time">{esc(time)}</p><p class="summer-price">{esc(price)}</p></div>'+ (f'<p class="summer-course-note">{esc(note)}</p>' if note else '') +'</article>' for name,time,price,note in INTENSIVE)
-    date_range, remainder = DATES.split(' Tues,', 1)
-    weekdays, exception = ('Tues,' + remainder).split('. ', 1)
-    dates=f'<p class="summer-intensive-dates"><strong>{esc(date_range)}</strong><span>{esc(weekdays)}.</span><span class="summer-date-exception">{esc(exception)}</span></p>'
+    dates=f'<p class="summer-intensive-dates"><span>{esc(DATES)}</span><span class="summer-date-exception">{esc(DATE_EXCEPTION)}</span></p>'
     combined, description=BOTH.split('. ',1)
     combined_price, combined_label=combined.split(' ',1)
     combined=f'<div class="summer-combined"><p class="summer-both"><strong>{esc(combined_price)}</strong> {esc(combined_label)}.</p><p>{esc(description)}</p></div>'
@@ -47,14 +46,14 @@ def render_summer(prefix='../'):
                 raise ValueError(f"Missing camp time: {camp['title']}")
             time,body=match.groups()
         notes=''.join(f'<p class="summer-camp-{key}">{esc(camp[key])}</p>' for key in ['discount','note'] if key in camp)
-        camps+=f'''<article class="summer-camp"><h3>{title}</h3><p class="summer-camp-dates">{esc(camp['dates'])}</p><p class="summer-camp-time">{esc(time)}</p><p class="summer-camp-body">{esc(body)}</p><div class="summer-camp-notes">{notes}</div></article>'''
+        camps+=f'''<article class="summer-camp"><h3>{title}</h3><div class="summer-camp-details"><p class="summer-camp-dates">{esc(camp['dates'])}</p><p class="summer-camp-time">{esc(time)}</p><p class="summer-camp-body">{esc(body)}</p><div class="summer-camp-notes">{notes}</div></div></article>'''
     return f'''<div class="summer-page"><header class="page-intro section-shell"><h1 class="intro-title">{TITLE}</h1></header>
 <section class="section-shell summer-intensive"><div class="summer-heading"><h2>Summer Intensive</h2>{dates}</div><div class="summer-courses">{courses}</div>{combined}<p class="summer-flexibility">{esc(FLEX)}</p></section>
 <section class="section-shell summer-camps"><div class="summer-heading"><h2>Summer Camps</h2><p>{esc(CAMP_INFO[0])}</p></div><div class="summer-camp-list">{camps}</div><div class="summer-camp-info"><p>{esc(CAMP_INFO[1])}</p><p>{esc(CAMP_INFO[2])}</p></div></section>
 <section class="section-shell summer-registration"><a class="button button-dark" href="{prefix}register/index.html">Register Now <span aria-hidden="true">↗</span></a></section><section class="section-shell summer-contact"><h2>Interested in Learning More?</h2><a class="text-link" href="{prefix}contact/index.html">Contact Us <span aria-hidden="true">↗</span></a></section></div>'''
 
 def write_reference():
-    blocks=[TITLE,'Summer Intensive',DATES]
+    blocks=[TITLE,'Summer Intensive',DATES,DATE_EXCEPTION]
     for name,time,price,note in INTENSIVE: blocks.append(f'{name} {time} {price}'+(f' {note}' if note else ''))
     blocks += [BOTH,FLEX,'Summer Camps',*CAMP_INFO]
     for camp in CAMPS: blocks += [camp[k] for k in ['title','discount','dates','time','body','note'] if k in camp]

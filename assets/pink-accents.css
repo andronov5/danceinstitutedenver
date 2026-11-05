@@ -25,11 +25,12 @@
 }
 
 .hero h1 em { color: var(--accent-pink-pale); }
-.site-footer { background: var(--accent-pink); color: var(--ink); border-top-color: transparent; }
-.site-footer .footer-bottom { color: var(--ink); border-top-color: #252e4240; }
-.site-footer .back-top { border-color: #252e4270; }
-.site-footer a:hover { color: var(--ink); text-decoration: underline; text-underline-offset: 4px; }
-.site-footer .back-top:hover { background: var(--accent-pink-hover); }
+.site-footer { background: #a84e78; color: #fffaf3; border-top-color: transparent; }
+.site-footer .footer-bottom { color: #fffaf3; border-top-color: #fffaf350; }
+.site-footer .back-top { border-color: #fffaf380; }
+.site-footer a:hover { color: #fffaf3; text-decoration: underline; text-underline-offset: 4px; }
+.site-footer .back-top:hover { background: #943d65; }
+.site-footer a:focus-visible { outline-color: #fffaf3; }
 /* The overlaid rule adds no height and does not move the hero content. */
 .hero::after {
   content: "";
