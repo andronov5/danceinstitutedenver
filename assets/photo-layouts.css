@@ -1,33 +1,203 @@
-/* Keep the original design; vary photo proportions instead of corner shapes. */
+/* The original palette and serif typography, with a more photographic rhythm. */
 .about-main-photo,
 .editorial-image,
 .wide-editorial,
 .contact-photo,
-.course-detail-photo {
-  border-radius: 0;
-}
-
-.about-collage { padding-right: 0; }
-.about-main-photo { width: 76%; object-position: center top; }
-.about-small-photo {
-  width: 64%;
-  aspect-ratio: 1.5;
-  right: 0;
-  transform: none;
-}
-.performance-story .editorial-image { aspect-ratio: 1; }
+.course-detail-photo { border-radius: 0; }
 .wide-editorial { height: auto; aspect-ratio: 1.8; }
 .contact-photo { aspect-ratio: 1.9; }
 
-.tab-arrow, .card-arrow { display: inline-flex; }
-.tab-arrow svg, .card-arrow svg, .course-image-arrow svg {
-  width: 24px;
-  height: 24px;
+.hero h1 > span:last-child { margin-left: .28em; }
+.hero-photo { animation: settle-photo 1.8s var(--ease) both; }
+
+/* A tall stage photograph and a smaller, offset candid keep their own space. */
+.home-about {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  grid-template-rows: auto auto;
+  gap: 36px clamp(48px, 7.5vw, 110px);
+  align-items: start;
+  padding-block: 110px;
 }
+.about-primary {
+  grid-column: 1;
+  grid-row: 1 / 3;
+  position: relative;
+  height: auto;
+  align-self: stretch;
+  min-height: 600px;
+  overflow: hidden;
+}
+.about-primary .about-main-photo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  object-position: center top;
+}
+.about-copy { grid-column: 2; padding-top: 20px; }
+.about-copy > p:not(.eyebrow) { max-width: 470px; }
+.about-secondary {
+  grid-column: 2;
+  width: 78%;
+  aspect-ratio: 1.5;
+  justify-self: end;
+  overflow: hidden;
+}
+.about-secondary img { width: 100%; height: 100%; object-fit: cover; }
+.about-primary img, .about-secondary img {
+  transition: transform 1.2s var(--ease);
+}
+
+/* The selected program is a photograph with its original caption. */
+.programs-section { padding-block: 88px; }
+.program-browser {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.12fr);
+  border: 0;
+  column-gap: clamp(45px, 6vw, 90px);
+  align-items: stretch;
+}
+.program-tabs {
+  padding: 0;
+  align-self: center;
+  border-top: 1px solid #c9c6be;
+}
+.program-tabs button {
+  min-height: 108px;
+  padding: 28px 0;
+  font-size: clamp(29px, 2.8vw, 40px);
+  position: relative;
+}
+.program-tabs button:last-child { border-bottom: 1px solid #c9c6be; }
+.program-tabs button::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 2px;
+  width: 100%;
+  background: #a84e78;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .45s var(--ease);
+}
+.program-tabs button[aria-selected=true]::after { transform: scaleX(1); }
+.program-panels { min-height: 420px; background: var(--ink); }
+.program-tab-panel {
+  min-height: 420px;
+  height: 100%;
+  padding: 36px;
+  color: #fff;
+  overflow: hidden;
+  align-items: flex-end;
+}
+.program-photo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+  animation: settle-photo .75s var(--ease) both;
+}
+#program-panel-1 .program-photo { object-position: center 20%; }
+#program-panel-2 .program-photo { object-position: 60% center; }
+.program-tab-panel::after {
+  content: '';
+  inset: 0;
+  width: auto;
+  height: auto;
+  border: 0;
+  border-radius: 0;
+  transform: none;
+  background: linear-gradient(180deg, transparent 35%, rgba(12,17,29,.75));
+  z-index: -1;
+}
+.program-tab-panel p {
+  max-width: 440px;
+  font-size: clamp(27px, 2.7vw, 38px);
+  line-height: 1.18;
+  text-shadow: 0 1px 16px rgba(0,0,0,.3);
+}
+#program-panel-2 p { font-size: clamp(26px, 2.1vw, 31px); }
+.performance-grid { margin-top: 64px; gap: 38px; }
+.performance-card { padding-top: 6px; transition: color .25s; }
+.performance-card:hover { color: #9a416c; }
+.performance-card h3 { font-size: 32px; }
+.growth-note { padding-top: 25px; }
+
+/* A quiet, centered pause between the photographic sections. */
+.testimonials {
+  display: block;
+  max-width: 980px;
+  padding-block: 100px 90px;
+  text-align: center;
+}
+.quote-label h2 { font-size: clamp(42px, 4.5vw, 62px); }
+.quote-content { margin-top: 38px; }
+.quote-slides { min-height: 240px; }
+.quote-slide blockquote { font-size: clamp(28px, 2.6vw, 37px); line-height: 1.3; }
+.quote-slide figcaption { justify-content: center; }
+.quote-controls { border: 0; justify-content: center; margin-top: 12px; }
+
+.tab-arrow, .card-arrow { display: inline-flex; }
+.tab-arrow svg, .card-arrow svg, .course-image-arrow svg { width: 24px; height: 24px; }
 .text-link > span > svg { width: 20px; height: 20px; }
 
+@keyframes settle-photo {
+  from { transform: scale(1.035); opacity: .8; }
+  to { transform: scale(1); opacity: 1; }
+}
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .about-primary:hover img, .about-secondary:hover img { transform: scale(1.025); }
+}
+@media (min-width: 651px) {
+  .programs-section > .section-shell {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.12fr);
+    column-gap: clamp(45px, 6vw, 90px);
+  }
+  .programs-section .section-topline { grid-column: 1; grid-row: 1; margin-bottom: 34px; }
+  .program-browser { display: contents; }
+  .program-tabs { grid-column: 1; grid-row: 2; }
+  .program-panels { grid-column: 2; grid-row: 1 / 3; }
+  .performance-grid, .growth-note { grid-column: 1 / -1; }
+}
+@media (max-width: 940px) {
+  .home-about { gap: 28px 40px; padding-block: 80px; }
+  .about-primary { min-height: 540px; }
+  .about-copy { padding: 0; }
+  .about-secondary { width: 90%; }
+  .program-browser { column-gap: 32px; }
+  .program-tabs button { font-size: 29px; }
+  .program-panels, .program-tab-panel { min-height: 360px; }
+  .program-tab-panel { padding: 26px; }
+  .performance-card h3 { font-size: 28px; }
+}
 @media (max-width: 650px) {
-  .about-collage { height: 370px; }
-  .about-main-photo { width: 72%; }
-  .about-small-photo { width: 64%; }
+  .hero h1 > span:last-child { margin-left: .12em; }
+  .home-about {
+    grid-template-columns: minmax(0, 1.08fr) minmax(0, .92fr);
+    gap: 28px 16px;
+    padding-block: 60px;
+  }
+  .about-copy { grid-column: 1 / -1; grid-row: 1; }
+  .about-primary { grid-column: 1; grid-row: 2; min-height: 0; height: auto; aspect-ratio: .63; }
+  .about-primary .about-main-photo { height: 100%; min-height: 0; object-position: center top; }
+  .about-secondary { grid-column: 2; grid-row: 2; width: 100%; align-self: end; aspect-ratio: 1.12; }
+  .programs-section { padding-block: 58px; }
+  .program-browser { grid-template-columns: minmax(0, 1fr); gap: 30px; }
+  .program-tabs button { min-height: 75px; padding: 20px 0; font-size: 29px; }
+  .program-panels, .program-tab-panel { min-height: 320px; }
+  .program-tab-panel p { font-size: 32px; }
+  #program-panel-2 p { font-size: 27px; }
+  .performance-grid { margin-top: 38px; gap: 26px; }
+  .performance-card h3 { font-size: 30px; }
+  .growth-note { padding-top: 0; }
+  .testimonials { padding-block: 60px; }
+  .quote-label h2 { font-size: 45px; }
+  .quote-content { margin-top: 28px; }
+  .quote-slide blockquote { font-size: 28px; }
+  .quote-slides { min-height: 0; }
+  .quote-controls { margin-top: 18px; }
 }
