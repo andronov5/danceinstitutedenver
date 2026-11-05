@@ -77,21 +77,9 @@
         "_id": "9a700458-8cb5-5955-971d-10261151e3d8"
       },
       {
-        "key": "policies-ballet-photo",
-        "isVisible": true,
-        "sortOrder": 5,
-        "title": "Studio Policies photograph",
-        "page": "about/studio-policies/index.html",
-        "image": "https://static.wixstatic.com/media/24dcb0_08904e1259944c46b0eb3f2593417e51~mv2.png",
-        "alt": "Ballet dancer practicing en pointe at the studio barre",
-        "focalX": null,
-        "focalY": null,
-        "_id": "26573964-03e0-555d-9c5c-f47d9c1fc2cb"
-      },
-      {
         "key": "nutcracker-hero",
         "isVisible": true,
-        "sortOrder": 6,
+        "sortOrder": 5,
         "title": "Nutcracker hero photograph",
         "page": "shows-and-competition/nutcracker/index.html",
         "image": "https://static.wixstatic.com/media/24dcb0_18293fc52d614dad861e559bf73d973f~mv2.webp",
@@ -103,7 +91,7 @@
       {
         "key": "contact-photo",
         "isVisible": true,
-        "sortOrder": 7,
+        "sortOrder": 6,
         "title": "Contact photo",
         "page": "Contact",
         "image": "https://static.wixstatic.com/media/24dcb0_30a4b71d6eb04e568d73ba3d42e329e0~mv2.webp",
@@ -1793,6 +1781,7 @@
         "focalY": null,
         "label": "",
         "url": "",
+        "afterSection": "",
         "_id": "00be3df1-0ae8-52ff-a9fd-c9f5e620564a"
       }
     ],

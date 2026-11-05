@@ -449,6 +449,11 @@
           "key": "url",
           "displayName": "Url",
           "type": "TEXT"
+        },
+        {
+          "key": "afterSection",
+          "displayName": "After section",
+          "type": "TEXT"
         }
       ],
       "permissions": {

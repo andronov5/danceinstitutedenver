@@ -67,6 +67,21 @@ test('image focal coordinates are constrained', () => {
   assert.equal(cms.coordinate('72'), null);
   assert.equal(cms.coordinate(Infinity), null);
 });
+test('section order moves only sortable sections and leaves unknown slots fixed', () => {
+  const hero = { name:'hero', row:{sortOrder:30} };
+  const missing = { name:'missing' };
+  const about = { name:'about', row:{sortOrder:10} };
+  const hidden = { name:'hidden', row:null };
+  const reviews = { name:'reviews', row:{sortOrder:20} };
+  const input = [hero,missing,about,hidden,reviews];
+  assert.deepEqual(cms.orderedSectionSlots(input).map(item => item.name), ['about','missing','reviews','hidden','hero']);
+  assert.deepEqual(input.map(item => item.name), ['hero','missing','about','hidden','reviews']);
+});
+test('default, absent and tied section ordering preserves existing layout', () => {
+  const entries = [{row:{sortOrder:0}}, {row:{sortOrder:1}}, {row:{sortOrder:1}}, {}, {row:{sortOrder:'-9'}}];
+  assert.deepEqual(cms.orderedSectionSlots(entries), entries);
+  assert.deepEqual(cms.orderedSectionSlots([]), []);
+});
 test('CMS is inert when a page has no binding manifest', async () => {
   assert.deepEqual(await cms.start({getElementById: () => null}, {}, base), {status:'bundled'});
 });

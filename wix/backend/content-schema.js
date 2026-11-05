@@ -84,7 +84,8 @@ export const PUBLIC_COLLECTIONS = {
     "focalX",
     "focalY",
     "label",
-    "url"
+    "url",
+    "afterSection"
   ],
   "DiClasses": [
     "key",

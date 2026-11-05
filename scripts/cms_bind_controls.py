@@ -127,6 +127,23 @@ def section_controls(builder, route, doc):
             raise ValueError('Missing section visibility target: ' + route + '/' + name)
         builder.singleton(nodes[0], 'DiSections', (route or 'home') + '-' + name,
                           {'title': name.replace('-', ' ').capitalize(), 'page': route or 'home'}, [])
+        # Placement follows actual page flow. Grid cards retain their enclosing
+        # layout, while ordinary sections can receive a new block immediately
+        # after themselves. These selectors are build metadata, never CMS input.
+        anchor_class, anchor_title = {
+            'contact-introduction': ('contact-heading', 'Contact introduction'),
+            'contact-intro': ('contact-layout', 'Contact details and form'),
+            'contact-form-panel': ('contact-layout', 'Contact details and form'),
+            'tuition-panel': ('registration-prices', 'Tuition and membership'),
+            'discount-panel': ('registration-prices', 'Tuition and membership'),
+            'membership-panel': ('registration-prices', 'Tuition and membership'),
+            'sawyer-link': ('registration-widget', 'Registration widget'),
+            'sawyer-frame': ('registration-widget', 'Registration widget'),
+        }.get(name, (name, name.replace('-', ' ').capitalize()))
+        anchor = doc.xpath('//*[' + cls(anchor_class) + ']')[0]
+        builder.current['records'][-1].update({
+            'placementSelector': builder.target(anchor), 'placementTitle': anchor_title,
+        })
 
 
 def extra_content(builder, route, doc):
@@ -136,12 +153,13 @@ def extra_content(builder, route, doc):
     template = '''<section class="cms-content-block"><img class="cms-block-photo" alt="" loading="lazy" hidden><div class="cms-block-copy"><h2 hidden></h2><div class="cms-block-body" hidden></div><a class="text-link" hidden></a></div></section>'''
     # One hidden starter item exposes all field types without public placeholder copy.
     rows = [{'key': 'extra-content-template', 'page': 'home', 'title': '', 'body': '', 'image': '', 'alt': '',
-             'focalX': None, 'focalY': None, 'label': '', 'url': '', 'isVisible': False, 'sortOrder': 10}]
-    builder.listing(container, 'DiContentBlocks', rows, template, [
+             'focalX': None, 'focalY': None, 'label': '', 'url': '', 'afterSection': '', 'isVisible': False, 'sortOrder': 10}]
+    listing = builder.listing(container, 'DiContentBlocks', rows, template, [
         field('h2', 'title', hideIfEmpty=True), field('.cms-block-body', 'body', 'rich', hideIfEmpty=True),
         field('img', 'image', 'image', altField='alt', xField='focalX', yField='focalY', hideIfEmpty=True),
         field('a', 'url', 'link', hideIfEmpty=True), field('a', 'label'),
     ], filter={'page': route or 'home'})
+    listing['placementField'] = 'afterSection'
 
 
 def bind_controls(builder, route, doc):

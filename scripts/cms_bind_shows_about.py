@@ -110,9 +110,7 @@ def _teachers(builder, route, doc):
 
 def _policies(builder, route, doc):
     _heading(builder, doc, route, "//main//h1", "policies-title", "Studio Policies page title")
-    builder.image(_one(doc, "//*[" + _class("policy-portrait") + "]/img"),
-                  "policies-ballet-photo", "Studio Policies photograph", route)
-    container = _one(doc, "//*[" + _class("policies-list") + "]")
+    container = _one(doc, "//*[" + _class("policies-content") + "]")
     rows = container.xpath("./section[" + _class("policy-section") + "]")
     records = []
     for order, row in enumerate(rows):

@@ -62,13 +62,10 @@ def render_policies(prefix: str = "../../") -> str:
     return f'''<div class="policies-page">
       {title(blocks[0])}
       <div class="section-shell policies-content">
-        <div class="policies-list">
-          <section class="policy-section" aria-labelledby="policy-rules">
-            <h2 id="policy-rules">{esc(blocks[1])}</h2>
-            <div class="policy-copy">{paragraph(blocks[2])}<ul class="policy-rules">{rules}</ul></div>
-          </section>
-          {sections}
-        </div>
-        <figure class="policy-portrait"><img src="{esc(prefix)}assets/images/policies-ballet.png" alt="Ballet dancer practicing en pointe at the studio barre" width="387" height="516" loading="eager" decoding="async"></figure>
+        <section class="policy-section" aria-labelledby="policy-rules">
+          <h2 id="policy-rules">{esc(blocks[1])}</h2>
+          <div class="policy-copy">{paragraph(blocks[2])}<ul class="policy-rules">{rules}</ul></div>
+        </section>
+        {sections}
       </div>
     </div>'''

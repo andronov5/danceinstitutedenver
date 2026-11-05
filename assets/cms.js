@@ -209,6 +209,14 @@
       });
     });
   }
+  function orderedSectionSlots(entries) {
+    // Missing/hidden sections retain their slot. Equal or absent orders retain
+    // the current DOM order, rather than falling back to unrelated row IDs.
+    var movable = entries.filter(function (entry) { return entry.row && Number.isFinite(entry.row.sortOrder); });
+    var ordered = movable.slice().sort(function (a, b) { return a.row.sortOrder - b.row.sortOrder; });
+    var cursor = 0;
+    return entries.map(function (entry) { return movable.includes(entry) ? ordered[cursor++] : entry; });
+  }
   function hydrate(document, manifest, collections, adapter, base) {
     // Validate nested collections even when their parent list is empty/hidden.
     // A broken snapshot must not partially replace a complete page or its title.
@@ -218,6 +226,30 @@
     var entries = manifest.records.concat(manifest.lists, manifest.galleries);
     var selectors = Array.from(new Set(entries.map(function (entry) { return entry.selector; })));
     selectors.forEach(function (selector) { if (!draft.querySelector(selector)) throw new Error('CMS page target is missing'); });
+    var layoutRoots = [];
+    var sectionEntries = manifest.records.filter(function (entry) { return entry.collection === 'DiSections'; });
+    var sectionRows = sectionEntries.length ? visibleRows(collections.DiSections) : [];
+    var sectionGroups = new Map();
+    sectionEntries.forEach(function (entry) {
+      var node = draft.querySelector(entry.selector);
+      var original = document.querySelector(entry.selector);
+      if (!original || !node.parentElement) throw new Error('CMS section target is missing');
+      var group = sectionGroups.get(node.parentElement);
+      if (!group) {
+        group = { parent: node.parentElement, original: original.parentElement, entries: [] };
+        sectionGroups.set(node.parentElement, group);
+      }
+      if (group.entries.some(function (candidate) { return candidate.node === node; })) return;
+      group.entries.push({ node: node, row: sectionRows.find(function (row) { return row.key === entry.key; }) });
+    });
+    // Previously positioned optional blocks must disappear when hidden or moved.
+    // Only wrappers created for this manifest's designated block lists qualify.
+    var extraLists = manifest.lists.filter(function (entry) { return entry.collection === 'DiContentBlocks' && entry.placementField === 'afterSection'; });
+    var extraSelectors = new Set(extraLists.map(function (entry) { return entry.selector; }));
+    var placedBlocksChanged = false;
+    Array.from(draft.querySelectorAll('[data-cms-extra-source]')).forEach(function (node) {
+      if (extraSelectors.has(node.getAttribute('data-cms-extra-source'))) { node.remove(); placedBlocksChanged = true; }
+    });
     // Undo only visibility previously imposed by CMS records. Keep the original
     // state of conditional UI (menus, empty optional links, disclosure controls).
     selectors.forEach(function (selector) {
@@ -248,6 +280,8 @@
       rows.forEach(function (row, index) {
         var item = template.content.firstElementChild.cloneNode(true);
         uniqueIds(item, 'cms-' + groupKey + '-' + index);
+        item.setAttribute('data-cms-item-collection', entry.collection);
+        item.setAttribute('data-cms-item-key', row.key);
         applyFields(item, row, entry.fields, context);
         (entry.children || []).forEach(function (child, childIndex) {
           var container = item.querySelector(child.selector);
@@ -285,10 +319,58 @@
       target.setAttribute('data-cms-hidden', String(target.hidden));
       target.hidden = true;
     });
+    sectionGroups.forEach(function (group) {
+      var children = Array.from(group.parent.children);
+      var originalOrder = group.entries.slice().sort(function (a, b) { return children.indexOf(a.node) - children.indexOf(b.node); });
+      var nextOrder = orderedSectionSlots(originalOrder);
+      if (nextOrder.every(function (entry, index) { return entry === originalOrder[index]; })) return;
+      // Keep each unbound sibling at its exact position using temporary slots.
+      var slots = originalOrder.map(function (entry) {
+        var marker = document.createComment('cms-section-slot');
+        entry.node.replaceWith(marker);
+        return marker;
+      });
+      slots.forEach(function (slot, index) { slot.replaceWith(nextOrder[index].node); });
+      layoutRoots.push({ original: group.original, replacement: group.parent });
+    });
+    extraLists.forEach(function (entry) {
+      var container = draft.querySelector(entry.selector);
+      var main = draft.querySelector('main');
+      if (!main || !main.contains(container)) return;
+      var rows = visibleRows(collections[entry.collection], entry.filter);
+      var buckets = new Map();
+      Array.from(container.children).forEach(function (block, index) {
+        var key = rows[index] && rows[index].afterSection;
+        if (typeof key !== 'string' || !key) return;
+        var section = sectionEntries.find(function (candidate) { return candidate.key === key; });
+        var anchor = section && draft.querySelector(section.placementSelector || section.selector);
+        if (!anchor || anchor === main || !main.contains(anchor)) return;
+        // Explicit build-time anchors respect inner page flow while keeping
+        // pricing/contact grids together. Older manifests use their main wrapper.
+        if (!section.placementSelector) while (anchor.parentElement !== main) anchor = anchor.parentElement;
+        if (anchor === container || anchor.contains(container)) return;
+        var bucket = buckets.get(anchor);
+        if (!bucket) {
+          bucket = document.createElement('div');
+          bucket.className = (anchor.parentElement.closest('.section-shell') ? '' : 'section-shell ') + 'cms-extra-sections';
+          bucket.setAttribute('data-cms-extra-source', entry.selector);
+          buckets.set(anchor, bucket);
+        }
+        bucket.appendChild(block);
+      });
+      buckets.forEach(function (bucket, anchor) { anchor.after(bucket); placedBlocksChanged = true; });
+    });
+    if (placedBlocksChanged) {
+      var originalMain = document.querySelector('main');
+      var draftMain = draft.querySelector('main');
+      if (!originalMain || !draftMain) throw new Error('CMS block placement target is missing');
+      layoutRoots.push({ original: originalMain, replacement: draftMain });
+    }
     // Prepare every replacement before touching the visible document. Nested
     // bindings are already contained in their ancestor's prepared replacement.
-    var roots = selectors.map(function (selector) { return { original: document.querySelector(selector), replacement: draft.querySelector(selector) }; });
+    var roots = selectors.map(function (selector) { return { original: document.querySelector(selector), replacement: draft.querySelector(selector) }; }).concat(layoutRoots);
     if (roots.some(function (pair) { return !pair.original || !pair.replacement; })) throw new Error('CMS target changed while loading');
+    roots = roots.filter(function (pair, index) { return roots.findIndex(function (candidate) { return candidate.original === pair.original; }) === index; });
     roots = roots.filter(function (pair) { return !roots.some(function (other) { return other !== pair && other.original.contains(pair.original); }); });
     roots.forEach(function (pair) { pair.original.replaceWith(pair.replacement); });
     return { status: 'connected', collections: Object.keys(collections).length };
@@ -317,5 +399,5 @@
       return { status: 'fallback' };
     } finally { clearTimeout(timer); }
   }
-  return Object.freeze({ safeUrl: safeUrl, phoneHref: phoneHref, emailHref: emailHref, mapHref: mapHref, sawyerUrl: sawyerUrl, coordinate: coordinate, visibleRows: visibleRows, contentCollections: contentCollections, sanitizeHtml: sanitizeHtml, hydrate: hydrate, start: start });
+  return Object.freeze({ safeUrl: safeUrl, phoneHref: phoneHref, emailHref: emailHref, mapHref: mapHref, sawyerUrl: sawyerUrl, coordinate: coordinate, visibleRows: visibleRows, contentCollections: contentCollections, sanitizeHtml: sanitizeHtml, orderedSectionSlots: orderedSectionSlots, hydrate: hydrate, start: start });
 });
