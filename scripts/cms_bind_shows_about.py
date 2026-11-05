@@ -221,38 +221,44 @@ def _competition(builder, route, doc):
     builder.text(_one(doc, "//*[" + _class("competition-introduction") + "]/div"),
                  "competition-introduction", "Competition introduction", route, rich=True)
     section = _one(doc, "//*[" + _class("competition-information") + "]")
-    builder.text(_one(section, "./h2"), "competition-information-title", "Competition information heading", route)
     container = _one(section, "./div")
     rows = container.xpath("./section[" + _class("competition-info-row") + "]")
     records = []
     for order, row in enumerate(rows):
-        title = _one(row, "./h3")
+        title = _one(row, "./h2")
         records.append({"key": _slug(plain(title)), "title": plain(title),
                         "body": "".join(outer(child) for child in row if child is not title),
                         "sortOrder": order, "isVisible": True})
     template = deepcopy(rows[0])
     body = html.Element("div", {"data-cms-competition-body": ""})
     for child in list(template):
-        if child.tag != "h3":
+        if child.tag != "h2":
             template.remove(child)
             body.append(child)
     template.append(body)
     builder.listing(container, "DiCompetitionInfo", records, outer(template), [
-        field("h3", "title"), field("[data-cms-competition-body]", "body", "rich")])
+        field("h2", "title"), field("[data-cms-competition-body]", "body", "rich")])
 
 
 def _recital(builder, route, doc):
     _heading(builder, doc, route, "//*[@id='recital-title']", "recital-title", "Recital page title")
     _galleries(builder, doc, "recital")
+    _heading(builder, doc, route, "//*[@id='recital-shows-title']", "recital-shows-title", "Recital shows heading")
+    _heading(builder, doc, route, "//*[@id='recital-gala-title']", "recital-gala-title", "Recital gala heading")
     _heading(builder, doc, route, "//*[@id='recital-volunteering-title']", "recital-volunteering-title", "Recital volunteering heading")
     for class_name, key, label in [("recital-copy-space", "recital-information", "Recital information"),
+                                    ("recital-gala-copy", "recital-gala", "Recital gala"),
                                     ("recital-volunteering-space", "recital-volunteering", "Recital volunteering")]:
         container = _one(doc, "//*[" + _class(class_name) + "]")
         container.attrib.pop("aria-hidden", None)
-        body = html.Element("div", {"class": "show-detail-copy", "hidden": "hidden"})
-        container.append(body)
+        existing = container.xpath("./div[" + _class("show-detail-copy") + "]")
+        if existing:
+            body = existing[0]
+        else:
+            body = html.Element("div", {"class": "show-detail-copy", "hidden": "hidden"})
+            container.append(body)
         builder.singleton(body, "DiPageContent", key,
-                          {"title": label, "page": route, "body": ""},
+                          {"title": label, "page": route, "body": inner(body)},
                           [field(":scope", "body", "rich", hideIfEmpty=True)])
         _optional_link(builder, container, key + "-link", label + " link", route)
 

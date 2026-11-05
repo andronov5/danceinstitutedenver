@@ -115,11 +115,10 @@
 .shows-page .competition-opening .competition-gallery { box-shadow: 0 18px 50px #080d1c30; }
 .shows-page .competition-introduction { padding: 40px 0 48px; color: var(--paper); background: var(--ink); }
 .shows-page .competition-introduction p { max-width: 860px; margin: auto; font-family: var(--serif); font-size: clamp(26px, 2.5vw, 34px); line-height: 1.4; letter-spacing: -.015em; }
-.shows-page .competition-information { display: grid; grid-template-columns: minmax(0, .65fr) minmax(0, 1.35fr); gap: clamp(30px, 5vw, 72px); max-width: 1120px; padding-block: 64px 28px; }
-.shows-page .competition-information > h2 { max-width: 9ch; font-size: clamp(34px, 3.5vw, 48px); line-height: 1.1; color: #9e466e; }
-.shows-page .competition-info-row { padding-block: 25px; border-top: 1px solid var(--line); }
+.shows-page .competition-information { max-width: 1120px; padding-block: 48px 28px; }
+.shows-page .competition-info-row { display: grid; grid-template-columns: minmax(0, .65fr) minmax(0, 1.35fr); gap: clamp(30px, 5vw, 72px); padding-block: 32px; border-top: 1px solid var(--line); }
 .shows-page .competition-info-row:first-child { padding-top: 0; border-top: 0; }
-.shows-page .competition-info-row h3 { margin: 0 0 10px; font-family: var(--sans); font-size: 20px; font-weight: 600; line-height: 1.4; }
+.shows-page .competition-info-row h2 { margin: 0; font-size: clamp(34px, 3.5vw, 48px); line-height: 1.1; color: #9e466e; }
 .shows-page .competition-info-row p { margin: 0; font-size: 17px; line-height: 1.8; color: #565b66; }
 
 /* Recital uses its gallery as the opening, with a soft stage fade behind the title. */
@@ -138,9 +137,9 @@
   .shows-page .competition-opening h1::after { width: 64px; margin-top: 18px; }
   .shows-page .competition-introduction { padding-block: 28px 34px; }
   .shows-page .competition-introduction p { font-size: 26px; }
-  .shows-page .competition-information { grid-template-columns: minmax(0, 1fr); gap: 30px; padding-block: 42px 18px; }
-  .shows-page .competition-information > h2 { max-width: none; font-size: 36px; }
-  .shows-page .competition-info-row { padding-block: 22px; }
+  .shows-page .competition-information { padding-block: 32px 18px; }
+  .shows-page .competition-info-row { grid-template-columns: minmax(0, 1fr); gap: 16px; padding-block: 24px; }
+  .shows-page .competition-info-row h2 { font-size: 36px; }
   .shows-page .competition-info-row p { font-size: 16px; }
   .shows-page .recital-opening .show-gallery-stage { height: 460px; }
   .shows-page .recital-heading { bottom: 34px; }

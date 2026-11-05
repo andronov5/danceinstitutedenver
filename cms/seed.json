@@ -450,31 +450,40 @@
         "sortOrder": 38,
         "title": "Competition introduction",
         "page": "shows-and-competition/competition/index.html",
-        "body": "<p>Competition is another way to grow as a dancer: practicing with purpose, working together, and sharing a performance on stage. From rehearsals to the final bow, the experience is about learning, expression, and being part of a team.</p>",
+        "body": "<p>We typically attend three competitions in April and May.</p>",
         "_id": "325b2eed-a32d-5835-90ab-d985133770f1"
-      },
-      {
-        "key": "competition-information-title",
-        "isVisible": true,
-        "sortOrder": 39,
-        "title": "Competition information heading",
-        "page": "shows-and-competition/competition/index.html",
-        "text": "Sample information",
-        "_id": "1470530c-09db-53b1-a0e4-01e808e315cc"
       },
       {
         "key": "recital-title",
         "isVisible": true,
-        "sortOrder": 40,
+        "sortOrder": 39,
         "title": "Recital page title",
         "page": "shows-and-competition/recital/index.html",
         "text": "Recital",
         "_id": "7ac7f921-e2e2-5377-b334-2a9d25125775"
       },
       {
-        "key": "recital-volunteering-title",
+        "key": "recital-shows-title",
+        "isVisible": true,
+        "sortOrder": 40,
+        "title": "Recital shows heading",
+        "page": "shows-and-competition/recital/index.html",
+        "text": "Shows",
+        "_id": "acaedf41-a47a-537e-b092-9848cbee0a83"
+      },
+      {
+        "key": "recital-gala-title",
         "isVisible": true,
         "sortOrder": 41,
+        "title": "Recital gala heading",
+        "page": "shows-and-competition/recital/index.html",
+        "text": "Our Gala",
+        "_id": "9cead242-11fe-5591-9bd7-2feaa6fb378d"
+      },
+      {
+        "key": "recital-volunteering-title",
+        "isVisible": true,
+        "sortOrder": 42,
         "title": "Recital volunteering heading",
         "page": "shows-and-competition/recital/index.html",
         "text": "Volunteering",
@@ -483,16 +492,25 @@
       {
         "key": "recital-information",
         "isVisible": true,
-        "sortOrder": 42,
+        "sortOrder": 43,
         "title": "Recital information",
         "page": "shows-and-competition/recital/index.html",
-        "body": "",
+        "body": "<p>We present three shows in early June to showcase what our dancers have been learning in class. Younger classes perform in one show, while some classes perform in all three.</p>",
         "_id": "3b6741fb-449d-53f7-ae7b-64daa7be6b6c"
+      },
+      {
+        "key": "recital-gala",
+        "isVisible": true,
+        "sortOrder": 44,
+        "title": "Recital gala",
+        "page": "shows-and-competition/recital/index.html",
+        "body": "<p>Our gala is an opportunity to support the studio, take part in bidding, and enjoy performances of our competition dances.</p>",
+        "_id": "02b1c99c-85c3-5182-9cf6-ecdd575e9027"
       },
       {
         "key": "recital-volunteering",
         "isVisible": true,
-        "sortOrder": 43,
+        "sortOrder": 45,
         "title": "Recital volunteering",
         "page": "shows-and-competition/recital/index.html",
         "body": "",
@@ -501,7 +519,7 @@
       {
         "key": "summer-title",
         "isVisible": true,
-        "sortOrder": 44,
+        "sortOrder": 46,
         "title": "Summer page title",
         "page": "Summer Intensive",
         "text": "2025 Summer Schedule",
@@ -510,7 +528,7 @@
       {
         "key": "summer-intensive-heading",
         "isVisible": true,
-        "sortOrder": 45,
+        "sortOrder": 47,
         "title": "Summer Intensive heading",
         "page": "Summer Intensive",
         "text": "Summer Intensive",
@@ -519,7 +537,7 @@
       {
         "key": "summer-intensive-dates",
         "isVisible": true,
-        "sortOrder": 46,
+        "sortOrder": 48,
         "title": "Summer Intensive dates and days",
         "page": "Summer Intensive",
         "text": "Classes meet Tuesdays, Wednesdays and Thursdays from June 17th–July 31st.",
@@ -528,7 +546,7 @@
       {
         "key": "summer-holiday-exception",
         "isVisible": true,
-        "sortOrder": 47,
+        "sortOrder": 49,
         "title": "Summer holiday exception",
         "page": "Summer Intensive",
         "text": "No class the week of July 4th.",
@@ -537,7 +555,7 @@
       {
         "key": "summer-combined-price",
         "isVisible": true,
-        "sortOrder": 48,
+        "sortOrder": 50,
         "title": "Summer combined course price",
         "page": "Summer Intensive",
         "body": "<strong>$400.00</strong> for both courses.",
@@ -546,7 +564,7 @@
       {
         "key": "summer-combined-description",
         "isVisible": true,
-        "sortOrder": 49,
+        "sortOrder": 51,
         "title": "Summer combined course description",
         "page": "Summer Intensive",
         "body": "Your dancer will have 54 hours of training this summer with our intensive. Our Intensive is perfect for dancers 11 and older that are looking to not only maintain their dance over the summer but to grow and be challenged.",
@@ -555,7 +573,7 @@
       {
         "key": "summer-flexibility",
         "isVisible": true,
-        "sortOrder": 50,
+        "sortOrder": 52,
         "title": "Summer attendance and flexibility",
         "page": "Summer Intensive",
         "body": "We understand there are vacations planned and students will miss some days here and there. This intensive is designed to accommodate busy schedules with an open curriculum and an extremely discounted price. As well as, no Monday or Friday classes.",
@@ -564,7 +582,7 @@
       {
         "key": "summer-camps-heading",
         "isVisible": true,
-        "sortOrder": 51,
+        "sortOrder": 53,
         "title": "Summer Camps heading",
         "page": "Summer Intensive",
         "text": "Summer Camps",
@@ -573,7 +591,7 @@
       {
         "key": "summer-camps-notice",
         "isVisible": true,
-        "sortOrder": 52,
+        "sortOrder": 54,
         "title": "Summer camp schedule notice",
         "page": "Summer Intensive",
         "body": "Schedule is subject to change or cancellation. Sign-up early to get the week you want.",
@@ -582,7 +600,7 @@
       {
         "key": "summer-camp-logistics",
         "isVisible": true,
-        "sortOrder": 53,
+        "sortOrder": 55,
         "title": "Summer camp full day and pickup information",
         "page": "Summer Intensive",
         "body": "Full-day camp is available by combining morning and afternoon camps. Early drop-off and Late pick-up are available for an additional charge of $10.00 per 30 minutes. Our Lunch Hour is Noon-1:00 PM.",
@@ -591,7 +609,7 @@
       {
         "key": "summer-camp-lunch",
         "isVisible": true,
-        "sortOrder": 54,
+        "sortOrder": 56,
         "title": "Summer camp lunch information",
         "page": "Summer Intensive",
         "body": "Campers in both the All-day and Half-day camps are welcome to join us for lunch.",
@@ -600,7 +618,7 @@
       {
         "key": "summer-contact-heading",
         "isVisible": true,
-        "sortOrder": 55,
+        "sortOrder": 57,
         "title": "Summer contact heading",
         "page": "Summer Intensive",
         "text": "Interested in Learning More?",
@@ -609,7 +627,7 @@
       {
         "key": "contact-title",
         "isVisible": true,
-        "sortOrder": 56,
+        "sortOrder": 58,
         "title": "Contact page title",
         "page": "Contact",
         "text": "Contact Dance Institute",
@@ -618,7 +636,7 @@
       {
         "key": "contact-introduction",
         "isVisible": true,
-        "sortOrder": 57,
+        "sortOrder": 59,
         "title": "Contact introduction",
         "page": "Contact",
         "text": "We are excited to hear from you! If you have any questions about our classes, schedule, or anything else, please reach out using the form below. Our team will respond promptly to ensure you have all the information you need.",
@@ -627,7 +645,7 @@
       {
         "key": "register-heading-1",
         "isVisible": true,
-        "sortOrder": 58,
+        "sortOrder": 60,
         "title": "Register",
         "page": "Register",
         "text": "Register",
@@ -636,7 +654,7 @@
       {
         "key": "register-heading-2",
         "isVisible": true,
-        "sortOrder": 59,
+        "sortOrder": 61,
         "title": "Monthly Tuition",
         "page": "Register",
         "text": "Monthly Tuition",
@@ -645,7 +663,7 @@
       {
         "key": "register-heading-3",
         "isVisible": true,
-        "sortOrder": 60,
+        "sortOrder": 62,
         "title": "Discounts Given",
         "page": "Register",
         "text": "Discounts Given",
@@ -654,7 +672,7 @@
       {
         "key": "register-heading-4",
         "isVisible": true,
-        "sortOrder": 61,
+        "sortOrder": 63,
         "title": "Membership Fee",
         "page": "Register",
         "text": "Membership Fee",
@@ -663,7 +681,7 @@
       {
         "key": "register-heading-5",
         "isVisible": true,
-        "sortOrder": 62,
+        "sortOrder": 64,
         "title": "How to Register:",
         "page": "Register",
         "text": "How to Register:",
@@ -672,7 +690,7 @@
       {
         "key": "register-instructions",
         "isVisible": true,
-        "sortOrder": 63,
+        "sortOrder": 65,
         "title": "Registration instructions",
         "page": "Register",
         "body": "Please click “Register Now!” then click “Learn More.” Once you have purchased your membership, you will be guided through the registration process. Ignore our waitlists. We have put those in place to ensure all the appropriate discounts are applied. If you have any questions or need any assistance please call <a href=\"tel:+13035250011\">303-525-0011</a>.",
@@ -760,9 +778,19 @@
         "_id": "4daeef97-fb38-5da0-8b19-0f58a4e84287"
       },
       {
-        "key": "recital-volunteering-link",
+        "key": "recital-gala-link",
         "isVisible": true,
         "sortOrder": 8,
+        "title": "Recital gala link",
+        "page": "shows-and-competition/recital/index.html",
+        "label": "",
+        "url": "",
+        "_id": "c1694856-9d03-5466-8571-3527e95ceac9"
+      },
+      {
+        "key": "recital-volunteering-link",
+        "isVisible": true,
+        "sortOrder": 9,
         "title": "Recital volunteering link",
         "page": "shows-and-competition/recital/index.html",
         "label": "",
@@ -772,7 +800,7 @@
       {
         "key": "summer-register",
         "isVisible": true,
-        "sortOrder": 9,
+        "sortOrder": 10,
         "title": "Summer registration button",
         "page": "Summer Intensive",
         "url": "@/register/index.html",
@@ -782,7 +810,7 @@
       {
         "key": "summer-contact",
         "isVisible": true,
-        "sortOrder": 10,
+        "sortOrder": 11,
         "title": "Summer contact button",
         "page": "Summer Intensive",
         "url": "@/contact/index.html",
@@ -792,7 +820,7 @@
       {
         "key": "register-now",
         "isVisible": true,
-        "sortOrder": 11,
+        "sortOrder": 12,
         "title": "Register Now button",
         "page": "Register",
         "url": "#sawyer-widget",
@@ -1886,52 +1914,20 @@
     ],
     "DiCompetitionInfo": [
       {
-        "key": "the-team",
+        "key": "choreography",
         "isVisible": true,
         "sortOrder": 0,
-        "title": "The Team",
-        "body": "<p>A competition team brings dancers together to strengthen their technique, develop stage presence and support one another. Teamwork, steady progress and a love of performing are at the heart of the experience.</p>",
-        "_id": "65940714-af75-5968-8980-3c199539ebf8"
+        "title": "Choreography",
+        "body": "<p>Our teachers choreograph competition dances, with self-choreography available for older dancers.</p>",
+        "_id": "9f752bf8-d5ab-5874-bbe5-17c018ad6238"
       },
       {
         "key": "rehearsals",
         "isVisible": true,
         "sortOrder": 1,
         "title": "Rehearsals",
-        "body": "<p>Rehearsals give dancers time to learn choreography, refine details and become comfortable performing as a group. Consistent practice, preparation and communication help every dancer contribute to the team.</p>",
+        "body": "<p>Large-group dances rehearse during class. Solos, duos, trios, and small groups rehearse on weekends.</p>",
         "_id": "618a71e1-3609-57ac-b840-ceb5cfc1fccf"
-      },
-      {
-        "key": "events",
-        "isVisible": true,
-        "sortOrder": 2,
-        "title": "Events",
-        "body": "<p>Competition weekends offer a chance to perform, receive feedback and celebrate progress together. Dates, venues, arrival times and performance schedules help families prepare for each event.</p>",
-        "_id": "a7ce7371-27e1-5b01-a43d-8e7309f8c478"
-      },
-      {
-        "key": "getting-ready",
-        "isVisible": true,
-        "sortOrder": 3,
-        "title": "Getting Ready",
-        "body": "<p>Pack your costume, dance shoes, water and any hair or makeup supplies you need. Review the event schedule in advance, arrive ready to warm up and support your teammates throughout the day.</p>",
-        "_id": "79690958-e5b2-558e-8bc7-0221f8623994"
-      },
-      {
-        "key": "costs",
-        "isVisible": true,
-        "sortOrder": 4,
-        "title": "Costs",
-        "body": "<p>Competition participation may involve entry fees, costumes and travel. Review the season’s cost breakdown and payment schedule before committing, and ask about any additional expenses.</p>",
-        "_id": "25f024d3-d9cd-530c-841d-db5643fd5407"
-      },
-      {
-        "key": "questions",
-        "isVisible": true,
-        "sortOrder": 5,
-        "title": "Questions",
-        "body": "<p>Interested in the competition experience? Contact the studio to discuss your dancer’s goals and learn about team placement, preparation and the next steps.</p>",
-        "_id": "8b1be864-5dff-5e60-b947-9cfcb3552fc7"
       }
     ],
     "DiSummerCourses": [

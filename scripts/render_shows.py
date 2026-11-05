@@ -109,13 +109,13 @@ def render_nutcracker(prefix: str = "../../") -> str:
 def render_competition(prefix: str = "../../") -> str:
     blocks = REQUEST["shows-and-competition/competition/index.html"]
     sections = "".join(
-        f'<section class="competition-info-row"><h3>{esc(blocks[index])}</h3><p>{esc(blocks[index + 1])}</p></section>'
-        for index in range(3, len(blocks), 2)
+        f'<section class="competition-info-row"><h2>{esc(blocks[index])}</h2><p>{esc(blocks[index + 1])}</p></section>'
+        for index in range(2, len(blocks), 2)
     )
     return f'''<div class="shows-page competition-page">
       <header class="competition-opening"><div class="section-shell"><h1>{esc(blocks[0])}</h1>{gallery(COMPETITION_IMAGES, prefix, 'competition-gallery')}</div></header>
       <div class="competition-introduction"><div class="section-shell"><p>{esc(blocks[1])}</p></div></div>
-      <section class="section-shell competition-information" aria-labelledby="competition-information-title"><h2 id="competition-information-title">{esc(blocks[2])}</h2><div>{sections}</div></section>
+      <div class="section-shell competition-information"><div>{sections}</div></div>
     </div>'''
 
 
@@ -124,7 +124,8 @@ def render_recital(prefix: str = "../../") -> str:
     return f'''<div class="shows-page recital-page">
       <header class="recital-opening" aria-labelledby="recital-title">{gallery(RECITAL_IMAGES, prefix, 'recital-gallery')}<div class="section-shell recital-heading"><h1 id="recital-title">{esc(blocks[0])}</h1></div></header>
       <div class="section-shell">
-        <div class="recital-copy-space" aria-hidden="true"></div>
-        <section class="show-detail-row recital-volunteering" aria-labelledby="recital-volunteering-title"><h2 id="recital-volunteering-title">{esc(blocks[1])}</h2><div class="recital-volunteering-space" aria-hidden="true"></div></section>
+        <section class="show-detail-row recital-shows" aria-labelledby="recital-shows-title"><h2 id="recital-shows-title">{esc(blocks[1])}</h2><div class="recital-copy-space"><div class="show-detail-copy"><p>{esc(blocks[2])}</p></div></div></section>
+        <section class="show-detail-row recital-gala" aria-labelledby="recital-gala-title"><h2 id="recital-gala-title">{esc(blocks[3])}</h2><div class="recital-gala-copy"><div class="show-detail-copy"><p>{esc(blocks[4])}</p></div></div></section>
+        <section class="show-detail-row recital-volunteering" aria-labelledby="recital-volunteering-title"><h2 id="recital-volunteering-title">{esc(blocks[5])}</h2><div class="recital-volunteering-space" aria-hidden="true"></div></section>
       </div>
     </div>'''
