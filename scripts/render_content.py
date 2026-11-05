@@ -6,6 +6,7 @@ ROOT = Path(__file__).resolve().parents[1]
 HOME_ADDITIONS = json.loads((ROOT/'reference/home-about-additions.json').read_text())
 TRIAL_TITLE = 'Take a trial class!'
 TRIAL_COPY = 'Drop into any class for a free trial before registering.'
+LERA_REVIEW = 'Dance Institute has helped me grow in so many ways, both as a dancer and as a person, and taught me lessons I’ll carry with me for the rest of my life. I have so much love for the teachers and dancers who make it such a special place. Everyone is so supportive, and DI really feels like my second family!'
 FEATURES = [
 ('Parental Viewing', 'Dance Institute welcomes parents to view classes. We want you to see what your child is learning and growing from the instruction provided from our teachers. We also offer comfortable chairs in a designated viewing area.'),
 ('Affordable Classes', 'We offer combination classes so that students receive a well-rounded dance education without the expense of attending multiple classes. You can learn hip hop dance, ballet, tap dance and more at our Denver studio.'),
@@ -25,10 +26,15 @@ def home_features():
 def render_register(prefix='../'):
     tuition=''.join(f'<div class="tuition-item"><dt>{esc(label)}</dt><dd>{esc(price)}</dd></div>' for label,price in TUITION)
     discounts=''.join(f'<div><dt>{esc(label)}</dt><dd>{esc(value)}</dd></div>' for label,value in DISCOUNTS)
-    return f'''<header class="page-intro section-shell"><h1 class="intro-title">Register</h1></header>
-<section class="section-shell registration-prices"><div class="tuition-panel"><h2>Monthly Tuition</h2><dl class="tuition-grid">{tuition}</dl></div><aside class="registration-aside"><section class="discount-panel"><h2>Discounts Given</h2><dl>{discounts}</dl></section><section class="membership-panel"><h2>Membership Fee</h2><p>$25 per dancer anually</p></section></aside></section>
-<section class="section-shell registration-how"><h2>How to Register:</h2><p>{esc(INSTRUCTIONS)}</p><a class="button button-dark" href="#sawyer-widget">Register Now! <span aria-hidden="true">↓</span></a></section>
-<section class="section-shell registration-widget" id="sawyer-widget" aria-label="Sawyer registration"><p class="sawyer-link"><a href="{SAWYER}" target="_blank" rel="noopener">Click Here</a> to register</p><div class="sawyer-frame"><iframe src="{SAWYER}" title="Dance Institute Denver registration" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="payment"></iframe></div></section>'''
+    # Split only at existing sentence boundaries; retain every instruction word.
+    boundaries=[0, INSTRUCTIONS.index('Once you'), INSTRUCTIONS.index('Ignore our waitlists.'), INSTRUCTIONS.index('If you have any questions'), len(INSTRUCTIONS)]
+    instruction_parts=[INSTRUCTIONS[start:end].strip() for start,end in zip(boundaries,boundaries[1:])]
+    steps=''.join(f'<li>{esc(part)}</li>' for part in instruction_parts[:3])
+    assistance=esc(instruction_parts[3]).replace('303-525-0011', '<a href="tel:+13035250011">303-525-0011</a>')
+    return f'''<div class="registration-page"><header class="page-intro section-shell"><h1 class="intro-title">Register</h1></header>
+<section class="section-shell registration-start"><div class="registration-how"><h2>How to Register:</h2><ol class="registration-steps">{steps}</ol><p class="registration-assistance">{assistance}</p></div><aside class="membership-panel"><h2>Membership Fee</h2><p><strong>$25</strong> <span>per dancer anually</span></p><a class="button button-dark" href="#sawyer-widget">Register Now! <span aria-hidden="true">↓</span></a></aside></section>
+<section class="section-shell registration-prices"><div class="tuition-panel"><h2>Monthly Tuition</h2><dl class="tuition-grid">{tuition}</dl></div><aside class="discount-panel"><h2>Discounts Given</h2><dl>{discounts}</dl></aside></section>
+<section class="section-shell registration-widget" id="sawyer-widget" aria-label="Sawyer registration"><p class="sawyer-link"><a href="{SAWYER}" target="_blank" rel="noopener">Click Here</a> to register</p><div class="sawyer-frame"><iframe src="{SAWYER}" title="Dance Institute Denver registration" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="payment"></iframe></div></section></div>'''
 
 def write_reference():
     pages = json.loads((ROOT/'reference/wix-content.json').read_text())
@@ -37,7 +43,7 @@ def write_reference():
     reviews = next(i for i,b in enumerate(home) if b['text']=='What Our Students Say')
     expected_home = ['Passion Moves Us', home[1]['text'], 'Discover More', 'About Dance Institute', home[about+1]['text'], 'What sets us apart']
     expected_home += [x for feature in FEATURES for x in feature]
-    expected_home += [b['text'] for b in home[reviews:reviews+7]] + ['template', 'Lera Andronova']
+    expected_home += [b['text'] for b in home[reviews:reviews+7]] + [LERA_REVIEW, 'Lera Andronova']
     expected_home += HOME_ADDITIONS + [TRIAL_TITLE, TRIAL_COPY, 'Schedule']
     expected_register = ['Register','Monthly Tuition'] + [x for row in TUITION for x in row] + ['Discounts Given'] + [x for row in DISCOUNTS for x in row] + ['Membership Fee','$25 per dancer anually','How to Register:',INSTRUCTIONS,'Register Now!','Click Here to register']
     (ROOT/'reference/content-request.json').write_text(json.dumps({'index.html':expected_home,'register/index.html':expected_register},ensure_ascii=False,indent=2)+'\n')

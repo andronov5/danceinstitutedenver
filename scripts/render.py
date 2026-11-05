@@ -5,7 +5,7 @@ import re
 from pathlib import Path
 from urllib.parse import unquote
 from render_inner import render_page_content, esc
-from render_content import home_features, render_register, HOME_ADDITIONS, TRIAL_TITLE, TRIAL_COPY
+from render_content import home_features, render_register, HOME_ADDITIONS, TRIAL_TITLE, TRIAL_COPY, LERA_REVIEW
 from render_about import render_teachers, render_policies
 from render_classes import render_classes
 from render_schedule import render_schedule
@@ -17,7 +17,7 @@ from render_shows import render_nutcracker, render_competition, render_recital
 ROOT = Path(__file__).resolve().parents[1]
 PAGES = json.loads((ROOT / 'reference/wix-content.json').read_text())
 ASSETS = json.loads((ROOT / 'reference/assets.json').read_text())
-NAV = [('Home',''), ('Dance Classes','dance-classes/'), ('About','about/'), ('Schedule','schedule/'), ('Shows & Competition','shows-and-competition/'), ('Summer Intensive','summer-intensive/'), ('Contact','contact/')]
+NAV = [('Home',''), ('About','about/'), ('Schedule','schedule/'), ('Shows & Competition','shows-and-competition/'), ('Summer Intensive','summer-intensive/'), ('Contact','contact/')]
 ARROW = '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>'
 
 def contact_form(prefix, key='contact'):
@@ -29,7 +29,7 @@ def contact_form(prefix, key='contact'):
     </form>'''
 
 def shell(title, name, content, prefix='', home=False):
-    groups={'About':[('Studio Policies','about/studio-policies/'),('Teachers','about/teachers/')], 'Shows & Competition':[('Nutcracker','shows-and-competition/nutcracker/'),('Competition','shows-and-competition/competition/'),('Recital','shows-and-competition/recital/')]}
+    groups={'About':[('Dance Classes','dance-classes/'),('Studio Policies','about/studio-policies/'),('Teachers','about/teachers/')], 'Shows & Competition':[('Nutcracker','shows-and-competition/nutcracker/'),('Competition','shows-and-competition/competition/'),('Recital','shows-and-competition/recital/')]}
     nav_items=[]
     mobile_items=[]
     for label,route in NAV:
@@ -48,7 +48,7 @@ def shell(title, name, content, prefix='', home=False):
     mobile_nav=''.join(mobile_items)
     register_current=' aria-current="page"' if name=='Register' else '' 
     return f'''<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f8f5ee"><meta name="robots" content="noindex,nofollow"><title>{esc(title)} | Dance Institute</title><meta name="description" content="Dance Institute in Denver. Ballet, Tap, Lyrical, Contemporary, Pointe, Hip-Hop, Poms, Acro, Tumbling, and Jazz."><link rel="icon" href="{prefix}assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="{prefix}assets/fonts.css"><link rel="stylesheet" href="{prefix}assets/site.css"><link rel="stylesheet" href="{prefix}assets/readability.css"><link rel="stylesheet" href="{prefix}assets/photo-layouts.css"><link rel="stylesheet" href="{prefix}assets/reviews.css"><link rel="stylesheet" href="{prefix}assets/inner-pages.css"><link rel="stylesheet" href="{prefix}assets/content-pages.css"><link rel="stylesheet" href="{prefix}assets/about-pages.css"><link rel="stylesheet" href="{prefix}assets/classes.css"><link rel="stylesheet" href="{prefix}assets/schedule.css"><link rel="stylesheet" href="{prefix}assets/summer.css"><link rel="stylesheet" href="{prefix}assets/contact-page.css"><link rel="stylesheet" href="{prefix}assets/shows.css"><script src="{prefix}assets/site.js" defer></script><script src="{prefix}assets/content-pages.js" defer></script><script src="{prefix}assets/schedule.js" defer></script><script src="{prefix}assets/reviews.js" defer></script><script src="{prefix}assets/shows.js" defer></script></head>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f8f5ee"><meta name="robots" content="noindex,nofollow"><title>{esc(title)} | Dance Institute</title><meta name="description" content="Dance Institute in Denver. Ballet, Tap, Lyrical, Contemporary, Pointe, Hip-Hop, Poms, Acro, Tumbling, and Jazz."><link rel="icon" href="{prefix}assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="{prefix}assets/fonts.css"><link rel="stylesheet" href="{prefix}assets/site.css"><link rel="stylesheet" href="{prefix}assets/readability.css"><link rel="stylesheet" href="{prefix}assets/photo-layouts.css"><link rel="stylesheet" href="{prefix}assets/reviews.css"><link rel="stylesheet" href="{prefix}assets/inner-pages.css"><link rel="stylesheet" href="{prefix}assets/content-pages.css"><link rel="stylesheet" href="{prefix}assets/about-pages.css"><link rel="stylesheet" href="{prefix}assets/classes.css"><link rel="stylesheet" href="{prefix}assets/schedule.css"><link rel="stylesheet" href="{prefix}assets/summer.css"><link rel="stylesheet" href="{prefix}assets/contact-page.css"><link rel="stylesheet" href="{prefix}assets/shows.css"><link rel="stylesheet" href="{prefix}assets/pink-accents.css"><script src="{prefix}assets/site.js" defer></script><script src="{prefix}assets/content-pages.js" defer></script><script src="{prefix}assets/schedule.js" defer></script><script src="{prefix}assets/reviews.js" defer></script><script src="{prefix}assets/shows.js" defer></script></head>
 <body class="{'home-page' if home else 'inner-page'}"><a class="skip-link" href="#main">Skip to Main Content</a>
 <header class="site-header"><a class="wordmark" href="{prefix}index.html" aria-label="Dance Institute home"><span>Dance<br>Institute</span></a><nav class="desktop-nav" aria-label="Main navigation">{nav}</nav><a class="header-contact" href="{prefix}register/index.html"{register_current}>Register Now {ARROW}</a><button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span></button></header>
 <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation" hidden>{mobile_nav}<a href="{prefix}register/index.html"{register_current}>Register</a><a class="mobile-phone" href="tel:+13035250011">303-525-0011</a></nav>
@@ -62,13 +62,14 @@ def home_content(page):
     # Locate quotes by heading, avoiding assumptions if source spacing changes.
     qi=next(i for i,x in enumerate(b) if x['text']=='What Our Students Say')
     quotes=[(b[qi+1+2*i]['text'],b[qi+2+2*i]['text']) for i in range(3)]
-    quotes.append(('template', 'Lera Andronova'))
+    quotes.append((LERA_REVIEW, 'Lera Andronova'))
     find=lambda text:next(i for i,x in enumerate(b) if x['text']==text)
     advantage=find('The Dance Institute Advantage')
     about=find('About Dance Institute')
     touch=find('Get in Touch')
     return f'''
 <section class="hero" aria-labelledby="hero-title"><img class="hero-photo" src="assets/images/dance-hero.webp" alt="Dance Institute dancers performing together on stage" width="1235" height="806" fetchpriority="high"><div class="hero-content section-shell"><div class="hero-copy"><h1 id="hero-title"><span>Passion</span> <span><em>Moves</em> Us</span></h1><p class="hero-subtitle">{txt(1)}</p><a class="button button-cream" href="dance-classes/index.html">Discover More {ARROW}</a></div></div></section>
+<aside class="home-address-bar" aria-label="Studio address"><a href="https://www.google.com/maps/search/?api=1&amp;query=10515+E+40th+Ave+%23114+Denver+CO+80239" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2.5"/></svg><span>10515 E 40th Ave, #114 · Denver, CO 80239</span></a></aside>
 
 <section class="section-shell home-about" id="about"><div class="about-collage reveal"><img class="about-main-photo" src="assets/images/dance-community.webp" alt="Young Dance Institute dancers in pink tutus on stage" width="1100" height="1566" loading="lazy"><div class="about-small-photo"><img src="assets/images/dance-performance.webp" alt="Four young dancers in pale blue costumes on stage" loading="lazy"></div></div><div class="about-copy reveal"><h2>About<br><em>Dance Institute</em></h2><p>{txt(about+1)}</p><p>{esc(HOME_ADDITIONS[0])}</p></div><div class="home-about-more">{''.join('<p>'+esc(paragraph)+'</p>' for paragraph in HOME_ADDITIONS[1:])}</div></section>
 <section class="trial-strip"><div class="section-shell"><h2>{TRIAL_TITLE}</h2><p>{TRIAL_COPY}</p><a class="button button-dark" href="schedule/index.html">Schedule {ARROW}</a></div></section>

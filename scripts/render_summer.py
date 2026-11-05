@@ -1,6 +1,7 @@
 """Summer content supplied by the owner; repeated pasted prices/copy deduplicated."""
 from html import escape as esc
 import json
+import re
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 TITLE='2025 Summer Schedule'
@@ -27,17 +28,30 @@ CAMPS=[
 REGISTER='Registration: Registration for all the above summer options can be completed through our website DanceInstituteDenver.com. Please click "Register Now" and click on "Camps/Events" to select the programs you’d like. Already a student at Dance Institute? Log in to your Sawyer account and register through the "Camps and Events" tab.'
 
 def render_summer(prefix='../'):
-    courses=''.join(f'<article class="summer-course"><h3>{esc(name)}</h3><p class="summer-time">{esc(time)}</p><p class="summer-price">{esc(price)}</p>'+ (f'<p class="summer-course-note">{esc(note)}</p>' if note else '') +'</article>' for name,time,price,note in INTENSIVE)
+    courses=''.join(f'<article class="summer-course"><h3>{esc(name)}</h3><div class="summer-course-meta"><p class="summer-time">{esc(time)}</p><p class="summer-price">{esc(price)}</p></div>'+ (f'<p class="summer-course-note">{esc(note)}</p>' if note else '') +'</article>' for name,time,price,note in INTENSIVE)
+    date_range, remainder = DATES.split(' Tues,', 1)
+    weekdays, exception = ('Tues,' + remainder).split('. ', 1)
+    dates=f'<p class="summer-intensive-dates"><strong>{esc(date_range)}</strong><span>{esc(weekdays)}.</span><span class="summer-date-exception">{esc(exception)}</span></p>'
+    combined, description=BOTH.split('. ',1)
+    combined_price, combined_label=combined.split(' ',1)
+    combined=f'<div class="summer-combined"><p class="summer-both"><strong>{esc(combined_price)}</strong> {esc(combined_label)}.</p><p>{esc(description)}</p></div>'
     camps=''
-    for i,camp in enumerate(CAMPS):
+    # Keep the shared July week in morning-to-afternoon order.
+    for camp in [CAMPS[i] for i in (0,1,2,4,3,5)]:
         heading,price=camp['title'].rsplit(' - ',1)
-        # Preserve the full supplied title while giving the price its own column.
         title=f'<span>{esc(heading)}</span><span class="summer-camp-price"><span class="summer-price-separator"> - </span>{esc(price)}</span>'
-        content=''.join(f'<p class="summer-camp-{key}">{esc(camp[key])}</p>' for key in ['discount','dates','time','body','note'] if key in camp)
-        camps+=f'<article class="summer-camp"><h3>{title}</h3><div class="summer-camp-details">{content}</div></article>'
+        if 'time' in camp:
+            time, body=camp['time'],camp['body']
+        else:
+            match=re.fullmatch(r'(\d{1,2}:\d{2} [AP]M - (?:\d{1,2}:\d{2} [AP]M|Noon)) (.+)',camp['body'])
+            if not match:
+                raise ValueError(f"Missing camp time: {camp['title']}")
+            time,body=match.groups()
+        notes=''.join(f'<p class="summer-camp-{key}">{esc(camp[key])}</p>' for key in ['discount','note'] if key in camp)
+        camps+=f'''<article class="summer-camp"><h3>{title}</h3><p class="summer-camp-dates">{esc(camp['dates'])}</p><p class="summer-camp-time">{esc(time)}</p><p class="summer-camp-body">{esc(body)}</p><div class="summer-camp-notes">{notes}</div></article>'''
     return f'''<div class="summer-page"><header class="page-intro section-shell"><h1 class="intro-title">{TITLE}</h1></header>
-<section class="section-shell summer-intensive"><div class="summer-heading"><h2>Summer Intensive</h2><p>{esc(DATES)}</p></div><div class="summer-courses">{courses}</div><div class="summer-intensive-notes"><p class="summer-both">{esc(BOTH)}</p><p>{esc(FLEX)}</p></div></section>
-<section class="section-shell summer-camps"><div class="summer-heading"><h2>Summer Camps</h2><p>{esc(CAMP_INFO[0])}</p></div><div class="summer-camp-info"><p>{esc(CAMP_INFO[1])}</p><p>{esc(CAMP_INFO[2])}</p></div><div class="summer-camp-list">{camps}</div></section>
+<section class="section-shell summer-intensive"><div class="summer-heading"><h2>Summer Intensive</h2>{dates}</div><div class="summer-courses">{courses}</div>{combined}<p class="summer-flexibility">{esc(FLEX)}</p></section>
+<section class="section-shell summer-camps"><div class="summer-heading"><h2>Summer Camps</h2><p>{esc(CAMP_INFO[0])}</p></div><div class="summer-camp-list">{camps}</div><div class="summer-camp-info"><p>{esc(CAMP_INFO[1])}</p><p>{esc(CAMP_INFO[2])}</p></div></section>
 <section class="section-shell summer-registration"><p>{esc(REGISTER)}</p><a class="button button-dark" href="{prefix}register/index.html">Register Now <span aria-hidden="true">↗</span></a></section><section class="section-shell summer-contact"><h2>Interested in Learning More?</h2><a class="text-link" href="{prefix}contact/index.html">Contact Us <span aria-hidden="true">↗</span></a></section></div>'''
 
 def write_reference():

@@ -1,29 +1,24 @@
 /* Distinct photo compositions for each show, within the studio's existing palette. */
-.shows-page .nutcracker-banner { height: clamp(280px, 34vw, 440px); overflow: hidden; background: #e8d9d9; }
+.shows-page .nutcracker-banner { height: auto; aspect-ratio: 16 / 9; overflow: hidden; background: #e8d9d9; }
 .shows-page .nutcracker-banner img { width: 100%; height: 100%; object-fit: cover; }
 .shows-page .nutcracker-photo-space { background: linear-gradient(125deg, #e8d9d9, #f0e8dc); }
 .shows-page .nutcracker-audition-card {
   position: relative;
-  width: min(530px, calc(100% - 48px));
-  margin: -88px 36px 0 auto;
-  padding: clamp(28px, 4vw, 48px);
+  width: 100%;
+  margin: 0;
+  padding: 30px 34px;
   color: var(--paper);
   background: var(--ink);
   border-top: 5px solid var(--pink);
   box-shadow: 0 16px 40px rgb(37 46 66 / 10%);
 }
-.shows-page .nutcracker-audition-card h2 { font-size: clamp(34px, 3.8vw, 48px); line-height: 1.1; }
-.shows-page .nutcracker-audition-card h3 { margin-top: 28px; font-size: clamp(29px, 3.1vw, 39px); line-height: 1.12; }
-.shows-page .nutcracker-audition-time { margin-top: 18px; font-size: 18px; line-height: 1.5; color: #f1c8db; }
-.shows-page .nutcracker-audition-copy {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: clamp(30px, 6vw, 80px);
-  padding: 54px 36px 0;
-  font-size: 17px;
-  line-height: 1.85;
-}
-.shows-page .nutcracker-audition-copy p + p { margin-top: 0; }
+.shows-page .nutcracker-audition-time { font-family: var(--serif); font-size: clamp(30px, 3.4vw, 40px); line-height: 1.2; color: #f1c8db; }
+.shows-page .nutcracker-audition-status { margin-top: 16px; font-size: 17px; line-height: 1.7; }
+.shows-page .nutcracker-prep { margin-top: 48px; }
+.shows-page.nutcracker-page .show-information { margin-top: 0; }
+.shows-page .nutcracker-show-dates { list-style: none; margin: 0 0 24px; padding: 0; font-family: var(--serif); font-size: clamp(28px, 3vw, 36px); line-height: 1.25; }
+.shows-page .nutcracker-show-dates li + li { margin-top: 14px; }
+.shows-page .nutcracker-ticket-note { padding-top: 20px; border-top: 1px solid var(--line); }
 .shows-page .show-detail-row {
   display: grid;
   grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr);
@@ -52,10 +47,11 @@
 .shows-page .show-photo-expand svg { width: 21px; height: 21px; }
 .shows-page .show-photo:hover .show-photo-expand { background: var(--blush); }
 .shows-page .competition-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; padding: 0 24px; }
-.shows-page .competition-gallery .show-photo { aspect-ratio: 1.05; }
-.shows-page .competition-gallery .show-photo:nth-child(2n) { margin-top: 76px; aspect-ratio: .94; }
-.shows-page .competition-gallery .show-photo:nth-child(3n) { width: 86%; justify-self: end; aspect-ratio: 1.18; }
-.shows-page .competition-gallery .show-photo:first-child { grid-column: 1 / -1; width: 100%; aspect-ratio: 1200 / 571; }
+.shows-page .competition-gallery .show-photo img { display: block; height: auto; }
+.shows-page .competition-gallery .show-photo:nth-child(2n) { margin-top: 76px; }
+.shows-page .competition-gallery .show-photo:nth-child(3n) { width: 86%; justify-self: end; }
+.shows-page .competition-gallery .show-photo:first-child,
+.shows-page .competition-gallery .show-photo:last-child { grid-column: 1 / -1; width: 100%; margin-top: 0; }
 .shows-page .show-photo-space { min-height: 320px; background: #eee7e0; }
 .shows-page .competition-gallery .show-photo-space { min-height: 0; aspect-ratio: 1.4; width: 86%; }
 .shows-page .competition-gallery .show-photo-space:last-child { justify-self: end; margin-top: 58px; background: #e9dedf; }
@@ -63,6 +59,15 @@
 .shows-page .recital-gallery { grid-template-columns: minmax(0, 1.35fr) minmax(0, .8fr); gap: 0; align-items: center; }
 .shows-page .recital-gallery .show-photo:first-child { aspect-ratio: 1.16; }
 .shows-page .recital-gallery .show-photo:nth-child(2) { width: calc(100% + 58px); margin-left: -58px; margin-top: 100px; aspect-ratio: .8; border: 14px solid var(--paper); box-shadow: 10px 10px 0 var(--blush); }
+.shows-page .recital-gallery .show-photo-space { min-height: 0; width: 88%; aspect-ratio: 1.3; margin-top: 48px; }
+.shows-page .recital-gallery .show-photo-space:nth-child(even) { width: 92%; justify-self: end; aspect-ratio: .95; margin-top: 68px; background: #e9dedf; }
+.shows-page .recital-gallery .show-photo-space:nth-child(5) { width: 100%; aspect-ratio: 1.65; }
+.shows-page .recital-gallery .show-photo-space:nth-child(6) { width: 86%; aspect-ratio: 1.15; }
+.shows-page .nutcracker-gallery { grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr); align-items: start; padding-block: 12px 48px; gap: 32px; }
+.shows-page .nutcracker-gallery .show-photo img { height: auto; }
+.shows-page .nutcracker-gallery .show-photo-space { min-height: 0; aspect-ratio: 1.3; }
+.shows-page .nutcracker-gallery .show-photo-space:nth-child(2) { aspect-ratio: .95; background: #e9dedf; }
+.shows-page .nutcracker-gallery .show-photo-space:nth-child(4) { aspect-ratio: 1.1; }
 .shows-page .recital-copy-space { min-height: 140px; }
 .shows-page .recital-volunteering-space { min-height: 200px; }
 
@@ -76,7 +81,6 @@
 .show-lightbox-controls { display: flex; justify-content: center; gap: 16px; margin-top: 20px; }
 
 @media (max-width: 800px) {
-  .shows-page .nutcracker-audition-copy { padding-inline: 0; gap: 28px; }
   .shows-page .show-detail-row { grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: 30px; }
   .shows-page .show-contact { padding: 34px; gap: 28px; }
   .shows-page .competition-gallery { padding-inline: 0; }
@@ -84,11 +88,9 @@
   .shows-page .recital-gallery .show-photo:nth-child(2) { width: calc(100% + 35px); margin-left: -35px; border-width: 9px; }
 }
 @media (max-width: 600px) {
-  .shows-page .nutcracker-banner { height: 230px; }
-  .shows-page .nutcracker-audition-card { width: calc(100% - 24px); margin: -50px 12px 0; padding: 30px 26px; }
-  .shows-page .nutcracker-audition-card h3 { margin-top: 22px; }
-  .shows-page .nutcracker-audition-time { font-size: 16px; }
-  .shows-page .nutcracker-audition-copy { grid-template-columns: minmax(0, 1fr); padding-top: 34px; font-size: 16px; gap: 24px; }
+  .shows-page .nutcracker-audition-card { padding: 26px; }
+  .shows-page .nutcracker-audition-status { font-size: 16px; }
+  .shows-page .nutcracker-prep { margin-top: 30px; }
   .shows-page .show-detail-row { grid-template-columns: minmax(0, 1fr); padding-block: 32px; gap: 25px; }
   .shows-page .show-detail-row h2 { max-width: 16ch; }
   .shows-page .show-information { margin-top: 36px; }
@@ -98,15 +100,23 @@
   .shows-page .show-contact { flex-direction: column; align-items: flex-start; padding: 30px 26px; gap: 26px; }
   .shows-page .competition-gallery { gap: 24px; grid-template-columns: minmax(0, 1fr); }
   .shows-page .competition-gallery .show-photo { width: 92%; }
-  .shows-page .competition-gallery .show-photo:nth-child(2n) { margin-top: 0; justify-self: end; aspect-ratio: 1.05; }
+  .shows-page .competition-gallery .show-photo:nth-child(2n) { margin-top: 0; justify-self: end; }
   .shows-page .competition-gallery .show-photo:nth-child(3n) { width: 92%; justify-self: start; }
-  .shows-page .competition-gallery .show-photo:first-child { width: 100%; }
+  .shows-page .competition-gallery .show-photo:first-child,
+  .shows-page .competition-gallery .show-photo:last-child { width: 100%; }
   .shows-page .competition-gallery .show-photo-space { width: 82%; aspect-ratio: 1.55; }
   .shows-page .competition-gallery .show-photo-space:last-child { margin-top: 0; }
   .shows-page .competition-copy { margin-top: 38px; padding-top: 28px; font-size: 28px; }
   .shows-page .recital-gallery { grid-template-columns: minmax(0, 1fr); }
   .shows-page .recital-gallery .show-photo:first-child { width: 94%; aspect-ratio: 1.2; }
   .shows-page .recital-gallery .show-photo:nth-child(2) { width: 68%; margin: -36px 8px 0 0; justify-self: end; border-width: 8px; }
+  .shows-page .recital-gallery .show-photo-space,
+  .shows-page .recital-gallery .show-photo-space:nth-child(5) { width: 92%; margin-top: 30px; aspect-ratio: 1.4; }
+  .shows-page .recital-gallery .show-photo-space:nth-child(even) { width: 76%; margin-top: 30px; aspect-ratio: 1.15; }
+  .shows-page .nutcracker-gallery { grid-template-columns: minmax(0, 1fr); gap: 24px; padding-block: 0 32px; }
+  .shows-page .nutcracker-gallery .show-photo-space { width: 90%; aspect-ratio: 1.4; }
+  .shows-page .nutcracker-gallery .show-photo-space:nth-child(2),
+  .shows-page .nutcracker-gallery .show-photo-space:nth-child(4) { width: 80%; justify-self: end; aspect-ratio: 1.25; }
   .shows-page .recital-copy-space { min-height: 100px; }
   .shows-page .recital-volunteering-space { min-height: 140px; }
   .show-lightbox { width: calc(100% - 20px); padding: 58px 10px 18px; }

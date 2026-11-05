@@ -47,5 +47,111 @@
     "confirmed_context": "Existing studio Wix Home photo. Precise show, event type and year are not verified. Do not caption as competition or Nutcracker.",
     "source_record": "reference/assets.json",
     "suggested_alt": "Young Dance Institute dancers in pink tutus performing on stage."
+  },
+  {
+    "path": "assets/images/competition-legacy-ensemble.webp",
+    "width": 1668,
+    "height": 1112,
+    "bytes": 129062,
+    "provenance": "User-supplied competition photograph for this gallery.",
+    "source_upload": "image(20261105-040707).png",
+    "processing": "WebP format conversion, quality 88. Full original dimensions; no crop, color adjustment, or content edits.",
+    "context": "competition",
+    "suggested_alt": "Dancers in black costumes hold a group pose at Legacy Dance Championships."
+  },
+  {
+    "path": "assets/images/competition-legacy-lift.webp",
+    "width": 1668,
+    "height": 1112,
+    "bytes": 127060,
+    "provenance": "User-supplied competition photograph for this gallery.",
+    "source_upload": "image(20261105-040727).png",
+    "processing": "WebP format conversion, quality 88. Full original dimensions; no crop, color adjustment, or content edits.",
+    "context": "competition",
+    "suggested_alt": "Dancers in white shirts lift a teammate with her arms reaching upward."
+  },
+  {
+    "path": "assets/images/competition-legacy-reach.webp",
+    "width": 1668,
+    "height": 1112,
+    "bytes": 127302,
+    "provenance": "User-supplied competition photograph for this gallery.",
+    "source_upload": "image(20261105-040750).png",
+    "processing": "WebP format conversion, quality 88. Full original dimensions; no crop, color adjustment, or content edits.",
+    "context": "competition",
+    "suggested_alt": "A dancer in a mauve dress reaches upward as her teammates gather around her on the floor."
+  },
+  {
+    "path": "assets/images/competition-legacy-quartet.webp",
+    "width": 1668,
+    "height": 1112,
+    "bytes": 124072,
+    "provenance": "User-supplied competition photograph for this gallery.",
+    "source_upload": "image(20261105-040911).png",
+    "processing": "WebP format conversion, quality 88. Full original dimensions; no crop, color adjustment, or content edits.",
+    "context": "competition",
+    "suggested_alt": "Four dancers in white costumes balance with one hand on the floor and the other reaching upward."
+  },
+  {
+    "path": "assets/images/competition-legacy-red-costumes.webp",
+    "width": 1668,
+    "height": 1112,
+    "bytes": 135210,
+    "provenance": "User-supplied competition photograph for this gallery.",
+    "source_upload": "image(20261105-040943).png",
+    "processing": "WebP format conversion, quality 88. Full original dimensions; no crop, color adjustment, or content edits.",
+    "context": "competition",
+    "suggested_alt": "Dancers in sparkling red costumes perform a synchronized kneeling pose."
+  },
+  {
+    "path": "assets/images/competition-legacy-acro-lift.webp",
+    "width": 1668,
+    "height": 1112,
+    "bytes": 103632,
+    "provenance": "User-supplied competition photograph for this gallery.",
+    "source_upload": "image(20261105-041007).png",
+    "processing": "WebP format conversion, quality 88. Full original dimensions; no crop, color adjustment, or content edits.",
+    "context": "competition",
+    "suggested_alt": "Dancers in brown costumes support a teammate in an overhead acrobatic lift."
+  },
+  {
+    "path": "assets/images/competition-legacy-floorwork.webp",
+    "width": 1668,
+    "height": 1112,
+    "bytes": 119836,
+    "provenance": "User-supplied competition photograph for this gallery.",
+    "source_upload": "image(20261105-041009).png",
+    "processing": "WebP format conversion, quality 88. Full original dimensions; no crop, color adjustment, or content edits.",
+    "context": "competition",
+    "suggested_alt": "Dancers in brown dresses perform expressive floorwork at Legacy Dance Championships.",
+    "duplicate_uploads": [
+      "image(20261105-041335).png",
+      "image(20261105-041736).png",
+      "image(20261105-041905).png"
+    ]
+  },
+  {
+    "path": "assets/images/nutcracker-stage.webp",
+    "source": "image(20261105-043239).png",
+    "width": 1200,
+    "height": 675,
+    "bytes": 70556,
+    "context": "nutcracker",
+    "confirmed_context": "User supplied this photograph for the Nutcracker page.",
+    "provenance": "User-provided studio photograph for the authorized website rebuild.",
+    "suggested_alt": "Dance Institute ballet dancers in pink tutus and teal bodices performing The Nutcracker on stage.",
+    "processing": "WebP format conversion at quality 88. Full original dimensions; no cropping, color adjustment, content edits, or upscaling."
+  },
+  {
+    "path": "assets/images/contact-dancers.webp",
+    "source": "image(20261105-043623).png",
+    "width": 448,
+    "height": 446,
+    "bytes": 24014,
+    "context": "contact",
+    "confirmed_context": "User supplied this photograph for the Contact page; exact show and year unspecified.",
+    "provenance": "User-provided studio photograph for the authorized website rebuild.",
+    "suggested_alt": "Dance Institute dancers in brown and pale blue costumes reaching outward during a stage performance.",
+    "processing": "WebP format conversion at quality 88. Full original dimensions; no cropping, color adjustment, content edits, or upscaling."
   }
 ]

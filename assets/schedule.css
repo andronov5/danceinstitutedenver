@@ -1,6 +1,7 @@
 /* A complete weekly overview; horizontal scrolling stays within the timetable. */
 .schedule-intro { display: flex; align-items: end; justify-content: space-between; gap: 36px; }
-.schedule-intro .intro-title { max-width: 760px; }
+.inner-page .schedule-intro { padding-top: 38px; padding-bottom: 24px; margin-bottom: 24px; }
+.schedule-intro .intro-title { max-width: 900px; font-size: clamp(42px, 4.3vw, 60px); line-height: 1.06; }
 .schedule-actions { display: flex; align-items: center; gap: 14px; padding-bottom: 6px; flex-shrink: 0; }
 .schedule-actions .button { white-space: nowrap; }
 .schedule-image-link { width: 54px; height: 54px; display: grid; place-items: center; border: 1px solid var(--line); transition: background .2s; }
@@ -8,46 +9,52 @@
 .schedule-image-link svg { width: 24px; height: 24px; stroke: currentColor; stroke-width: 1.3; }
 .schedule-page { min-width: 0; padding-bottom: 100px; }
 .schedule-table-scroll {
-  width: 100%; max-width: 100%; overflow-x: auto; overscroll-behavior-x: contain;
+  width: 100%; max-width: 100%; max-height: min(720px, 72dvh); overflow: auto; overscroll-behavior-x: contain;
   border: 1px solid var(--line); scrollbar-color: #ad7a91 #e8e1da;
   -webkit-overflow-scrolling: touch;
 }
 .schedule-table-scroll:focus-visible { outline: 2px solid #a84170; outline-offset: 5px; }
-.schedule-table { width: 100%; min-width: 1040px; table-layout: fixed; border-collapse: separate; border-spacing: 0; text-align: left; }
-.schedule-table .schedule-class-column { width: 29%; }
+.schedule-table { width: 100%; min-width: 1180px; table-layout: fixed; border-collapse: separate; border-spacing: 0; text-align: left; }
+.schedule-table .schedule-class-column { width: 255px; }
+.schedule-table .schedule-detail-column { width: 220px; }
 .schedule-table th, .schedule-table td { border-right: 1px solid #dfdbd4; border-bottom: 1px solid var(--line); vertical-align: middle; }
 .schedule-table th:last-child, .schedule-table td:last-child { border-right: 0; }
 .schedule-table tbody tr:last-child > * { border-bottom: 0; }
-.schedule-table thead th { padding: 18px 8px; background: var(--ink); color: var(--paper); font-size: 16px; font-weight: 500; line-height: 1.4; text-align: center; border-right-color: #ffffff20; }
-.schedule-table thead th:first-child { text-align: left; padding-inline: 22px; }
+.schedule-table thead th { position: sticky; top: 0; z-index: 2; padding: 12px 8px; background: var(--ink); color: var(--paper); font-size: 16px; font-weight: 500; line-height: 1.4; text-align: center; border-right-color: #ffffff20; }
+.schedule-table thead th:first-child { text-align: left; padding-inline: 12px; }
 .schedule-table tr > :first-child { position: sticky; left: 0; z-index: 1; box-shadow: 3px 0 0 #252e4206; }
-.schedule-table thead tr > :first-child { z-index: 2; }
-.schedule-table tbody th { padding: 18px 22px; background: #f8f5ee; font-weight: 500; }
-.schedule-class-name { display: block; font-size: 17px; font-weight: 600; line-height: 1.4; }
-.schedule-class-description { display: block; font-size: 16px; line-height: 1.5; color: var(--muted); margin-top: 5px; }
-.schedule-table td { padding: 12px 6px; background: #fffaf6; font-size: 17px; line-height: 1.4; font-variant-numeric: tabular-nums; text-align: center; }
+.schedule-table thead tr > :first-child { z-index: 3; }
+.schedule-table tbody th { padding: 7px 12px; background: #f8f5ee; font-weight: 500; }
+.schedule-class-name { display: block; font-size: 16px; font-weight: 600; line-height: 1.3; }
+.schedule-mobile-detail { display: none; }
+.schedule-table .schedule-class-detail { padding: 7px 10px; text-align: left; font-size: 16px; line-height: 1.3; color: var(--muted); }
+.schedule-table td { padding: 5px 6px; background: #fffaf6; font-size: 16px; line-height: 1.3; font-variant-numeric: tabular-nums; text-align: center; }
 .schedule-table tbody tr:nth-child(even) th { background: #f0ece5; }
 .schedule-table tbody tr:nth-child(even) td { background: #f8f3ee; }
-.schedule-meeting span { display: block; padding: 10px 3px; background: #eed7df; color: #66394e; font-size: 17px; font-weight: 600; white-space: nowrap; }
+.schedule-meeting span { display: block; padding: 4px 3px; background: #eed7df; color: #66394e; font-size: 16px; font-weight: 600; white-space: nowrap; }
 .schedule-table tbody tr:hover th, .schedule-table tbody tr:hover td { background: #eee4e4; }
-.schedule-footnote { font-size: 16px; line-height: 1.7; margin-top: 28px; color: var(--muted); }
+.schedule-footnote { font-size: 16px; line-height: 1.7; margin-top: 16px; color: var(--muted); }
 .schedule-dialog { width: min(1100px, calc(100% - 32px)); max-height: calc(100dvh - 40px); border: none; padding: 45px 12px 12px; background: #fff; color: var(--ink); box-shadow: 0 30px 90px #0005; overflow: auto; }
 .schedule-dialog::backdrop { background: #171c2cc9; }
 .schedule-dialog img { width: 100%; }
 .schedule-dialog-close { position: absolute; top: 5px; right: 9px; width: 36px; height: 36px; background: transparent; border: 0; font-size: 32px; line-height: 1; }
 @media (max-width: 1050px) {
   .schedule-intro { display: block; }
-  .schedule-actions { margin-top: 28px; }
+  .schedule-actions { margin-top: 20px; }
 }
 @media (max-width: 650px) {
   .schedule-table { min-width: 850px; }
+  .schedule-table .schedule-detail-column,
+  .schedule-table .schedule-class-detail,
+  .schedule-table .schedule-detail-heading { display: none; }
+  .schedule-mobile-detail { display: block; margin-top: 3px; font-size: 16px; line-height: 1.3; color: var(--muted); font-weight: 400; }
+  .schedule-table-scroll { max-height: 68dvh; }
   .schedule-table .schedule-class-column { width: 190px; }
-  .schedule-table thead th { padding: 16px 6px; }
-  .schedule-table thead th:first-child, .schedule-table tbody th { padding-inline: 15px; }
-  .schedule-table tbody th { padding-block: 15px; }
+  .schedule-table thead th { padding: 10px 6px; }
+  .schedule-table thead th:first-child, .schedule-table tbody th { padding-inline: 10px; }
+  .schedule-table tbody th { padding-block: 7px; }
   .schedule-table td { padding-inline: 5px; }
   .schedule-class-name, .schedule-meeting span { font-size: 16px; }
-  .schedule-class-description { font-size: 16px; }
   .schedule-page { padding-bottom: 70px; }
   .schedule-footnote { margin-top: 24px; }
 }

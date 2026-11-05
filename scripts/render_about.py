@@ -54,19 +54,23 @@ def render_teachers(prefix: str = "../../") -> str:
 
 
 def render_policies(prefix: str = "../../") -> str:
-    """Return only the supplied mission and announcements."""
+    """Return the four supplied studio-policy sections without changing their copy."""
     blocks = REQUEST["about/studio-policies/index.html"]
-    announcements = "".join(f"<li>{esc(value)}</li>" for value in blocks[5:])
+    rules = "".join(f"<li>{esc(value)}</li>" for value in blocks[3:7])
+    sections = "".join(
+        f'''<section class="policy-section" aria-labelledby="policy-{anchor}">
+          <h2 id="policy-{anchor}">{esc(blocks[index])}</h2>
+          <div class="policy-copy">{paragraph(blocks[index + 1])}</div>
+        </section>'''
+        for anchor, index in [("attire", 7), ("hair", 9), ("class-viewing", 11)]
+    )
     return f'''<div class="policies-page">
       {title(blocks[0])}
       <div class="section-shell policies-content">
-        <section class="policy-section" aria-labelledby="policy-mission">
-          <h2 id="policy-mission">{esc(blocks[1])}</h2>
-          <div class="policy-copy"><p class="mission-opening">{esc(blocks[2])}</p>{paragraph(blocks[3])}</div>
+        <section class="policy-section" aria-labelledby="policy-rules">
+          <h2 id="policy-rules">{esc(blocks[1])}</h2>
+          <div class="policy-copy">{paragraph(blocks[2])}<ul class="policy-rules">{rules}</ul></div>
         </section>
-        <section class="policy-section" aria-labelledby="policy-announcements">
-          <h2 id="policy-announcements">{esc(blocks[4])}</h2>
-          <ul class="policy-announcements">{announcements}</ul>
-        </section>
+        {sections}
       </div>
     </div>'''

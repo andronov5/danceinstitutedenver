@@ -1,4 +1,4 @@
-"""Dance Classes presentation using the user's supplied copy verbatim."""
+"""Concise class descriptions aligned with the supplied 2026–2027 timetable."""
 
 from __future__ import annotations
 
@@ -10,31 +10,16 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 ROUTE = "dance-classes/index.html"
 CATEGORIES = ("Combo Classes", "Ballet Classes", "Hip-Hop Classes", "Additional Classes")
-LEADING_NAMES = (
-    "Intro to Poms",
-    "3 & 4-year-old, 4 & 5-year-old and 5 & 7-year-old",
-    "6-9-Year-Old:",
-    "8-11-Year-Old:",
-    "Advanced:",
-    "Pre-Pointe",
-    "Pointe",
-    "Recommendation:",
-    "Musical Theater",
-    "Intro to Hip-Hop:",
-    "Hip-Hop 1 :",
-    "Hip-Hop 2:",
-    "Hip-Hop 3:",
-)
+PLACEMENT_NOTE = "Class placement is determined by Dance Institute Instructors."
 
 
-def row(text: str, extra_class: str = "") -> str:
-    """Emphasize an existing name without inserting or changing any words."""
-    leading = next((name for name in LEADING_NAMES if text.startswith(name)), "")
-    content = html.escape(text)
-    if leading:
-        content = "<strong>" + html.escape(leading) + "</strong>" + html.escape(text[len(leading):])
-    content = content.replace("\n", "<br>")
-    return f'<p class="classes-row{(" " + extra_class) if extra_class else ""}">{content}</p>'
+def row(text: str) -> str:
+    """Keep each class name above its single-sentence description."""
+    name, separator, description = text.partition("\n")
+    content = f"<strong>{html.escape(name)}</strong>"
+    if separator:
+        content += f"<br>{html.escape(description)}"
+    return f'<p class="classes-row">{content}</p>'
 
 
 def render_classes(prefix: str = "../") -> str:
@@ -44,6 +29,8 @@ def render_classes(prefix: str = "../") -> str:
     sections: dict[str, list[str]] = {}
     current = ""
     for block in blocks[1:]:
+        if block == PLACEMENT_NOTE:
+            continue
         if block in CATEGORIES:
             current = block
             sections[current] = []
@@ -56,14 +43,12 @@ def render_classes(prefix: str = "../") -> str:
 
     for category in CATEGORIES:
         identifier = category.lower().replace(" ", "-")
-        opened = " open"
-        out += f'''<details class="classes-group" id="{identifier}"{opened}>
+        out += f'''<details class="classes-group" id="{identifier}" open>
           <summary class="classes-summary"><h2>{html.escape(category)}</h2><span class="classes-toggle" aria-hidden="true"></span></summary>
           <div class="classes-rows">'''
         for text in sections[category]:
-            intro = "classes-introduction" if category == "Hip-Hop Classes" and text.startswith("Have a blast") else ""
-            out += row(text, intro)
+            out += row(text)
         out += "</div></details>"
 
-    out += '</div></div>'
+    out += f'</div><div class="section-shell"><p class="classes-row">{html.escape(PLACEMENT_NOTE)}</p></div></div>'
     return out

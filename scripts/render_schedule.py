@@ -1,7 +1,7 @@
 """The 2026–2027 schedule transcribed from the owner's supplied image.
 
-Keep the original spelling, class labels, ages and time notation. In particular,
-do not harmonize these ages with the separately supplied Dance Classes copy.
+Keep the original spelling, class labels, ages and time notation. This timetable
+is the owner-selected source of truth for class ages, levels and durations.
 """
 
 from html import escape
@@ -49,23 +49,24 @@ def render_schedule(prefix='../'):
     for name, description, times in ROWS:
         label = f'<span class="schedule-class-name">{escape(name)}</span>'
         if description:
-            label += f'<span class="schedule-class-description">{escape(description)}</span>'
+            label += f'<span class="schedule-mobile-detail">{escape(description)}</span>'
+        detail = f'<td class="schedule-class-detail">{escape(description)}</td>'
         cells = ''.join(
             f'<td class="schedule-meeting"><span>{escape(times[day])}</span></td>' if day in times
             else '<td></td>'
             for day in DAYS
         )
-        rows.append(f'<tr><th scope="row">{label}</th>{cells}</tr>')
+        rows.append(f'<tr><th scope="row">{label}</th>{detail}{cells}</tr>')
     source = f'{prefix}assets/images/class-schedule.png'
     return f'''<header class="page-intro section-shell schedule-intro"><h1 class="intro-title">{TITLE}</h1>
       <div class="schedule-actions"><a class="button button-dark" href="{prefix}register/index.html">Register Now</a>
       <a class="schedule-image-link" href="{source}" target="_blank" rel="noopener" data-schedule-image aria-label="View the original class schedule">{GRID_ICON}</a></div>
     </header>
     <div class="section-shell schedule-page" data-schedule>
-      <div class="schedule-table-scroll" role="region" aria-label="Weekly class schedule. Scroll horizontally to see every day." tabindex="0">
+      <div class="schedule-table-scroll" role="region" aria-label="Weekly class schedule. Scroll to browse classes and days." tabindex="0">
         <table class="schedule-table" aria-label="2026-2027 class schedule" aria-describedby="schedule-footnote">
-          <colgroup><col class="schedule-class-column"><col span="6"></colgroup>
-          <thead><tr><th scope="col">Class</th>{headings}</tr></thead>
+          <colgroup><col class="schedule-class-column"><col class="schedule-detail-column"><col span="6"></colgroup>
+          <thead><tr><th scope="col">Class</th><th class="schedule-detail-heading" scope="col" aria-label="Class details"></th>{headings}</tr></thead>
           <tbody>{''.join(rows)}</tbody>
         </table>
       </div>

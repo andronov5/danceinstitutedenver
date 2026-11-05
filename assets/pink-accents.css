@@ -1,0 +1,54 @@
+/* Color accents only: retain the existing layout, type, and component shapes. */
+:root {
+  --accent-pink: #f274b5;
+  --accent-pink-hover: #fa91c7;
+  --accent-pink-pale: #f6c6df;
+  --accent-raspberry: #9e2a62;
+}
+
+/* Navy text has 5.13:1 contrast on the pink fill, and 6.42:1 on hover. */
+.header-contact,
+.button-dark,
+.hero .button-cream,
+.shows-page .show-contact .button {
+  color: var(--ink);
+  background: var(--accent-pink);
+  border-color: var(--accent-pink);
+}
+.header-contact:hover,
+.button-dark:hover,
+.hero .button-cream:hover,
+.shows-page .show-contact .button:hover {
+  color: var(--ink);
+  background: var(--accent-pink-hover);
+  border-color: var(--accent-pink-hover);
+}
+
+.hero h1 em { color: var(--accent-pink-pale); }
+/* The overlaid rule adds no height and does not move the hero content. */
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0;
+  height: 5px;
+  z-index: 1;
+  background: var(--accent-pink);
+  pointer-events: none;
+}
+
+.desktop-nav a:hover::after,
+.desktop-nav a[aria-current]::after { background: var(--accent-pink); }
+.nav-dropdown-toggle.is-current { text-decoration-color: var(--accent-pink); }
+.mobile-menu a[aria-current] {
+  color: var(--accent-raspberry);
+  border-bottom-color: var(--accent-pink);
+}
+.inner-page .page-intro { border-bottom-color: var(--accent-pink); }
+.home-about h2 em,
+.quote-label h2 em { color: var(--accent-raspberry); }
+
+.home-address-bar { padding: 13px 22px; background: #f2e0e9; color: var(--ink); text-align: center; border-bottom: 1px solid #e0c4d2; }
+.home-address-bar a { display: inline-flex; align-items: center; justify-content: center; gap: 10px; font-size: 17px; line-height: 1.5; }
+.home-address-bar svg { width: 20px; height: 20px; flex: 0 0 20px; }
+.home-address-bar a:hover { text-decoration: underline; text-underline-offset: 4px; }
+@media (max-width: 600px) { .home-address-bar { padding: 11px 20px; } .home-address-bar a { max-width: 340px; font-size: 16px; } }
