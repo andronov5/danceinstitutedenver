@@ -1,0 +1,181 @@
+/* Interior-page refinements within the existing serif, cream and blush palette. */
+.inner-page .page-intro {
+  padding-bottom: 36px;
+  margin-bottom: 36px;
+  border-bottom: 1px solid var(--line);
+}
+.inner-page .intro-title { max-width: 1000px; }
+.inner-page .intro-lead { max-width: 860px; }
+.inner-page .section-heading { margin-bottom: 28px; }
+.inner-page .split-story,
+.inner-page .about-opening,
+.inner-page .story-section,
+.inner-page .contact-layout,
+.inner-page .course-detail-layout { gap: clamp(32px, 5vw, 72px); }
+.inner-page .split-story > *,
+.inner-page .about-opening > *,
+.inner-page .story-section > *,
+.inner-page .team-grid > *,
+.inner-page .program-panel > *,
+.inner-page .course-grid > * { min-width: 0; }
+
+/* Give existing photographs and paragraphs their own comfortable space. */
+.inner-page .editorial-image,
+.inner-page .wide-editorial,
+.inner-page .contact-photo,
+.inner-page .course-detail-photo { border-radius: 0; }
+.inner-page .performance-story { grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); }
+.inner-page .performance-story .editorial-image { aspect-ratio: 1.1; }
+.inner-page .performance-story .story-copy { line-height: 1.5; }
+.inner-page .about-opening { grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); }
+.inner-page .about-description,
+.inner-page .story-section .prose { max-width: 65ch; }
+.inner-page .story-section { margin-top: 60px; padding-block: 48px; }
+.inner-page .story-section .section-heading { margin-bottom: 0; }
+.inner-page .team-section { padding-block: 56px; }
+.inner-page .team-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 36px 28px; }
+.inner-page .team-card { padding: 0 0 20px; border-bottom: 1px solid var(--line); }
+.inner-page .team-card h3 { line-height: 1.15; }
+.inner-page .team-card p { margin-top: 8px; }
+.inner-page .clients-section { padding-top: 32px; }
+.inner-page .client-grid { gap: 24px; }
+
+/* The open accordion is visibly distinct, with a generous native summary target. */
+.inner-page .program-accordion { border-top: 1px solid var(--line); }
+.inner-page .program-detail { transition: background-color .2s; }
+.inner-page .program-detail[open] { background: rgba(238, 215, 223, .32); }
+.inner-page .program-summary {
+  grid-template-columns: minmax(0, 1fr) 44px;
+  gap: 24px;
+  padding: 28px 24px;
+  min-height: 106px;
+}
+.inner-page .program-summary h2 { font-size: clamp(42px, 4.8vw, 58px); line-height: 1.1; }
+.inner-page .program-summary:hover h2 { color: #a65279; }
+.inner-page .accordion-icon {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: var(--paper);
+}
+.inner-page .program-copy { max-width: 850px; padding: 0 92px 32px 24px; }
+.inner-page .program-copy h3 { line-height: 1.2; margin-bottom: 16px; }
+.inner-page .program-copy p { max-width: 65ch; }
+
+/* Retain the three original color panels while clarifying their reading columns. */
+.inner-page .program-panel {
+  grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr);
+  gap: clamp(30px, 4vw, 56px);
+  align-items: start;
+  padding: 38px 40px;
+  margin-bottom: 24px;
+}
+.inner-page .program-panel h2 { margin: 0 0 18px; line-height: 1.06; }
+.inner-page .program-subtitle { max-width: 28ch; line-height: 1.65; }
+.inner-page .program-panel .prose { max-width: 65ch; }
+
+/* Clear field boundaries and room for labels make the inquiry form easier to use. */
+.inner-page .contact-layout { grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr); align-items: start; }
+.inner-page .contact-intro .prose { margin-bottom: 30px; max-width: 50ch; }
+.inner-page .contact-form-panel { padding: 32px; border: 1px solid var(--line); }
+.inner-page .contact-form-panel .field label { margin-bottom: 8px; }
+.inner-page .contact-form-panel .field input,
+.inner-page .contact-form-panel .field textarea {
+  min-height: 48px;
+  padding: 11px 12px;
+  background: var(--paper);
+  border: 1px solid #b9b8b3;
+  border-radius: 0;
+}
+.inner-page .contact-form-panel .field textarea { min-height: 140px; }
+.inner-page .contact-form-panel .field input:focus,
+.inner-page .contact-form-panel .field textarea:focus { border-color: #a65279; }
+.inner-page .contact-form-panel .form-bottom { gap: 18px; margin-top: 24px; align-items: start; }
+.inner-page .contact-form-panel .form-note { max-width: 35ch; }
+
+/* Consistent card bottoms keep prices, durations and actions easy to compare. */
+.inner-page .course-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px 26px; }
+.inner-page .course-card { display: flex; flex-direction: column; }
+.inner-page .course-image { flex-shrink: 0; aspect-ratio: 1.5; }
+.inner-page .course-body { display: flex; flex-direction: column; flex: 1; padding: 26px; }
+.inner-page .course-body h2 { line-height: 1.15; margin-bottom: 16px; }
+.inner-page .course-body h2 a:hover { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 5px; }
+.inner-page .course-body > p { margin-bottom: 0; }
+.inner-page .course-body .course-meta { margin-top: auto; padding-top: 26px; margin-bottom: 22px; }
+.inner-page .course-meta { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.inner-page .course-meta dd { margin-top: 6px; }
+.inner-page .course-body .text-link { min-height: 44px; padding-bottom: 10px; }
+.inner-page .course-detail-heading { gap: 40px; }
+.inner-page .course-detail-booking { flex: 0 0 240px; }
+.inner-page .course-detail-copy { max-width: 65ch; }
+.inner-page .course-detail-copy h2 { line-height: 1.15; }
+.inner-page .instructor-card { align-self: start; }
+.inner-page .instructor-card .eyebrow { margin-bottom: 20px; }
+.inner-page .course-detail-nav a { padding-block: 10px; }
+.inner-page .course-detail-nav [aria-disabled] { padding-block: 10px; opacity: .5; }
+
+/* Long policy headings stay with their paragraphs in a comfortable reading measure. */
+.inner-page .legal-copy { max-width: 800px; }
+.inner-page .legal-copy > section { padding-top: 28px; border-top: 1px solid var(--line); }
+.inner-page .legal-copy > section:first-child { padding-top: 0; border-top: 0; }
+.inner-page .legal-copy h2 { max-width: 30ch; line-height: 1.2; }
+.inner-page .legal-copy li { padding-left: 4px; }
+
+@media (max-width: 1000px) {
+  .inner-page .course-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .inner-page .program-panel { padding: 30px; }
+  .inner-page .contact-layout { grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); }
+  .inner-page .contact-form-panel { padding: 24px; }
+  .inner-page .contact-form-panel .field-pair { grid-template-columns: minmax(0, 1fr); gap: 0; }
+}
+
+@media (max-width: 760px) {
+  .inner-page .contact-layout { grid-template-columns: minmax(0, 1fr); }
+  .inner-page .contact-intro { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 26px; align-items: center; }
+  .inner-page .contact-intro .prose { margin-bottom: 0; }
+  .inner-page .contact-form-panel .field-pair { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+  .inner-page .course-detail-heading { display: block; }
+  .inner-page .course-detail-booking { margin-top: 28px; max-width: 340px; }
+}
+
+@media (max-width: 650px) {
+  .inner-page .page-intro { padding-bottom: 28px; margin-bottom: 28px; }
+  .inner-page .split-story,
+  .inner-page .about-opening,
+  .inner-page .story-section,
+  .inner-page .course-detail-layout { grid-template-columns: minmax(0, 1fr); gap: 28px; }
+  .inner-page .story-section { padding-block: 34px; margin-top: 40px; }
+  .inner-page .team-section { padding-block: 40px; }
+  .inner-page .team-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 18px; }
+  .inner-page .client-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+  .inner-page .client-logo { min-height: 80px; padding: 8px; }
+  .inner-page .program-summary { padding: 22px 12px; gap: 16px; min-height: 90px; grid-template-columns: minmax(0, 1fr) 36px; }
+  .inner-page .program-summary h2 { font-size: 40px; }
+  .inner-page .accordion-icon { width: 36px; height: 36px; }
+  .inner-page .program-copy { padding: 0 16px 26px 12px; }
+  .inner-page .program-panel { grid-template-columns: minmax(0, 1fr); gap: 24px; padding: 28px 24px; margin-bottom: 20px; }
+  .inner-page .program-panel h2 { margin-bottom: 12px; }
+  .inner-page .program-subtitle { max-width: none; }
+  .inner-page .contact-intro { display: block; }
+  .inner-page .contact-intro .prose { margin-bottom: 26px; }
+  .inner-page .contact-form-panel { padding: 24px 20px; }
+  .inner-page .course-grid { grid-template-columns: minmax(0, 1fr); gap: 28px; }
+  .inner-page .course-body { padding: 24px; }
+  .inner-page .course-detail-heading .intro-title { font-size: clamp(48px, 10vw, 60px); }
+  .inner-page .legal-copy > section { padding-top: 24px; }
+}
+
+@media (max-width: 480px) {
+  .inner-page .contact-form-panel .field-pair { grid-template-columns: minmax(0, 1fr); gap: 0; }
+}
+
+@media (max-width: 420px) {
+  .inner-page .client-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .inner-page .program-detail { transition: none; }
+}
