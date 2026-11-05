@@ -39,7 +39,18 @@ def render_classes(prefix: str = "../") -> str:
 
     out = f'''<div class="classes-page">
       <header class="page-intro section-shell"><h1 class="intro-title">{html.escape(title)}</h1></header>
-      <div class="section-shell classes-accordion">'''
+      <div class="section-shell classes-tools" data-classes-tools hidden>
+        <div class="classes-search-field">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg>
+          <label class="classes-screen-reader" for="classes-search">Search classes</label>
+          <input id="classes-search" type="search" placeholder="Search classes" autocomplete="off" data-classes-search aria-controls="classes-list">
+          <button class="classes-search-clear" type="button" data-classes-clear aria-label="Clear class search" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button>
+        </div>
+        <button class="classes-all-toggle" type="button" data-classes-toggle aria-controls="classes-list">Collapse all</button>
+      </div>
+      <div class="section-shell classes-search-empty" data-classes-empty hidden><p>No classes found.</p><button type="button" data-classes-reset>Clear search</button></div>
+      <p class="classes-screen-reader" data-classes-status role="status" aria-live="polite" aria-atomic="true"></p>
+      <div class="section-shell classes-accordion" id="classes-list">'''
 
     for category in CATEGORIES:
         identifier = category.lower().replace(" ", "-")
