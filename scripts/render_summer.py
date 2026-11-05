@@ -25,7 +25,6 @@ CAMPS=[
  {'title':'Hip-Hop Camp Ages 6 and up - $195.00','dates':'July 28th – Aug 1st','body':'10:00 AM - Noon Students will receive training from Miss Irie and guest instructors. This camp is designed to give dancers the flavor of Hip-Hop, including breaking, freestyle, and choreography. Snack included.'},
  {'title':'Nutcracker Prep Week - $100.00','dates':'Aug 18th – Aug 22nd','time':'5:00 PM - 7:00 PM (Monday – Thursday)','body':'This week prepares dancers for their Nutcracker audition. Any dancer wanting to put extra focus into their ballet dancing before they audition is encouraged to come dance with us this week.'}
 ]
-REGISTER='Registration: Registration for all the above summer options can be completed through our website DanceInstituteDenver.com. Please click "Register Now" and click on "Camps/Events" to select the programs you’d like. Already a student at Dance Institute? Log in to your Sawyer account and register through the "Camps and Events" tab.'
 
 def render_summer(prefix='../'):
     courses=''.join(f'<article class="summer-course"><h3>{esc(name)}</h3><div class="summer-course-meta"><p class="summer-time">{esc(time)}</p><p class="summer-price">{esc(price)}</p></div>'+ (f'<p class="summer-course-note">{esc(note)}</p>' if note else '') +'</article>' for name,time,price,note in INTENSIVE)
@@ -52,13 +51,13 @@ def render_summer(prefix='../'):
     return f'''<div class="summer-page"><header class="page-intro section-shell"><h1 class="intro-title">{TITLE}</h1></header>
 <section class="section-shell summer-intensive"><div class="summer-heading"><h2>Summer Intensive</h2>{dates}</div><div class="summer-courses">{courses}</div>{combined}<p class="summer-flexibility">{esc(FLEX)}</p></section>
 <section class="section-shell summer-camps"><div class="summer-heading"><h2>Summer Camps</h2><p>{esc(CAMP_INFO[0])}</p></div><div class="summer-camp-list">{camps}</div><div class="summer-camp-info"><p>{esc(CAMP_INFO[1])}</p><p>{esc(CAMP_INFO[2])}</p></div></section>
-<section class="section-shell summer-registration"><p>{esc(REGISTER)}</p><a class="button button-dark" href="{prefix}register/index.html">Register Now <span aria-hidden="true">↗</span></a></section><section class="section-shell summer-contact"><h2>Interested in Learning More?</h2><a class="text-link" href="{prefix}contact/index.html">Contact Us <span aria-hidden="true">↗</span></a></section></div>'''
+<section class="section-shell summer-registration"><a class="button button-dark" href="{prefix}register/index.html">Register Now <span aria-hidden="true">↗</span></a></section><section class="section-shell summer-contact"><h2>Interested in Learning More?</h2><a class="text-link" href="{prefix}contact/index.html">Contact Us <span aria-hidden="true">↗</span></a></section></div>'''
 
 def write_reference():
     blocks=[TITLE,'Summer Intensive',DATES]
     for name,time,price,note in INTENSIVE: blocks.append(f'{name} {time} {price}'+(f' {note}' if note else ''))
     blocks += [BOTH,FLEX,'Summer Camps',*CAMP_INFO]
     for camp in CAMPS: blocks += [camp[k] for k in ['title','discount','dates','time','body','note'] if k in camp]
-    blocks += [REGISTER,'Register Now','Interested in Learning More?','Contact Us']
+    blocks += ['Register Now','Interested in Learning More?','Contact Us']
     (ROOT/'reference/summer-request.json').write_text(json.dumps({'summer-intensive/index.html':blocks},ensure_ascii=False,indent=2)+'\n')
 if __name__=='__main__': write_reference()

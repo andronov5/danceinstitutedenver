@@ -18,7 +18,7 @@ def render_contact(prefix: str = "../") -> str:
     paragraph = html.escape(CONTACT[2]["text"])
     asset_prefix = html.escape(prefix, quote=True)
     return f'''<div class="contact-page">
-      <header class="page-intro section-shell contact-heading"><h1 class="intro-title" id="contact-title">{title}</h1></header>
+      <header class="page-intro section-shell contact-heading"><h1 class="intro-title" id="contact-title">{title}</h1><p class="contact-introduction">{paragraph}</p></header>
       <section class="section-shell contact-layout">
         <div class="contact-intro">
           <div class="contact-visual-panel">
@@ -31,7 +31,6 @@ def render_contact(prefix: str = "../") -> str:
               </div>
             </div>
           </div>
-          <div class="prose"><p>{paragraph}</p></div>
         </div>
         <div class="contact-form-panel"><!--CONTACT_FORM--></div>
       </section>

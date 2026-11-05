@@ -20,8 +20,8 @@
 .apart-photo, .apart-shade { position: absolute; inset: 0; width: 100%; height: 100%; z-index: -1; }
 .apart-photo { object-fit: cover; object-position: center 55%; }
 .apart-shade { background: linear-gradient(120deg, #151c2c94, #151c2c62 48%, #151c2c9c); }
-.apart-content { padding-block: 100px 130px; }
-.apart-content > h2 { color: #fffaf3; margin-bottom: 66px; text-shadow: 0 3px 24px #0003; }
+.apart-content { padding-block: 96px 124px; }
+.apart-content > h2 { color: #fffaf3; margin-bottom: 62px; text-shadow: 0 3px 24px #0003; }
 .apart-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 32px; align-items: start; }
 .apart-card { position: relative; padding: 34px 30px 38px; background: #f8f5eef0; border: 1px solid #ffffffa8; box-shadow: 0 24px 60px #0c111f40, 0 4px 9px #0c111f26; backdrop-filter: blur(8px); animation: apart-float 8s ease-in-out infinite; animation-delay: calc(var(--card-index) * -1.3s); transition: box-shadow .3s, background .3s; }
 .apart-card:nth-child(3n+2) { margin-top: 42px; }
@@ -31,13 +31,14 @@
 .apart-card p { font-size: 16px; line-height: 1.8; color: #414858; }
 @keyframes apart-float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-9px); } }
 .registration-page .page-intro { margin-bottom: 30px; padding-bottom: 28px; }
-.registration-prices { display: grid; grid-template-columns: minmax(0,1.35fr) minmax(0,1fr) minmax(0,.85fr); align-items: start; gap: 24px; padding-bottom: 30px; }
-.registration-prices > div { min-width: 0; padding: 24px; border: 1px solid var(--line); background: #efede6; }
+.registration-prices { display: grid; grid-template-columns: minmax(0,1.1fr) minmax(0,1fr); align-items: start; gap: 24px; padding-bottom: 30px; }
+.registration-side { display: grid; gap: 20px; min-width: 0; }
+.registration-prices .tuition-panel, .registration-prices .discount-panel, .registration-prices .membership-panel { min-width: 0; padding: 24px; border: 1px solid var(--line); background: #efede6; }
 .registration-prices h2 { font-size: 32px; line-height: 1.15; margin-bottom: 20px; }
 .registration-prices .membership-panel { border-color: #d7b9c6; border-top: 4px solid var(--accent-pink,#a65279); background: #eed7df85; }
-.membership-panel p { margin: 0; line-height: 1.5; }
-.membership-panel p strong { display: block; font-family: var(--serif); font-size: 44px; font-weight: 500; line-height: 1; }
-.membership-panel p span { display: block; margin-top: 7px; font-size: 16px; }
+.membership-panel p { display: flex; align-items: baseline; flex-wrap: wrap; gap: 6px 12px; margin: 0; line-height: 1.5; }
+.membership-panel p strong { font-family: var(--serif); font-size: 40px; font-weight: 500; line-height: 1; }
+.membership-panel p span { font-size: 16px; }
 .tuition-grid { margin: 0; }
 .tuition-item { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1.15fr); gap: 16px; align-items: baseline; padding: 10px 0; border-top: 1px solid var(--line); }
 .tuition-item dt { font-size: 16px; line-height: 1.5; }
@@ -66,16 +67,14 @@
  .apart-grid { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 28px; }
  .apart-card:nth-child(n) { margin-top: 0; }
  .apart-card:nth-child(even) { margin-top: 34px; }
- .registration-prices { grid-template-columns: minmax(0,1fr); gap: 20px; }
- .membership-panel p { display: flex; align-items: baseline; flex-wrap: wrap; gap: 6px 12px; }
- .membership-panel p span { margin: 0; }
 }
 @media (max-width: 760px) {
+ .registration-prices { grid-template-columns: minmax(0,1fr); gap: 20px; }
  .registration-how { grid-template-columns: minmax(0,1fr); gap: 16px; }
  .registration-how .button { justify-self: start; }
 }
 @media (max-width: 650px) {
- .apart-content { padding-block: 64px 76px; }
+ .apart-content { padding-block: 61px 73px; }
  .apart-content > h2 { margin-bottom: 42px; font-size: 48px; }
  .apart-grid { grid-template-columns: minmax(0,1fr); gap: 26px; }
  .apart-card:nth-child(n) { margin: 0; }
@@ -85,7 +84,7 @@
  .registration-page .page-intro { margin-bottom: 26px; }
  .registration-how h2 { font-size: 28px; }
  .registration-prices h2 { font-size: 30px; }
- .registration-prices > div { padding: 22px; }
+ .registration-prices .tuition-panel, .registration-prices .discount-panel, .registration-prices .membership-panel { padding: 22px; }
  .tuition-item { gap: 14px; padding-block: 10px; }
  .tuition-item dt { font-size: 16px; }
  .tuition-item dd { font-size: 16px; }

@@ -9,12 +9,12 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 ROUTE = "dance-classes/index.html"
-CATEGORIES = ("Combo Classes", "Ballet Classes", "Hip-Hop Classes", "Additional Classes")
+CATEGORIES = ("Combo Classes", "Advanced Classes", "Ballet Classes", "Hip-Hop Classes", "Additional Classes")
 PLACEMENT_NOTE = "Class placement is determined by Dance Institute Instructors."
 
 
 def row(text: str) -> str:
-    """Keep the supplied name and description together in a compact card."""
+    """Keep each supplied class name beside its description in one readable row."""
     name, separator, description = text.partition("\n")
     content = f"<h3>{html.escape(name)}</h3>"
     if separator:

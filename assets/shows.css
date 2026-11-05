@@ -28,7 +28,7 @@
 .shows-page .nutcracker-audition-time { font-family: var(--serif); font-size: clamp(30px, 3.4vw, 40px); line-height: 1.2; color: #f1c8db; }
 .shows-page .nutcracker-audition-status { margin-top: 16px; font-size: 17px; line-height: 1.7; }
 .shows-page .nutcracker-prep { margin-top: 0; }
-.shows-page .nutcracker-shows { max-width: 780px; margin-inline: auto; padding-block: 36px; font-size: 19px; line-height: 1.65; }
+.shows-page .nutcracker-shows .show-detail-copy { font-size: 18px; line-height: 1.65; }
 .shows-page .nutcracker-show-details { display: grid; grid-template-columns: 76px minmax(0, 1fr); gap: 16px 20px; margin: 0; }
 .shows-page .nutcracker-show-details dt { font-weight: 600; }
 .shows-page .nutcracker-show-details dd, .shows-page .nutcracker-show-details p { margin: 0; }
@@ -82,7 +82,7 @@
   .shows-page .show-contact { padding: 34px; gap: 28px; }
 }
 @media (max-width: 600px) {
-  .shows-page .nutcracker-shows { font-size: 17px; padding-block: 28px; }
+  .shows-page .nutcracker-shows .show-detail-copy { font-size: 17px; }
   .shows-page .nutcracker-show-details { grid-template-columns: 58px minmax(0, 1fr); gap: 14px 12px; }
   .shows-page .nutcracker-ticket-note { margin-left: 70px; }
   .shows-page .nutcracker-hero { --nutcracker-photo-height: 400px; min-height: 560px; }

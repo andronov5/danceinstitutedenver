@@ -28,7 +28,7 @@ def render_register(prefix='../'):
     discounts=''.join(f'<div><dt>{esc(label)}</dt><dd>{esc(value)}</dd></div>' for label,value in DISCOUNTS)
     instructions=esc(INSTRUCTIONS).replace('303-525-0011', '<a href="tel:+13035250011">303-525-0011</a>')
     return f'''<div class="registration-page"><header class="page-intro section-shell"><h1 class="intro-title">Register</h1></header>
-<section class="section-shell registration-prices"><div class="tuition-panel"><h2>Monthly Tuition</h2><dl class="tuition-grid">{tuition}</dl></div><div class="discount-panel"><h2>Discounts Given</h2><dl>{discounts}</dl></div><div class="membership-panel"><h2>Membership Fee</h2><p><strong>$25</strong> <span>per dancer anually</span></p></div></section>
+<section class="section-shell registration-prices"><div class="tuition-panel"><h2>Monthly Tuition</h2><dl class="tuition-grid">{tuition}</dl></div><div class="registration-side"><div class="discount-panel"><h2>Discounts Given</h2><dl>{discounts}</dl></div><div class="membership-panel"><h2>Membership Fee</h2><p><strong>$25</strong> <span>per dancer anually</span></p></div></div></section>
 <section class="section-shell registration-how"><h2>How to Register:</h2><p>{instructions}</p><a class="button button-dark" href="#sawyer-widget">Register Now! <span aria-hidden="true">↓</span></a></section>
 <section class="section-shell registration-widget" id="sawyer-widget" aria-label="Sawyer registration"><p class="sawyer-link"><a href="{SAWYER}" target="_blank" rel="noopener">Click Here</a> to register</p><div class="sawyer-frame"><iframe src="{SAWYER}" title="Dance Institute Denver registration" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="payment"></iframe></div></section></div>'''
 

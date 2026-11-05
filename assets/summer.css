@@ -3,9 +3,10 @@
 .summer-heading { margin-bottom: 26px; }
 .summer-heading h2 { font-size: clamp(42px,4.5vw,64px); }
 .summer-heading > p { margin-top: 18px; font-size: 17px; line-height: 1.75; }
-.summer-heading .summer-intensive-dates { display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 22px; }
-.summer-intensive-dates strong { font-family: var(--serif); font-size: 31px; line-height: 1.15; font-weight: 500; }
-.summer-date-exception { width: 100%; color: var(--muted); font-size: 16px; }
+.summer-heading .summer-intensive-dates { display: grid; gap: 8px; }
+.summer-intensive-dates strong { display: block; font-family: var(--serif); font-size: 31px; line-height: 1.15; font-weight: 600; }
+.summer-intensive-dates > span { display: block; }
+.summer-date-exception { color: var(--muted); font-size: 16px; }
 .summer-courses { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 24px; }
 .summer-course { padding: 26px 30px; background: #eee2e5; border: 1px solid #dcc8d0; }
 .summer-course:nth-child(2) { background: #eceae3; border-color: var(--line); }
@@ -37,8 +38,7 @@
 .summer-camp-note { color: var(--muted); }
 .summer-camp-info { display: grid; grid-template-columns: minmax(0,1.4fr) minmax(0,1fr); gap: 32px; margin-top: 26px; padding: 24px 28px; background: #eae6de; }
 .summer-camp-info p { margin: 0; font-size: 16px; line-height: 1.75; }
-.summer-registration { display: grid; grid-template-columns: minmax(0,1fr) auto; gap: 38px; align-items: center; padding-block: 36px; }
-.summer-registration p { max-width: 85ch; font-size: 16px; line-height: 1.8; }
+.summer-registration { display: flex; align-items: center; padding-block: 36px; }
 .summer-contact { display: flex; justify-content: space-between; align-items: center; gap: 35px; padding: 32px 36px; background: var(--blush); }
 .summer-contact h2 { font-size: 43px; max-width: 700px; }
 .summer-contact .text-link { flex-shrink: 0; }
@@ -53,16 +53,13 @@
  .summer-camp-price { font-size: 30px; }
  .summer-combined { grid-template-columns: minmax(150px,.55fr) minmax(0,1.45fr); gap: 25px; }
  .summer-camp-info { gap: 26px; }
- .summer-registration { gap: 28px; }
 }
 @media (max-width:650px) {
  .summer-page { padding-bottom: 20px; }
  .summer-heading { margin-bottom: 22px; }
  .summer-heading > p { font-size: 16px; }
- .summer-heading .summer-intensive-dates { display: block; }
- .summer-intensive-dates strong { display: block; font-size: 28px; margin-bottom: 8px; }
- .summer-date-exception { display: block; margin-top: 6px; }
- .summer-courses,.summer-combined,.summer-camp-list,.summer-camp-info,.summer-registration { grid-template-columns: minmax(0,1fr); }
+ .summer-intensive-dates strong { font-size: 28px; }
+ .summer-courses,.summer-combined,.summer-camp-list,.summer-camp-info { grid-template-columns: minmax(0,1fr); }
  .summer-courses { gap: 16px; }
  .summer-course { padding: 24px; }
  .summer-course h3 { font-size: 32px; }
@@ -82,8 +79,7 @@
  .summer-camp .summer-camp-time { font-size: 17px; }
  .summer-camp-notes:empty { display: none; }
  .summer-camp-info { padding: 24px; margin-top: 22px; gap: 18px; }
- .summer-registration { gap: 24px; padding-block: 30px; }
- .summer-registration .button { justify-self: start; }
+ .summer-registration { padding-block: 30px; }
  .summer-contact { display: block; padding: 28px; }
  .summer-contact h2 { font-size: 36px; margin-bottom: 22px; }
 }

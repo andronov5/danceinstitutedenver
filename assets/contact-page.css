@@ -1,4 +1,12 @@
 /* A single photograph-and-details panel keeps the original side-by-side form. */
+.contact-page .contact-heading { padding-top: 52px; }
+.contact-page .contact-introduction {
+  max-width: 900px;
+  margin-top: 22px;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #565b66;
+}
 .contact-page .contact-layout {
   display: grid;
   grid-template-columns: minmax(0, 448px) minmax(0, 1fr);
@@ -70,13 +78,6 @@
 .contact-page .contact-actions a { max-width: 100%; overflow-wrap: anywhere; }
 .contact-page .contact-details a:hover { color: var(--accent-pink-pale, #f6c6df); }
 .contact-page .contact-details a:focus-visible { outline-color: var(--accent-pink-pale, #f6c6df); }
-.contact-page .contact-intro .prose {
-  margin-top: 24px;
-  margin-bottom: 0;
-  max-width: 50ch;
-  font-size: 17px;
-  line-height: 1.8;
-}
 .contact-page .contact-photo {
   display: block;
   width: 100%;
@@ -99,10 +100,11 @@
   .contact-page .contact-intro { display: block; }
 }
 @media (max-width: 650px) {
+  .contact-page .contact-heading { padding-top: 36px; }
+  .contact-page .contact-introduction { margin-top: 18px; font-size: 16px; }
   .contact-page .contact-details { margin-top: -126px; padding: 0 24px 26px; }
   .contact-page .contact-address-link address { font-size: 24px; }
-  .contact-page .contact-actions,
-  .contact-page .contact-intro .prose { font-size: 16px; }
+  .contact-page .contact-actions { font-size: 16px; }
 }
 .contact-page .field label { font-size: 16px; }
 .contact-page .form-note { font-size: 14px; }

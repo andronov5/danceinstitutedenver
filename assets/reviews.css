@@ -1,9 +1,9 @@
 /* A horizontal gallery with a quiet center and visible neighboring reviews. */
-.testimonials.review-gallery { display: block; width: 100%; max-width: none; margin-inline: 0; padding-block: 86px 78px; }
+.testimonials.review-gallery { display: block; width: 100%; max-width: none; margin-inline: 0; padding-block: 80px 72px; }
 .review-gallery .review-heading { max-width: 980px; text-align: center; margin-bottom: 28px; }
 .review-gallery .review-heading h2 { font-size: clamp(42px, 4.5vw, 62px); line-height: 1.08; }
 .review-gallery .review-heading em { white-space: nowrap; }
-.review-gallery .review-viewport { position: relative; padding: 19px 0 34px; }
+.review-gallery .review-viewport { position: relative; padding: 17px 0 30px; }
 .review-gallery .review-rail { display: grid; gap: 24px; }
 .review-gallery .review-panel { width: min(840px, calc(100% - 64px)); margin: 0 auto; padding: 40px clamp(26px, 4.5vw, 64px); background: #fffdf8; border: 1px solid #e1dcd1; text-align: center; }
 .review-gallery .review-panel blockquote { margin: 0; font-family: var(--serif); font-size: clamp(26px, 2.25vw, 30px); line-height: 1.36; letter-spacing: -.015em; }
@@ -16,7 +16,7 @@
 .review-gallery.reviews-ready .review-viewport.is-dragging { cursor: grabbing; }
 .review-gallery.reviews-ready .review-rail { display: flex; gap: 32px; align-items: stretch; transition: transform .65s cubic-bezier(.22, .68, .28, 1); will-change: transform; }
 .review-gallery.reviews-ready .review-panel {
-  flex: 0 0 min(76%, 840px); min-width: 0; min-height: 340px; margin: 0;
+  flex: 0 0 min(76%, 840px); min-width: 0; min-height: 324px; margin: 0;
   display: flex; flex-direction: column; justify-content: center;
   transform: scale(.94); opacity: .45;
   transition: transform .65s ease, opacity .65s ease, box-shadow .65s ease;
@@ -37,12 +37,12 @@
 .header-contact[aria-current=page] { background: var(--ink); color: var(--paper); }
 
 @media (max-width: 940px) {
-  .testimonials.review-gallery { padding-block: 70px; }
+  .testimonials.review-gallery { padding-block: 66px; }
   .review-gallery.reviews-ready .review-panel { flex-basis: 82%; }
   .review-gallery .review-panel { padding: 31px; }
 }
 @media (max-width: 650px) {
-  .testimonials.review-gallery { padding-block: 52px; }
+  .testimonials.review-gallery { padding-block: 48px; }
   .review-gallery .review-heading { margin-bottom: 19px; }
   .review-gallery .review-heading h2 { font-size: 41px; }
   .review-gallery .review-heading em { white-space: normal; }
@@ -50,7 +50,7 @@
   .review-gallery .review-panel blockquote { font-size: 24px; line-height: 1.36; }
   .review-gallery .review-panel figcaption { font-size: 14px; margin-top: 21px; }
   .review-gallery.reviews-ready .review-rail { gap: 12px; }
-  .review-gallery.reviews-ready .review-panel { flex-basis: 88%; min-height: 306px; }
+  .review-gallery.reviews-ready .review-panel { flex-basis: 88%; min-height: 296px; }
   .review-gallery.reviews-ready .review-navigation { gap: 20px; }
 }
 @media (prefers-reduced-motion: reduce) {
