@@ -29,12 +29,24 @@
 .schedule-footnote { margin-top:18px; color:var(--muted); font-size:16px; line-height:1.7; }
 @media(max-width:1050px) { .schedule-intro { display:block; }.schedule-actions { margin-top:20px; } }
 @media(max-width:700px) {
-  .schedule-table { min-width:850px; }
-  .schedule-table .schedule-class-column { width:205px; }
-  .schedule-table .schedule-detail-column,.schedule-table .schedule-class-detail,.schedule-table .schedule-detail-heading { display:none; }
-  .schedule-mobile-detail { display:block; margin-top:3px; color:var(--muted); font-size:15px; font-weight:400; }
-  .schedule-table th,.schedule-table td { padding:8px; }
-  .schedule-page { padding-bottom:38px; }
+  .inner-page .schedule-intro { text-align:center; padding-block:32px 18px; margin-bottom:14px; border-bottom:0; }
+  .schedule-intro .intro-title { font-size:clamp(22px,5.6vw,34px); line-height:1.2; }
+  .schedule-actions { margin-top:22px; padding-bottom:0; }
+  .schedule-actions .button { min-height:44px; }
+  .schedule-page.section-shell { width:calc(100% - 32px); padding-bottom:32px; }
+  /* Match the supplied overview: every row, detail and weekday fits at once.
+     Native pinch-to-zoom remains available through the page viewport. */
+  .schedule-table-scroll { border:1px solid #797582; overflow:visible; }
+  .schedule-table { min-width:0; font-family:Arial,sans-serif; font-size:clamp(4.4px,1.4vw,9.8px); }
+  .schedule-table .schedule-class-column { width:21%; }
+  .schedule-table .schedule-detail-column { width:20%; }
+  .schedule-table tr>:first-child { position:static; box-shadow:none; }
+  .schedule-table th,.schedule-table td { padding:0.16em 0.2em; font-size:inherit; line-height:1.1; border-right:0.5px solid #a8a2aa; border-bottom:0.5px solid #a8a2aa; }
+  .schedule-table tr>:last-child { border-right:0; }
+  .schedule-table thead th { padding-block:0.55em; }
+  .schedule-class-name { font-size:inherit; line-height:inherit; }
+  .schedule-table td.schedule-class-detail { color:#56515d; }
+  .schedule-footnote { margin-top:10px; font-size:clamp(8px,2.1vw,13px); line-height:1.4; }
 }
 @media print {
   .schedule-table-scroll { overflow:visible; }.schedule-table { min-width:0; }

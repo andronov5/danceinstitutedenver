@@ -60,7 +60,7 @@ def render_schedule(prefix='../'):
       <div class="schedule-actions"><a class="button button-dark" href="{prefix}register/index.html">Register Now</a></div>
     </header>
     <div class="section-shell schedule-page">
-      <div class="schedule-table-scroll" role="region" aria-label="Full weekly class schedule. Scroll horizontally to see every day on smaller screens." tabindex="0">
+      <div class="schedule-table-scroll" role="region" aria-label="Full weekly class schedule" tabindex="0">
         <table class="schedule-table" aria-label="2026-2027 class schedule" aria-describedby="schedule-footnote">
           <colgroup><col class="schedule-class-column"><col class="schedule-detail-column"><col span="6"></colgroup>
           <thead><tr><th scope="col">Class</th><th class="schedule-detail-heading" scope="col">Details</th>{headings}</tr></thead>
