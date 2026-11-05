@@ -6,7 +6,7 @@ ROOT = Path(__file__).resolve().parents[1]
 HOME_ADDITIONS = json.loads((ROOT/'reference/home-about-additions.json').read_text())
 TRIAL_TITLE = 'Take a trial class!'
 TRIAL_COPY = 'Drop into any class for a free trial before registering.'
-LERA_REVIEW = 'Dance Institute has helped me grow in so many ways, both as a dancer and as a person, and taught me lessons I’ll carry with me for the rest of my life. I have so much love for the teachers and dancers who make it such a special place. Everyone is so supportive, and DI really feels like my second family!'
+LERA_REVIEW = '“Dance Institute has helped me grow in so many ways, both as a dancer and as a person, and taught me lessons I’ll carry with me for the rest of my life. I have so much love for the teachers and dancers who make it such a special place. Everyone is so supportive, and DI really feels like my second family!”'
 FEATURES = [
 ('Parental Viewing', 'Dance Institute welcomes parents to view classes. We want you to see what your child is learning and growing from the instruction provided from our teachers. We also offer comfortable chairs in a designated viewing area.'),
 ('Affordable Classes', 'We offer combination classes so that students receive a well-rounded dance education without the expense of attending multiple classes. You can learn hip hop dance, ballet, tap dance and more at our Denver studio.'),

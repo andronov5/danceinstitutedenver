@@ -3,6 +3,11 @@ Promise.resolve(window.siteContentReady).then(() => {
 
   document.querySelectorAll('[data-review-gallery]').forEach(section => {
     const originals = [...section.querySelectorAll('[data-review-slide]')];
+    originals.forEach(slide => {
+      const quote = slide.querySelector('blockquote');
+      const text = quote.textContent.trim();
+      if (text && !/^[“"«]/.test(text)) quote.textContent = `“${text}”`;
+    });
     const dotContainer = section.querySelector('.review-dots');
     dotContainer.replaceChildren(...originals.map((slide, index) => {
       slide.id = 'gallery-review-' + index;

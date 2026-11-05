@@ -64,15 +64,62 @@ Promise.resolve(window.siteContentReady).then(() => {
   });
 
   if ('IntersectionObserver' in window && !reducedMotion.matches) {
+    // Reveal small content groups once, without delaying heroes or content that
+    // is already on screen. The gallery rails retain their own movement.
+    const selector = [
+      '.home-about .about-collage', '.home-about .about-copy > *', '.home-about-more > p',
+      '.trial-strip > .section-shell', '.apart-content > h2', '.apart-card',
+      '.review-heading', '.review-viewport',
+      '.classes-summary', '.policy-section > h2', '.policy-copy > p', '.policy-rules',
+      '.teacher-portrait', '.teacher-biography > h2', '.teacher-biography > p',
+      '.show-detail-row > h2', '.show-detail-copy', '.nutcracker-audition-card',
+      '.show-coming-soon', '.competition-introduction .section-shell',
+      '.competition-information > h2', '.competition-info-row', '.show-contact',
+      '.tuition-panel', '.discount-panel', '.membership-panel',
+      '.registration-how > h2', '.registration-how > p', '.sawyer-link',
+      '.summer-heading', '.summer-course', '.summer-combined', '.summer-flexibility',
+      '.summer-camp', '.summer-camp-info', '.summer-contact', '.summer-registration',
+      '.contact-details', '.contact-form-panel'
+    ].join(',');
+    const pending = new Set();
+    const reveal = element => {
+      if (!pending.delete(element)) return;
+      element.classList.add('is-visible');
+      observer.unobserve(element);
+      // Restore each component's own hover transitions after the entrance.
+      const finish = event => {
+        if (event.target !== element || event.propertyName !== 'opacity') return;
+        element.classList.remove('scroll-reveal');
+        element.removeEventListener('transitionend', finish);
+      };
+      element.addEventListener('transitionend', finish);
+    };
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
-        if (entry.isIntersecting) { entry.target.classList.add('is-visible'); observer.unobserve(entry.target); }
+        if (entry.isIntersecting) reveal(entry.target);
       });
-    }, { threshold: 0.06 });
-    document.querySelectorAll('.reveal').forEach(element => observer.observe(element));
+    }, { threshold: 0.01, rootMargin: '0px 0px -24px 0px' });
+    document.querySelectorAll(selector).forEach(element => {
+      const bounds = element.getBoundingClientRect();
+      // Avoid hidden CMS rows, nested effects, and concealing a whole long section.
+      if (bounds.top < window.innerHeight || !bounds.width || !bounds.height ||
+          bounds.height > window.innerHeight * .85 || element.parentElement.closest('.scroll-reveal')) return;
+      element.classList.add('scroll-reveal');
+      pending.add(element);
+      observer.observe(element);
+    });
     document.documentElement.classList.add('motion-ready');
+    // Keyboard navigation must never land inside visually concealed content.
+    document.addEventListener('focusin', event => {
+      const element = event.target.closest('.scroll-reveal');
+      if (element) reveal(element);
+    });
     reducedMotion.addEventListener('change', event => {
-      if (event.matches) { observer.disconnect(); document.documentElement.classList.remove('motion-ready'); }
+      if (event.matches) {
+        observer.disconnect();
+        pending.clear();
+        document.documentElement.classList.remove('motion-ready');
+      }
     });
   }
 });
