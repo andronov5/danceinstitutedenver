@@ -1,0 +1,728 @@
+{
+  "siteId": "f3c88b1a-e358-495d-bcfd-78c490531ee8",
+  "timestamp": "2026-11-05T06:29:36.432Z",
+  "status": "CMS_PROVISIONED",
+  "frontendPublished": false,
+  "bridgeDeployed": false,
+  "media": [
+    {
+      "sourcePath": "assets/images/ballet-feet.webp",
+      "id": "24dcb0_9bd0d4dc7b0a49618e21d3283bce29ab~mv2.webp",
+      "url": "https://static.wixstatic.com/media/24dcb0_9bd0d4dc7b0a49618e21d3283bce29ab~mv2.webp",
+      "operationStatus": "READY",
+      "width": 2200,
+      "height": 1467
+    },
+    {
+      "sourcePath": "assets/images/competition-legacy-acro-lift.webp",
+      "id": "24dcb0_ef048965ebca4ce8896165ca3f97a2c5~mv2.webp",
+      "url": "https://static.wixstatic.com/media/24dcb0_ef048965ebca4ce8896165ca3f97a2c5~mv2.webp",
+      "operationStatus": "READY",
+      "width": 1668,
+      "height": 1112
+    },
+    {
+      "sourcePath": "assets/images/competition-legacy-ensemble.webp",
+      "id": "24dcb0_dec556b9ea4143e5bdb8474725c67f21~mv2.webp",
+      "url": "https://static.wixstatic.com/media/24dcb0_dec556b9ea4143e5bdb8474725c67f21~mv2.webp",
+      "operationStatus": "READY",
+      "width": 1668,
+      "height": 1112
+    },
+    {
+      "sourcePath": "assets/images/competition-legacy-floorwork.webp",
+      "id": "24dcb0_733d814b81664233b163728328b60fc4~mv2.webp",
+      "url": "https://static.wixstatic.com/media/24dcb0_733d814b81664233b163728328b60fc4~mv2.webp",
+      "operationStatus": "READY",
+      "width": 1668,
+      "height": 1112
+    },
+    {
+      "sourcePath": "assets/images/competition-legacy-lift.webp",
+      "id": "24dcb0_628cd52c5d414b0dadd7e00f7ca6c19b~mv2.webp",
+      "url": "https://static.wixstatic.com/media/24dcb0_628cd52c5d414b0dadd7e00f7ca6c19b~mv2.webp",
+      "operationStatus": "READY",
+      "width": 1668,
+      "height": 1112
+    },
+    {
+      "sourcePath": "assets/images/competition-legacy-quartet.webp",
+      "id": "24dcb0_d8284070602f4ed5b46bdcf49315db69~mv2.webp",
+      "url": "https://static.wixstatic.com/media/24dcb0_d8284070602f4ed5b46bdcf49315db69~mv2.webp",
+      "operationStatus": "READY",
+      "width": 1668,
+      "height": 1112
+    },
+    {
+      "sourcePath": "assets/images/competition-legacy-reach.webp",
+      "id": "24dcb0_58b465b7de4f4f788bab98d6ebe9ad6d~mv2.webp",
+      "url": "https://static.wixstatic.com/media/24dcb0_58b465b7de4f4f788bab98d6ebe9ad6d~mv2.webp",
+      "operationStatus": "READY",
+      "width": 1668,
+      "height": 1112
+    },
+    {
+      "sourcePath": "assets/images/competition-legacy-red-costumes.webp",
+      "id": "24dcb0_76ec9f58b9b148c5b2eb07928196f121~mv2.webp",
+      "url": "https://static.wixstatic.com/media/24dcb0_76ec9f58b9b148c5b2eb07928196f121~mv2.webp",
+      "operationStatus": "READY",
+      "width": 1668,
+      "height": 1112
+    },
+    {
+      "sourcePath": "assets/images/competition-rainbow.webp",
+      "id": "24dcb0_1a61e1fa946a414b8e5f8d0dc325310e~mv2.webp",
+      "url": "https://static.wixstatic.com/media/24dcb0_1a61e1fa946a414b8e5f8d0dc325310e~mv2.webp",
+      "operationStatus": "READY",
+      "width": 1200,
+      "height": 571
+    },
+    {
+      "sourcePath": "assets/images/contact-dancers.webp",
+      "id": "24dcb0_30a4b71d6eb04e568d73ba3d42e329e0~mv2.webp",
+      "url": "https://static.wixstatic.com/media/24dcb0_30a4b71d6eb04e568d73ba3d42e329e0~mv2.webp",
+      "operationStatus": "READY",
+      "width": 448,
+      "height": 446
+    },
+    {
+      "sourcePath": "assets/images/dance-community.webp",
+      "id": "24dcb0_8968189b29754c48bbaf626594ddac77~mv2.webp",
+      "url": "https://static.wixstatic.com/media/24dcb0_8968189b29754c48bbaf626594ddac77~mv2.webp",
+      "operationStatus": "READY",
+      "width": 1100,
+      "height": 1566
+    },
+    {
+      "sourcePath": "assets/images/dance-hero.webp",
+      "id": "24dcb0_2571f77207464292acee54784fb8ae49~mv2.webp",
+      "url": "https://static.wixstatic.com/media/24dcb0_2571f77207464292acee54784fb8ae49~mv2.webp",
+      "operationStatus": "READY",
+      "width": 1235,
+      "height": 806
+    },
+    {
+      "sourcePath": "assets/images/dance-institute-logo.png",
+      "id": "24dcb0_7537791c7d89426e906859931433e512~mv2.png",
+      "url": "https://static.wixstatic.com/media/24dcb0_7537791c7d89426e906859931433e512~mv2.png",
+      "operationStatus": "READY",
+      "width": 206,
+      "height": 100
+    },
+    {
+      "sourcePath": "assets/images/dance-performance.webp",
+      "id": "24dcb0_7e15f829632241bfb6c86a57d9a6b047~mv2.webp",
+      "url": "https://static.wixstatic.com/media/24dcb0_7e15f829632241bfb6c86a57d9a6b047~mv2.webp",
+      "operationStatus": "READY",
+      "width": 1400,
+      "height": 1025
+    },
+    {
+      "sourcePath": "assets/images/miss-michele.webp",
+      "id": "24dcb0_8459d185060c485f8c9e4fe569aacd84~mv2.webp",
+      "url": "https://static.wixstatic.com/media/24dcb0_8459d185060c485f8c9e4fe569aacd84~mv2.webp",
+      "operationStatus": "READY",
+      "width": 900,
+      "height": 1104
+    },
+    {
+      "sourcePath": "assets/images/nutcracker-stage.webp",
+      "id": "24dcb0_18293fc52d614dad861e559bf73d973f~mv2.webp",
+      "url": "https://static.wixstatic.com/media/24dcb0_18293fc52d614dad861e559bf73d973f~mv2.webp",
+      "operationStatus": "READY",
+      "width": 1200,
+      "height": 675
+    }
+  ],
+  "collections": [
+    {
+      "id": "DiStudio",
+      "displayName": "Studio contact information",
+      "created": true,
+      "inserted": 1,
+      "skipped": 0,
+      "errors": [],
+      "revision": "1",
+      "permissions": {
+        "insert": "ADMIN",
+        "update": "ADMIN",
+        "remove": "ADMIN",
+        "read": "ADMIN"
+      },
+      "itemIds": [
+        "d42556b4-9afc-50dc-9f97-1e70122cb322"
+      ],
+      "failed": 0
+    },
+    {
+      "id": "DiImages",
+      "displayName": "Page photos and logo",
+      "created": true,
+      "inserted": 7,
+      "skipped": 0,
+      "errors": [],
+      "revision": "1",
+      "permissions": {
+        "insert": "ADMIN",
+        "update": "ADMIN",
+        "remove": "ADMIN",
+        "read": "ADMIN"
+      },
+      "itemIds": [
+        "4aa9f82a-940b-58d8-96f7-92e3a4744875",
+        "7d24aeb1-7ebd-5fec-a78d-5c6daf066e81",
+        "a511d36d-3171-5bb2-992e-1df7597bd013",
+        "960da55f-98a1-50d4-9170-d777c309e3f9",
+        "9a700458-8cb5-5955-971d-10261151e3d8",
+        "fe0a3d4f-6dc2-58d0-aef3-1df6bfd9d2c5",
+        "06ba428f-8c25-583e-a38e-1295dbff17d5"
+      ],
+      "failed": 0
+    },
+    {
+      "id": "DiPageContent",
+      "displayName": "Page text",
+      "created": true,
+      "inserted": 64,
+      "skipped": 0,
+      "errors": [],
+      "revision": "1",
+      "permissions": {
+        "insert": "ADMIN",
+        "update": "ADMIN",
+        "remove": "ADMIN",
+        "read": "ADMIN"
+      },
+      "itemIds": [
+        "b5d33fb0-ece4-55f6-a47c-aef66d0f60f3",
+        "146be8ff-f166-5e6a-ad49-d6eafc225bef",
+        "160fd2b7-6715-59f8-b5d2-28ce074ef4c7",
+        "0b2cf2e6-30df-5791-a064-15173db05c34",
+        "ee173294-4295-504e-a668-e1708c83d67d",
+        "43c802b3-9c2b-56d9-8067-1ae4f233a6dd",
+        "3573582d-9485-5da6-bb3d-55d716aa1b99",
+        "a7c1b2b0-f630-5037-a784-e51bf7d6095d",
+        "7fdf8b7a-115e-5743-a418-4b502dfbb353",
+        "2042f42b-409d-5769-93ab-a5ac0db7c2f4",
+        "07da4ce8-9de6-505f-b8ef-29173c1597c2",
+        "63d39f8f-cc9c-5004-94ca-871fa9162e8e",
+        "0f488e82-d3be-55e7-9dda-efbe5d24c8e9",
+        "78e00ed4-cff5-5554-8dc3-6b03e7ad8317",
+        "4fe97297-8abe-5f4a-a42e-b908958f9982",
+        "fb87d34b-63bf-52fc-b812-3a01a98b88ea",
+        "d68b8311-87b7-5f5b-af53-8032fe2cfb06",
+        "8ff4622a-2913-5b40-9dea-19bc13772bc8",
+        "43e04dbb-b6dc-5d7e-908e-90354807c607",
+        "cb9a54fe-ba8f-505b-9b4b-d65318b0f262",
+        "5b2fbeb8-12bd-5707-9b34-1c2ee73c88d2",
+        "e9f19ecc-943e-5ab2-9882-6291cac7564d",
+        "376f9657-a832-5dd2-a5a3-d76b6b105978",
+        "322128d8-f055-5b5a-a216-126d0e7e5a62",
+        "c869eee6-2121-5061-8187-ab5a9caeb761",
+        "83eb3801-31eb-5a8c-a894-fb22c39494a7",
+        "3305a806-0381-5e76-9b9a-d5e066be2eb7",
+        "0fff9305-55f5-5f6f-82ea-8a8422814a47",
+        "040c6d16-d1af-511c-96fd-b679412e5359",
+        "9a8a768b-5be5-55a8-bb8e-b60ccd9d2f51",
+        "78cdcadc-f175-565d-938f-71a7fe6db263",
+        "662c8eee-520f-563d-a60e-6b6980613398",
+        "016875ac-564c-5857-bf1a-2bc0959a7f16",
+        "3c291381-ef54-519a-9141-969fb92bd51c",
+        "0eaa83ce-f6af-5b6c-85f3-68655a7cae5e",
+        "cdb4ec3a-751d-55d6-8f02-65d604333aa9",
+        "19aa4739-9ef5-5780-bc4b-dcf3b5fb87e8",
+        "81871d88-3f76-59d8-b719-2af58dd264e1",
+        "325b2eed-a32d-5835-90ab-d985133770f1",
+        "1470530c-09db-53b1-a0e4-01e808e315cc",
+        "7ac7f921-e2e2-5377-b334-2a9d25125775",
+        "011653a7-fcef-515a-ba1f-789c164b0fad",
+        "3b6741fb-449d-53f7-ae7b-64daa7be6b6c",
+        "03563609-c825-5800-9d5c-e1bcbe068ed8",
+        "75ab7e8d-3609-56b4-b14f-ff76cb36dcee",
+        "ca767709-47be-512c-9fef-3147a613ccf6",
+        "311c370e-8620-5009-bbda-76834a6a17d0",
+        "0ed13a1f-67c0-535b-9be0-828a0fb3e91e",
+        "661a5479-df5e-5527-8751-69d7da2df277",
+        "65c1be78-6928-5839-a49e-fc15449cbd60",
+        "f4d4ad93-1733-5e44-847b-6add16c1caef",
+        "396bcaa5-052e-5145-86d2-547298400c16",
+        "3588e8ae-03d0-586f-8106-e473ce29e3a3",
+        "5cde47fd-081e-576e-bc6f-fb8f5e0a4001",
+        "1ea41dff-891a-5e56-8bbc-59479cdd613f",
+        "86b0f669-a0ab-5b29-8a07-3742af33a434",
+        "8eef6266-606d-594b-adb8-e4e84776f754",
+        "8c66523c-c9fd-5e0a-85aa-032a404fe2fd",
+        "5cce6bbd-f59b-5689-be71-c2d54570a2c6",
+        "d9a31c3a-fa0a-566e-863f-6cb67deaf236",
+        "6e004a14-81d1-524d-b08a-086925cfcc55",
+        "443823b3-b970-5cfc-af4e-7983c3b106fd",
+        "09c6ead1-6f75-5f5b-996d-c9ac9c450d99",
+        "1a064351-1d3d-550d-8c13-c40a17d9bcde"
+      ],
+      "failed": 0
+    },
+    {
+      "id": "DiLinks",
+      "displayName": "Buttons and links",
+      "created": true,
+      "inserted": 12,
+      "skipped": 0,
+      "errors": [],
+      "revision": "1",
+      "permissions": {
+        "insert": "ADMIN",
+        "update": "ADMIN",
+        "remove": "ADMIN",
+        "read": "ADMIN"
+      },
+      "itemIds": [
+        "48dbbd9a-9f6f-5a49-8e66-15f8c64d4030",
+        "523b831b-672c-54bd-b24f-7a7974bed8ef",
+        "1990c7db-8872-5179-85a9-42fd3ad0dfc6",
+        "4bbd3cb9-c2d6-5c7f-815a-cc4059a2d442",
+        "f7fca8ae-3649-5ecd-869c-aedfb387d18a",
+        "ec68052f-0e35-5bd9-bee9-05f6dffd007f",
+        "33fe37db-7668-5725-9eda-2c7e0755911a",
+        "4daeef97-fb38-5da0-8b19-0f58a4e84287",
+        "408a526a-1535-5160-bcbc-1dbe744addcc",
+        "da39edbb-a847-5a92-8237-0052196866dc",
+        "db5c80c4-1736-5c18-a614-8070e1ee6bae",
+        "b15aed59-e297-5496-81c5-31db2524a1bf"
+      ],
+      "failed": 0
+    },
+    {
+      "id": "DiFeatures",
+      "displayName": "What sets us apart",
+      "created": true,
+      "inserted": 6,
+      "skipped": 0,
+      "errors": [],
+      "revision": "2",
+      "permissions": {
+        "insert": "ADMIN",
+        "update": "ADMIN",
+        "remove": "ADMIN",
+        "read": "ADMIN"
+      },
+      "itemIds": [
+        "52bc84e8-ee0e-521e-93f3-4b359fe229a0",
+        "70f0e144-61b8-55d9-99e1-c0f1c95c0fdc",
+        "0bd13a82-f763-55c5-b2c5-d5575a55342e",
+        "39008c78-76f1-5e8a-9e91-5f9c1e3ca367",
+        "4fe2d731-6748-555d-bbf2-cc96a8739df0",
+        "7c136a43-7c0f-5568-b9b4-cde1dbde96e1"
+      ],
+      "failed": 0
+    },
+    {
+      "id": "DiTestimonials",
+      "displayName": "Testimonials",
+      "created": true,
+      "inserted": 4,
+      "skipped": 0,
+      "errors": [],
+      "revision": "1",
+      "permissions": {
+        "insert": "ADMIN",
+        "update": "ADMIN",
+        "remove": "ADMIN",
+        "read": "ADMIN"
+      },
+      "itemIds": [
+        "92da8da1-1ce9-544e-b746-de5dcaa571fb",
+        "604ba15d-8ee5-534b-b170-e2822f63d0d1",
+        "4c5de002-2ba6-5546-930d-1d6dfc2a75fd",
+        "44106651-0d37-5f5f-aafe-b0807addbf5d"
+      ],
+      "failed": 0
+    },
+    {
+      "id": "DiClassCategories",
+      "displayName": "Class categories",
+      "created": true,
+      "inserted": 5,
+      "skipped": 0,
+      "errors": [],
+      "revision": "1",
+      "permissions": {
+        "insert": "ADMIN",
+        "update": "ADMIN",
+        "remove": "ADMIN",
+        "read": "ADMIN"
+      },
+      "itemIds": [
+        "dd10c74c-f7fe-5cbc-80ff-aeb65431c663",
+        "bd5bff50-ecd2-5f89-9f8e-6a14a5682a5d",
+        "c98a358c-449c-5dbc-8fce-c9d737c1abee",
+        "2f9eebaa-b0ad-5782-ac36-273eb7175186",
+        "cefb71d7-93dd-538e-93da-81d2ef4b6851"
+      ],
+      "failed": 0
+    },
+    {
+      "id": "DiClasses",
+      "displayName": "Dance classes",
+      "created": true,
+      "inserted": 28,
+      "skipped": 0,
+      "errors": [],
+      "revision": "1",
+      "permissions": {
+        "insert": "ADMIN",
+        "update": "ADMIN",
+        "remove": "ADMIN",
+        "read": "ADMIN"
+      },
+      "itemIds": [
+        "a09926a3-7661-5d25-97fd-350ba38f2897",
+        "eca85ed2-9f56-5cae-b117-f84952c26527",
+        "eb60c3e2-9340-59af-a2d5-9e83fa6bb87f",
+        "2b7c3f03-f713-5741-8cea-1c7ab12c4c0e",
+        "ed7823dc-6089-58d8-a6ae-513197552a34",
+        "c48913a6-fed2-5085-a450-b9914b773b68",
+        "3d110e9e-275b-54c7-9f4a-4228b02a5730",
+        "17758992-e7d5-583e-a47a-56f757dc2371",
+        "2e52686d-64bb-5a8a-a96c-56b0a4b455ab",
+        "19c164cb-a601-5eca-9f3f-e25dc385b0b6",
+        "40886727-49f4-5f5e-8525-f106e2323c27",
+        "27c2be54-b456-59ff-9835-85a0c4e1383e",
+        "64c0a314-b854-539d-8a07-2389f96e69d6",
+        "cddeac5c-e5cc-524e-82b3-ddf13cd27bf1",
+        "8e58db49-2e37-50a5-a6b2-e436cc0851e9",
+        "996df16a-9a93-556c-98b8-135a71b6638e",
+        "4585d3ac-1c5c-584d-81f1-594be4ddb125",
+        "5db23642-baf5-5f4c-bee3-235fdc73e47a",
+        "39ed659f-b7b8-5eb1-aae9-4311dc828e8a",
+        "db1fc463-1195-5ca3-a0ac-783292556d2c",
+        "0abf4689-9361-503d-b493-475402a5ffa9",
+        "b701873f-033b-5ba4-9031-57a3f6bcb9e7",
+        "10eaf0ec-0567-538c-a1c1-f5b79d315888",
+        "88414414-d46f-5454-88e0-ceb74354876b",
+        "458d2eb0-eca3-52dd-88c6-bbd5745c2c21",
+        "5e6b5ad9-d683-5ad9-a370-5447cda3cadc",
+        "7c0f9b67-118e-5293-8ee8-cc593f48eac2",
+        "5203d46c-5d72-53ff-ab3b-21aef2b97c6e"
+      ],
+      "failed": 0
+    },
+    {
+      "id": "DiTeachers",
+      "displayName": "Teachers",
+      "created": true,
+      "inserted": 6,
+      "skipped": 0,
+      "errors": [],
+      "revision": "1",
+      "permissions": {
+        "insert": "ADMIN",
+        "update": "ADMIN",
+        "remove": "ADMIN",
+        "read": "ADMIN"
+      },
+      "itemIds": [
+        "d3573e40-e228-57f8-add5-33c87acf62b3",
+        "be465d64-b4b2-5401-9390-a815c486b8ae",
+        "a684e0d7-d1b0-5b57-bcd2-5e74fd97e0fd",
+        "7214e904-ed58-5e99-8055-47bf126ff1fa",
+        "77737f24-e28b-5580-b12f-b8cf8d38168e",
+        "5489160a-bd57-58e8-a45f-f5755127969b"
+      ],
+      "failed": 0
+    },
+    {
+      "id": "DiPolicies",
+      "displayName": "Studio policies",
+      "created": true,
+      "inserted": 4,
+      "skipped": 0,
+      "errors": [],
+      "revision": "1",
+      "permissions": {
+        "insert": "ADMIN",
+        "update": "ADMIN",
+        "remove": "ADMIN",
+        "read": "ADMIN"
+      },
+      "itemIds": [
+        "440ecd2e-92c9-5756-b444-c7717038e4b8",
+        "9056274f-fe26-5345-85ba-5c6e934c6b18",
+        "f662e44a-9a66-5603-9674-7d7439a244f6",
+        "4a8c1def-8572-5919-8ad9-0726c0337243"
+      ],
+      "failed": 0
+    },
+    {
+      "id": "DiSchedule",
+      "displayName": "Weekly schedule",
+      "created": true,
+      "inserted": 28,
+      "skipped": 0,
+      "errors": [],
+      "revision": "1",
+      "permissions": {
+        "insert": "ADMIN",
+        "update": "ADMIN",
+        "remove": "ADMIN",
+        "read": "ADMIN"
+      },
+      "itemIds": [
+        "12c0538d-8c62-5fdc-b17f-0b5841bba87a",
+        "650a713a-9862-589b-8d34-3745b6238b4a",
+        "42786389-edf1-5c7c-9e05-7948a33b5371",
+        "3766a874-38a6-5fee-91e8-0e27e894d2b5",
+        "1d5610ff-4d22-55d9-bb45-3ef041febf61",
+        "1ade3d3e-e112-5e67-9ab2-cf5665002175",
+        "7cedcd33-9c69-5acd-af5f-af3f4e03b665",
+        "06de0b32-6e68-5de7-a035-9a2c9de6b245",
+        "1cf19d5e-7092-5b25-b7ed-44305630a4f0",
+        "5c351997-6660-5160-9b92-420a292cee4c",
+        "d98994e8-75a4-51ae-a240-02ccec6d8d69",
+        "e0bf1a09-e0cd-57b9-ba37-b7350aa4d9ab",
+        "0b2d5d61-2bd0-59bd-b90a-f8ac90a5ad83",
+        "20440422-3010-5bf5-b16a-8535a2003f27",
+        "c6dc6dc0-8036-514c-877e-348e76a2b6cf",
+        "8c355973-370d-5fcf-acb5-2db3e466e78f",
+        "999fe9d4-7af0-5739-b314-273b2230467e",
+        "f40129b8-232b-5ec9-a7d2-1be3edc3825d",
+        "db5f51e2-d5ea-586b-9862-638af7bd7512",
+        "87062e41-a89d-507b-b965-59d1813131d0",
+        "42e714bd-e591-56f0-917a-8b682710c3f3",
+        "d0e5d5f1-4aaf-53b1-9587-317003dcb1cf",
+        "f98957c4-1ae1-5b05-9f37-0a771fedc0fe",
+        "2c2c07e7-f20e-5524-9eb3-7a4a67f3433f",
+        "01249660-cbda-5d9b-9c6f-fd636aab5b37",
+        "1a3a5a25-11dc-5ae3-ae07-90cac556960f",
+        "10f0bcc3-3e92-5310-8b42-58226041568b",
+        "9d3f3492-9b53-5f68-a4e9-ec298fbe2804"
+      ],
+      "failed": 0
+    },
+    {
+      "id": "DiShowDates",
+      "displayName": "Nutcracker show dates",
+      "created": true,
+      "inserted": 2,
+      "skipped": 0,
+      "errors": [],
+      "revision": "1",
+      "permissions": {
+        "insert": "ADMIN",
+        "update": "ADMIN",
+        "remove": "ADMIN",
+        "read": "ADMIN"
+      },
+      "itemIds": [
+        "f923bc18-c896-5dab-b09a-c7661742ec7b",
+        "baa47a7d-1d4b-5744-acf7-a8d6b9e9dd9e"
+      ],
+      "failed": 0
+    },
+    {
+      "id": "DiGalleryPhotos",
+      "displayName": "Photo galleries",
+      "created": true,
+      "inserted": 12,
+      "skipped": 0,
+      "errors": [],
+      "revision": "1",
+      "permissions": {
+        "insert": "ADMIN",
+        "update": "ADMIN",
+        "remove": "ADMIN",
+        "read": "ADMIN"
+      },
+      "itemIds": [
+        "ef0f96fb-e177-52ee-a2f1-64e97e8590bf",
+        "b4fef19b-8a9c-5998-8fe2-b3211634dd33",
+        "87225622-9f44-53ba-b316-d9de124f1b8c",
+        "6e9c17c4-79c5-521a-8baa-dd742b4fd19f",
+        "576a6e7c-22c4-5625-8b53-99377df7d194",
+        "22c7452a-3447-5043-a15a-90cbb73bca33",
+        "2d603a7b-bb5c-5092-aafe-b558008ef662",
+        "0f06416d-b188-5083-bd90-906737fb17a5",
+        "e80b3a18-0b26-5772-b43e-b1398e232353",
+        "a57ce291-e833-565a-ae28-a057b8f6d6c5",
+        "08c4b881-4437-58d5-9f7b-1ccd94ecd7a2",
+        "ac423a32-c29f-51c9-92c7-af635aa5679d"
+      ],
+      "failed": 0
+    },
+    {
+      "id": "DiCompetitionInfo",
+      "displayName": "Competition information",
+      "created": true,
+      "inserted": 6,
+      "skipped": 0,
+      "errors": [],
+      "revision": "1",
+      "permissions": {
+        "insert": "ADMIN",
+        "update": "ADMIN",
+        "remove": "ADMIN",
+        "read": "ADMIN"
+      },
+      "itemIds": [
+        "65940714-af75-5968-8980-3c199539ebf8",
+        "618a71e1-3609-57ac-b840-ceb5cfc1fccf",
+        "a7ce7371-27e1-5b01-a43d-8e7309f8c478",
+        "79690958-e5b2-558e-8bc7-0221f8623994",
+        "25f024d3-d9cd-530c-841d-db5643fd5407",
+        "8b1be864-5dff-5e60-b947-9cfcb3552fc7"
+      ],
+      "failed": 0
+    },
+    {
+      "id": "DiSummerCourses",
+      "displayName": "Summer intensive courses",
+      "created": true,
+      "inserted": 2,
+      "skipped": 0,
+      "errors": [],
+      "revision": "1",
+      "permissions": {
+        "insert": "ADMIN",
+        "update": "ADMIN",
+        "remove": "ADMIN",
+        "read": "ADMIN"
+      },
+      "itemIds": [
+        "387a9538-077b-5162-95f6-620f532bc883",
+        "622de1e9-5141-5c3f-8539-70fef718af46"
+      ],
+      "failed": 0
+    },
+    {
+      "id": "DiSummerCamps",
+      "displayName": "Summer camps",
+      "created": true,
+      "inserted": 6,
+      "skipped": 0,
+      "errors": [],
+      "revision": "1",
+      "permissions": {
+        "insert": "ADMIN",
+        "update": "ADMIN",
+        "remove": "ADMIN",
+        "read": "ADMIN"
+      },
+      "itemIds": [
+        "ce4c3d6f-af22-5327-8a95-86564513d6f7",
+        "89e3d5de-84af-5e70-b652-7189233e48fa",
+        "d7999015-f142-5e69-9587-a21e1dc73573",
+        "ee94eab0-1bdb-527c-a3f4-406149bcc6f2",
+        "b40171cc-a96a-52fc-9d87-de2c4f0547de",
+        "4c49e4c1-696d-5b03-ba87-1f70e0ffc39f"
+      ],
+      "failed": 0
+    },
+    {
+      "id": "DiTuition",
+      "displayName": "Monthly tuition",
+      "created": true,
+      "inserted": 7,
+      "skipped": 0,
+      "errors": [],
+      "revision": "1",
+      "permissions": {
+        "insert": "ADMIN",
+        "update": "ADMIN",
+        "remove": "ADMIN",
+        "read": "ADMIN"
+      },
+      "itemIds": [
+        "01cca998-d780-5a55-b8db-5a19b2b779be",
+        "46add190-c89d-5406-9ed0-af1e39c70350",
+        "8a85d299-2b57-5a9e-b4e3-cf09564c3ee0",
+        "157cbabc-a6a3-5b66-b49b-d949dc5202be",
+        "aec44627-e711-5f0c-9ced-fffc76c3abaa",
+        "eaa87a42-32ef-5311-8743-71d16a16207b",
+        "aae02c9e-378b-5214-a271-5f15a42c7050"
+      ],
+      "failed": 0
+    },
+    {
+      "id": "DiDiscounts",
+      "displayName": "Tuition discounts",
+      "created": true,
+      "inserted": 4,
+      "skipped": 0,
+      "errors": [],
+      "revision": "1",
+      "permissions": {
+        "insert": "ADMIN",
+        "update": "ADMIN",
+        "remove": "ADMIN",
+        "read": "ADMIN"
+      },
+      "itemIds": [
+        "0551f82f-b2bc-5e65-a198-f54a8d80cdf4",
+        "2aa7bc69-d322-5231-bdd3-3e654b65d2c6",
+        "56eca8e5-5fa3-5fd3-872c-83e192732a9e",
+        "e14ce3f4-71e8-5706-9207-e719228bc095"
+      ],
+      "failed": 0
+    },
+    {
+      "id": "DiRegistration",
+      "displayName": "Registration settings",
+      "created": true,
+      "inserted": 2,
+      "skipped": 0,
+      "errors": [],
+      "revision": "1",
+      "permissions": {
+        "insert": "ADMIN",
+        "update": "ADMIN",
+        "remove": "ADMIN",
+        "read": "ADMIN"
+      },
+      "itemIds": [
+        "ab71c703-e5ef-5c46-99c1-a170efc09cb8",
+        "f7ce44dc-5b1e-5f7f-9dda-60698f1f9925"
+      ],
+      "failed": 0
+    }
+  ],
+  "totals": {
+    "createdCollections": 19,
+    "insertedRecords": 206,
+    "skippedRecords": 0,
+    "failedCollections": 0
+  },
+  "corrections": [
+    {
+      "timestamp": "2026-11-05T06:33:06.724Z",
+      "previousFeatureBodyType": "RICH_TEXT",
+      "featureBodyType": "TEXT",
+      "featureCollectionRevision": "2",
+      "studioPermissions": {
+        "insert": "ADMIN",
+        "update": "ADMIN",
+        "remove": "ADMIN",
+        "read": "ADMIN"
+      },
+      "sampleCounts": {
+        "DiStudio": 1,
+        "DiFeatures": 6,
+        "DiImages": 7,
+        "DiTeachers": 6,
+        "DiGalleryPhotos": 12,
+        "DiClasses": 28,
+        "DiSchedule": 28
+      },
+      "focusSkippedEditedFields": [],
+      "focusPatched": {
+        "totalSuccesses": 0,
+        "totalFailures": 0
+      },
+      "media": {
+        "uploadedCount": 16,
+        "usedCount": 16,
+        "missing": []
+      },
+      "featureBodiesRemainPlainText": true
+    }
+  ],
+  "verified": "2026-11-05T06:33:06.724Z"
+}

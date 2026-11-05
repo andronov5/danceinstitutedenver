@@ -56,9 +56,9 @@
 .policies-page .policy-section + .policy-section { margin-top: 50px; padding-top: 44px; border-top: 1px solid var(--line); }
 .policies-page .policy-section h2 { font-size: clamp(38px, 4.2vw, 54px); line-height: 1.1; }
 .policies-page .policy-copy { min-width: 0; max-width: 65ch; font-size: 17px; line-height: 1.85; }
-.policies-page .policy-rules { margin: 22px 0 0; padding-left: 21px; }
-.policies-page .policy-rules li { padding-left: 5px; }
-.policies-page .policy-rules li + li { margin-top: 14px; }
+.policies-page .policy-copy ul { margin: 22px 0 0; padding-left: 21px; }
+.policies-page .policy-copy ul li { padding-left: 5px; }
+.policies-page .policy-copy ul li + li { margin-top: 14px; }
 
 @media (max-width: 760px) {
   .about-hub .about-hub-layout { grid-template-columns: minmax(0, 1fr); gap: 30px; }

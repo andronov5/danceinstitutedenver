@@ -1,8 +1,21 @@
-(() => {
+Promise.resolve(window.siteContentReady).then(() => {
   'use strict';
 
   document.querySelectorAll('[data-review-gallery]').forEach(section => {
     const originals = [...section.querySelectorAll('[data-review-slide]')];
+    const dotContainer = section.querySelector('.review-dots');
+    dotContainer.replaceChildren(...originals.map((slide, index) => {
+      slide.id = 'gallery-review-' + index;
+      const dot = document.createElement('button');
+      dot.className = 'review-dot'; dot.type = 'button';
+      dot.dataset.reviewDot = index;
+      dot.setAttribute('aria-controls', slide.id);
+      dot.setAttribute('aria-label', 'Show review by ' + slide.querySelector('figcaption').textContent);
+      dot.setAttribute('aria-pressed', String(index === 0));
+      return dot;
+    }));
+    section.querySelector('.review-navigation').hidden = originals.length < 2;
+    if (!originals.length) section.hidden = true;
     if (originals.length < 2) return;
     const viewport = section.querySelector('.review-viewport');
     const rail = section.querySelector('.review-rail');
@@ -201,4 +214,4 @@
     reduced.addEventListener('change', () => { if (moving && reduced.matches) finish(); schedule(); });
     document.fonts?.ready.then(measure);
   });
-})();
+});

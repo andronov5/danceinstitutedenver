@@ -1,5 +1,5 @@
 /* The two parent navigation items open only their requested child pages. */
-(() => {
+Promise.resolve(window.siteContentReady).then(() => {
   const groups = [...document.querySelectorAll('.nav-dropdown')];
   const close = group => {
     group.querySelector('[data-dropdown-toggle]').setAttribute('aria-expanded', 'false');
@@ -29,4 +29,4 @@
   document.addEventListener('click', event => {
     groups.forEach(group => { if (!group.contains(event.target)) close(group); });
   });
-})();
+});

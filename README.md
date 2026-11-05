@@ -4,6 +4,10 @@ A static HTML/CSS/JavaScript website using the owner's supplied copy and request
 
 ## Pages and editing
 
+Wix CMS content editing has been added to the existing coded design. See [Michele’s content guide](cms/README.md) and [connection setup](wix/README.md). The shared Wix site now contains the initial CMS content and imported photos. The backend connection is staged in this repository and remains disabled until it is installed, published and verified in Wix; dashboard edits do not appear on the website yet.
+
+Build prerequisite: `python3 -m pip install -r requirements-build.txt`. Run `npm run build` to render the pages and generate their CMS bindings, or `npm test` for transport and runtime checks. There are no browser package dependencies. Never re-import the initial seed over Michele’s future edits.
+
 - `index.html` — Home.
 - `dance-classes/` — concise class descriptions in a simple list with names aligned beside descriptions on desktop and stacked on mobile, native expandable sections, all open initially. Advanced Classes follows Combo Classes and contains Jazz 1–4 and Contemporary/Lyrical 1–4. Ages, levels and durations follow the supplied 2026–2027 schedule. Baby Moves is removed; Additional Classes includes Trot'n Tots, Intro to Poms, both Leaps, Turns, Tricks levels and Adult Tap. Advanced Pointe Technique is under Ballet. Class descriptions omit recital references.
 - `about/studio-policies/`, `about/teachers/` — the About menu contains Dance Classes, Studio Policies and Teachers. Policies restores the original section rows with headings on the left and supplied policy text on the right. Teachers uses alternating photo/biography rows, Michele's supplied photograph and complete biography, and empty photo/bio spaces for the five other named teachers. Michele's full biography is always visible, with no disclosure control.

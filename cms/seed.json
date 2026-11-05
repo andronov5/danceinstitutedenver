@@ -1,0 +1,2151 @@
+{
+  "version": 1,
+  "collections": {
+    "DiStudio": [
+      {
+        "key": "studio",
+        "isVisible": true,
+        "sortOrder": 0,
+        "title": "Studio contact information",
+        "name": "Dance Institute",
+        "phone": "303-525-0011",
+        "email": "dance@danceinstitutedenver.com",
+        "address": "10515 E 40th Ave\n#114\nDenver, CO 80239",
+        "_id": "d42556b4-9afc-50dc-9f97-1e70122cb322"
+      }
+    ],
+    "DiImages": [
+      {
+        "key": "studio-logo",
+        "isVisible": true,
+        "sortOrder": 0,
+        "title": "Studio logo",
+        "page": "All pages",
+        "image": "https://static.wixstatic.com/media/24dcb0_7537791c7d89426e906859931433e512~mv2.png",
+        "alt": "Dance Institute",
+        "focalX": null,
+        "focalY": null,
+        "_id": "4aa9f82a-940b-58d8-96f7-92e3a4744875"
+      },
+      {
+        "key": "home-hero-photo",
+        "isVisible": true,
+        "sortOrder": 1,
+        "title": "hero photo",
+        "page": "Home",
+        "image": "https://static.wixstatic.com/media/24dcb0_2571f77207464292acee54784fb8ae49~mv2.webp",
+        "alt": "Dance Institute dancers performing together on stage",
+        "focalX": null,
+        "focalY": null,
+        "_id": "7d24aeb1-7ebd-5fec-a78d-5c6daf066e81"
+      },
+      {
+        "key": "home-about-main-photo",
+        "isVisible": true,
+        "sortOrder": 2,
+        "title": "about main photo",
+        "page": "Home",
+        "image": "https://static.wixstatic.com/media/24dcb0_8968189b29754c48bbaf626594ddac77~mv2.webp",
+        "alt": "Young Dance Institute dancers in pink tutus on stage",
+        "focalX": null,
+        "focalY": null,
+        "_id": "a511d36d-3171-5bb2-992e-1df7597bd013"
+      },
+      {
+        "key": "home-apart-photo",
+        "isVisible": true,
+        "sortOrder": 3,
+        "title": "apart photo",
+        "page": "Home",
+        "image": "https://static.wixstatic.com/media/24dcb0_9bd0d4dc7b0a49618e21d3283bce29ab~mv2.webp",
+        "alt": "",
+        "focalX": null,
+        "focalY": null,
+        "_id": "960da55f-98a1-50d4-9170-d777c309e3f9"
+      },
+      {
+        "key": "home-about-small-photo",
+        "isVisible": true,
+        "sortOrder": 4,
+        "title": "About small photo",
+        "page": "Home",
+        "image": "https://static.wixstatic.com/media/24dcb0_7e15f829632241bfb6c86a57d9a6b047~mv2.webp",
+        "alt": "Four young dancers in pale blue costumes on stage",
+        "focalX": null,
+        "focalY": null,
+        "_id": "9a700458-8cb5-5955-971d-10261151e3d8"
+      },
+      {
+        "key": "nutcracker-hero",
+        "isVisible": true,
+        "sortOrder": 5,
+        "title": "Nutcracker hero photograph",
+        "page": "shows-and-competition/nutcracker/index.html",
+        "image": "https://static.wixstatic.com/media/24dcb0_18293fc52d614dad861e559bf73d973f~mv2.webp",
+        "alt": "",
+        "focalX": null,
+        "focalY": 70,
+        "_id": "fe0a3d4f-6dc2-58d0-aef3-1df6bfd9d2c5"
+      },
+      {
+        "key": "contact-photo",
+        "isVisible": true,
+        "sortOrder": 6,
+        "title": "Contact photo",
+        "page": "Contact",
+        "image": "https://static.wixstatic.com/media/24dcb0_30a4b71d6eb04e568d73ba3d42e329e0~mv2.webp",
+        "alt": "Dancers performing together on stage",
+        "focalX": null,
+        "focalY": null,
+        "_id": "06ba428f-8c25-583e-a38e-1295dbff17d5"
+      }
+    ],
+    "DiPageContent": [
+      {
+        "key": "home-hero-word-1",
+        "isVisible": true,
+        "sortOrder": 0,
+        "title": "Hero title word 1",
+        "page": "Home",
+        "text": "Passion",
+        "_id": "b5d33fb0-ece4-55f6-a47c-aef66d0f60f3"
+      },
+      {
+        "key": "home-hero-word-2",
+        "isVisible": true,
+        "sortOrder": 1,
+        "title": "Hero title word 2",
+        "page": "Home",
+        "text": "Moves",
+        "_id": "146be8ff-f166-5e6a-ad49-d6eafc225bef"
+      },
+      {
+        "key": "home-hero-word-3",
+        "isVisible": true,
+        "sortOrder": 2,
+        "title": "Hero title word 3",
+        "page": "Home",
+        "text": "Us",
+        "_id": "160fd2b7-6715-59f8-b5d2-28ce074ef4c7"
+      },
+      {
+        "key": "home-hero-subtitle",
+        "isVisible": true,
+        "sortOrder": 3,
+        "title": "Hero subtitle",
+        "page": "Home",
+        "text": "Join Us at Dance Institute Today",
+        "_id": "0b2cf2e6-30df-5791-a064-15173db05c34"
+      },
+      {
+        "key": "home-about-title",
+        "isVisible": true,
+        "sortOrder": 4,
+        "title": "About title",
+        "page": "Home",
+        "body": "About<br><em>Dance Institute</em>",
+        "_id": "ee173294-4295-504e-a668-e1708c83d67d"
+      },
+      {
+        "key": "home-about-1",
+        "isVisible": true,
+        "sortOrder": 5,
+        "title": "About paragraph 1",
+        "page": "Home",
+        "text": "At Dance Institute, we are passionate about teaching dance to students aged 2 to adult. Our extensive curriculum includes Ballet, Tap, Lyrical, Contemporary, Pointe, Hip-Hop, Poms, Acro, Tumbling, and Jazz. We create a nurturing environment where students not only learn to dance but also develop confidence, dedication and self awareness.",
+        "_id": "43c802b3-9c2b-56d9-8067-1ae4f233a6dd"
+      },
+      {
+        "key": "home-about-2",
+        "isVisible": true,
+        "sortOrder": 6,
+        "title": "About paragraph 2",
+        "page": "Home",
+        "text": "Welcome to Dance Institute in Denver, CO. We are a staff of dedicated, passionate dance educators eager to work with dancers of all ages and help them grow into the amazing dancers they aspire to be. Each one of our teachers have put in countless hours learning and growing in the world of dance from very young ages. Our teachers have performed in the industry and have taught many students. There is no doubt your dancers will love every moment of gaining knowledge from these talented people.",
+        "_id": "3573582d-9485-5da6-bb3d-55d716aa1b99"
+      },
+      {
+        "key": "home-about-3",
+        "isVisible": true,
+        "sortOrder": 7,
+        "title": "About paragraph 3",
+        "page": "Home",
+        "text": "Our Denver dance school offers students a nurturing environment geared towards cultivating the best of each dancer. We want every student to feel supported in their effort to develop into the best dancer they can possibly become, whether they want to grow up and move into the professional field of dance or learn to dance because it is just plain fun. Every dancer is different. We are here to help students discover their strengths and work on their weaknesses to make them a more well-rounded dancer.",
+        "_id": "a7c1b2b0-f630-5037-a784-e51bf7d6095d"
+      },
+      {
+        "key": "home-about-4",
+        "isVisible": true,
+        "sortOrder": 8,
+        "title": "About paragraph 4",
+        "page": "Home",
+        "text": "We strive for our dance studio to make every student feel at home. We treat all our students like family. Once you get to know the parents and staff, the studio will begin to feel like your home away from home. It is our desire to make you feel comfortable while you are here, while we focus on making your dancers feel encouraged, inspired, and supported.",
+        "_id": "7fdf8b7a-115e-5743-a418-4b502dfbb353"
+      },
+      {
+        "key": "home-about-5",
+        "isVisible": true,
+        "sortOrder": 9,
+        "title": "About paragraph 5",
+        "page": "Home",
+        "text": "By providing technical training in a friendly and encouraging atmosphere. Our mission is for Dance Institute students to have a well-rounded dance education. We are dedicated to our students' self-assurance, poise, and confidence.",
+        "_id": "2042f42b-409d-5769-93ab-a5ac0db7c2f4"
+      },
+      {
+        "key": "home-trial-h2",
+        "isVisible": true,
+        "sortOrder": 10,
+        "title": "Trial h2",
+        "page": "Home",
+        "text": "Take a trial class!",
+        "_id": "07da4ce8-9de6-505f-b8ef-29173c1597c2"
+      },
+      {
+        "key": "home-trial-p",
+        "isVisible": true,
+        "sortOrder": 11,
+        "title": "Trial p",
+        "page": "Home",
+        "text": "Drop into any class for a free trial before registering.",
+        "_id": "63d39f8f-cc9c-5004-94ca-871fa9162e8e"
+      },
+      {
+        "key": "home-apart-title",
+        "isVisible": true,
+        "sortOrder": 12,
+        "title": "What sets us apart title",
+        "page": "Home",
+        "text": "What sets us apart",
+        "_id": "0f488e82-d3be-55e7-9dda-efbe5d24c8e9"
+      },
+      {
+        "key": "home-testimonials-title",
+        "isVisible": true,
+        "sortOrder": 13,
+        "title": "Testimonials title",
+        "page": "Home",
+        "body": "What Our <em>Students Say</em>",
+        "_id": "78e00ed4-cff5-5554-8dc3-6b03e7ad8317"
+      },
+      {
+        "key": "classes-title",
+        "isVisible": true,
+        "sortOrder": 14,
+        "title": "Dance Classes title",
+        "page": "Dance Classes",
+        "text": "Dance Classes",
+        "_id": "4fe97297-8abe-5f4a-a42e-b908958f9982"
+      },
+      {
+        "key": "classes-placement",
+        "isVisible": true,
+        "sortOrder": 15,
+        "title": "Class placement note",
+        "page": "Dance Classes",
+        "text": "Class placement is determined by Dance Institute Instructors.",
+        "_id": "fb87d34b-63bf-52fc-b812-3a01a98b88ea"
+      },
+      {
+        "key": "teachers-title",
+        "isVisible": true,
+        "sortOrder": 16,
+        "title": "Teachers page title",
+        "page": "about/teachers/index.html",
+        "text": "Teachers",
+        "_id": "d68b8311-87b7-5f5b-af53-8032fe2cfb06"
+      },
+      {
+        "key": "policies-title",
+        "isVisible": true,
+        "sortOrder": 17,
+        "title": "Studio Policies page title",
+        "page": "about/studio-policies/index.html",
+        "text": "STUDIO POLICIES",
+        "_id": "8ff4622a-2913-5b40-9dea-19bc13772bc8"
+      },
+      {
+        "key": "schedule-title",
+        "isVisible": true,
+        "sortOrder": 18,
+        "title": "Class Schedule title",
+        "page": "Schedule",
+        "text": "2026-2027 Class Schedule",
+        "_id": "43e04dbb-b6dc-5d7e-908e-90354807c607"
+      },
+      {
+        "key": "schedule-footnote",
+        "isVisible": true,
+        "sortOrder": 19,
+        "title": "Class Schedule placement note",
+        "page": "Schedule",
+        "text": "*Class placement is determined by Dance Institute Instructors",
+        "_id": "cb9a54fe-ba8f-505b-9b4b-d65318b0f262"
+      },
+      {
+        "key": "nutcracker-title",
+        "isVisible": true,
+        "sortOrder": 20,
+        "title": "Nutcracker page title",
+        "page": "shows-and-competition/nutcracker/index.html",
+        "text": "Nutcracker",
+        "_id": "5b2fbeb8-12bd-5707-9b34-1c2ee73c88d2"
+      },
+      {
+        "key": "nutcracker-shows-title",
+        "isVisible": true,
+        "sortOrder": 21,
+        "title": "Nutcracker Shows heading",
+        "page": "shows-and-competition/nutcracker/index.html",
+        "text": "Nutcracker Shows",
+        "_id": "e9f19ecc-943e-5ab2-9882-6291cac7564d"
+      },
+      {
+        "key": "nutcracker-prep-title",
+        "isVisible": true,
+        "sortOrder": 22,
+        "title": "Nutcracker Prep Week heading",
+        "page": "shows-and-competition/nutcracker/index.html",
+        "text": "Nutcracker Prep Week",
+        "_id": "376f9657-a832-5dd2-a5a3-d76b6b105978"
+      },
+      {
+        "key": "nutcracker-auditions-title",
+        "isVisible": true,
+        "sortOrder": 23,
+        "title": "Nutcracker Auditions heading",
+        "page": "shows-and-competition/nutcracker/index.html",
+        "text": "Nutcracker Auditions",
+        "_id": "322128d8-f055-5b5a-a216-126d0e7e5a62"
+      },
+      {
+        "key": "nutcracker-rehearsals-title",
+        "isVisible": true,
+        "sortOrder": 24,
+        "title": "Nutcracker Rehearsals heading",
+        "page": "shows-and-competition/nutcracker/index.html",
+        "text": "Nutcracker Rehearsals",
+        "_id": "c869eee6-2121-5061-8187-ab5a9caeb761"
+      },
+      {
+        "key": "nutcracker-merch-title",
+        "isVisible": true,
+        "sortOrder": 25,
+        "title": "Merch heading",
+        "page": "shows-and-competition/nutcracker/index.html",
+        "text": "Merch",
+        "_id": "83eb3801-31eb-5a8c-a894-fb22c39494a7"
+      },
+      {
+        "key": "nutcracker-when-label",
+        "isVisible": true,
+        "sortOrder": 26,
+        "title": "When label",
+        "page": "shows-and-competition/nutcracker/index.html",
+        "text": "When:",
+        "_id": "3305a806-0381-5e76-9b9a-d5e066be2eb7"
+      },
+      {
+        "key": "nutcracker-where-label",
+        "isVisible": true,
+        "sortOrder": 27,
+        "title": "Where label",
+        "page": "shows-and-competition/nutcracker/index.html",
+        "text": "Where:",
+        "_id": "0fff9305-55f5-5f6f-82ea-8a8422814a47"
+      },
+      {
+        "key": "nutcracker-venue",
+        "isVisible": true,
+        "sortOrder": 28,
+        "title": "Show venue name",
+        "page": "shows-and-competition/nutcracker/index.html",
+        "text": "Adams City High School",
+        "_id": "040c6d16-d1af-511c-96fd-b679412e5359"
+      },
+      {
+        "key": "nutcracker-tickets-status",
+        "isVisible": true,
+        "sortOrder": 29,
+        "title": "Nutcracker tickets status",
+        "page": "shows-and-competition/nutcracker/index.html",
+        "text": "Tickets coming soon!",
+        "_id": "9a8a768b-5be5-55a8-bb8e-b60ccd9d2f51"
+      },
+      {
+        "key": "nutcracker-prep-body",
+        "isVisible": true,
+        "sortOrder": 30,
+        "title": "Nutcracker Prep Week details",
+        "page": "shows-and-competition/nutcracker/index.html",
+        "body": "<p>This week prepares dancers for their Nutcracker audition. Any dancer wanting to put extra focus into their ballet dancing before they audition is encouraged to come dance with us this week.</p>",
+        "_id": "78cdcadc-f175-565d-938f-71a7fe6db263"
+      },
+      {
+        "key": "nutcracker-audition-date",
+        "isVisible": true,
+        "sortOrder": 31,
+        "title": "Nutcracker audition date",
+        "page": "shows-and-competition/nutcracker/index.html",
+        "text": "August 29, 2026",
+        "dateTime": "2026-08-29",
+        "_id": "662c8eee-520f-563d-a60e-6b6980613398"
+      },
+      {
+        "key": "nutcracker-audition-status",
+        "isVisible": true,
+        "sortOrder": 32,
+        "title": "Nutcracker audition status",
+        "page": "shows-and-competition/nutcracker/index.html",
+        "text": "Auditions have closed for this season.",
+        "_id": "016875ac-564c-5857-bf1a-2bc0959a7f16"
+      },
+      {
+        "key": "nutcracker-rehearsal-date",
+        "isVisible": true,
+        "sortOrder": 33,
+        "title": "Rehearsal schedule",
+        "page": "shows-and-competition/nutcracker/index.html",
+        "text": "Saturday afternoons",
+        "_id": "3c291381-ef54-519a-9141-969fb92bd51c"
+      },
+      {
+        "key": "nutcracker-rehearsal-body",
+        "isVisible": true,
+        "sortOrder": 34,
+        "title": "Rehearsal details and registration link",
+        "page": "shows-and-competition/nutcracker/index.html",
+        "body": "Rehearsals last 30–90 minutes, depending on the role. We make every effort to accommodate performers’ schedules. Performers may miss no more than two rehearsals. The rehearsal fee is $130 and can be paid under Events on the <a href=\"../../register/index.html\">Register Now!</a> page.",
+        "_id": "0eaa83ce-f6af-5b6c-85f3-68655a7cae5e"
+      },
+      {
+        "key": "nutcracker-merch-status",
+        "isVisible": true,
+        "sortOrder": 35,
+        "title": "Nutcracker merchandise status",
+        "page": "shows-and-competition/nutcracker/index.html",
+        "text": "Coming soon!",
+        "_id": "cdb4ec3a-751d-55d6-8f02-65d604333aa9"
+      },
+      {
+        "key": "nutcracker-contact-title",
+        "isVisible": true,
+        "sortOrder": 36,
+        "title": "Nutcracker contact heading",
+        "page": "shows-and-competition/nutcracker/index.html",
+        "text": "Interested in Learning More?",
+        "_id": "19aa4739-9ef5-5780-bc4b-dcf3b5fb87e8"
+      },
+      {
+        "key": "competition-title",
+        "isVisible": true,
+        "sortOrder": 37,
+        "title": "Competition page title",
+        "page": "shows-and-competition/competition/index.html",
+        "text": "Competition",
+        "_id": "81871d88-3f76-59d8-b719-2af58dd264e1"
+      },
+      {
+        "key": "competition-introduction",
+        "isVisible": true,
+        "sortOrder": 38,
+        "title": "Competition introduction",
+        "page": "shows-and-competition/competition/index.html",
+        "body": "<p>Competition is another way to grow as a dancer: practicing with purpose, working together, and sharing a performance on stage. From rehearsals to the final bow, the experience is about learning, expression, and being part of a team.</p>",
+        "_id": "325b2eed-a32d-5835-90ab-d985133770f1"
+      },
+      {
+        "key": "competition-information-title",
+        "isVisible": true,
+        "sortOrder": 39,
+        "title": "Competition information heading",
+        "page": "shows-and-competition/competition/index.html",
+        "text": "Sample information",
+        "_id": "1470530c-09db-53b1-a0e4-01e808e315cc"
+      },
+      {
+        "key": "recital-title",
+        "isVisible": true,
+        "sortOrder": 40,
+        "title": "Recital page title",
+        "page": "shows-and-competition/recital/index.html",
+        "text": "Recital",
+        "_id": "7ac7f921-e2e2-5377-b334-2a9d25125775"
+      },
+      {
+        "key": "recital-volunteering-title",
+        "isVisible": true,
+        "sortOrder": 41,
+        "title": "Recital volunteering heading",
+        "page": "shows-and-competition/recital/index.html",
+        "text": "Volunteering",
+        "_id": "011653a7-fcef-515a-ba1f-789c164b0fad"
+      },
+      {
+        "key": "recital-information",
+        "isVisible": true,
+        "sortOrder": 42,
+        "title": "Recital information",
+        "page": "shows-and-competition/recital/index.html",
+        "body": "",
+        "_id": "3b6741fb-449d-53f7-ae7b-64daa7be6b6c"
+      },
+      {
+        "key": "recital-volunteering",
+        "isVisible": true,
+        "sortOrder": 43,
+        "title": "Recital volunteering",
+        "page": "shows-and-competition/recital/index.html",
+        "body": "",
+        "_id": "03563609-c825-5800-9d5c-e1bcbe068ed8"
+      },
+      {
+        "key": "summer-title",
+        "isVisible": true,
+        "sortOrder": 44,
+        "title": "Summer page title",
+        "page": "Summer Intensive",
+        "text": "2025 Summer Schedule",
+        "_id": "75ab7e8d-3609-56b4-b14f-ff76cb36dcee"
+      },
+      {
+        "key": "summer-intensive-heading",
+        "isVisible": true,
+        "sortOrder": 45,
+        "title": "Summer Intensive heading",
+        "page": "Summer Intensive",
+        "text": "Summer Intensive",
+        "_id": "ca767709-47be-512c-9fef-3147a613ccf6"
+      },
+      {
+        "key": "summer-intensive-dates",
+        "isVisible": true,
+        "sortOrder": 46,
+        "title": "Summer Intensive dates and days",
+        "page": "Summer Intensive",
+        "text": "Classes meet Tuesdays, Wednesdays and Thursdays from June 17th–July 31st.",
+        "_id": "311c370e-8620-5009-bbda-76834a6a17d0"
+      },
+      {
+        "key": "summer-holiday-exception",
+        "isVisible": true,
+        "sortOrder": 47,
+        "title": "Summer holiday exception",
+        "page": "Summer Intensive",
+        "text": "No class the week of July 4th.",
+        "_id": "0ed13a1f-67c0-535b-9be0-828a0fb3e91e"
+      },
+      {
+        "key": "summer-combined-price",
+        "isVisible": true,
+        "sortOrder": 48,
+        "title": "Summer combined course price",
+        "page": "Summer Intensive",
+        "body": "<strong>$400.00</strong> for both courses.",
+        "_id": "661a5479-df5e-5527-8751-69d7da2df277"
+      },
+      {
+        "key": "summer-combined-description",
+        "isVisible": true,
+        "sortOrder": 49,
+        "title": "Summer combined course description",
+        "page": "Summer Intensive",
+        "body": "Your dancer will have 54 hours of training this summer with our intensive. Our Intensive is perfect for dancers 11 and older that are looking to not only maintain their dance over the summer but to grow and be challenged.",
+        "_id": "65c1be78-6928-5839-a49e-fc15449cbd60"
+      },
+      {
+        "key": "summer-flexibility",
+        "isVisible": true,
+        "sortOrder": 50,
+        "title": "Summer attendance and flexibility",
+        "page": "Summer Intensive",
+        "body": "We understand there are vacations planned and students will miss some days here and there. This intensive is designed to accommodate busy schedules with an open curriculum and an extremely discounted price. As well as, no Monday or Friday classes.",
+        "_id": "f4d4ad93-1733-5e44-847b-6add16c1caef"
+      },
+      {
+        "key": "summer-camps-heading",
+        "isVisible": true,
+        "sortOrder": 51,
+        "title": "Summer Camps heading",
+        "page": "Summer Intensive",
+        "text": "Summer Camps",
+        "_id": "396bcaa5-052e-5145-86d2-547298400c16"
+      },
+      {
+        "key": "summer-camps-notice",
+        "isVisible": true,
+        "sortOrder": 52,
+        "title": "Summer camp schedule notice",
+        "page": "Summer Intensive",
+        "body": "Schedule is subject to change or cancellation. Sign-up early to get the week you want.",
+        "_id": "3588e8ae-03d0-586f-8106-e473ce29e3a3"
+      },
+      {
+        "key": "summer-camp-logistics",
+        "isVisible": true,
+        "sortOrder": 53,
+        "title": "Summer camp full day and pickup information",
+        "page": "Summer Intensive",
+        "body": "Full-day camp is available by combining morning and afternoon camps. Early drop-off and Late pick-up are available for an additional charge of $10.00 per 30 minutes. Our Lunch Hour is Noon-1:00 PM.",
+        "_id": "5cde47fd-081e-576e-bc6f-fb8f5e0a4001"
+      },
+      {
+        "key": "summer-camp-lunch",
+        "isVisible": true,
+        "sortOrder": 54,
+        "title": "Summer camp lunch information",
+        "page": "Summer Intensive",
+        "body": "Campers in both the All-day and Half-day camps are welcome to join us for lunch.",
+        "_id": "1ea41dff-891a-5e56-8bbc-59479cdd613f"
+      },
+      {
+        "key": "summer-contact-heading",
+        "isVisible": true,
+        "sortOrder": 55,
+        "title": "Summer contact heading",
+        "page": "Summer Intensive",
+        "text": "Interested in Learning More?",
+        "_id": "86b0f669-a0ab-5b29-8a07-3742af33a434"
+      },
+      {
+        "key": "contact-title",
+        "isVisible": true,
+        "sortOrder": 56,
+        "title": "Contact page title",
+        "page": "Contact",
+        "text": "Contact Dance Institute",
+        "_id": "8eef6266-606d-594b-adb8-e4e84776f754"
+      },
+      {
+        "key": "contact-introduction",
+        "isVisible": true,
+        "sortOrder": 57,
+        "title": "Contact introduction",
+        "page": "Contact",
+        "text": "We are excited to hear from you! If you have any questions about our classes, schedule, or anything else, please reach out using the form below. Our team will respond promptly to ensure you have all the information you need.",
+        "_id": "8c66523c-c9fd-5e0a-85aa-032a404fe2fd"
+      },
+      {
+        "key": "register-heading-1",
+        "isVisible": true,
+        "sortOrder": 58,
+        "title": "Register",
+        "page": "Register",
+        "text": "Register",
+        "_id": "5cce6bbd-f59b-5689-be71-c2d54570a2c6"
+      },
+      {
+        "key": "register-heading-2",
+        "isVisible": true,
+        "sortOrder": 59,
+        "title": "Monthly Tuition",
+        "page": "Register",
+        "text": "Monthly Tuition",
+        "_id": "d9a31c3a-fa0a-566e-863f-6cb67deaf236"
+      },
+      {
+        "key": "register-heading-3",
+        "isVisible": true,
+        "sortOrder": 60,
+        "title": "Discounts Given",
+        "page": "Register",
+        "text": "Discounts Given",
+        "_id": "6e004a14-81d1-524d-b08a-086925cfcc55"
+      },
+      {
+        "key": "register-heading-4",
+        "isVisible": true,
+        "sortOrder": 61,
+        "title": "Membership Fee",
+        "page": "Register",
+        "text": "Membership Fee",
+        "_id": "443823b3-b970-5cfc-af4e-7983c3b106fd"
+      },
+      {
+        "key": "register-heading-5",
+        "isVisible": true,
+        "sortOrder": 62,
+        "title": "How to Register:",
+        "page": "Register",
+        "text": "How to Register:",
+        "_id": "09c6ead1-6f75-5f5b-996d-c9ac9c450d99"
+      },
+      {
+        "key": "register-instructions",
+        "isVisible": true,
+        "sortOrder": 63,
+        "title": "Registration instructions",
+        "page": "Register",
+        "body": "Please click “Register Now!” then click “Learn More.” Once you have purchased your membership, you will be guided through the registration process. Ignore our waitlists. We have put those in place to ensure all the appropriate discounts are applied. If you have any questions or need any assistance please call <a href=\"tel:+13035250011\">303-525-0011</a>.",
+        "_id": "1a064351-1d3d-550d-8c13-c40a17d9bcde"
+      }
+    ],
+    "DiLinks": [
+      {
+        "key": "home-discover",
+        "isVisible": true,
+        "sortOrder": 0,
+        "title": "home-discover",
+        "page": "Home",
+        "url": "@/dance-classes/index.html",
+        "label": "Discover More",
+        "_id": "48dbbd9a-9f6f-5a49-8e66-15f8c64d4030"
+      },
+      {
+        "key": "home-schedule",
+        "isVisible": true,
+        "sortOrder": 1,
+        "title": "home-schedule",
+        "page": "Home",
+        "url": "@/schedule/index.html",
+        "label": "Schedule",
+        "_id": "523b831b-672c-54bd-b24f-7a7974bed8ef"
+      },
+      {
+        "key": "schedule-register",
+        "isVisible": true,
+        "sortOrder": 2,
+        "title": "Schedule registration button",
+        "page": "Schedule",
+        "url": "@/register/index.html",
+        "label": "Register Now",
+        "_id": "1990c7db-8872-5179-85a9-42fd3ad0dfc6"
+      },
+      {
+        "key": "nutcracker-venue-link",
+        "isVisible": true,
+        "sortOrder": 3,
+        "title": "Show venue directions",
+        "page": "shows-and-competition/nutcracker/index.html",
+        "url": "https://www.google.com/maps/dir/?api=1&destination=Adams+City+High+School%2C+7200+Quebec+Parkway%2C+Commerce+City%2C+CO+80022",
+        "_id": "4bbd3cb9-c2d6-5c7f-815a-cc4059a2d442"
+      },
+      {
+        "key": "nutcracker-tickets-link",
+        "isVisible": true,
+        "sortOrder": 4,
+        "title": "Nutcracker tickets link",
+        "page": "shows-and-competition/nutcracker/index.html",
+        "label": "",
+        "url": "",
+        "_id": "f7fca8ae-3649-5ecd-869c-aedfb387d18a"
+      },
+      {
+        "key": "nutcracker-merch-link",
+        "isVisible": true,
+        "sortOrder": 5,
+        "title": "Nutcracker merchandise link",
+        "page": "shows-and-competition/nutcracker/index.html",
+        "label": "",
+        "url": "",
+        "_id": "ec68052f-0e35-5bd9-bee9-05f6dffd007f"
+      },
+      {
+        "key": "nutcracker-contact-link",
+        "isVisible": true,
+        "sortOrder": 6,
+        "title": "Nutcracker contact link",
+        "page": "shows-and-competition/nutcracker/index.html",
+        "url": "@/contact/index.html",
+        "label": "Contact Us",
+        "_id": "33fe37db-7668-5725-9eda-2c7e0755911a"
+      },
+      {
+        "key": "recital-information-link",
+        "isVisible": true,
+        "sortOrder": 7,
+        "title": "Recital information link",
+        "page": "shows-and-competition/recital/index.html",
+        "label": "",
+        "url": "",
+        "_id": "4daeef97-fb38-5da0-8b19-0f58a4e84287"
+      },
+      {
+        "key": "recital-volunteering-link",
+        "isVisible": true,
+        "sortOrder": 8,
+        "title": "Recital volunteering link",
+        "page": "shows-and-competition/recital/index.html",
+        "label": "",
+        "url": "",
+        "_id": "408a526a-1535-5160-bcbc-1dbe744addcc"
+      },
+      {
+        "key": "summer-register",
+        "isVisible": true,
+        "sortOrder": 9,
+        "title": "Summer registration button",
+        "page": "Summer Intensive",
+        "url": "@/register/index.html",
+        "label": "Register Now",
+        "_id": "da39edbb-a847-5a92-8237-0052196866dc"
+      },
+      {
+        "key": "summer-contact",
+        "isVisible": true,
+        "sortOrder": 10,
+        "title": "Summer contact button",
+        "page": "Summer Intensive",
+        "url": "@/contact/index.html",
+        "label": "Contact Us",
+        "_id": "db5c80c4-1736-5c18-a614-8070e1ee6bae"
+      },
+      {
+        "key": "register-now",
+        "isVisible": true,
+        "sortOrder": 11,
+        "title": "Register Now button",
+        "page": "Register",
+        "url": "#sawyer-widget",
+        "label": "Register Now!",
+        "_id": "b15aed59-e297-5496-81c5-31db2524a1bf"
+      }
+    ],
+    "DiFeatures": [
+      {
+        "key": "feature-1",
+        "isVisible": true,
+        "sortOrder": 0,
+        "title": "Parental Viewing",
+        "body": "Dance Institute welcomes parents to view classes. We want you to see what your child is learning and growing from the instruction provided from our teachers. We also offer comfortable chairs in a designated viewing area.",
+        "_id": "52bc84e8-ee0e-521e-93f3-4b359fe229a0"
+      },
+      {
+        "key": "feature-2",
+        "isVisible": true,
+        "sortOrder": 1,
+        "title": "Affordable Classes",
+        "body": "We offer combination classes so that students receive a well-rounded dance education without the expense of attending multiple classes. You can learn hip hop dance, ballet, tap dance and more at our Denver studio.",
+        "_id": "70f0e144-61b8-55d9-99e1-c0f1c95c0fdc"
+      },
+      {
+        "key": "feature-3",
+        "isVisible": true,
+        "sortOrder": 2,
+        "title": "Non-competitive Atmosphere",
+        "body": "No student or group of students receives more performing focus than others. All our dance students are welcomed into our dance community. Our dance studio offers a supportive atmosphere and provide an educational dance platform to allow your dancer to grow to their fullest potential.",
+        "_id": "0bd13a82-f763-55c5-b2c5-d5575a55342e"
+      },
+      {
+        "key": "feature-4",
+        "isVisible": true,
+        "sortOrder": 3,
+        "title": "Community Focused",
+        "body": "We perform at many community events throughout Denver, and at retirement homes as well. We donate show proceeds to local schools as well as raise funds for local charities.",
+        "_id": "39008c78-76f1-5e8a-9e91-5f9c1e3ca367"
+      },
+      {
+        "key": "feature-5",
+        "isVisible": true,
+        "sortOrder": 4,
+        "title": "Parental Involvement",
+        "body": "The Dance Institute Parent Organization (DIPO) is designated to create community within our Denver dance school. Parent involvement is key to success in any education and we encourage all our parents to become involved in our parent community.",
+        "_id": "4fe2d731-6748-555d-bbf2-cc96a8739df0"
+      },
+      {
+        "key": "feature-6",
+        "isVisible": true,
+        "sortOrder": 5,
+        "title": "Structured Curriculum",
+        "body": "The Dance Institute school year runs September through June with a recital in June. Students will \"\"graduate\"\" in June into the classes starting the following September.",
+        "_id": "7c136a43-7c0f-5568-b9b4-cde1dbde96e1"
+      }
+    ],
+    "DiTestimonials": [
+      {
+        "key": "review-1",
+        "isVisible": true,
+        "sortOrder": 0,
+        "title": "Lauren Still",
+        "quote": "\"My daughter has grown up with a love of dance from a young age thanks to 5+ years with Dance Institute LLC and Ms. Michele. Dance Institute LLC has offered the perfect balance for our young dancer — great instruction and progressive growth with a relaxed, family-friendly, non-competitive atmosphere. I highly recommend Ms. Michele and Dance Institute\"",
+        "_id": "92da8da1-1ce9-544e-b746-de5dcaa571fb"
+      },
+      {
+        "key": "review-2",
+        "isVisible": true,
+        "sortOrder": 1,
+        "title": "Sarah B.",
+        "quote": "\"Dance with Miss Michele is the highlight of my (4 year old) daughter's week. This is her second year dancing and, not only does she continue to love it, but aslso she is learning all the basics at a young age.  Michele does a great job meeting her young students where they are and steadily teaching them skills poise , and positions while they smile and dance the hour away.\"",
+        "_id": "604ba15d-8ee5-534b-b170-e2822f63d0d1"
+      },
+      {
+        "key": "review-3",
+        "isVisible": true,
+        "sortOrder": 2,
+        "title": "Olivia Brown",
+        "quote": "\"Every class at Dance Institute is an opportunity to express myself and improve my skills. I love being part of this amazing dance family!\"",
+        "_id": "4c5de002-2ba6-5546-930d-1d6dfc2a75fd"
+      },
+      {
+        "key": "review-4",
+        "isVisible": true,
+        "sortOrder": 3,
+        "title": "Lera Andronova",
+        "quote": "Dance Institute has helped me grow in so many ways, both as a dancer and as a person, and taught me lessons I’ll carry with me for the rest of my life. I have so much love for the teachers and dancers who make it such a special place. Everyone is so supportive, and DI really feels like my second family!",
+        "_id": "44106651-0d37-5f5f-aafe-b0807addbf5d"
+      }
+    ],
+    "DiClassCategories": [
+      {
+        "key": "combo-classes",
+        "isVisible": true,
+        "sortOrder": 0,
+        "title": "Combo Classes",
+        "categoryOrder": 0,
+        "_id": "dd10c74c-f7fe-5cbc-80ff-aeb65431c663"
+      },
+      {
+        "key": "advanced-classes",
+        "isVisible": true,
+        "sortOrder": 1,
+        "title": "Advanced Classes",
+        "categoryOrder": 1,
+        "_id": "bd5bff50-ecd2-5f89-9f8e-6a14a5682a5d"
+      },
+      {
+        "key": "ballet-classes",
+        "isVisible": true,
+        "sortOrder": 2,
+        "title": "Ballet Classes",
+        "categoryOrder": 2,
+        "_id": "c98a358c-449c-5dbc-8fce-c9d737c1abee"
+      },
+      {
+        "key": "hip-hop-classes",
+        "isVisible": true,
+        "sortOrder": 3,
+        "title": "Hip-Hop Classes",
+        "categoryOrder": 3,
+        "_id": "2f9eebaa-b0ad-5782-ac36-273eb7175186"
+      },
+      {
+        "key": "additional-classes",
+        "isVisible": true,
+        "sortOrder": 4,
+        "title": "Additional Classes",
+        "categoryOrder": 4,
+        "_id": "cefb71d7-93dd-538e-93da-81d2ef4b6851"
+      }
+    ],
+    "DiClasses": [
+      {
+        "key": "combo-classes-1",
+        "isVisible": true,
+        "sortOrder": 0,
+        "title": "3-4 Year Old",
+        "description": "A one-hour combination of ballet, tap and tumbling for ages 3–4.",
+        "category": "combo-classes",
+        "categoryOrder": 0,
+        "_id": "a09926a3-7661-5d25-97fd-350ba38f2897"
+      },
+      {
+        "key": "combo-classes-2",
+        "isVisible": true,
+        "sortOrder": 1,
+        "title": "4-5 Year Old",
+        "description": "A one-hour combination of ballet, tap and tumbling for ages 4–5.",
+        "category": "combo-classes",
+        "categoryOrder": 0,
+        "_id": "eca85ed2-9f56-5cae-b117-f84952c26527"
+      },
+      {
+        "key": "combo-classes-3",
+        "isVisible": true,
+        "sortOrder": 2,
+        "title": "5-7 Year Old",
+        "description": "A one-hour combination of ballet, tap and tumbling for ages 5–7.",
+        "category": "combo-classes",
+        "categoryOrder": 0,
+        "_id": "eb60c3e2-9340-59af-a2d5-9e83fa6bb87f"
+      },
+      {
+        "key": "combo-classes-4",
+        "isVisible": true,
+        "sortOrder": 3,
+        "title": "6-9 Year Old",
+        "description": "A 75-minute combination of ballet, tap and jazz for ages 6–9.",
+        "category": "combo-classes",
+        "categoryOrder": 0,
+        "_id": "2b7c3f03-f713-5741-8cea-1c7ab12c4c0e"
+      },
+      {
+        "key": "combo-classes-5",
+        "isVisible": true,
+        "sortOrder": 4,
+        "title": "8-11 Year Old",
+        "description": "A 90-minute combination of ballet, tap and jazz for ages 8–11.",
+        "category": "combo-classes",
+        "categoryOrder": 0,
+        "_id": "ed7823dc-6089-58d8-a6ae-513197552a34"
+      },
+      {
+        "key": "advanced-classes-1",
+        "isVisible": true,
+        "sortOrder": 0,
+        "title": "Jazz 1",
+        "description": "A one-hour jazz class for ages 9 and up focused on rhythm, coordination and technique.",
+        "category": "advanced-classes",
+        "categoryOrder": 1,
+        "_id": "c48913a6-fed2-5085-a450-b9914b773b68"
+      },
+      {
+        "key": "advanced-classes-2",
+        "isVisible": true,
+        "sortOrder": 1,
+        "title": "Jazz 2",
+        "description": "One hour of level 2 jazz technique and combinations for ages 11 and up.",
+        "category": "advanced-classes",
+        "categoryOrder": 1,
+        "_id": "3d110e9e-275b-54c7-9f4a-4228b02a5730"
+      },
+      {
+        "key": "advanced-classes-3",
+        "isVisible": true,
+        "sortOrder": 2,
+        "title": "Jazz 3",
+        "description": "One hour of level 3 jazz technique and combinations for ages 12 and up.",
+        "category": "advanced-classes",
+        "categoryOrder": 1,
+        "_id": "17758992-e7d5-583e-a47a-56f757dc2371"
+      },
+      {
+        "key": "advanced-classes-4",
+        "isVisible": true,
+        "sortOrder": 3,
+        "title": "Jazz 4",
+        "description": "One hour of level 4 jazz technique and combinations for ages 12 and up.",
+        "category": "advanced-classes",
+        "categoryOrder": 1,
+        "_id": "2e52686d-64bb-5a8a-a96c-56b0a4b455ab"
+      },
+      {
+        "key": "advanced-classes-5",
+        "isVisible": true,
+        "sortOrder": 4,
+        "title": "Contemporary/Lyrical 1",
+        "description": "A one-hour contemporary and lyrical class for ages 9 and up combining expressive movement and technique.",
+        "category": "advanced-classes",
+        "categoryOrder": 1,
+        "_id": "19c164cb-a601-5eca-9f3f-e25dc385b0b6"
+      },
+      {
+        "key": "advanced-classes-6",
+        "isVisible": true,
+        "sortOrder": 5,
+        "title": "Contemporary/Lyrical 2",
+        "description": "One hour of level 2 contemporary and lyrical dance for ages 11 and up.",
+        "category": "advanced-classes",
+        "categoryOrder": 1,
+        "_id": "40886727-49f4-5f5e-8525-f106e2323c27"
+      },
+      {
+        "key": "advanced-classes-7",
+        "isVisible": true,
+        "sortOrder": 6,
+        "title": "Contemporary/Lyrical 3",
+        "description": "One hour of level 3 contemporary and lyrical dance for ages 12 and up.",
+        "category": "advanced-classes",
+        "categoryOrder": 1,
+        "_id": "27c2be54-b456-59ff-9835-85a0c4e1383e"
+      },
+      {
+        "key": "advanced-classes-8",
+        "isVisible": true,
+        "sortOrder": 7,
+        "title": "Contemporary/Lyrical 4",
+        "description": "One hour of level 4 contemporary and lyrical dance for ages 12 and up.",
+        "category": "advanced-classes",
+        "categoryOrder": 1,
+        "_id": "64c0a314-b854-539d-8a07-2389f96e69d6"
+      },
+      {
+        "key": "ballet-classes-1",
+        "isVisible": true,
+        "sortOrder": 0,
+        "title": "Ballet/Pre-Pointe",
+        "description": "A 90-minute class for ages 9 and up combining ballet technique with preparation for pointe.",
+        "category": "ballet-classes",
+        "categoryOrder": 2,
+        "_id": "cddeac5c-e5cc-524e-82b3-ddf13cd27bf1"
+      },
+      {
+        "key": "ballet-classes-2",
+        "isVisible": true,
+        "sortOrder": 1,
+        "title": "Intro to Pointe/Pointe 1",
+        "description": "A one-hour introduction to pointe technique for dancers ages 12 and up.",
+        "category": "ballet-classes",
+        "categoryOrder": 2,
+        "_id": "8e58db49-2e37-50a5-a6b2-e436cc0851e9"
+      },
+      {
+        "key": "ballet-classes-3",
+        "isVisible": true,
+        "sortOrder": 2,
+        "title": "Pointe 2",
+        "description": "One hour of level 2 pointe technique for dancers ages 12 and up.",
+        "category": "ballet-classes",
+        "categoryOrder": 2,
+        "_id": "996df16a-9a93-556c-98b8-135a71b6638e"
+      },
+      {
+        "key": "ballet-classes-4",
+        "isVisible": true,
+        "sortOrder": 3,
+        "title": "Pointe 3",
+        "description": "One hour of level 3 pointe technique for dancers ages 12 and up.",
+        "category": "ballet-classes",
+        "categoryOrder": 2,
+        "_id": "4585d3ac-1c5c-584d-81f1-594be4ddb125"
+      },
+      {
+        "key": "ballet-classes-5",
+        "isVisible": true,
+        "sortOrder": 4,
+        "title": "Advanced Pointe Technique",
+        "description": "A 90-minute technique class for dancers in Pointe levels 2 and 3.",
+        "category": "ballet-classes",
+        "categoryOrder": 2,
+        "_id": "5db23642-baf5-5f4c-bee3-235fdc73e47a"
+      },
+      {
+        "key": "hip-hop-classes-1",
+        "isVisible": true,
+        "sortOrder": 0,
+        "title": "Hip-Hop Intro",
+        "description": "A 45-minute introduction to hip-hop rhythm and movement for ages 5–8.",
+        "category": "hip-hop-classes",
+        "categoryOrder": 3,
+        "_id": "39ed659f-b7b8-5eb1-aae9-4311dc828e8a"
+      },
+      {
+        "key": "hip-hop-classes-2",
+        "isVisible": true,
+        "sortOrder": 1,
+        "title": "Hip-Hop 1",
+        "description": "One hour of hip-hop technique and choreography for ages 8–11.",
+        "category": "hip-hop-classes",
+        "categoryOrder": 3,
+        "_id": "db1fc463-1195-5ca3-a0ac-783292556d2c"
+      },
+      {
+        "key": "hip-hop-classes-3",
+        "isVisible": true,
+        "sortOrder": 2,
+        "title": "Hip-Hop 2",
+        "description": "A 75-minute class in level 2 hip-hop technique and choreography for ages 11 and up.",
+        "category": "hip-hop-classes",
+        "categoryOrder": 3,
+        "_id": "0abf4689-9361-503d-b493-475402a5ffa9"
+      },
+      {
+        "key": "hip-hop-classes-4",
+        "isVisible": true,
+        "sortOrder": 3,
+        "title": "Hip-Hop 3",
+        "description": "A 75-minute class in level 3 hip-hop technique and choreography for ages 11 and up.",
+        "category": "hip-hop-classes",
+        "categoryOrder": 3,
+        "_id": "b701873f-033b-5ba4-9031-57a3f6bcb9e7"
+      },
+      {
+        "key": "additional-classes-1",
+        "isVisible": true,
+        "sortOrder": 0,
+        "title": "Trot'n Tots",
+        "description": "A 45-minute creative movement class exploring rhythm and movement.",
+        "category": "additional-classes",
+        "categoryOrder": 4,
+        "_id": "10eaf0ec-0567-538c-a1c1-f5b79d315888"
+      },
+      {
+        "key": "additional-classes-2",
+        "isVisible": true,
+        "sortOrder": 1,
+        "title": "Musical Theater",
+        "description": "A one-hour class combining Broadway-style jazz and tap.",
+        "category": "additional-classes",
+        "categoryOrder": 4,
+        "_id": "88414414-d46f-5454-88e0-ceb74354876b"
+      },
+      {
+        "key": "additional-classes-3",
+        "isVisible": true,
+        "sortOrder": 2,
+        "title": "Leaps, Turns, Tricks Adv 1/2",
+        "description": "Technique practice in leaps, turns and dance tricks for advanced levels 1 and 2.",
+        "category": "additional-classes",
+        "categoryOrder": 4,
+        "_id": "458d2eb0-eca3-52dd-88c6-bbd5745c2c21"
+      },
+      {
+        "key": "additional-classes-4",
+        "isVisible": true,
+        "sortOrder": 3,
+        "title": "Leaps, Turns, Tricks Adv 3/4",
+        "description": "Technique practice in leaps, turns and dance tricks for advanced levels 3 and 4.",
+        "category": "additional-classes",
+        "categoryOrder": 4,
+        "_id": "5e6b5ad9-d683-5ad9-a370-5447cda3cadc"
+      },
+      {
+        "key": "additional-classes-5",
+        "isVisible": true,
+        "sortOrder": 4,
+        "title": "Intro to Poms",
+        "description": "A one-hour introduction to pom dance, arm motions and coordinated movement for ages 9 and up.",
+        "category": "additional-classes",
+        "categoryOrder": 4,
+        "_id": "7c0f9b67-118e-5293-8ee8-cc593f48eac2"
+      },
+      {
+        "key": "additional-classes-6",
+        "isVisible": true,
+        "sortOrder": 5,
+        "title": "Adult Tap",
+        "description": "A tap class for adults focused on rhythm, footwork and coordination.",
+        "category": "additional-classes",
+        "categoryOrder": 4,
+        "_id": "5203d46c-5d72-53ff-ab3b-21aef2b97c6e"
+      }
+    ],
+    "DiTeachers": [
+      {
+        "key": "miss-michele",
+        "isVisible": true,
+        "sortOrder": 0,
+        "name": "Miss Michele",
+        "bio": "<p>“A dream comes true” is how Miss Michele views Dance Institute LLC. With a passion for dance since the age of 3 and a passion for teaching since 9, the best way to describe Dance Institute is “living a dream.”</p><p>“First and foremost I am a teacher,” Miss Michele says. “To see a student learn and then master their technique is an absolute joy for me. Nothing in the world makes me happier than to see my students blossom into dancers.” Miss Michele adapts her style for a wide variety of ages while maintaining a fun and playful atmosphere. Miss Michele has been dancing for 40+ years and is trained in ballet, tap, jazz, hip-hop, modern, tumbling and ballroom. She accumulated many performances and choreography credits while attending the University of Minnesota. She was also the TA for tap and ballroom courses at the University and started assisting in ballet, jazz, tap and tumbling class at the age of 14.</p><p>“Assisting was the best way to develop my technique. After hundreds of plies and shuffles 4 hours a day, 4 days per week, mastery appeared.” says Miss Michele. After college, she taught at a large studio in Minnesota where she developed her choreography muscle that originally appeared in college.</p><p>Dance Institute LLC is family-owned and operated and, since we opened our doors in 2005, we’ve treated every customer like they were a part of our family.</p>",
+        "image": "https://static.wixstatic.com/media/24dcb0_8459d185060c485f8c9e4fe569aacd84~mv2.webp",
+        "alt": "Miss Michele",
+        "focalX": 50,
+        "focalY": 50,
+        "_id": "d3573e40-e228-57f8-add5-33c87acf62b3"
+      },
+      {
+        "key": "miss-jennifer",
+        "isVisible": true,
+        "sortOrder": 1,
+        "name": "Miss Jennifer",
+        "bio": "",
+        "image": "",
+        "alt": "Miss Jennifer",
+        "focalX": 50,
+        "focalY": 50,
+        "_id": "be465d64-b4b2-5401-9390-a815c486b8ae"
+      },
+      {
+        "key": "miss-rachel",
+        "isVisible": true,
+        "sortOrder": 2,
+        "name": "Miss Rachel",
+        "bio": "",
+        "image": "",
+        "alt": "Miss Rachel",
+        "focalX": 50,
+        "focalY": 50,
+        "_id": "a684e0d7-d1b0-5b57-bcd2-5e74fd97e0fd"
+      },
+      {
+        "key": "miss-susie",
+        "isVisible": true,
+        "sortOrder": 3,
+        "name": "Miss Susie",
+        "bio": "",
+        "image": "",
+        "alt": "Miss Susie",
+        "focalX": 50,
+        "focalY": 50,
+        "_id": "7214e904-ed58-5e99-8055-47bf126ff1fa"
+      },
+      {
+        "key": "miss-brianna",
+        "isVisible": true,
+        "sortOrder": 4,
+        "name": "Miss Brianna",
+        "bio": "",
+        "image": "",
+        "alt": "Miss Brianna",
+        "focalX": 50,
+        "focalY": 50,
+        "_id": "77737f24-e28b-5580-b12f-b8cf8d38168e"
+      },
+      {
+        "key": "miss-ellary",
+        "isVisible": true,
+        "sortOrder": 5,
+        "name": "Miss Ellary",
+        "bio": "",
+        "image": "",
+        "alt": "Miss Ellary",
+        "focalX": 50,
+        "focalY": 50,
+        "_id": "5489160a-bd57-58e8-a45f-f5755127969b"
+      }
+    ],
+    "DiPolicies": [
+      {
+        "key": "rules-and-safety",
+        "isVisible": true,
+        "sortOrder": 0,
+        "title": "Rules and Safety",
+        "body": "<p>Safety is of the utmost importance. The best way for everyone to be safe is to follow directions.</p><ul class=\"policy-rules\"><li>Students that pose a risk to others with their behavior will be asked to sit out.</li><li>No hanging from the ballet barres.</li><li>No gum or jewelry in class.</li><li>Students may bring a closed water bottle into class.</li></ul>",
+        "_id": "440ecd2e-92c9-5756-b444-c7717038e4b8"
+      },
+      {
+        "key": "attire",
+        "isVisible": true,
+        "sortOrder": 1,
+        "title": "Attire",
+        "body": "<p>Proper attire is very important in dance. It allows for freedom of movement and is also needed for the instructor to view a student’s body positions. Female dancers up to age 9 will wear black short sleeve leotards and pink tights. Tights and leotards of any color are the base attire for all classes. Skirts may be worn during Ballet and dance pants may be worn during Jazz, Tap and Hip-Hop. Male dancers of all ages may wear dance pants and T-shirts. Please, nothing loose or baggy. All dancers will need the proper shoes. Dancewear can be purchased through the studio.</p>",
+        "_id": "9056274f-fe26-5345-85ba-5c6e934c6b18"
+      },
+      {
+        "key": "hair",
+        "isVisible": true,
+        "sortOrder": 2,
+        "title": "Hair",
+        "body": "<p>Hair must be off the face. A bun is best for long hair. Pigtails are best for students in tumbling.</p>",
+        "_id": "f662e44a-9a66-5603-9674-7d7439a244f6"
+      },
+      {
+        "key": "class-viewing",
+        "isVisible": true,
+        "sortOrder": 3,
+        "title": "Class viewing",
+        "body": "<p>While viewing class, we ask that you refrain from talking.</p>",
+        "_id": "4a8c1def-8572-5919-8ad9-0726c0337243"
+      }
+    ],
+    "DiSchedule": [
+      {
+        "key": "schedule-row-1",
+        "isVisible": true,
+        "sortOrder": 0,
+        "title": "Trot'n Tots",
+        "description": "45 min Creative Movement",
+        "monday": "",
+        "tuesday": "",
+        "wednesday": "",
+        "thursday": "",
+        "friday": "",
+        "saturday": "8:15AM",
+        "_id": "12c0538d-8c62-5fdc-b17f-0b5841bba87a"
+      },
+      {
+        "key": "schedule-row-2",
+        "isVisible": true,
+        "sortOrder": 1,
+        "title": "3-4 Year Old 1 Hr",
+        "description": "1 Hr Ballet, Tap, Tumbling",
+        "monday": "",
+        "tuesday": "",
+        "wednesday": "",
+        "thursday": "4:30PM",
+        "friday": "",
+        "saturday": "9:00AM",
+        "_id": "650a713a-9862-589b-8d34-3745b6238b4a"
+      },
+      {
+        "key": "schedule-row-3",
+        "isVisible": true,
+        "sortOrder": 2,
+        "title": "4-5 Year Old 1 Hr",
+        "description": "1 Hr Ballet, Tap, Tumbling",
+        "monday": "",
+        "tuesday": "4:00PM",
+        "wednesday": "",
+        "thursday": "",
+        "friday": "",
+        "saturday": "10:00AM",
+        "_id": "42786389-edf1-5c7c-9e05-7948a33b5371"
+      },
+      {
+        "key": "schedule-row-4",
+        "isVisible": true,
+        "sortOrder": 3,
+        "title": "5-7 Year Old 1 Hr",
+        "description": "1 Hr Ballet, Tap, Tumbling",
+        "monday": "",
+        "tuesday": "5:00PM",
+        "wednesday": "",
+        "thursday": "",
+        "friday": "",
+        "saturday": "11:00AM",
+        "_id": "3766a874-38a6-5fee-91e8-0e27e894d2b5"
+      },
+      {
+        "key": "schedule-row-5",
+        "isVisible": true,
+        "sortOrder": 4,
+        "title": "6-9 Year Old 1.25 Hr",
+        "description": "1.25 Hr Ballet, Tap, Jazz",
+        "monday": "4:15PM",
+        "tuesday": "",
+        "wednesday": "",
+        "thursday": "",
+        "friday": "",
+        "saturday": "9:00AM",
+        "_id": "1d5610ff-4d22-55d9-bb45-3ef041febf61"
+      },
+      {
+        "key": "schedule-row-6",
+        "isVisible": true,
+        "sortOrder": 5,
+        "title": "8-11 Year Old 1.5 Hr",
+        "description": "1.5 Hr Ballet, Tap, Jazz",
+        "monday": "",
+        "tuesday": "",
+        "wednesday": "4:00PM",
+        "thursday": "",
+        "friday": "",
+        "saturday": "10:15AM",
+        "_id": "1ade3d3e-e112-5e67-9ab2-cf5665002175"
+      },
+      {
+        "key": "schedule-row-7",
+        "isVisible": true,
+        "sortOrder": 6,
+        "title": "Musical Theater",
+        "description": "1 Hr Broadway Style Jazz & Tap",
+        "monday": "",
+        "tuesday": "",
+        "wednesday": "5:30PM",
+        "thursday": "",
+        "friday": "",
+        "saturday": "",
+        "_id": "7cedcd33-9c69-5acd-af5f-af3f4e03b665"
+      },
+      {
+        "key": "schedule-row-8",
+        "isVisible": true,
+        "sortOrder": 7,
+        "title": "Ballet/Pre-Pointe",
+        "description": "1.5 Hr 9-up",
+        "monday": "5:00PM",
+        "tuesday": "",
+        "wednesday": "",
+        "thursday": "4:30PM",
+        "friday": "",
+        "saturday": "",
+        "_id": "06de0b32-6e68-5de7-a035-9a2c9de6b245"
+      },
+      {
+        "key": "schedule-row-9",
+        "isVisible": true,
+        "sortOrder": 8,
+        "title": "Intro to Pointe/Pointe 1",
+        "description": "1Hr ages 12-up*",
+        "monday": "6:00PM",
+        "tuesday": "",
+        "wednesday": "",
+        "thursday": "5:30PM",
+        "friday": "",
+        "saturday": "",
+        "_id": "1cf19d5e-7092-5b25-b7ed-44305630a4f0"
+      },
+      {
+        "key": "schedule-row-10",
+        "isVisible": true,
+        "sortOrder": 9,
+        "title": "Pointe 2",
+        "description": "1Hr ages 12-up*",
+        "monday": "",
+        "tuesday": "",
+        "wednesday": "",
+        "thursday": "6:30PM",
+        "friday": "",
+        "saturday": "",
+        "_id": "5c351997-6660-5160-9b92-420a292cee4c"
+      },
+      {
+        "key": "schedule-row-11",
+        "isVisible": true,
+        "sortOrder": 10,
+        "title": "Pointe 3",
+        "description": "1Hr ages 12-up*",
+        "monday": "",
+        "tuesday": "",
+        "wednesday": "",
+        "thursday": "7:30PM",
+        "friday": "",
+        "saturday": "",
+        "_id": "d98994e8-75a4-51ae-a240-02ccec6d8d69"
+      },
+      {
+        "key": "schedule-row-12",
+        "isVisible": true,
+        "sortOrder": 11,
+        "title": "Pointe Adv Tech",
+        "description": "1.5 Hr Levels 2 & 3 Only",
+        "monday": "7:00PM",
+        "tuesday": "",
+        "wednesday": "",
+        "thursday": "",
+        "friday": "",
+        "saturday": "",
+        "_id": "e0bf1a09-e0cd-57b9-ba37-b7350aa4d9ab"
+      },
+      {
+        "key": "schedule-row-13",
+        "isVisible": true,
+        "sortOrder": 12,
+        "title": "Jazz 1",
+        "description": "1 Hr ages 9-up*",
+        "monday": "",
+        "tuesday": "",
+        "wednesday": "7:30PM",
+        "thursday": "",
+        "friday": "",
+        "saturday": "",
+        "_id": "0b2d5d61-2bd0-59bd-b90a-f8ac90a5ad83"
+      },
+      {
+        "key": "schedule-row-14",
+        "isVisible": true,
+        "sortOrder": 13,
+        "title": "Jazz 2",
+        "description": "1 Hr ages 11-up*",
+        "monday": "",
+        "tuesday": "",
+        "wednesday": "6:30PM",
+        "thursday": "",
+        "friday": "",
+        "saturday": "",
+        "_id": "20440422-3010-5bf5-b16a-8535a2003f27"
+      },
+      {
+        "key": "schedule-row-15",
+        "isVisible": true,
+        "sortOrder": 14,
+        "title": "Jazz 3",
+        "description": "1 Hr ages 12-up*",
+        "monday": "",
+        "tuesday": "6:30PM",
+        "wednesday": "",
+        "thursday": "",
+        "friday": "",
+        "saturday": "",
+        "_id": "c6dc6dc0-8036-514c-877e-348e76a2b6cf"
+      },
+      {
+        "key": "schedule-row-16",
+        "isVisible": true,
+        "sortOrder": 15,
+        "title": "Jazz 4",
+        "description": "1 Hr ages 12-up*",
+        "monday": "",
+        "tuesday": "7:30PM",
+        "wednesday": "",
+        "thursday": "",
+        "friday": "",
+        "saturday": "",
+        "_id": "8c355973-370d-5fcf-acb5-2db3e466e78f"
+      },
+      {
+        "key": "schedule-row-17",
+        "isVisible": true,
+        "sortOrder": 16,
+        "title": "Contemp/Lyrical 1",
+        "description": "1 Hr ages 9-up*",
+        "monday": "",
+        "tuesday": "",
+        "wednesday": "6:30PM",
+        "thursday": "",
+        "friday": "",
+        "saturday": "",
+        "_id": "999fe9d4-7af0-5739-b314-273b2230467e"
+      },
+      {
+        "key": "schedule-row-18",
+        "isVisible": true,
+        "sortOrder": 17,
+        "title": "Contemp/Lyrical 2",
+        "description": "1 Hr ages 11-up*",
+        "monday": "",
+        "tuesday": "",
+        "wednesday": "7:30PM",
+        "thursday": "",
+        "friday": "",
+        "saturday": "",
+        "_id": "f40129b8-232b-5ec9-a7d2-1be3edc3825d"
+      },
+      {
+        "key": "schedule-row-19",
+        "isVisible": true,
+        "sortOrder": 18,
+        "title": "Contemp/Lyrical 3",
+        "description": "1 Hr ages 12-up*",
+        "monday": "",
+        "tuesday": "7:30PM",
+        "wednesday": "",
+        "thursday": "",
+        "friday": "",
+        "saturday": "",
+        "_id": "db5f51e2-d5ea-586b-9862-638af7bd7512"
+      },
+      {
+        "key": "schedule-row-20",
+        "isVisible": true,
+        "sortOrder": 19,
+        "title": "Contemp/Lyrical 4",
+        "description": "1 Hr ages 12-up*",
+        "monday": "",
+        "tuesday": "6:30PM",
+        "wednesday": "",
+        "thursday": "",
+        "friday": "",
+        "saturday": "",
+        "_id": "87062e41-a89d-507b-b965-59d1813131d0"
+      },
+      {
+        "key": "schedule-row-21",
+        "isVisible": true,
+        "sortOrder": 20,
+        "title": "Hip-Hop Intro",
+        "description": "45 Min ages 5-8",
+        "monday": "",
+        "tuesday": "",
+        "wednesday": "4:45PM",
+        "thursday": "",
+        "friday": "",
+        "saturday": "",
+        "_id": "42e714bd-e591-56f0-917a-8b682710c3f3"
+      },
+      {
+        "key": "schedule-row-22",
+        "isVisible": true,
+        "sortOrder": 21,
+        "title": "Hip-Hop 1",
+        "description": "1 Hr ages 8-11",
+        "monday": "",
+        "tuesday": "",
+        "wednesday": "5:30PM",
+        "thursday": "",
+        "friday": "",
+        "saturday": "",
+        "_id": "d0e5d5f1-4aaf-53b1-9587-317003dcb1cf"
+      },
+      {
+        "key": "schedule-row-23",
+        "isVisible": true,
+        "sortOrder": 22,
+        "title": "Hip-Hop 2",
+        "description": "1.25 Hr 11-Up*",
+        "monday": "7:00PM",
+        "tuesday": "",
+        "wednesday": "",
+        "thursday": "",
+        "friday": "",
+        "saturday": "",
+        "_id": "f98957c4-1ae1-5b05-9f37-0a771fedc0fe"
+      },
+      {
+        "key": "schedule-row-24",
+        "isVisible": true,
+        "sortOrder": 23,
+        "title": "Hip-Hop 3",
+        "description": "1.25 Hr 11-Up*",
+        "monday": "5:30PM",
+        "tuesday": "",
+        "wednesday": "",
+        "thursday": "",
+        "friday": "",
+        "saturday": "",
+        "_id": "2c2c07e7-f20e-5524-9eb3-7a4a67f3433f"
+      },
+      {
+        "key": "schedule-row-25",
+        "isVisible": true,
+        "sortOrder": 24,
+        "title": "Leaps, Turns, Tricks Adv 1/2",
+        "description": "",
+        "monday": "",
+        "tuesday": "",
+        "wednesday": "",
+        "thursday": "6:30PM",
+        "friday": "",
+        "saturday": "",
+        "_id": "01249660-cbda-5d9b-9c6f-fd636aab5b37"
+      },
+      {
+        "key": "schedule-row-26",
+        "isVisible": true,
+        "sortOrder": 25,
+        "title": "Leaps, Turns, Tricks Adv 3/4",
+        "description": "",
+        "monday": "",
+        "tuesday": "5:30PM",
+        "wednesday": "",
+        "thursday": "",
+        "friday": "",
+        "saturday": "",
+        "_id": "1a3a5a25-11dc-5ae3-ae07-90cac556960f"
+      },
+      {
+        "key": "schedule-row-27",
+        "isVisible": true,
+        "sortOrder": 26,
+        "title": "Intro to Poms",
+        "description": "1 Hr Ages 9-Up",
+        "monday": "",
+        "tuesday": "",
+        "wednesday": "",
+        "thursday": "5:30PM",
+        "friday": "",
+        "saturday": "",
+        "_id": "10f0bcc3-3e92-5310-8b42-58226041568b"
+      },
+      {
+        "key": "schedule-row-28",
+        "isVisible": true,
+        "sortOrder": 27,
+        "title": "Rehearsals",
+        "description": "Nutcracker & Competition",
+        "monday": "",
+        "tuesday": "",
+        "wednesday": "",
+        "thursday": "",
+        "friday": "4:00-7:00",
+        "saturday": "12:00-5:00",
+        "_id": "9d3f3492-9b53-5f68-a4e9-ec298fbe2804"
+      }
+    ],
+    "DiShowDates": [
+      {
+        "key": "nutcracker-show-1",
+        "isVisible": true,
+        "sortOrder": 0,
+        "dateLabel": "Friday, December 18, 2026",
+        "datePrefix": "Friday, December ",
+        "dayNumber": "18",
+        "year": "2026",
+        "dateTime": "2026-12-18",
+        "showLabel": "Friday, December 18 at 6 PM",
+        "showDateTime": "2026-12-18T18:00",
+        "_id": "f923bc18-c896-5dab-b09a-c7661742ec7b"
+      },
+      {
+        "key": "nutcracker-show-2",
+        "isVisible": true,
+        "sortOrder": 1,
+        "dateLabel": "Saturday, December 19, 2026",
+        "datePrefix": "Saturday, December ",
+        "dayNumber": "19",
+        "year": "2026",
+        "dateTime": "2026-12-19",
+        "showLabel": "Saturday, December 19 at 1 PM",
+        "showDateTime": "2026-12-19T13:00",
+        "_id": "baa47a7d-1d4b-5744-acf7-a8d6b9e9dd9e"
+      }
+    ],
+    "DiGalleryPhotos": [
+      {
+        "key": "nutcracker-1",
+        "isVisible": true,
+        "sortOrder": 0,
+        "title": "nutcracker photo 1",
+        "gallery": "nutcracker",
+        "image": "https://static.wixstatic.com/media/24dcb0_18293fc52d614dad861e559bf73d973f~mv2.webp",
+        "alt": "Dance Institute Nutcracker performers on stage",
+        "focalX": 50.0,
+        "focalY": 50.0,
+        "_id": "ef0f96fb-e177-52ee-a2f1-64e97e8590bf"
+      },
+      {
+        "key": "nutcracker-2",
+        "isVisible": true,
+        "sortOrder": 1,
+        "title": "nutcracker photo 2",
+        "gallery": "nutcracker",
+        "image": "https://static.wixstatic.com/media/24dcb0_7e15f829632241bfb6c86a57d9a6b047~mv2.webp",
+        "alt": "Dance Institute dancers performing in the Nutcracker",
+        "focalX": 50.0,
+        "focalY": 50.0,
+        "_id": "b4fef19b-8a9c-5998-8fe2-b3211634dd33"
+      },
+      {
+        "key": "competition-1",
+        "isVisible": true,
+        "sortOrder": 0,
+        "title": "competition photo 1",
+        "gallery": "competition",
+        "image": "https://static.wixstatic.com/media/24dcb0_628cd52c5d414b0dadd7e00f7ca6c19b~mv2.webp",
+        "alt": "Dancers in white shirts lift a teammate with her arms reaching upward.",
+        "focalX": 50.0,
+        "focalY": 50.0,
+        "_id": "87225622-9f44-53ba-b316-d9de124f1b8c"
+      },
+      {
+        "key": "competition-2",
+        "isVisible": true,
+        "sortOrder": 1,
+        "title": "competition photo 2",
+        "gallery": "competition",
+        "image": "https://static.wixstatic.com/media/24dcb0_76ec9f58b9b148c5b2eb07928196f121~mv2.webp",
+        "alt": "Dancers in sparkling red costumes perform a synchronized kneeling pose.",
+        "focalX": 50.0,
+        "focalY": 80.0,
+        "_id": "6e9c17c4-79c5-521a-8baa-dd742b4fd19f"
+      },
+      {
+        "key": "competition-3",
+        "isVisible": true,
+        "sortOrder": 2,
+        "title": "competition photo 3",
+        "gallery": "competition",
+        "image": "https://static.wixstatic.com/media/24dcb0_733d814b81664233b163728328b60fc4~mv2.webp",
+        "alt": "Dancers in brown dresses perform expressive floorwork at Legacy Dance Championships.",
+        "focalX": 50.0,
+        "focalY": 50.0,
+        "_id": "576a6e7c-22c4-5625-8b53-99377df7d194"
+      },
+      {
+        "key": "competition-4",
+        "isVisible": true,
+        "sortOrder": 3,
+        "title": "competition photo 4",
+        "gallery": "competition",
+        "image": "https://static.wixstatic.com/media/24dcb0_1a61e1fa946a414b8e5f8d0dc325310e~mv2.webp",
+        "alt": "Five Dance Institute dancers onstage at Rainbow National Dance Competition",
+        "focalX": 50.0,
+        "focalY": 50.0,
+        "_id": "22c7452a-3447-5043-a15a-90cbb73bca33"
+      },
+      {
+        "key": "competition-5",
+        "isVisible": true,
+        "sortOrder": 4,
+        "title": "competition photo 5",
+        "gallery": "competition",
+        "image": "https://static.wixstatic.com/media/24dcb0_58b465b7de4f4f788bab98d6ebe9ad6d~mv2.webp",
+        "alt": "A dancer in a mauve dress reaches upward as her teammates gather around her on the floor.",
+        "focalX": 50.0,
+        "focalY": 100.0,
+        "_id": "2d603a7b-bb5c-5092-aafe-b558008ef662"
+      },
+      {
+        "key": "competition-6",
+        "isVisible": true,
+        "sortOrder": 5,
+        "title": "competition photo 6",
+        "gallery": "competition",
+        "image": "https://static.wixstatic.com/media/24dcb0_ef048965ebca4ce8896165ca3f97a2c5~mv2.webp",
+        "alt": "Dancers in brown costumes support a teammate in an overhead acrobatic lift.",
+        "focalX": 50.0,
+        "focalY": 50.0,
+        "_id": "0f06416d-b188-5083-bd90-906737fb17a5"
+      },
+      {
+        "key": "competition-7",
+        "isVisible": true,
+        "sortOrder": 6,
+        "title": "competition photo 7",
+        "gallery": "competition",
+        "image": "https://static.wixstatic.com/media/24dcb0_d8284070602f4ed5b46bdcf49315db69~mv2.webp",
+        "alt": "Four dancers in white costumes balance with one hand on the floor and the other reaching upward.",
+        "focalX": 50.0,
+        "focalY": 80.0,
+        "_id": "e80b3a18-0b26-5772-b43e-b1398e232353"
+      },
+      {
+        "key": "competition-8",
+        "isVisible": true,
+        "sortOrder": 7,
+        "title": "competition photo 8",
+        "gallery": "competition",
+        "image": "https://static.wixstatic.com/media/24dcb0_dec556b9ea4143e5bdb8474725c67f21~mv2.webp",
+        "alt": "Dancers in black costumes hold a group pose at Legacy Dance Championships.",
+        "focalX": 50.0,
+        "focalY": 80.0,
+        "_id": "a57ce291-e833-565a-ae28-a057b8f6d6c5"
+      },
+      {
+        "key": "recital-1",
+        "isVisible": true,
+        "sortOrder": 0,
+        "title": "recital photo 1",
+        "gallery": "recital",
+        "image": "https://static.wixstatic.com/media/24dcb0_2571f77207464292acee54784fb8ae49~mv2.webp",
+        "alt": "Dance Institute dancers performing together on stage",
+        "focalX": 50.0,
+        "focalY": 50.0,
+        "_id": "08c4b881-4437-58d5-9f7b-1ccd94ecd7a2"
+      },
+      {
+        "key": "recital-2",
+        "isVisible": true,
+        "sortOrder": 1,
+        "title": "recital photo 2",
+        "gallery": "recital",
+        "image": "https://static.wixstatic.com/media/24dcb0_8968189b29754c48bbaf626594ddac77~mv2.webp",
+        "alt": "Young Dance Institute dancers in pink tutus on stage",
+        "focalX": 50.0,
+        "focalY": 0.0,
+        "_id": "ac423a32-c29f-51c9-92c7-af635aa5679d"
+      }
+    ],
+    "DiCompetitionInfo": [
+      {
+        "key": "the-team",
+        "isVisible": true,
+        "sortOrder": 0,
+        "title": "The Team",
+        "body": "<p>A competition team brings dancers together to strengthen their technique, develop stage presence and support one another. Teamwork, steady progress and a love of performing are at the heart of the experience.</p>",
+        "_id": "65940714-af75-5968-8980-3c199539ebf8"
+      },
+      {
+        "key": "rehearsals",
+        "isVisible": true,
+        "sortOrder": 1,
+        "title": "Rehearsals",
+        "body": "<p>Rehearsals give dancers time to learn choreography, refine details and become comfortable performing as a group. Consistent practice, preparation and communication help every dancer contribute to the team.</p>",
+        "_id": "618a71e1-3609-57ac-b840-ceb5cfc1fccf"
+      },
+      {
+        "key": "events",
+        "isVisible": true,
+        "sortOrder": 2,
+        "title": "Events",
+        "body": "<p>Competition weekends offer a chance to perform, receive feedback and celebrate progress together. Dates, venues, arrival times and performance schedules help families prepare for each event.</p>",
+        "_id": "a7ce7371-27e1-5b01-a43d-8e7309f8c478"
+      },
+      {
+        "key": "getting-ready",
+        "isVisible": true,
+        "sortOrder": 3,
+        "title": "Getting Ready",
+        "body": "<p>Pack your costume, dance shoes, water and any hair or makeup supplies you need. Review the event schedule in advance, arrive ready to warm up and support your teammates throughout the day.</p>",
+        "_id": "79690958-e5b2-558e-8bc7-0221f8623994"
+      },
+      {
+        "key": "costs",
+        "isVisible": true,
+        "sortOrder": 4,
+        "title": "Costs",
+        "body": "<p>Competition participation may involve entry fees, costumes and travel. Review the season’s cost breakdown and payment schedule before committing, and ask about any additional expenses.</p>",
+        "_id": "25f024d3-d9cd-530c-841d-db5643fd5407"
+      },
+      {
+        "key": "questions",
+        "isVisible": true,
+        "sortOrder": 5,
+        "title": "Questions",
+        "body": "<p>Interested in the competition experience? Contact the studio to discuss your dancer’s goals and learn about team placement, preparation and the next steps.</p>",
+        "_id": "8b1be864-5dff-5e60-b947-9cfcb3552fc7"
+      }
+    ],
+    "DiSummerCourses": [
+      {
+        "key": "summer-course-1",
+        "isVisible": true,
+        "sortOrder": 0,
+        "title": "Contemporary/Jazz",
+        "time": "2:00-3:30",
+        "price": "$225.00",
+        "note": "",
+        "_id": "387a9538-077b-5162-95f6-620f532bc883"
+      },
+      {
+        "key": "summer-course-2",
+        "isVisible": true,
+        "sortOrder": 1,
+        "title": "Inter/Adv Ballet",
+        "time": "3:30-5:00",
+        "price": "$225.00",
+        "note": "(This is for both Pointe and non-Pointe Ballet dancers.)",
+        "_id": "622de1e9-5141-5c3f-8539-70fef718af46"
+      }
+    ],
+    "DiSummerCamps": [
+      {
+        "key": "summer-camp-1",
+        "isVisible": true,
+        "sortOrder": 0,
+        "title": "Camp AGES 4-6 years old",
+        "price": "$225.00",
+        "dates": "June 16th – 20th or July 14th – July 18th",
+        "time": "9:30 AM - 12:00 PM",
+        "body": "This camp includes Tap, Ballet, Tumbling, Crafts, Snack.",
+        "discount": "",
+        "note": "",
+        "_id": "ce4c3d6f-af22-5327-8a95-86564513d6f7"
+      },
+      {
+        "key": "summer-camp-2",
+        "isVisible": true,
+        "sortOrder": 1,
+        "title": "Camp AGES 6-9 years old",
+        "price": "$225.00",
+        "dates": "June 23rd – 27th or July 21st - July 25th",
+        "time": "9:30 AM - 12:00 PM",
+        "body": "This camp includes Tap, Ballet, Tumbling, Hip-Hop, Video, Snack.",
+        "discount": "",
+        "note": "(Parents of 8 & 9-year-old students please see Miss Michele for placement)",
+        "_id": "89e3d5de-84af-5e70-b652-7189233e48fa"
+      },
+      {
+        "key": "summer-camp-3",
+        "isVisible": true,
+        "sortOrder": 2,
+        "title": "Afternoon Art 6-9 years old",
+        "price": "$225.00",
+        "dates": "June 23rd – 27th or July 21st - July 25th",
+        "time": "1:00 PM - 3:30 PM",
+        "body": "Make it an all-day camp for your dancer by adding art in the afternoons. Pack a lunch and spend the afternoon relaxing with our wonderful array of art projects. Each day is a different theme.",
+        "discount": "(There’s a $25 discount when combined with morning Dance Camp)",
+        "note": "",
+        "_id": "d7999015-f142-5e69-9587-a21e1dc73573"
+      },
+      {
+        "key": "summer-camp-4",
+        "isVisible": true,
+        "sortOrder": 3,
+        "title": "Hip-Hop Camp Ages 6 and up",
+        "price": "$195.00",
+        "dates": "July 28th – Aug 1st",
+        "time": "10:00 AM - Noon",
+        "body": "Students will receive training from Miss Irie and guest instructors. This camp is designed to give dancers the flavor of Hip-Hop, including breaking, freestyle, and choreography. Snack included.",
+        "discount": "",
+        "note": "",
+        "_id": "ee94eab0-1bdb-527c-a3f4-406149bcc6f2"
+      },
+      {
+        "key": "summer-camp-5",
+        "isVisible": true,
+        "sortOrder": 4,
+        "title": "Camp AGES 8 – 13 (Beginner/Intermediate)",
+        "price": "$250.00",
+        "dates": "July 28th – Aug 1st",
+        "time": "1:00 PM - 4:30 PM",
+        "body": "This camp is designed to quickly elevate a student’s abilities. The focus will be on Technique, Showmanship, Strength, and Flexibility in Ballet, Lyrical, Tap, and Jazz. Snack included.",
+        "discount": "(There’s a $25 discount when combined with Hip-Hop)",
+        "note": "(Parents of 8 &; 9-year-old students please see Miss Michele for placement)",
+        "_id": "b40171cc-a96a-52fc-9d87-de2c4f0547de"
+      },
+      {
+        "key": "summer-camp-6",
+        "isVisible": true,
+        "sortOrder": 5,
+        "title": "Nutcracker Prep Week",
+        "price": "$100.00",
+        "dates": "Aug 18th – Aug 22nd",
+        "time": "5:00 PM - 7:00 PM (Monday – Thursday)",
+        "body": "This week prepares dancers for their Nutcracker audition. Any dancer wanting to put extra focus into their ballet dancing before they audition is encouraged to come dance with us this week.",
+        "discount": "",
+        "note": "",
+        "_id": "4c49e4c1-696d-5b03-ba87-1f70e0ffc39f"
+      }
+    ],
+    "DiTuition": [
+      {
+        "key": "dituition-1",
+        "isVisible": true,
+        "sortOrder": 0,
+        "title": "45 minutes",
+        "price": "$75/month",
+        "_id": "01cca998-d780-5a55-b8db-5a19b2b779be"
+      },
+      {
+        "key": "dituition-2",
+        "isVisible": true,
+        "sortOrder": 1,
+        "title": "1 hour",
+        "price": "$80/month",
+        "_id": "46add190-c89d-5406-9ed0-af1e39c70350"
+      },
+      {
+        "key": "dituition-3",
+        "isVisible": true,
+        "sortOrder": 2,
+        "title": "1.25 hour",
+        "price": "$85/month",
+        "_id": "8a85d299-2b57-5a9e-b4e3-cf09564c3ee0"
+      },
+      {
+        "key": "dituition-4",
+        "isVisible": true,
+        "sortOrder": 3,
+        "title": "1.5 hour",
+        "price": "$90/month",
+        "_id": "157cbabc-a6a3-5b66-b49b-d949dc5202be"
+      },
+      {
+        "key": "dituition-5",
+        "isVisible": true,
+        "sortOrder": 4,
+        "title": "Trot’n Tots",
+        "price": "$80/6 weeks",
+        "_id": "aec44627-e711-5f0c-9ced-fffc76c3abaa"
+      },
+      {
+        "key": "dituition-6",
+        "isVisible": true,
+        "sortOrder": 5,
+        "title": "Unlimited Classes",
+        "price": "$275/month",
+        "_id": "eaa87a42-32ef-5311-8743-71d16a16207b"
+      },
+      {
+        "key": "dituition-7",
+        "isVisible": true,
+        "sortOrder": 6,
+        "title": "Workshops",
+        "price": "$25/class or included with Unlimited Membership",
+        "_id": "aae02c9e-378b-5214-a271-5f15a42c7050"
+      }
+    ],
+    "DiDiscounts": [
+      {
+        "key": "didiscounts-1",
+        "isVisible": true,
+        "sortOrder": 0,
+        "title": "2 classes",
+        "price": "5% discount",
+        "_id": "0551f82f-b2bc-5e65-a198-f54a8d80cdf4"
+      },
+      {
+        "key": "didiscounts-2",
+        "isVisible": true,
+        "sortOrder": 1,
+        "title": "3 classes:",
+        "price": "10% discount",
+        "_id": "2aa7bc69-d322-5231-bdd3-3e654b65d2c6"
+      },
+      {
+        "key": "didiscounts-3",
+        "isVisible": true,
+        "sortOrder": 2,
+        "title": "4 classes:",
+        "price": "15% discount",
+        "_id": "56eca8e5-5fa3-5fd3-872c-83e192732a9e"
+      },
+      {
+        "key": "didiscounts-4",
+        "isVisible": true,
+        "sortOrder": 3,
+        "title": "Unlimited classes:",
+        "price": "$275",
+        "_id": "e14ce3f4-71e8-5706-9207-e719228bc095"
+      }
+    ],
+    "DiRegistration": [
+      {
+        "key": "membership",
+        "isVisible": true,
+        "sortOrder": 0,
+        "title": "Membership fee",
+        "price": "$25",
+        "description": "per dancer anually",
+        "_id": "ab71c703-e5ef-5c46-99c1-a170efc09cb8"
+      },
+      {
+        "key": "sawyer",
+        "isVisible": true,
+        "sortOrder": 1,
+        "title": "Sawyer membership link",
+        "url": "https://www.hisawyer.com/dance-institute-denver/schedules/membership-plans",
+        "_id": "f7ce44dc-5b1e-5f7f-9dda-60698f1f9925"
+      }
+    ]
+  }
+}

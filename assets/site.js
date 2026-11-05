@@ -1,5 +1,5 @@
 /* Small, progressive enhancements. All page copy is delivered in HTML. */
-(() => {
+Promise.resolve(window.siteContentReady).then(() => {
   'use strict';
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
   const menuButton = document.querySelector('.menu-toggle');
@@ -57,8 +57,9 @@
       const name = [data.get('firstName'), data.get('lastName')].filter(Boolean).join(' ');
       const body = `Name: ${name}\nEmail: ${data.get('email')}\nPhone: ${data.get('phone') || ''}\n\n${data.get('message') || ''}`;
       const status = form.querySelector('.form-status');
-      if (status) status.textContent = 'Your email draft is ready. Send it from your email app to deliver your message. You can also email dance@danceinstitutedenver.com directly.';
-      window.location.href = `mailto:dance@danceinstitutedenver.com?subject=${encodeURIComponent('Dance Institute inquiry')}&body=${encodeURIComponent(body)}`;
+      const recipient = form.getAttribute('action').replace(/^mailto:/, '').split('?')[0];
+      if (status) status.textContent = `Your email draft is ready. Send it from your email app to deliver your message. You can also email ${recipient} directly.`;
+      window.location.href = `mailto:${recipient}?subject=${encodeURIComponent('Dance Institute inquiry')}&body=${encodeURIComponent(body)}`;
     });
   });
 
@@ -74,4 +75,4 @@
       if (event.matches) { observer.disconnect(); document.documentElement.classList.remove('motion-ready'); }
     });
   }
-})();
+});

@@ -1,0 +1,6 @@
+{
+  "enabled": false,
+  "transport": "http-function",
+  "endpoint": "",
+  "collectionIds": {}
+}

@@ -143,6 +143,7 @@ def validate(base: Path) -> None:
 
 def build() -> None:
     subprocess.run([sys.executable, str(ROOT / "scripts" / "render.py")], cwd=ROOT, check=True)
+    subprocess.run([sys.executable, str(ROOT / "scripts" / "cms_bind.py")], cwd=ROOT, check=True)
     if not (ROOT / "index.html").is_file():
         raise ValueError("The root index.html has not been created yet.")
     if DIST.exists():

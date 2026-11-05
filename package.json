@@ -7,6 +7,7 @@
     "build": "python3 scripts/site.py build",
     "check": "python3 scripts/site.py check",
     "check:copy": "python3 scripts/check_copy.py",
+    "test": "node --test tests/*.test.mjs",
     "package": "python3 scripts/site.py package"
   }
 }

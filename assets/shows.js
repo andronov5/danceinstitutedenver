@@ -1,5 +1,5 @@
 /* Simple looping galleries, with arrows, swipes and keyboard navigation. */
-(() => {
+Promise.resolve(window.siteContentReady).then(() => {
   'use strict';
   const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
   const swipe = (element, navigate) => {
@@ -77,4 +77,4 @@
     restart();
   });
 
-})();
+});
